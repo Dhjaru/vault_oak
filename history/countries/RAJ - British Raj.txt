@@ -242,7 +242,7 @@ set_variable = {
 
 add_manpower = 350000
 
-set_convoys = 150
+set_convoys = 500
 
 set_cosmetic_tag = RAJ_UK # British Raj
 
@@ -282,4 +282,45 @@ if = {
 		female = yes
 		nationalities = { RAJ }
 	}
+}
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 5500
+    producer = ENG
+}
+add_equipment_to_stockpile = {
+    type = artillery_equipment_1
+    amount = 250
+    producer = ENG
+}
+add_equipment_to_stockpile = {
+    type = field_gun_equipment_1
+    amount = 500
+    producer = ENG
+}
+add_equipment_to_stockpile = {
+    type = radio_equipment_1
+    amount = 100
+    producer = ENG
+}
+add_equipment_to_stockpile = {
+    type = special_equipment_1
+    amount = 0
+    producer = ENG
+}
+add_equipment_to_stockpile = {
+    type = horse_equipment_0
+    amount = 1500
+    producer = ENG
+}
+add_equipment_to_stockpile = {
+    type = motorized_equipment_1
+    amount = 600
+    producer = ENG
+}
+add_equipment_to_stockpile = {
+    type = support_equipment_1
+    amount = 550
+    producer = ENG
 }

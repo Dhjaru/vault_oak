@@ -6,7 +6,7 @@
 oob = "HUN_1936"
 set_convoys = 150
 set_research_slots = 4
-starting_train_buffer = 2
+starting_train_buffer = 6
 set_stability = 0.65
 set_war_support = 0.4
 recruit_character = HUN_flushed
@@ -196,3 +196,73 @@ set_popularities = {
 
 #Start Horty as neutral if DOD
 
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 33000
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 12000
+    producer = BUL
+}
+add_equipment_to_stockpile = {
+    type = artillery_equipment_1
+    amount = 600
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+    type = artillery_equipment_1
+    amount = 300
+    producer = BUL
+}
+add_equipment_to_stockpile = {
+    type = radio_equipment_1
+    amount = 300
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+    type = radio_equipment_1
+    amount = 300
+    producer = BUL
+}
+add_equipment_to_stockpile = {
+    type = special_equipment_1
+    amount = 800
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+    type = special_equipment_1
+    amount = 200
+    producer = BUL
+}
+add_equipment_to_stockpile = {
+    type = horse_equipment_0
+    amount = 7000
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+    type = horse_equipment_0
+    amount = 2000
+    producer = BUL
+}
+add_equipment_to_stockpile = {
+    type = motorized_equipment_1
+    amount = 1300
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+    type = motorized_equipment_1
+    amount = 900
+    producer = BUL
+}
+add_equipment_to_stockpile = {
+    type = support_equipment_1
+    amount = 1300
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+    type = support_equipment_1
+    amount = 900
+    producer = BUL
+}
