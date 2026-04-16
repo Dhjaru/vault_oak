@@ -1,7 +1,7 @@
 state_categories = {
 pastoral = {
 	local_building_slots = 5
-	color = { 160 160 0 }
+	color = { 160 80 0 }
 	buildings_max_level = {
         air_base = 6
     }

@@ -144,30 +144,6 @@
 				RAJ_central_indian_railways
 			}
 		}
-		"AST"={
-			minor = yes
-			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-				ast_strenghten_coalition
-				AST_fight_work_or_perish
-				ast_rats_of_tobruk
-			}
-		}
-		"SAF"={
-			minor = yes
-			history = "SAF_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-				SAF_production_agreements_with_the_empire
-				SAF_spirit_of_the_zulu_war
-				SAF_appoint_hendrik_van_den_bjil
-			}
-		}
 		"SPR"={
 			minor = yes
 			history = "SPR_GATHERING_STORM_DESC"
@@ -196,51 +172,6 @@
 				HUN_bled_agreement
 				HUN_reorganize_the_royal_hungarian_army
 				HUN_the_return_of_transylvania
-			}
-		}
-		"ROM"={
-			minor = yes
-			history = "ROM_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				ROM_king_carol_ii_hedonist
-				neutrality_idea
-				ROM_romanian_officers
-			}
-			focuses = {
-				ROM_imprison_the_iron_guard
-				ROM_for_the_preservation_of_greater_romania
-				ROM_institute_a_royal_dictatorship
-			}
-		}
-		"PRC"={
-			minor = yes
-			history = "PRC_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				PRC_the_long_march_1
-				PRC_low_popular_support_3
-				PRC_power_struggles
-			}
-			focuses = {
-				PRC_infiltration
-				PRC_maoism
-				PRC_provoke_japan
-			}
-		}
-		"CHI"={
-			minor = yes
-			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				CHI_army_corruption_1
-				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
-			}
-			focuses = {
-				CHI_mobilize_reserves_2
-				CHI_sino_german_cooperation
-				CHI_war_of_national_liberation
 			}
 		}
 		
