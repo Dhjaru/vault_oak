@@ -6918,7 +6918,7 @@ foreign_politics = {
 				complete_national_focus = GER_romanian_oil
 			}
 			ROM = {
-				give_resource_rights = { receiver = GER state = 46 }
+				give_resource_rights = { receiver = GER state = 46 resources = { oil } }
 			}
 		}
 	}
