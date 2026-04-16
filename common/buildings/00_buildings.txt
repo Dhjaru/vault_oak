@@ -511,6 +511,7 @@ buildings = {
 		spawn_point = nuclear_reactor_spawn
 		show_on_map = 1
 		base_cost = 30000
+		per_controlled_building_extra_cost = 10000
 		icon_frame = 28
 		#nuclear_reactor = yes
 		tags = { civilian_reactor_building }
@@ -523,7 +524,6 @@ buildings = {
 				thermonuclear_production_factor = 2
 				industrial_capacity_dockyard = 0.04
 				industrial_capacity_factory = 0.04
-				local_resources_factor = -0.02
 			}
 		}
 
