@@ -3797,6 +3797,11 @@ PAR_instant_effect_decisions = {
 				AST = {
 					add_ideas = AST_fortress_ast
 				}
+				RAJ = {
+					set_variable = { var = RAJ_army_core_attack_factor value = 2 } 
+					set_variable = { var = RAJ_army_core_defence_factor value = 2 }
+					force_update_dynamic_modifier = yes 
+				}
 			}
 			else_if = {
 				limit = {
@@ -3806,6 +3811,11 @@ PAR_instant_effect_decisions = {
 				}
 				AST = {
 					add_ideas = AST_fortress_ast_2
+				}
+				RAJ = {
+					set_variable = { var = RAJ_army_core_attack_factor value = 2 } 
+					set_variable = { var = RAJ_army_core_defence_factor value = 2 }
+					force_update_dynamic_modifier = yes 
 				}
 			}
 			
@@ -3886,6 +3896,11 @@ PAR_instant_effect_decisions = {
 				AST = {
 					remove_ideas = AST_fortress_ast
 				}
+				RAJ = {
+					set_variable = { var = RAJ_army_core_attack_factor value = 0 } 
+					set_variable = { var = RAJ_army_core_defence_factor value = 0 } 
+					force_update_dynamic_modifier = yes
+				}
 			}
 			else_if = {
 				limit = {
@@ -3895,6 +3910,11 @@ PAR_instant_effect_decisions = {
 				}
 				AST = {
 					remove_ideas = AST_fortress_ast_2
+				}
+				RAJ = {
+					set_variable = { var = RAJ_army_core_attack_factor value = 0 } 
+					set_variable = { var = RAJ_army_core_defence_factor value = 0 }
+					force_update_dynamic_modifier = yes 
 				}
 			}
 			

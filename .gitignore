@@ -4,3 +4,4 @@ descriptor.mod
 *.vsidx
 .vs/vault_oak/FileContentIndex/read.lock
 .vs/slnx.sqlite
+/.vs

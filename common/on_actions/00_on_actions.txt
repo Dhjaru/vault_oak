@@ -205,7 +205,8 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
-			
+			set_variable = { var = RAJ_army_core_attack_factor value = 2 } 
+			set_variable = { var = RAJ_army_core_defence_factor value = 2 } 
 			if = {
 				limit = {
 					282 = {

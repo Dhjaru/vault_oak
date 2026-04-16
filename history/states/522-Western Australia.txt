@@ -10,6 +10,7 @@ state = {
 	
 	}
 	history = {
+		add_dynamic_modifier = { modifier = RAJ_protected_by_papua }
 		owner = RAJ
 		buildings = {
 			infrastructure = 5

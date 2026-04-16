@@ -135,3 +135,11 @@ AST_army_modifier = {
 
      
 }
+
+RAJ_protected_by_papua = {
+    enable = { always = yes } #optional, the modifier won't apply if not enabled
+    icon = GFX_idea_AST_fortress_ast
+
+    army_core_attack_factor = RAJ.RAJ_army_core_attack_factor
+    army_core_defence_factor = RAJ.RAJ_army_core_defence_factor
+}
