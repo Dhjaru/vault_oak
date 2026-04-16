@@ -1,0 +1,40 @@
+state = {
+	id = 820
+	name = "STATE_821"
+	resources = {
+		tungsten = 52
+		chromium = 20
+		aluminium = 32
+	}
+
+	history = {
+			set_state_flag = JAP_interior_flag
+		owner = CHI
+		add_core_of = CHI
+		add_dynamic_modifier = { modifier = CHI_tougher_resistance2 }
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		
+		victory_points = {
+			1612 3 
+		}
+		victory_points = {
+			7019 3 
+		}
+		victory_points = {
+			13630 6 
+		}
+	}
+
+	provinces = {
+		13619  13617 13616  13614  1612   7019 7596 7609  7948 8072  12408 10474 13638 13630 13634		11865 5048 10144
+	}
+	manpower = 8541600
+	buildings_max_level_factor = 1.000
+	state_category = city
+}

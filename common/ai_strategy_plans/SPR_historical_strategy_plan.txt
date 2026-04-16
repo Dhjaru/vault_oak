@@ -1,0 +1,74 @@
+SPR_historical_plan = {
+	name = "Spanish historical plan"
+	desc = "Historical behavior for Nationalist Spain - HOO2 modified"
+
+	allowed = {
+		original_tag = SPR
+	}
+	enable = {
+		OR = {
+			tag = SPR
+			tag = SPA
+		}
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+			has_game_rule = {
+				rule = SPR_ai_behavior 
+				option = NATIONALIST_HISTORICAL
+			}
+		}
+	}
+	abort = {
+		OR = {
+			tag = SPD
+			tag = SPC
+			OR = {
+				has_war_with = ENG
+				has_war_with = GER
+			}
+		}
+		
+	}
+
+	ai_national_focuses = {
+		SPA_redeploy_army_of_africa
+		SPA_hand_over_the_ceda_campaign_chest
+		SPA_negotiate_carlist_support
+		SPA_secure_the_northern_garrisons
+		SPA_con_paquito
+		SPA_caudillo_of_spain
+
+		SPA_redeploy_army_of_africa
+		SPA_army_of_africa_leads_the_way
+
+		SPA_adopt_the_26_points
+		SPA_dictator_for_life
+		SPA_stamp_out_the_maquis
+
+
+	}
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

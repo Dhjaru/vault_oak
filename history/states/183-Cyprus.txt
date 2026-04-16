@@ -1,0 +1,38 @@
+state = {
+	id = 183
+	name = "STATE_183"
+	manpower = 347959
+	
+	state_category = rural
+	resources = {
+		chromium = 48 # was: 4
+	}
+
+	history =	{
+		set_state_flag = ENG_controls
+		owner = ENG
+		victory_points = {
+			11984 5
+		}
+		victory_points = {
+			7193 3
+		}
+		strategic_state_location = {
+			favorable_approach = 7193
+			
+		}
+		 strategic_province_location = {
+			defensible_coastline = 7193
+			defensible_coastline = 11984
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 5
+			7193 = {
+				naval_base = 2
+			}
+		}
+
+	}
+	provinces = { 7193 11984 }
+}

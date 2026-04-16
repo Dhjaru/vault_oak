@@ -1,0 +1,47 @@
+
+state = {
+	id = 842
+	name = "STATE_843"
+	manpower = 2500
+	state_category = small_island
+
+	history = {
+		
+		add_core_of = SEN
+		set_state_flag = JAP_controls
+		owner = JAP
+	
+		strategic_state_location = {
+			bigger_islands = 13035
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 4
+			
+			2489 = {
+				naval_base = 8
+				coastal_bunker = 2	
+				naval_supply_hub = 1
+				naval_headquarters = 1
+			}
+			13035 = {
+				naval_base = 6
+				coastal_bunker = 2			
+			}
+			13036 = {
+				naval_base = 2
+				coastal_bunker = 2			
+			}
+
+		}
+		victory_points = {
+			2489 4
+		}
+
+
+	}
+
+	provinces = {
+	 2489 13035 13036
+	}
+}

@@ -1,0 +1,40 @@
+state = {
+	id = 748
+	name = "STATE_748"
+	provinces = {
+		1010 4141 4325 4431 9939 10763 11972 13636 13637 13651 13652 13653
+	}
+	resources = {
+		steel = 100
+		chromium = 32
+		aluminium = 40
+	}
+	history = {
+		set_state_flag = JAP_interior_flag
+		owner = CHI
+		add_core_of = CHI
+		add_dynamic_modifier = { modifier = CHI_tougher_resistance3 }
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 6
+
+		}
+		victory_points = {
+			1010 7
+		}
+		victory_points = {
+			13652 4
+		}
+		1939.1.1 = {
+			buildings = {
+				infrastructure = 4
+				air_base = 1
+			}
+		}
+	}
+	manpower = 8500000
+	state_category = pastoral
+	buildings_max_level_factor = 1.000
+}

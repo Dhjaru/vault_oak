@@ -1,0 +1,666 @@
+﻿# Characters shared by the chinese countries
+# for each country, generate one instance of the characters
+every_possible_country = {
+	limit = {
+		original_tag = SPR
+		has_dlc = "La Resistance"
+	}
+
+	generate_character = {
+		token_base = SPA_emilio_herrera
+		name=SPA_emilio_herrera
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SPA_emilio_herrera
+			ledger = air
+			name = SPA_emilio_herrera
+			allowed = {
+				NOT = {
+					has_dlc = "La Resistance"
+				}
+				original_tag = SPR
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_francisco_franco
+		name=SPA_francisco_franco
+		portraits={
+			army={
+				large="GFX_portrait_spain_francisco_franco"
+				small="gfx/interface/ideas/idea_SPA_francisco_franco.dds"
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_emilio_mola
+		name=SPA_emilio_mola
+		portraits={
+			army={
+				large="GFX_portrait_SPA_emilio_mola"
+				small="gfx/interface/ideas/idea_SPA_emilio_mola.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SPA_emilio_mola
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available = {
+				NOT = {
+					has_completed_focus = SPA_dios_patria_y_rey
+				}
+			}
+			traits = {
+				army_infantry_2
+				}
+			cost = 100
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_juan_yague
+		name=SPA_juan_yague
+		portraits={
+			army={
+				large="GFX_portrait_SPA_juan_yague"
+				small="gfx/interface/ideas/idea_SPA_juan_yague.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SPA_juan_yague
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+			available = {
+				NOT = {
+					has_completed_focus = SPA_the_plalanx_ascendent
+				}
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_emilio_esteban_infantes
+		name=SPA_emilio_esteban_infantes
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SPA_emilio_esteban_infantes
+			ledger = army
+			name = SPA_emilio_esteban_infantes
+			allowed = {
+				NOT = {
+					has_dlc = "La Resistance"
+				}
+				original_tag = SPR
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_agustin_munoz_grandes
+		name=SPA_agustin_munoz_grandes
+		portraits={
+			army={
+				small="GFX_idea_SPA_agustin_munoz_grandes"
+				large="GFX_portrait_SPA_augustin_muynoz_grandes"
+			}
+		}
+		advisor={
+		cost = 100
+			slot = theorist
+			idea_token = SPA_agustin_munoz_grandes
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			traits = {
+				mobile_warfare_expert
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_jose_enrique_varela
+		name=SPA_jose_enrique_varela
+		portraits={
+			army={
+				large="GFX_portrait_SPA_jose_enrique_varela"
+				small="gfx/interface/ideas/idea_SPA_jose_enrique_varela.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SPA_jose_enrique_varela
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+			available = {
+				NOT = {
+					has_completed_focus = SPA_the_plalanx_ascendent
+				}
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_miguel_cabanellas
+		name=SPA_miguel_cabanellas
+		portraits={
+			army={
+				large="GFX_portrait_SPA_miguel_cabanellas"
+				small="gfx/interface/ideas/idea_SPA_miguel_cabanellas.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SPA_miguel_cabanellas
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+
+			}
+			available = {
+
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+		}
+	}
+
+	
+
+	generate_character = {
+		token_base = SPA_rafael_garcia_valino
+		name=SPA_rafael_garcia_valino
+		portraits={
+			army={
+				small="GFX_idea_SPA_rafael_garcia_valino"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SPA_rafael_garcia_valino
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {}
+			available = {}
+
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+		}		
+	}
+
+
+	generate_character = {
+		token_base = SPA_miguel_ponte
+		name=SPA_miguel_ponte
+		portraits={
+			army={
+				small="GFX_idea_SPA_miguel_ponte"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SPA_miguel_ponte
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {}
+
+			available = {
+				has_completed_focus = SPA_dios_patria_y_rey
+			}
+
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+		}		
+	}
+
+	generate_character = {
+		token_base = SPA_joaquin_garcia_morato
+		name=SPA_joaquin_garcia_morato
+		portraits={
+			army={
+				small="GFX_idea_SPA_joaquin_garcia_morato"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = SPA_joaquin_garcia_morato
+			ledger = air
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {
+
+			}
+
+			available = {}
+
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 150
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_juan_vigon_suero_diaz
+		name=SPA_juan_vigon_suero_diaz
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_air_europe_2"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = SPA_juan_vigon_suero_diaz
+			ledger = air
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {}
+			available = {}
+
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_wilhelm_ritter_von_thoma
+		name=SPA_wilhelm_ritter_von_thoma
+		portraits={
+			army={
+				small="GFX_idea_SPA_wilhelm_ritter_von_thoma"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = SPA_wilhelm_ritter_von_thoma
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+			available = {
+				has_completed_focus = SPA_condor_leagion_advisors
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_enrique_canovas_lacruz
+		name=SPA_enrique_canovas_lacruz
+		portraits={
+			army={
+				small="GFX_idea_SPA_enrique_canovas_lacruz"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SPA_enrique_canovas_lacruz
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available = {
+				NOT = {
+					has_completed_focus = SPR_masters_of_our_own_fate
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+		}
+	}
+
+	generate_character = {
+		token_base = SPA_ricardo_rada
+		name=SPA_ricardo_rada
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_europe_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SPA_ricardo_rada
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+			available = {
+			
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+					NOT = { tag = SPD }
+				}
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			cost = 100
+		}		
+	}
+
+	generate_character = {
+		token_base = SPR_felipe_diaz_sandino
+		name=SPR_felipe_diaz_sandino
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_air_europe_2"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SPR_felipe_diaz_sandino
+			ledger = air
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPA
+					tag = SPB
+				}
+			}
+			available = {
+			
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+	generate_character = {
+		token_base = SPR_council_of_theorists
+		name=SPR_council_of_theorists
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SPR_council_of_theorists
+			ledger = military
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPA
+					tag = SPB
+				}
+				has_completed_focus = SPR_regional_defense_council_of_aragon
+			}
+			available = {
+				has_completed_focus = SPR_communal_military_strategies
+			}
+			traits = { council_of_theorists }
+		}
+	}
+	generate_character = {
+		token_base = SPR_domenec_batet
+		name=SPR_domenec_batet
+		portraits={
+			army={
+				small="GFX_idea_SPR_domenec_batet"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SPR_domenec_batet
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPA
+					tag = SPB
+				}
+			}
+			available = {
+			
+			}
+			traits = { army_chief_morale_2 }
+			cost = 100
+		}
+	}
+	generate_character = {
+		token_base = SPR_etelvino_vega
+		name=SPR_etelvino_vega
+		portraits={
+			army={
+				small="GFX_idea_SPR_etelvino_vega"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SPR_etelvino_vega
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPA
+					tag = SPB
+				}
+			}
+			available = {
+				
+			}
+			traits = { army_chief_defensive_2 }
+			cost = 100
+		}
+	}
+	generate_character = {
+		token_base = SPR_ignacio_hidalgo_de_cisneros
+		name=SPR_ignacio_hidalgo_de_cisneros
+		portraits={
+			army={
+				small="GFX_idea_SPR_ignacio_hidalgo_de_cisneros"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = SPR_ignacio_hidalgo_de_cisneros
+			ledger = air
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPA
+					tag = SPB
+				}
+			}
+			available = {
+				NOT = {
+					has_completed_focus = SPR_masters_of_our_own_fate
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPR_not_nationalist_spain_tt
+					NOT = { tag = SPA }
+				}
+			}
+			traits = { air_chief_safety_2 }
+			cost = 100
+		}
+	}
+	generate_character = {
+		token_base = SPR_toribio_martinez_cabrera
+		name=SPR_toribio_martinez_cabrera
+		portraits={
+			army={
+				small="GFX_idea_SPR_toribio_martinez_cabrera"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SPR_toribio_martinez_cabrera
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				NOT = {
+					tag = SPA
+					tag = SPB
+				}
+			}
+			available = {
+				
+			}
+			traits = { army_artillery_2 }
+			cost = 100
+		}
+	}
+	
+}
+
