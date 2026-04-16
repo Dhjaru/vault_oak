@@ -7,7 +7,7 @@ state = {
 	state_category = large_city
 
 	history = {
-		owner = SAF
+		owner = CAN
 		1936.1.1.14 = {
 			owner = CAN
 			add_core_of = CAN
@@ -31,7 +31,7 @@ state = {
 		victory_points = {
 			12589 10 
 		}
-		add_core_of = SAF
+		add_core_of = CAN
 	}
 
 	provinces = {

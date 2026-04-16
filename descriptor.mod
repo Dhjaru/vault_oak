@@ -42,4 +42,4 @@ tags={
 picture="thumbnail.png"
 name="Hearts of Vault"
 supported_version="1.17.5.2"
-path="E:/Dokument/Paradox Interactive/Hearts of Iron IV/mod/vault_oak"
+path="C:/Users/jonas/Documents/Paradox Interactive/Hearts of Iron IV/mod/vault_oak"

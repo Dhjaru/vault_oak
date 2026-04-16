@@ -10,10 +10,10 @@ state = {
 
 
 	history = {
-		owner = NZL
+		owner = RAJ
 		1936.1.1.14 = {
-			owner = AST
-			add_core_of = AST
+			owner = RAJ
+			add_core_of = RAJ
 
 		}
 		buildings = {
@@ -32,7 +32,7 @@ state = {
 		victory_points = {
 			2211 1 
 		}
-		add_core_of = NZL
+		add_core_of = RAJ
 	}
 	provinces = {
 		2197 2203 2211 4819 5195 7839 8204 8212 8232 8241 10650 12632 12966 12974 12980 12988 

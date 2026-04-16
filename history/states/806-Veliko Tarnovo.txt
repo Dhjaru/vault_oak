@@ -13,18 +13,18 @@ state = {
 			3819 3
 		}		
 		1936.1.1.14 = {
-			owner = ROM
-			add_core_of = ROM
+			owner = HUN
+			add_core_of = HUN
 			remove_core_of = BUL
 
 		}
-		owner = BUL
+		owner = HUN
 
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
 			arms_factory = 1
 		}
-		add_core_of = BUL
+		add_core_of = HUN
 	}
 }

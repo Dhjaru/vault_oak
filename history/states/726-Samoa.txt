@@ -7,7 +7,7 @@ state = {
 	history = {
 		add_dynamic_modifier = { modifier = no_airfields }
 		add_core_of = NZL
-		owner = NZL
+		owner = RAJ
 		buildings = {
 			air_base = 2
 			infrastructure = 3
