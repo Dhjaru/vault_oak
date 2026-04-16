@@ -1,4 +1,4 @@
-version="1.11.4"
+version="1"
 replace_path="history/countries"
 replace_path="common/national_focus"
 replace_path="common/units/names_divisions"

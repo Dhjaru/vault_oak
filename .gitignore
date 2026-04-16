@@ -1,3 +1,7 @@
 descriptor.mod
 descriptor.mod
 *.mod
+*.vsidx
+.vs/slnx.sqlite
+.vs/vault_oak/FileContentIndex/read.lock
+descriptor.mod
