@@ -6590,6 +6590,7 @@ foreign_politics = {
 		}
 		visible = {
 			has_war = yes
+			NOT = { HUN = { is_in_faction_with = GER } }
 			NOT = {
 				GER = { controls_state = 731 }
 				any_other_country = {
@@ -6622,9 +6623,7 @@ foreign_politics = {
 		}
 
 		complete_effect = {
-			ROM = { give_military_access = GER }
-			HUN = { give_military_access = GER }
-			add_to_faction = BUL
+			add_to_faction = HUN
 		}
 	}
 
@@ -6640,21 +6639,12 @@ foreign_politics = {
 		}
 
 		available = {
-			any_state = {
-				is_core_of = SOV 
-				NOT = {
-					is_controlled_by = BUL
-				}
-			}
-			AND = {
-				BUL = {
-					is_in_faction_with = ROOT
-					is_free_or_subject_of_root = yes
-					has_full_control_of_state = 48
-					has_full_control_of_state = 806
-					has_full_control_of_state = 212
-					has_full_control_of_state = 211
-				}
+			any_allied_country = {
+				is_free_or_subject_of_root = yes
+				has_full_control_of_state = 48
+				has_full_control_of_state = 806
+				has_full_control_of_state = 212
+				has_full_control_of_state = 211
 			}
 			FRA = { has_capitulated = yes }
 			has_war = yes
@@ -6675,7 +6665,16 @@ foreign_politics = {
 		}
 
 		complete_effect = {
-			BUL = {
+			56 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_allied_country = {
+				trigger = { owns_state = 48}
 				48 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -6685,16 +6684,6 @@ foreign_politics = {
 					}
 				}
 			}
-			GER = {
-				56 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}			
 		}
 	}
 	GER_operation_marita = {
@@ -6794,19 +6783,11 @@ foreign_politics = {
 			any_state = {
 				is_core_of = SOV 
 				NOT = {
-					is_controlled_by = ROM
+					OR = {
+						is_controlled_by = ROM
+						is_controlled_by = HUN
+					}
 				}
-			}
-			HUN = {
-				has_full_control_of_state = 155
-				has_full_control_of_state = 808
-				has_full_control_of_state = 43
-				has_full_control_of_state = 807
-				has_full_control_of_state = 154	
-			}
-			ROM = {
-				has_full_control_of_state = 46
-				has_full_control_of_state = 79
 			}
 			OR = {
 				HUN = {
@@ -6849,40 +6830,37 @@ foreign_politics = {
 			}
 			HUN = {
 				add_stability = -0.1
-				155 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-				154 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
-			ROM = {
-				add_stability = -0.1
-				81 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+			154 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
-				82 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+			}
+			81 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			82 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
 		}	
@@ -6900,8 +6878,8 @@ foreign_politics = {
 		fire_only_once = yes
 		
 		available = {
-			ROM = { is_in_faction_with = ROOT }
-			ROM = { is_subject_of = ROOT }
+			46 = { CONTROLLER = { is_in_faction_with = ROOT } }
+			46 = { OWNER = { is_subject_of = ROOT } }
 		}
 		
 		visible = {
@@ -6917,8 +6895,8 @@ foreign_politics = {
 			hidden_effect = {
 				complete_national_focus = GER_romanian_oil
 			}
-			ROM = {
-				give_resource_rights = { receiver = GER state = 46 resources = { oil } }
+			46 = {
+				controller = { give_resource_rights = { receiver = GER state = 46 resources = { oil } } }
 			}
 		}
 	}
@@ -7007,33 +6985,23 @@ foreign_politics = {
 					is_controlled_by = ROM
 				}
 			}
-			AND = {
-				BUL = {
-					is_in_faction_with = ROOT
-					is_free_or_subject_of_root = yes
-					has_full_control_of_state = 48
-					has_full_control_of_state = 806
-					has_full_control_of_state = 212
-					has_full_control_of_state = 211
-				}
-			}
 			HUN = {
+				is_in_faction_with = ROOT
+				is_free_or_subject_of_root = yes
+				has_full_control_of_state = 48
+				has_full_control_of_state = 806
+				has_full_control_of_state = 212
+				has_full_control_of_state = 211
 				has_full_control_of_state = 155
 				has_full_control_of_state = 808
 				has_full_control_of_state = 43
 				has_full_control_of_state = 807
 				has_full_control_of_state = 154	
-			}
-			ROM = {
 				has_full_control_of_state = 46
 				has_full_control_of_state = 79
 			}
 			OR = {
 				HUN = {
-					is_in_faction_with = ROOT
-					is_free_or_subject_of_root = yes
-				}
-				ROM = {
 					is_in_faction_with = ROOT
 					is_free_or_subject_of_root = yes
 				}
@@ -7060,9 +7028,6 @@ foreign_politics = {
 				}
 			}
 			HUN = {
-				add_stability = -0.1
-			}
-			ROM = {
 				add_stability = -0.1
 			}
 				

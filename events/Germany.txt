@@ -2338,7 +2338,7 @@ country_event = {
 				instant_build = yes
 			}
 			add_dynamic_modifier = {
-				modifier = SLO_hlinka_collaberators
+				modifier = SLO_hlinka_collaborators
 			}
 		}
 		809 = {
@@ -2354,7 +2354,7 @@ country_event = {
 				instant_build = yes
 			}
 			add_dynamic_modifier = {
-				modifier = SLO_hlinka_collaberators
+				modifier = SLO_hlinka_collaborators
 			}
 		}
 		70 = {
@@ -2370,7 +2370,7 @@ country_event = {
 				instant_build = yes
 			}
 			add_dynamic_modifier = {
-				modifier = SLO_hlinka_collaberators
+				modifier = SLO_hlinka_collaborators
 			}
 		}
 		ENG = {
@@ -2420,7 +2420,7 @@ country_event = {
 				instant_build = yes
 			}
 			add_dynamic_modifier = {
-				modifier = SLO_hlinka_collaberators
+				modifier = SLO_hlinka_collaborators
 			}
 		}
 		809 = {
@@ -2436,7 +2436,7 @@ country_event = {
 				instant_build = yes
 			}
 			add_dynamic_modifier = {
-				modifier = SLO_hlinka_collaberators
+				modifier = SLO_hlinka_collaborators
 			}
 		}
 		70 = {
@@ -2452,7 +2452,7 @@ country_event = {
 				instant_build = yes
 			}
 			add_dynamic_modifier = {
-				modifier = SLO_hlinka_collaberators
+				modifier = SLO_hlinka_collaborators
 			}
 		}
 		ai_chance = { 

@@ -26,7 +26,7 @@
 
 SLO_hlinka_collaborators = { 
 	enable = { always = yes } #optional, the modifier won't apply if not enabled
-	icon = GFX_idea_SLO_hlinka_collaberators
+	icon = GFX_idea_SLO_hlinka_collaborators
 
 	# list of modifiers
     local_building_slots_factor = 0.5
