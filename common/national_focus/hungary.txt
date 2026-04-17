@@ -4341,7 +4341,6 @@ focus_tree = {
 		available = {
 			OR = {
 				controls_state = 664
-				
 			}
 		}
 
@@ -4365,9 +4364,21 @@ focus_tree = {
 				}
 				73 = {
 					add_core_of = ROOT 
-				}				
+				}			
+			} 
+			else = {
+				custom_effect_tooltip = HUN_southern_carp					
 			}
-			custom_effect_tooltip = HUN_southern_carp					
+			if = {
+				limit = {
+					HUN = {
+						owns_state = 123
+					}
+				}
+				123 = {
+					add_core_of = ROOT 
+				}			
+			}
 		}
 	}				
 
@@ -4387,6 +4398,10 @@ focus_tree = {
 
 		available = {
 			controls_state = 76
+			OR = {
+				has_country_flag = GER_second_vienna_award_HUN_north
+				has_country_flag = GER_second_vienna_award_HUN_all
+			}
 		}
 
 		bypass = {
