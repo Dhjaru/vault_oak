@@ -4398,10 +4398,7 @@ focus_tree = {
 
 		available = {
 			controls_state = 76
-			OR = {
-				has_country_flag = GER_second_vienna_award_HUN_north
-				has_country_flag = GER_second_vienna_award_HUN_all
-			}
+			GER = { has_completed_focus = GER_second_vienna_award }
 		}
 
 		bypass = {
