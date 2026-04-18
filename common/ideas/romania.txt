@@ -340,6 +340,7 @@ ideas = {
 			}
 
 			cancel = {
+				not = { original_tag = ROM }
 			}
 			
 			modifier = {				
