@@ -5022,11 +5022,16 @@ SOV_GER_evacuations_category = {
 						limit = {
 							OR = {
 								state = 217
+								state = 236
+								state = 265
+								state = 239
 								state = 237
 							}
 						}
 						add_extra_state_shared_building_slots = 1	
 						add_building_construction = {
+							type = industrial_complex
+							level = 1
 							instant_build = yes
 						}
 					}
