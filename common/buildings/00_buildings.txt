@@ -101,7 +101,7 @@ buildings = {
 		damage_factor = 2
 		level_cap = {
 			shares_slots = yes
-			state_max = 99
+			state_max = 999
 		}
 	}
 	industrial_complex = {
@@ -117,7 +117,7 @@ buildings = {
 		damage_factor = 2
 		level_cap = {
 			shares_slots = yes
-			state_max = 99
+			state_max = 999
 		}
 	}
 	
@@ -207,7 +207,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 60
+			state_max = 999
 		}
 	}
 	

@@ -421,28 +421,37 @@ GER_operation_barbarossa_category = {
 					limit = {
 						OR = {
 							state = 40 
+							state = 402
+							state = 403
 							state = 404
-							state = 732
-							state = 742
-							state = 654
-							state = 590
-							state = 589
-							state = 581
-							state = 569
+							state = 405
 							state = 568
+							state = 569
 							state = 570
 							state = 571
-							state = 583
 							state = 572
+							state = 573
+							state = 578
+							state = 581
+							state = 582
+							state = 583
+							state = 584
+							state = 585
+							state = 586
+							state = 587
+							state = 588
+							state = 589
+							state = 590
+							state = 653
+							state = 654
+							state = 732
+							state = 742
 
 							state = 217
-							state = 236
-							state = 265
-							state = 239
 
 						}
 					}
-					add_extra_state_shared_building_slots = 99	
+					add_extra_state_shared_building_slots = 30	
 				}
 				every_country = {
 					limit = {
