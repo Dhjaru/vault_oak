@@ -91,6 +91,14 @@ USA_arms_shipment_category = {
 			}
 			if = {
 				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
+			if = {
+				limit = {
 					USA = {
 						has_completed_focus = USA_lend_lease_act
 					}
@@ -668,6 +676,14 @@ USA_arms_shipment_category = {
 			
 			if = {
 				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
+			if = {
+				limit = {
 					USA = {
 						has_completed_focus = USA_lend_lease_act
 					}
@@ -780,6 +796,14 @@ USA_arms_shipment_category = {
 				seller_tags = { USA }
 			}
 			
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
 			if = {
 				limit = {
 					USA = {
@@ -896,6 +920,14 @@ USA_arms_shipment_category = {
 		
 			if = {
 				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
+			if = {
+				limit = {
 					USA = {
 						has_completed_focus = USA_lend_lease_act
 					}
@@ -1010,6 +1042,14 @@ USA_arms_shipment_category = {
 				seller_tags = { USA }
 			}
 			
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
 			if = {
 				limit = {
 					USA = {
@@ -1134,6 +1174,14 @@ USA_arms_shipment_category = {
 			
 			if = {
 				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
+			if = {
+				limit = {
 					USA = {
 						has_completed_focus = USA_lend_lease_act
 					}
@@ -1242,6 +1290,14 @@ USA_arms_shipment_category = {
 				cic = 15000
 				equipment_type = anti_air_equipment
 				seller_tags = { USA }
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
 			}
 			
 			if = {
@@ -1364,6 +1420,14 @@ USA_arms_shipment_category = {
 				equipment_type = heavy_anti_air_equipment
 				seller_tags = { USA }
 			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
 			
 			if = {
 				limit = {
@@ -1482,6 +1546,14 @@ USA_arms_shipment_category = {
 				cic = 15000
 				equipment_type = motorized_equipment
 				seller_tags = { USA }
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
 			}
 			
 			if = {
@@ -1602,6 +1674,14 @@ USA_arms_shipment_category = {
 			
 			if = {
 				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
+			if = {
+				limit = {
 					USA = {
 						has_completed_focus = USA_lend_lease_act
 					}
@@ -1716,6 +1796,14 @@ USA_arms_shipment_category = {
 				seller_tags = { USA }
 			}
 			
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
 			if = {
 				limit = {
 					USA = {
@@ -1833,6 +1921,14 @@ USA_arms_shipment_category = {
 			
 			if = {
 				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
+			if = {
+				limit = {
 					USA = {
 						has_completed_focus = USA_lend_lease_act
 					}
@@ -1947,6 +2043,14 @@ USA_arms_shipment_category = {
 			
 			if = {
 				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
+			if = {
+				limit = {
 					USA = {
 						has_completed_focus = USA_lend_lease_act
 					}
@@ -2058,6 +2162,14 @@ USA_arms_shipment_category = {
 				seller_tags = { USA }
 			}
 			
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				USA = {
+					add_cic = 5000
+				}
+			}
 			if = {
 				limit = {
 					USA = {
