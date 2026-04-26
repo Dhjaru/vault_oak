@@ -6736,6 +6736,9 @@ focus = {
 		has_full_control_of_state = 840
 		has_full_control_of_state = 613
 		date > 1939.01.01
+		if = {
+			has_war_with = CHI
+		}
 			
 	}
 
@@ -6882,7 +6885,9 @@ focus = {
 	}
 
 	available = {
-		
+		if = {
+			has_war_with = CHI
+		}
 			
 	}
 

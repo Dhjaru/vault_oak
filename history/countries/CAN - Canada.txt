@@ -357,6 +357,7 @@ if = {
 
 
 add_ideas = {
+	CAN_volunteers3
 	disarmed_nation
 	GER_aatlantic_wall_4
 	CAN_reciprocal_trade_1

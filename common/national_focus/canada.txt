@@ -2742,6 +2742,21 @@ focus_tree = {
 			}
 			army_experience = 25
 
+			#set_rule = { can_send_volunteers = yes }
+			add_ideas = CAN_volunteers
+			#custom_effect_tooltip = CAN_modify_army_spirit_tt
+			#add_to_variable = {
+			#	CAN_experience_gain_army_factor_var = 0.07
+			#	tooltip = CAN_add_army_xp_tt1
+			#}
+			#add_to_variable = {
+			#	CAN_send_volunteers_tension_var = -0.50
+			#	tooltip = CAN_tension_tt1
+			#}
+			#add_to_variable = {
+			#	CAN_send_volunteer_divisions_required_var = -1
+			#	tooltip = CAN_force_tt1
+			#}
 
 
 
@@ -3008,6 +3023,7 @@ focus = {
 
 		available = {
 			has_global_flag = spanish_civil_war
+			has_completed_focus = CAN_denounce_foreign_enlistment
 			NOT = {
 				has_completed_focus = CAN_denounce_foreign_enlistment
 			}

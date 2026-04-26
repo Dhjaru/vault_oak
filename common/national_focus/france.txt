@@ -27,6 +27,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = CAN_volunteers
 			add_to_variable = {
 				FRA_collapsing_government_stability_factor_modifier = 0.075
 			}
@@ -267,119 +268,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = FRA_french_support_for_the_spanish 
-		icon = GFX_FRA_support_spain
-		available_if_capitulated = no
-		cost = 3
-		relative_position_id = FRA_matignon_agreements
-		prerequisite = {
-			focus = FRA_the_war_at_our_border
-		}
-		mutually_exclusive = {
-			focus = FRA_token_support
-		}
-		x = 7
-		y = 2
-		
-		ai_will_do = {
-			factor = 0
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					FRA = {
-						has_completed_focus = FRA_rally_behind_the_popular_front
-					}
-				}
-				add_political_power = -50
-
-				set_rule = { can_send_volunteers = yes }
-				custom_effect_tooltip = FRA_can_volunteerscope_tt
-				add_to_variable = {
-					FRA_send_volunteers_tension_var = -0.5
-				}
-				add_to_variable = {
-					FRA_send_volunteer_divisions_required_var = -1
-				}
 	
-				SPN = {
-					if = {
-						limit = {
-							SPR = {
-								NOT = {
-									has_completed_focus = naval_blockade_of_republicans
-								}
-							}
-						}
-						add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 7000
-							producer = FRA
-						}	
-						add_equipment_to_stockpile = {
-							type = artillery_equipment_1
-							amount = 250
-							producer = FRA
-						}
-					}
-					if = {
-						limit = {
-							SPR = {
-								has_completed_focus = naval_blockade_of_republicans
-							}
-						}
-						add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 5000
-							producer = FRA
-						}	
-						add_equipment_to_stockpile = {
-							type = artillery_equipment_1
-							amount = 200
-							producer = FRA
-						}
-					}
-				}
-
-			}
-			else_if = {
-				limit = {
-					FRA = {
-						has_completed_focus = FRA_settlements_with_right_wing_leagues
-					}
-				}
-				add_political_power = -50
-
-				set_rule = { can_send_volunteers = yes }
-				custom_effect_tooltip = FRA_can_volunteers_tt
-				add_to_variable = {
-					FRA_experience_gain_army_var = 0.07
-				}
-				add_to_variable = {
-					FRA_send_volunteers_tension_var = -0.5
-				}
-				add_to_variable = {
-					FRA_send_volunteer_divisions_required_var = -1
-				}
-				
-				SPN = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment_0
-						amount = 3000
-						producer = FRA
-					}	
-					add_equipment_to_stockpile = {
-						type = artillery_equipment_1
-						amount = 250
-						producer = FRA
-					}
-				}
-				
-			}			
-		}
-	}
 
 	focus = {
 		id = FRA_token_support 
@@ -394,7 +283,7 @@ focus_tree = {
 			focus = FRA_french_support_for_the_spanish
 		}
 
-		x = 5
+		x = 6
 		y = 2
 		
 		ai_will_do = {
@@ -415,15 +304,14 @@ focus_tree = {
 		relative_position_id = FRA_token_support
 		prerequisite = {
 			focus = FRA_token_support
-			focus = FRA_french_support_for_the_spanish
 		}
 
 		available = {
 			has_idea = FRA_rep_refugees
 		}			
 
-		x = 1
-		y = 2
+		x = 0
+		y = 1
 		
 		ai_will_do = {
 			factor = 4
@@ -1573,7 +1461,7 @@ focus_tree = {
 			}		
 		}
 		x = 0
-		y = 1
+		y = 2
 		
 		ai_will_do = {
 			factor = 20
