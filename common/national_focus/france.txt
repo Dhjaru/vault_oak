@@ -3499,7 +3499,7 @@ focus_tree = {
 		completion_reward = {
 			539 = {
 			
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 					type = tank_assembly
 					level = 2
@@ -3508,10 +3508,10 @@ focus_tree = {
 			}
 			set_capital = {state = 772}
 			772 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -3519,27 +3519,62 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
 			}
 			660 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
 			773 = {
-				add_extra_state_shared_building_slots = 4		
+				add_extra_state_shared_building_slots = 6		
 				add_building_construction = {
 					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
 			539 = {
-				add_extra_state_shared_building_slots = 4		
+				add_extra_state_shared_building_slots = 6		
 				add_building_construction = {
 					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
