@@ -178,11 +178,6 @@ foreign_support = {
 		complete_effect = {
 			add_to_variable = { var = SOV_guns_variable value = 3000 }
 			if = {
-				limit = {
-					282 = {
-						has_state_flag = no_partial_china_war_state_flag
-					}
-				}
 				if = {
 					limit = {
 						check_variable = {
@@ -254,7 +249,7 @@ foreign_support = {
 
 							}
 						}
-						army_experience = 10
+						army_experience = 15
 					}
 					add_equipment_to_stockpile = { type = infantry_equipment amount = -3000 producer = SOV } 
 					
@@ -568,7 +563,7 @@ foreign_support = {
 					}
 				}
 				JAP = {
-					controls_state = 594
+					controls_state = 608
 				}
 				has_equipment = { infantry_equipment > 2999 }
 			}
@@ -755,7 +750,7 @@ foreign_support = {
 									has_equipment = { infantry_equipment > 2999 }
 								}
 							}
-							army_experience = 10
+							army_experience = 15
 						}
 						send_equipment = {
 							equipment = infantry_equipment
@@ -785,7 +780,7 @@ foreign_support = {
 									has_equipment = { infantry_equipment > 2999 }
 								}
 							}
-							army_experience = 10
+							army_experience = 15
 						}
 						send_equipment = {
 							equipment = infantry_equipment
@@ -918,7 +913,7 @@ foreign_support = {
 					}
 				}
 				JAP = {
-					controls_state = 594
+					controls_state = 608
 				}
 				if = {
 					limit = {
@@ -1224,7 +1219,7 @@ foreign_support = {
 							has_equipment = { artillery_equipment > 449 }
 						}
 						
-						army_experience = 10
+						army_experience = 15
 					}
 					else_if = {
 						limit = {
@@ -1232,7 +1227,7 @@ foreign_support = {
 							has_equipment = { heavy_artillery_equipment > 219 }
 						}
 						
-						army_experience = 10
+						army_experience = 15
 					}
 
 					else_if = {
@@ -1241,7 +1236,7 @@ foreign_support = {
 							has_equipment = { pack_artillery_equipment > 819 }
 						}
 					
-						army_experience = 10
+						army_experience = 15
 					}
 					
 					else_if = {
@@ -1250,7 +1245,7 @@ foreign_support = {
 							has_equipment = { artillery_equipment> 449 }
 						}
 					
-						army_experience = 10
+						army_experience = 15
 					}
 					else_if = {
 						limit = {
@@ -1258,7 +1253,7 @@ foreign_support = {
 							has_equipment = { heavy_artillery_equipment > 219 }
 						}
 						
-						army_experience = 10
+						army_experience = 15
 					}
 					else_if = {
 						limit = {
@@ -1266,7 +1261,7 @@ foreign_support = {
 							has_equipment = { field_gun_equipment > 549 }
 						}
 						
-						army_experience = 10
+						army_experience = 15
 					}
 						
 				
@@ -1377,7 +1372,7 @@ foreign_support = {
 							has_equipment = { artillery_equipment > 449 }
 						}
 						
-						army_experience = 10
+						army_experience = 15
 					}
 					else_if = {
 						limit = {
@@ -1385,7 +1380,7 @@ foreign_support = {
 							has_equipment = { heavy_artillery_equipment > 219 }
 						}
 						
-						army_experience = 10
+						army_experience = 15
 					}
 
 					else_if = {
@@ -1394,7 +1389,7 @@ foreign_support = {
 							has_equipment = { pack_artillery_equipment > 819 }
 						}
 					
-						army_experience = 10
+						army_experience = 15
 					}
 					
 					else_if = {
@@ -1403,7 +1398,7 @@ foreign_support = {
 							has_equipment = { artillery_equipment> 449 }
 						}
 					
-						army_experience = 10
+						army_experience = 15
 					}
 					else_if = {
 						limit = {
@@ -1411,7 +1406,7 @@ foreign_support = {
 							has_equipment = { heavy_artillery_equipment > 219 }
 						}
 						
-						army_experience = 10
+						army_experience = 15
 					}
 					else_if = {
 						limit = {
@@ -1419,7 +1414,7 @@ foreign_support = {
 							has_equipment = { field_gun_equipment > 549 }
 						}
 						
-						army_experience = 10
+						army_experience = 15
 					}
 						
 				
@@ -1633,7 +1628,7 @@ foreign_support = {
 					}
 				}
 				JAP = {
-					controls_state = 594
+					controls_state = 608
 				}
 				has_equipment = { small_plane_airframe > 99 }
 			}
@@ -1944,7 +1939,7 @@ foreign_support = {
 								has_equipment = { small_plane_airframe > 99 }
 							}
 						}
-						army_experience = 10
+						army_experience = 15
 					}
 					#add_equipment_to_stockpile = { type = small_plane_airframe amount = -100 producer = SOV } 
 					send_equipment = {
@@ -1972,7 +1967,7 @@ foreign_support = {
 								has_equipment = { small_plane_airframe > 99 }
 							}
 						}
-						army_experience = 10
+						army_experience = 15
 					}
 					#add_equipment_to_stockpile = { type = small_plane_airframe amount = -100 producer = SOV } 
 					send_equipment = {
@@ -2108,7 +2103,7 @@ foreign_support = {
 					}
 				}
 				JAP = {
-					controls_state = 594
+					controls_state = 608
 				}
 				has_equipment = { small_plane_cas_airframe > 99 }
 			}
@@ -2341,7 +2336,7 @@ foreign_support = {
 								has_equipment = { small_plane_cas_airframe > 99 }
 							}
 						}
-						army_experience = 10
+						army_experience = 15
 					}
 					#add_equipment_to_stockpile = { type = small_plane_cas_airframe amount = -100 producer = SOV } 
 					send_equipment = {
@@ -2368,7 +2363,7 @@ foreign_support = {
 								has_equipment = { small_plane_cas_airframe > 99 }
 							}
 						}
-						army_experience = 10
+						army_experience = 15
 					}
 					#add_equipment_to_stockpile = { type = small_plane_cas_airframe amount = -100 producer = SOV } 
 					send_equipment = {
@@ -2500,7 +2495,7 @@ foreign_support = {
 					}
 				}
 				JAP = {
-					controls_state = 594
+					controls_state = 608
 				}
 				has_equipment = { light_tank_chassis > 149 }
 				has_equipment = { motorized_equipment > 99 }
@@ -2690,7 +2685,7 @@ foreign_support = {
 								has_equipment = { motorized_equipment > 99 }
 							}
 						}
-						army_experience = 10
+						army_experience = 15
 					}
 				
 					
@@ -2727,7 +2722,7 @@ foreign_support = {
 								has_equipment = { motorized_equipment > 99 }
 							}
 						}
-						army_experience = 10
+						army_experience = 15
 					}
 				
 					
@@ -6218,7 +6213,7 @@ foreign_support = {
 		}
 
 		remove_effect = {
-			army_experience = 10
+			army_experience = 15
 			add_political_power = 100
 			add_war_support = 0.05
 			random_country = {

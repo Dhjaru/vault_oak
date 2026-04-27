@@ -205,8 +205,15 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
-			set_variable = { var = RAJ_army_core_attack_factor value = 2 } 
-			set_variable = { var = RAJ_army_core_defence_factor value = 2 } 
+			if = {
+				limit = {
+					POR = { is_ai = yes }
+				}
+				NZL = {
+					set_rule = { can_send_volunteers = no }
+				}
+			}
+			
 			if = {
 				limit = {
 					282 = {
@@ -229,15 +236,15 @@ on_actions = {
 			}
 			else = {
 				JAP = {
-					set_variable = { JAP_factory_output_modifier = 0.3 }
-					set_variable = { JAP_dockyard_output_modifier = 0.25 }
+					set_variable = { JAP_factory_output_modifier = 0.1 }
+					set_variable = { JAP_dockyard_output_modifier = 0.1 }
 					set_variable = {
 						JAP_production_speed_industrial_complex_factor_var = 0.2
 					}
 				}
 				MAN = {
-					set_variable = { JAP_factory_output_modifier = 0.3 }
-					set_variable = { JAP_dockyard_output_modifier = 0.25 }
+					set_variable = { JAP_factory_output_modifier = 0.1 }
+					set_variable = { JAP_dockyard_output_modifier = 0.1 }
 				}
 				
 			}
@@ -2262,20 +2269,8 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					country_exists = HUN
-					NOT = { country_exists = BUL }
-				}
-				HUN = {
-					transfer_state = 184
-					add_state_core = 184
-				}
-
-			}
-			if = {
-				limit = {
 					NOT = {
 						country_exists = BUL
-						country_exists = HUN
 					}
 				}
 				GER = {
@@ -2397,12 +2392,11 @@ on_actions = {
 					transfer_state = 104
 					transfer_state = 107
 					transfer_state = 108
+					transfer_state = 106
 	   				transfer_state = 764
 				}
 				HUN = {
 	   				transfer_state = 45
-					transfer_state = 106
-					add_state_core = 106
 				}
 			}
 			else_if = {
@@ -3945,6 +3939,13 @@ on_actions = {
 							decision = JAP_strike_on_the_southern_resource_area
 							days = -365
 						}
+						
+					}
+					USA = {
+						add_days_remove  = {
+							decision = USA_tora_tora_countdown
+							days = -365
+						}
 					}
 					MAN = {
 						add_to_variable = {
@@ -3987,6 +3988,13 @@ on_actions = {
 					}
 					add_days_remove  = {
 						decision = JAP_strike_on_the_southern_resource_area
+						days = -30
+					}
+					
+				}
+				USA = {
+					add_days_remove  = {
+						decision = USA_tora_tora_countdown
 						days = -30
 					}
 				}
@@ -4034,6 +4042,14 @@ on_actions = {
 						}
 					add_days_remove  = {
 						decision = JAP_strike_on_the_southern_resource_area
+						days = -120
+					}
+					
+					
+				}
+				USA = {
+					add_days_remove  = {
+						decision = USA_tora_tora_countdown
 						days = -120
 					}
 				}
@@ -6493,6 +6509,12 @@ on_actions = {
 					}
 					add_days_remove  = {
 						decision = JAP_strike_on_the_southern_resource_area
+						days = -30
+					}
+				}
+				USA = {
+					add_days_remove  = {
+						decision = USA_tora_tora_countdown
 						days = -30
 					}
 				}
