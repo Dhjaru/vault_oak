@@ -7,3 +7,4 @@ descriptor.*
 .vs/slnx.sqlite
 /.vs
 descriptor.mod
+*.mod
