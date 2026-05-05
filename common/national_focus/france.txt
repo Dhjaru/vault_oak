@@ -27,6 +27,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
 			add_ideas = CAN_volunteers
 			add_to_variable = {
 				FRA_collapsing_government_stability_factor_modifier = 0.075
@@ -5648,24 +5649,19 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = FRA
-					free_building_slots = {
-						building = arms_factory
-						size > 3
-						include_locked = yes
-					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			272	= {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5844,10 +5840,10 @@ focus_tree = {
 			}
 			539 = {
 			
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 					type = tank_assembly
-					level = 1
+					level = 3
 					instant_build = yes 
 				}
 			}
@@ -5910,10 +5906,10 @@ focus_tree = {
 			}
 			539 = {
 			
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 					type = tank_assembly
-					level = 1
+					level = 3
 					instant_build = yes 
 				}
 			}

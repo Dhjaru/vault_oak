@@ -4086,8 +4086,11 @@ focus_tree = {
 		}
 
 		available = {
-			AST = {
-				has_capitulated = yes
+			285 = {
+				is_controlled_by = JAP
+			}
+			517 = {
+				is_controlled_by = JAP
 			}
 		}
 
@@ -10679,17 +10682,10 @@ focus = {
 			date > 1942.1.1
 			OR = {
 				RAJ = {
-					surrender_progress < 0.2
+					surrender_progress < 0.1
 					NOT = { RAJ = { has_capitulated = yes } }
 				}
 			}
-			OR = {
-				AST = {
-					surrender_progress < 0.2
-					NOT = { AST = { has_capitulated = yes } }				
-				}
-			}
-		
 		}
 
 		bypass = {
@@ -10832,18 +10828,11 @@ focus = {
 			has_war_with = USA
 			OR = {
 				RAJ = {
-					surrender_progress < 0.6
+					surrender_progress < 0.4
 					NOT = { RAJ = { has_capitulated = yes } }
 				}
 				date > 1943.6.1
 			}
-			OR = {
-				AST = {
-					surrender_progress < 0.6
-					NOT = { AST = { has_capitulated = yes } }				
-				}
-				date > 1943.6.1
-			}	
 		}
 
 		bypass = {

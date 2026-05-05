@@ -2724,6 +2724,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
 			custom_effect_tooltip = CAN_modify_industry_spirit_tt
 			add_to_variable = {
 				CAN_stability_factor_var = -0.1
