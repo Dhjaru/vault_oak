@@ -40,6 +40,6 @@ tags={
 	"Technologies"
 }
 picture="thumbnail.png"
-name="DEV_Hearts of Vault"
+name="Hearts of Vault"
 supported_version="1.18.*.*"
 path="C:/Users/jonas/Documents/Paradox Interactive/Hearts of Iron IV/mod/vault_oak"
