@@ -41,4 +41,4 @@ tags={
 }
 picture="thumbnail.png"
 name="Hearts of Vault"
-supported_version="1.18.*.*"
+supported_version="1.18.*"
