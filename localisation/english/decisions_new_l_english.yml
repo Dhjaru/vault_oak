@@ -1325,9 +1325,9 @@ decision_cost_MP_3000_PP_50:0"£manpower_texticon  §Y3000§! £pol_power §Y50�
 decision_cost_MP_3000_PP_50_blocked: "£manpower_texticon  §R3000§! £pol_power §R50§!"
 decision_cost_MP_3000_PP_50_tooltip: "It costs £manpower_texticon  §Y3000§! and £pol_power §Y50§! to take this decision"
 
-decision_cost_MP_3000_PP_25:0"£manpower_texticon  §Y3000§! £pol_power §Y25§!"
-decision_cost_MP_3000_PP_25_blocked: "£manpower_texticon  §R3000§! £pol_power §R25§!"
-decision_cost_MP_3000_PP_25_tooltip: "It costs £manpower_texticon  §Y3000§! and £pol_power §Y25§! to take this decision"
+decision_cost_MP_3000_PP_25:0"£manpower_texticon  §Y3000§! £pol_power §Y15§!"
+decision_cost_MP_3000_PP_25_blocked: "£manpower_texticon  §R3000§! £pol_power §R15§!"
+decision_cost_MP_3000_PP_25_tooltip: "It costs £manpower_texticon  §Y3000§! and £pol_power §Y15§! to take this decision"
 
 USA_north_east_states_tt:0 "£state States in the §YNorth East§! have the on map decision: £decision_icon_small §YSuccesful WPA Programme§! available (requires at least lvl §Y8 Infrastructure§!)."
 USA_southern_states_tt:0 "£state States in the §YSouth§! have the on map decision: £decision_icon_small §YSuccesful WPA Programme§! available (requires at least lvl §Y8 Infrastructure§!)."

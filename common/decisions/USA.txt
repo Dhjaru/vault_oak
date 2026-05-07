@@ -805,7 +805,7 @@ USA_crisis_management_system_cat = {
 		custom_cost_trigger = {
 			ROOT = {
 				has_manpower > 2999
-				has_political_power > 24
+				has_political_power > 14
 			}
 		}
 
@@ -817,7 +817,7 @@ USA_crisis_management_system_cat = {
 		complete_effect = {
 			hidden_effect = {
 				add_manpower = -3000 
-				add_political_power = -25
+				add_political_power = -15
 			}
 			add_to_variable = { USA_political_power_new_deal_spent = 25 }
 			add_to_variable = { USA_manpower_new_deal_spent = 3000 }
@@ -916,7 +916,7 @@ USA_crisis_management_system_cat = {
 		custom_cost_trigger = {
 			ROOT = {
 				has_manpower > 2999
-				has_political_power > 24
+				has_political_power > 14
 			}
 		}
 
@@ -926,7 +926,7 @@ USA_crisis_management_system_cat = {
 		complete_effect = {
 			hidden_effect = {
 				add_manpower = -3000 
-				add_political_power = -25
+				add_political_power = -15
 			}
 			add_to_variable = { USA_political_power_new_deal_spent = 25 }
 			add_to_variable = { USA_manpower_new_deal_spent = 3000 }
@@ -1460,7 +1460,7 @@ USA_crisis_management_system_cat = {
 		custom_cost_trigger = {
 			ROOT = {
 				has_manpower > 2999
-				has_political_power > 24
+				has_political_power > 14
 			}
 		}
 
@@ -1471,7 +1471,7 @@ USA_crisis_management_system_cat = {
 			
 			hidden_effect = {
 				add_manpower = -3000 
-				add_political_power = -25
+				add_political_power = -15
 			}
 			add_to_variable = { USA_political_power_new_deal_spent = 25 }
 			add_to_variable = { USA_manpower_new_deal_spent = 3000 }
@@ -1702,7 +1702,7 @@ USA_crisis_management_system_cat = {
 	
 		custom_cost_trigger = {
 			ROOT = {
-				has_political_power > 24
+				has_political_power > 14
 			}
 		}
 
@@ -1712,7 +1712,7 @@ USA_crisis_management_system_cat = {
 		complete_effect = {
 			
 			hidden_effect = {
-				add_political_power = -25
+				add_political_power = -15
 			}
 		
 
