@@ -1,4 +1,5 @@
 ﻿l_english:
+ usa_state: "Land of the free"
 STRATEGIC_LOCATION_EXTRA_LEVEL: "Max level $BUILDING|Y$: $AMOUNT|=+$"
  STRATEGIC_LOCATION_DESC: "§YStrategic Location§!"
 BUILDING_CURRENT_MAX_LEVEL:0 "Potential Max level for $BUILDING|Y$: $MAXLEVEL|Y$"

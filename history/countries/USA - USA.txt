@@ -78,6 +78,18 @@ set_variable = { USA_fuel_gain_factor_var = 0 }
 
 
 
+IF = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	add_breakthrough_points = {
+		specialization = specialization_land
+		value = 1
+	}
+	sp:sp_land_stronghold_network = {
+		add_project_progress_ratio = 0.5
+	}
+}
 
 
 add_dynamic_modifier = {

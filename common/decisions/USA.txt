@@ -2335,7 +2335,7 @@ USA_crisis_management_system_cat = {
 		custom_cost_trigger = {
 			ROOT = {
 				has_manpower > 2999
-				has_political_power > 24
+				has_political_power > 14
 			}
 		}
 
@@ -2345,7 +2345,7 @@ USA_crisis_management_system_cat = {
 		complete_effect = {
 			hidden_effect = {
 				add_manpower = -3000 
-				add_political_power = -25
+				add_political_power = -15
 			}
 			add_to_variable = { USA_political_power_new_deal_spent = 25 }
 			add_to_variable = { USA_manpower_new_deal_spent = 3000 }
@@ -2359,7 +2359,7 @@ USA_crisis_management_system_cat = {
 						}
 					}
 				}
-				add_to_temp_variable = { extra_cgs_counter = 0.004 }
+				add_to_temp_variable = { extra_cgs_counter = 0.002 }
 
 			}
 			else_if = {
@@ -2372,7 +2372,7 @@ USA_crisis_management_system_cat = {
 					}
 				}
 				
-				add_to_temp_variable = { extra_cgs_counter = 0.002 }
+				add_to_temp_variable = { extra_cgs_counter = 0.001 }
 			}
 			if = {
 				limit = {
@@ -2384,7 +2384,7 @@ USA_crisis_management_system_cat = {
 					}
 				}
 				
-				add_to_temp_variable = { extra_cgs_counter = 0.002 }
+				add_to_temp_variable = { extra_cgs_counter = 0.001 }
 			}
 			else_if = {
 				limit = {
@@ -2408,7 +2408,7 @@ USA_crisis_management_system_cat = {
 					}
 				}
 				
-				add_to_temp_variable = { extra_cgs_counter = 0.002 }
+				add_to_temp_variable = { extra_cgs_counter = 0.001 }
 			}
 			else_if = {
 				limit = {
@@ -2432,7 +2432,7 @@ USA_crisis_management_system_cat = {
 					}
 				}
 				
-				add_to_temp_variable = { extra_cgs_counter = 0.004 }
+				add_to_temp_variable = { extra_cgs_counter = 0.002 }
 			}
 			else_if = {
 				limit = {
@@ -2444,7 +2444,7 @@ USA_crisis_management_system_cat = {
 					}
 				}
 				
-				add_to_temp_variable = { extra_cgs_counter = 0.002 }
+				add_to_temp_variable = { extra_cgs_counter = 0.001 }
 			}
 			add_to_temp_variable = { extra_cgs_counter = 0.002 }
 			custom_effect_tooltip = USA_modify_new_deal_tt
