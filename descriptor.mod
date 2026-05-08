@@ -42,3 +42,4 @@ tags={
 picture="thumbnail.png"
 name="Hearts of Vault"
 supported_version="1.18.*"
+remote_file_id="3721617792"
