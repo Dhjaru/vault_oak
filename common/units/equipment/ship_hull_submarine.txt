@@ -84,7 +84,7 @@ equipments = {
 		
 		naval_range = 2500
 		
-		max_strength = 50
+		max_strength = 45
 		
 
 		fuel_consumption = 0.07
@@ -218,7 +218,7 @@ equipments = {
 		
 		naval_range = 5000
 		
-		max_strength = 60
+		max_strength = 55
 		anti_air_attack = 4
 
 
@@ -286,7 +286,7 @@ equipments = {
 		naval_range = 6000
 		anti_air_attack = 4
 		
-		max_strength = 65
+		max_strength = 60
 		
 
 		
@@ -356,7 +356,7 @@ equipments = {
 		
 		naval_range = 5000
 		
-		max_strength = 70
+		max_strength = 60
 		naval_dominance_factor = 0
 
 
@@ -429,7 +429,7 @@ equipments = {
 		anti_air_attack = 4
 		naval_range = 6500
 		naval_dominance_factor = 0
-		max_strength = 50
+		max_strength = 55
 
 
 		
@@ -471,7 +471,7 @@ equipments = {
 		anti_air_attack = 6
 		naval_range = 500
 		naval_dominance_factor = 0
-		max_strength = 50
+		max_strength = 40
 
 		manpower = 100
 
@@ -537,7 +537,7 @@ equipments = {
 		naval_range = 6500
 		naval_dominance_factor = 0
 		
-		max_strength = 50
+		max_strength = 80
 
 
 		
@@ -579,7 +579,7 @@ equipments = {
 		
 		naval_range = 2500
 		
-		max_strength = 60
+		max_strength = 40
 		
 
 		fuel_consumption = 0.07
@@ -623,7 +623,7 @@ equipments = {
 
 		naval_range = 4000
 		
-		max_strength = 65
+		max_strength = 45
 		
 
 		
@@ -667,7 +667,7 @@ equipments = {
 		
 		naval_range = 5000
 		
-		max_strength = 65
+		max_strength = 50
 
 
 		
@@ -712,7 +712,7 @@ equipments = {
 
 		naval_range = 6000
 		
-		max_strength = 65
+		max_strength = 55
 		
 
 		
