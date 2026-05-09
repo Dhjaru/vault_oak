@@ -94,6 +94,7 @@ set_variable = { ITA_re_land_reinforce_rate = 0 }
 set_variable = { ITA_re_army_speed_factor = 0 }
 set_variable = { ITA_re_army_army_org_factor = 0 }
 set_variable = { ITA_re_org_loss_when_moving = 0 }
+set_variable = { ITA_re_conscription = 0.01}
 
 set_variable = { ITA_re_army_morale_factor = 0 }
 set_variable = { ITA_re_army_leader_cost_factor = 0 }
