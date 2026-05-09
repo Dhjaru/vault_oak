@@ -77,14 +77,14 @@ equipments = {
 		
 		surface_detection = 5
 		sub_detection = 0
-		surface_visibility = 50
-		sub_visibility = 170
+		surface_visibility = 1
+		sub_visibility = 17
 		naval_speed = 12
 		reliability = 0.60
 		
 		naval_range = 2500
 		
-		max_strength = 300
+		max_strength = 50
 		
 
 		fuel_consumption = 0.07
@@ -148,14 +148,14 @@ equipments = {
 			fixed_ship_engine_slot = sub_ship_engine_2
 		}
 		
-		sub_visibility = 170
+		sub_visibility = 17
 		naval_speed = 12
 		reliability = 0.70
 		anti_air_attack = 4
 
 		naval_range = 4000
 		reliability = 0.70
-		max_strength = 300
+		max_strength = 50
 		naval_dominance_factor = 0
 		
 
@@ -211,14 +211,14 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 	
-		sub_visibility = 160
+		sub_visibility = 16
 		naval_speed = 12
 		reliability = 0.75
 		naval_dominance_factor = 0
 		
 		naval_range = 5000
 		
-		max_strength = 320
+		max_strength = 60
 		anti_air_attack = 4
 
 
@@ -278,7 +278,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 	
-		sub_visibility = 150
+		sub_visibility = 15
 		naval_speed = 12
 		reliability = 0.80
 		naval_dominance_factor = 0
@@ -286,7 +286,7 @@ equipments = {
 		naval_range = 6000
 		anti_air_attack = 4
 		
-		max_strength = 340
+		max_strength = 65
 		
 
 		
@@ -349,14 +349,14 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 160
+		sub_visibility = 16
 		naval_speed = 9
 		reliability = 0.75
 		anti_air_attack = 4
 		
 		naval_range = 5000
 		
-		max_strength = 300
+		max_strength = 70
 		naval_dominance_factor = 0
 
 
@@ -423,13 +423,13 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 
-		sub_visibility = 190
+		sub_visibility = 19
 		naval_speed = 16
 		reliability = 0.75
 		anti_air_attack = 4
 		naval_range = 6500
 		naval_dominance_factor = 0
-		max_strength = 450
+		max_strength = 50
 
 
 		
@@ -465,13 +465,13 @@ equipments = {
 			fixed_ship_engine_slot = inherit
 		}
 		
-		sub_visibility = 160
+		sub_visibility = 16
 		naval_speed = 8
 		reliability = 0.60
 		anti_air_attack = 6
 		naval_range = 500
 		naval_dominance_factor = 0
-		max_strength = 300
+		max_strength = 50
 
 		manpower = 100
 
@@ -530,14 +530,14 @@ equipments = {
 			fixed_ship_engine_slot = sub_ship_nuclear_engine_1
 		}
 		
-		sub_visibility = 180
+		sub_visibility = 18
 		naval_speed = 14
 		reliability = 0.75
 		anti_air_attack = 4
 		naval_range = 6500
 		naval_dominance_factor = 0
 		
-		max_strength = 400
+		max_strength = 50
 
 
 		
@@ -572,14 +572,14 @@ equipments = {
 		
 		surface_detection = 30
 		sub_detection = 0
-		surface_visibility = 50
-		sub_visibility = 300
+		surface_visibility = 1
+		sub_visibility = 30
 		naval_speed = 6
 		reliability = 0.60
 		
 		naval_range = 2500
 		
-		max_strength = 20
+		max_strength = 60
 		
 
 		fuel_consumption = 0.07
@@ -616,14 +616,14 @@ equipments = {
 		
 		surface_detection = 10
 		sub_detection = 0
-		surface_visibility = 50
-		sub_visibility = 250
+		surface_visibility = 1
+		sub_visibility = 25
 		naval_speed = 11
 		reliability = 0.70
 
 		naval_range = 4000
 		
-		max_strength = 25
+		max_strength = 65
 		
 
 		
@@ -660,14 +660,14 @@ equipments = {
 		
 		surface_detection = 50
 		sub_detection = 0
-		surface_visibility = 50
-		sub_visibility = 250
+		surface_visibility = 1
+		sub_visibility = 25
 		naval_speed = 13
 		reliability = 0.75
 		
 		naval_range = 5000
 		
-		max_strength = 25
+		max_strength = 65
 
 
 		
@@ -705,14 +705,14 @@ equipments = {
 		
 		surface_detection = 70
 		sub_detection = 0
-		surface_visibility = 50
-		sub_visibility = 200
+		surface_visibility = 1
+		sub_visibility = 20
 		naval_speed = 13
 		reliability = 0.80
 
 		naval_range = 6000
 		
-		max_strength = 26
+		max_strength = 65
 		
 
 		
