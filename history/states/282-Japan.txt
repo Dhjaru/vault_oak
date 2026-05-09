@@ -16,7 +16,7 @@ state = {
 			set_state_flag = less_players_state_flag	
 
 		}
-		1936.1.1.13 = {
+		1936.1.1.12 = {
 			set_state_flag = no_china_war_state_flag	
 
 		}

@@ -2,7 +2,7 @@
 	bookmark = {
 		name = "NO_CHINA_SCENARIO_MP"
 		desc = "NO_CHINA_SCENARIO_MP_DESC"
-		date = 1936.1.1.13
+		date = 1936.1.1.12
 		picture = "no_china_scenario"
 		default_country = "GER"
 		default = no
