@@ -2837,18 +2837,18 @@ NNavy = {
 	WARSCORE_GAIN_FOR_SUNK_SHIP_PRODUCTION_COST_FACTOR = 0.0004,				-- sunk ships will give enemy war score relative to cost of a ship that has been sunk
 
 	-- those two work together in the formula f(x) = Y(x/(x+X)) where Y is MAX and X is SLOPE
-	NAVAL_COMBAT_AIR_SUB_DETECTION_MAX = 10.0,
+	NAVAL_COMBAT_AIR_SUB_DETECTION_MAX = 50.0,
 	NAVAL_COMBAT_AIR_SUB_DETECTION_SLOPE = 10.0,						-- lower means sharper curve (ramps up very fast, then flatten out very fast). Must be >0
 
 	NAVAL_COMBAT_AIR_SUB_DETECTION_EXTERNAL_FACTOR = 100.0,					-- Factor applied to the stats of external air planes
 	NAVAL_COMBAT_AIR_SUB_DETECTION_INTERNAL_EFFICIENCY_FACTOR = 1,			-- Factor of Carrier's sortie efficiency on the stats bellow
 	NAVAL_COMBAT_AIR_AGILITY_TO_SUB_DETECTION = 0.2,					-- Factor to apply to the agility of air planes active in a naval combat to deduce their contibution to sub detection
-	NAVAL_COMBAT_AIR_STRIKE_ATTACK_TO_SUB_DETECTION = 0,					-- Same, but for strike attack (aka naval attack)
-	NAVAL_COMBAT_AIR_STRIKE_TARGETING_TO_SUB_DETECTION = 0,				-- Same, but for strike targeting (aka naval targeting)
+	NAVAL_COMBAT_AIR_STRIKE_ATTACK_TO_SUB_DETECTION = 0.5,					-- Same, but for strike attack (aka naval attack)
+	NAVAL_COMBAT_AIR_STRIKE_TARGETING_TO_SUB_DETECTION = 1,				-- Same, but for strike targeting (aka naval targeting)
 	NAVAL_COMBAT_AIR_MAX_SPEED_TO_SUB_DETECTION = 0.1,					-- Same, but for Max Speed
-	NAVAL_COMBAT_AIR_PLANE_COUNT_TO_SUB_DETECTION = 0.15,					-- Factor applied to the number of active plane in a naval combat to deduce their contribution to sub detection
-	NAVAL_COMBAT_AIR_SUB_DETECTION_DECAY_RATE = 0,					-- Factor to decay the value of sub detection contributed by planes on the last hour. Note: the maximum value between the decayed value and the newly computed one is taken into account. A decay rate of 1 means that nothing is carried over, the previous value is zerod out. A decay rate of 0 means that the previous value is carried over as is.
-	NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.02,				--# 0.035		-- A global factor that applies after all others, right before the sub detection contributed by plane is added to the global sub detection of a combatant
+	NAVAL_COMBAT_AIR_PLANE_COUNT_TO_SUB_DETECTION = 0.5,					-- Factor applied to the number of active plane in a naval combat to deduce their contribution to sub detection
+	NAVAL_COMBAT_AIR_SUB_DETECTION_DECAY_RATE = 0.01,					-- Factor to decay the value of sub detection contributed by planes on the last hour. Note: the maximum value between the decayed value and the newly computed one is taken into account. A decay rate of 1 means that nothing is carried over, the previous value is zerod out. A decay rate of 0 means that the previous value is carried over as is.
+	NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1,				--# 0.035		-- A global factor that applies after all others, right before the sub detection contributed by plane is added to the global sub detection of a combatant
 
 	NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10,                             -- scoring for target picking for planes inside naval combat, one define per ship typ
 	NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200,

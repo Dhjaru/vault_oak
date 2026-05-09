@@ -89,7 +89,8 @@ equipments = {
 
 		
 		surface_detection = 1
-		sub_detection = 6
+		sub_detection = 20
+		sub_attack = 5
 		surface_visibility = 30
 		naval_speed = 23
 		reliability = 0.95
@@ -533,7 +534,8 @@ equipments = {
 
 		
 		surface_detection = 10
-		sub_detection = 15
+		sub_detection = 20
+		sub_attack = 5
 		surface_visibility = 30
 		naval_speed = 26
 		reliability = 0.70
@@ -621,7 +623,8 @@ equipments = {
 
 		
 		surface_detection = 10
-		sub_detection = 15
+		sub_detection = 20
+		sub_attack = 5
 		surface_visibility = 30
 		naval_speed = 28
 		reliability = 0.80
@@ -667,7 +670,8 @@ equipments = {
 
 		
 		surface_detection = 10
-		sub_detection = 15
+		sub_detection = 20
+		sub_attack = 5
 		surface_visibility = 30
 		naval_speed = 30
 		reliability = 0.85
@@ -713,7 +717,8 @@ equipments = {
 
 		
 		surface_detection = 10
-		sub_detection = 15
+		sub_detection = 20
+		sub_attack = 5
 		surface_visibility = 30
 		naval_speed = 32
 		reliability = 0.90
