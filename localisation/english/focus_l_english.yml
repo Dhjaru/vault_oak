@@ -4989,6 +4989,8 @@ RAJ_two_nation_theory_desc:0 "Two Nation Theory is the idea that India and the M
  RAJ_commit_to_africa_desc:0 " "
  RAJ_commit_to_asia:0 "Divert Resources to Australia"
  RAJ_commit_to_asia_desc:0 " " 
+ RAJ_commit_to_north_america:0 "Divert Resources to Canada"
+ RAJ_commit_to_north_america_desc:0 " " 
  RAJ_aid_british_rnd:0 "British Research Aid"
  RAJ_aid_british_rnd_desc:0" "
  RAJ_british_armor:0 "§GBritish§! §GTanks§!"

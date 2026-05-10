@@ -1483,6 +1483,7 @@ ENG_budget_decisions = {
 					has_state_flag = no_partial_china_war_state_flag
 				}
 			}
+			SAF = { exists = yes }
 		}
 
 		custom_cost_trigger = {
@@ -1667,6 +1668,7 @@ ENG_budget_decisions = {
 		days_remove = 180
 
 		visible = {
+			AST = { exists = yes }
 		}
 
 		custom_cost_trigger = {

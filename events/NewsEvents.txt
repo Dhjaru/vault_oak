@@ -13625,7 +13625,7 @@ news_event = {
 	id = horsttool.11
 	title = "Horsttool"
 	
-	desc = " [From.Getname] gave five military factories to [From.From.Owner.Getname]"
+	desc = " [From.Getname] gave 5 military factories to [From.From.Owner.Getname]"
 	picture = GFX_news_event_001
 	
 	major = yes
@@ -13641,7 +13641,7 @@ news_event = {
 	id = horsttool.12
 	title = "Horsttool"
 	
-	desc = " [From.Getname] gave one civilian factory to [From.From.Owner.Getname]"
+	desc = " [From.Getname] gave 1 civilian factory to [From.From.Owner.Getname]"
 	picture = GFX_news_event_001
 	
 	major = yes

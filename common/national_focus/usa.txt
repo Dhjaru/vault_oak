@@ -5225,18 +5225,37 @@ focus_tree = {
 			has_war_with = JAP 
 		}
 		completion_reward = {
-			AST = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 10000
+			if = {
+				limit = { AST = { exists = yes } }
+				AST = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 10000
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 500
+					}
+					add_equipment_to_stockpile = {
+						type = special_equipment_1
+						amount = 3000
+					}
 				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 500
-				}
-				add_equipment_to_stockpile = {
-					type = special_equipment_1
-					amount = 3000
+			}
+			else = {
+				RAJ = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 10000
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 500
+					}
+					add_equipment_to_stockpile = {
+						type = special_equipment_1
+						amount = 3000
+					}
 				}
 			}
 			add_resource = {
