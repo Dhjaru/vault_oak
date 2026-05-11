@@ -40,6 +40,5 @@ tags={
 	"Technologies"
 }
 picture="thumbnail.png"
-name="Hearts of Vault"
+name="Dev_Hearts of Vault"
 supported_version="1.18.1.0"
-remote_file_id="3709162074"
