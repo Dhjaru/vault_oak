@@ -250,7 +250,7 @@ units = {
 		location = 11506
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.4
 
 
 	# Xe Corps d'Armée (Région Militaire in 1936) -- Strassbourg
@@ -904,18 +904,12 @@ instant_effect = { #player
 ####################### Equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0
-			amount = 40000
+			amount = 20000
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
 		type = radio_equipment_1
-			amount = 1000
-			producer = FRA
-		}
-	
-	add_equipment_to_stockpile = {
-		type = support_equipment_1
-			amount = 1800
+			amount = 750
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
@@ -930,17 +924,17 @@ instant_effect = { #player
 		}
 	add_equipment_to_stockpile = {
 		type = anti_air_equipment_1
-			amount = 1300
+			amount = 900
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
 		type = heavy_artillery_equipment_1
-			amount = 1200
+			amount = 900
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
 		type = heavy_anti_air_equipment_1
-			amount = 300
+			amount = 200
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
@@ -955,7 +949,7 @@ instant_effect = { #player
 		}
 	add_equipment_to_stockpile = {
 		type = field_gun_equipment_1
-			amount = 4000
+			amount = 3000
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
@@ -965,7 +959,7 @@ instant_effect = { #player
 		}
 	add_equipment_to_stockpile = {
 		type = artillery_equipment_1
-			amount = 500
+			amount = 400
 			producer = FRA
 		}	
     add_equipment_to_stockpile = {
@@ -994,7 +988,7 @@ instant_effect = { #player
        }
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
-			amount = 3875
+			amount = 3575
 			producer = FRA
 		}
 				
