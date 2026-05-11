@@ -40,5 +40,5 @@ tags={
 	"Technologies"
 }
 picture="thumbnail.png"
-name="Dev_Hearts of Vault"
+name="DEV_Hearts of Vault"
 supported_version="1.18.1.0"
