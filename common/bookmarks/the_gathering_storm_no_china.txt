@@ -5,7 +5,7 @@
 		date = 1936.1.1.12
 		picture = "no_china_scenario"
 		default_country = "GER"
-		default = no
+		default = yes
 		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
