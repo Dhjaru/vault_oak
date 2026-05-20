@@ -291,7 +291,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			 always = no
 		}
 
 		available_if_capitulated = yes
