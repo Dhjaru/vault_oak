@@ -584,7 +584,9 @@ foreign_support = {
 					
 				}
 				has_equipment = { infantry_equipment > 2999 }
-			}   
+			}
+			has_tech = improved_infantry_weapons
+			   
 		}
 
 		visible = {
@@ -594,7 +596,6 @@ foreign_support = {
 				}
 			}
 			
-			has_tech = improved_infantry_weapons
 			JAP = {
                 has_completed_focus = JAP_intervene_in_china
 				
@@ -1015,6 +1016,12 @@ foreign_support = {
 			
 			
 			
+			OR = {
+				has_tech = artillery5_2
+				has_tech = artillery5_1
+				has_tech = heavy_artillery3_1
+				has_tech = heavy_artillery3_2
+			}
             
 		}
 
@@ -1028,12 +1035,6 @@ foreign_support = {
                 has_completed_focus = JAP_intervene_in_china
 				
             }
-			OR = {
-				has_tech = artillery5_2
-				has_tech = artillery5_1
-				has_tech = heavy_artillery3_1
-				has_tech = heavy_artillery3_2
-			}
 			
            SOV = {
 				has_country_flag = SOV_sino_japanese_war_started_flag
@@ -3609,6 +3610,12 @@ foreign_support = {
 			}
 			
 			
+			OR = {
+				has_tech = artillery5_2
+				has_tech = artillery5_1
+				has_tech = heavy_artillery3_1
+				has_tech = heavy_artillery3_2
+			}
 			
 			
             
@@ -3619,12 +3626,6 @@ foreign_support = {
                 has_completed_focus = JAP_intervene_in_china
 				
             }
-			OR = {
-				has_tech = artillery5_2
-				has_tech = artillery5_1
-				has_tech = heavy_artillery3_1
-				has_tech = heavy_artillery3_2
-			}
 			
            SOV = {
 				has_country_flag = SOV_sino_japanese_war_started_flag
