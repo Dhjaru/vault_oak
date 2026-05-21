@@ -17039,11 +17039,11 @@ focus_tree = {
 			#ITA_bop_very_low_increase_effect = yes
 
 			custom_effect_tooltip = ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
-			#add_to_variable = { 
-				#var = ITA_political_power_gain_modifier 
-				#value = -0.15 
-				#tooltip = political_power_gain_daily_tooltip
-			#}
+			add_to_variable = { 
+				var = ITA_political_power_gain_modifier 
+				value = -0.15 
+				tooltip = political_power_gain_daily_tooltip
+			}
 			add_to_variable = { 
 				var = ITA_iri_local_resources_factor 
 				value = 0.05 
