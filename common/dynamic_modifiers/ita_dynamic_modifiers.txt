@@ -108,7 +108,7 @@ ITA_ricostruzione_industriale_dynamic_modifier = { #NATIONAL SPIRIT
 	aircraft_manufacturer_cost_factor = ITA_iri_aircraft_manufacturer_cost_factor 
 	naval_manufacturer_cost_factor = ITA_iri_naval_manufacturer_cost_factor
 	consumer_goods_expected_value = ITA_industry_consumer_goods_modifier
-	 political_power_gain = ITA_political_power_gain_modifier
+	political_power_gain = ITA_political_power_gain_modifier
 
 	#  later stuff
 	production_speed_arms_factory_factor = ITA_iri_production_speed_arms_factory_factor 

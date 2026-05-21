@@ -1642,11 +1642,11 @@ ITA_balance_of_power_category = {
 			custom_effect_tooltip = "Clickable every 180 days"
 			ITA_bop_medium_decrease_effect = yes
 			custom_effect_tooltip = ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
-			add_to_variable = {
-				var = ITA_political_power_gain_modifier
-				value = -0.1
-				tooltip = political_power_gain_daily_tooltip
-			}
+			#add_to_variable = {
+				#var = ITA_political_power_gain_modifier
+				#value = -0.1
+				#tooltip = political_power_gain_daily_tooltip
+			#}
 			add_to_variable = {
 				var = ITA_iri_production_speed_industrial_complex_factor
 				value = -0.1
