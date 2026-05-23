@@ -20,19 +20,21 @@ country_event = {
 			country_event = { days = 1 id = soviet.4 }
 		}
 		set_country_flag = bessarabia_ceded
-		if = {
-			limit = {
-				has_idea = ROM_preserve_greater_romania
+		ROM = {
+			if = {
+				limit = {
+					has_idea = ROM_preserve_greater_romania
+				}
+				remove_ideas = ROM_preserve_greater_romania
 			}
-			remove_ideas = ROM_preserve_greater_romania
-		}
-		if = {
-			limit = {
-				has_idea = ROM_preserve_greater_romania2 
+			if = {
+				limit = {
+					has_idea = ROM_preserve_greater_romania2 
+				}
+				remove_ideas = ROM_preserve_greater_romania2 
 			}
-			remove_ideas = ROM_preserve_greater_romania2 
+			add_ideas = ROM_army_tensions
 		}
-		add_ideas = ROM_army_tensions
 	}
 }
 
