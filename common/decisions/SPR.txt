@@ -184,7 +184,7 @@ SPR_the_inevitable_civil_war = {
 
 		fire_only_once = yes
 
-		days_mission_timeout = 526
+		days_mission_timeout = 700
 
 		is_good = no
 
