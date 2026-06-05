@@ -797,7 +797,6 @@ instant_effect = { #player
 		requested_factories = 6
 		progress = 0.1
 		efficiency = 20
-		industrial_manufacturer = mio:JAP_tokyo_arsenal_organization
 	}
 	
 	add_equipment_production = {
@@ -846,7 +845,6 @@ instant_effect = { #player
 		requested_factories = 5
 		progress = 0.3
 		efficiency = 20
-		industrial_manufacturer = mio:JAP_osaka_army_arsenal_artillery_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -856,7 +854,6 @@ instant_effect = { #player
 		requested_factories = 2
 		progress = 0.3
 		efficiency = 20
-		industrial_manufacturer = mio:JAP_osaka_army_arsenal_artillery_organization
 	}
 	 add_equipment_production = {
 		equipment = {
@@ -866,7 +863,6 @@ instant_effect = { #player
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 20
-		industrial_manufacturer = mio:JAP_osaka_army_arsenal_artillery_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -876,7 +872,6 @@ instant_effect = { #player
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 20
-		industrial_manufacturer = mio:JAP_nissan_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -886,7 +881,6 @@ instant_effect = { #player
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 20
-		industrial_manufacturer = mio:ishikawa
 	}
 	add_equipment_production = { 
 		equipment = {

@@ -1,9 +1,0 @@
-air_wings = {
-	29 = {
-		tac_bomber_equipment_1936 = {
-			owner = "FRA"
-			amount = 100
-		}
-	}
-}
-

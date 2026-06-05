@@ -56,14 +56,14 @@ MAN_internal_factions:0 "Faction Management"
  MAN_division_unit_tt:0 "Gain §Y2 30 Width Medium Tank Divisions§! or §Y2 30 Width Light Tank Divisions§! depending on which you researched.\n"
  MAN_division_unit_tt_2:0 "Gain §Y2 80% 30 Width Medium Tank Divisions§! or §Y2 80% 30 Width Light Tank Divisions§! depending on which you researched.\n"
 
-  figters_japan_export:0 "§3Unlocks Decisions§!:-60 days\n  §YFightters to Japan§!\n-§YHeavy Wing Path§!:\n §5"Heavy Wing Production"§! £GFX_right_arrow 40 Heavy Fighters\n §5"Streamline H.W.P."§! £GFX_right_arrow 80 Heavy Fighters\n Economic Surplus:  §G+8000§! / §G+16000§!\n\n-§YLight Wing Path§!:\n §5"Light Wing Production"§! £GFX_right_arrow 60 Light Fighters\n §5"Streamline L.W.P."§! £GFX_right_arrow 120 Light Fighters\n Economic Surplus:  §G+8000§! / §G+16000§!\n"
+  figters_japan_export:0 "§3Unlocks Auto-Completing Decisions§!:-120 days\n  §YExport Airwings to Japan§!\n-§YHeavy Wing Path§!:\n §5"Heavy Wing Production"§! £GFX_right_arrow 40 Heavy Fighters\n §5"Streamline H.W.P."§! £GFX_right_arrow 80 Heavy Fighters\n §YIndustial Output§!: §R-20.00%§!\n Economic Surplus: §G+25000§!\n\n-§YLight Wing Path§!:\n §5"Jap.-Man. Air Production"§! £GFX_right_arrow 50 Light Fighters\n §5"Light Wing Production"§! £GFX_right_arrow 80 Light Fighters\n §5"Streamline L.W.P."§! £GFX_right_arrow 110 Light Fighters\n §YIndustial Output§!: §R-10.00%§!\n Economic Surplus: §G+15000§!"
 
  MAN_need_research_speed:0 "§OMonsters in Uniform§! gives more than §R-18%§! §YResearch speed§! "
  MAN_need_research_speed2:0 "§OMonsters in Uniform§! gives more than §R-10%§! §YResearch speed§! "
  MAN_need_research_speed4:0 "§OMonsters in Uniform§! gives more than §G+0%§! §YResearch speed§! "
  MAN_right_side_exr:0 "If §YKwantung§! is §GIntegrated§!;\n     All §YKwantung§! focuse: Army Expreience: §G+45§!"
 
-  bomber_japan_export:0 "§3Additional§!:\n  §YExport Airwings to Japan§!\n-§YHeavy Wing Path§!:\n §5"Heavy Wing Production"§! £GFX_right_arrow 20 Tactical Bombers\n §5"Streamline H.W.P."§! £GFX_right_arrow 40 Tactical Bombers Economic Surplus:  §G+8000§! / §G+16000§!\n\n-§YLight Wing Path§!:\n §5"Light Wing Production"§! £GFX_right_arrow 40 Close Air Suppor\n §5"Streamline L.W.P."§! £GFX_right_arrow 60 Close Air Suppor\n Economic Surplus:  §G+8000§! / §G+16000§!\n"
+  bomber_japan_export:0 "§3Additional§!:\n  §YExport Airwings to Japan§!\n-§YHeavy Wing Path§!:\n §5"Heavy Wing Production"§! £GFX_right_arrow 20 Tactical Bombers\n §5"Streamline H.W.P."§! £GFX_right_arrow 40 Tactical Bombers\n\n-§YLight Wing Path§!:\n §5"Light Wing Production"§! £GFX_right_arrow 40 Close Air Suppor\n §5"Streamline L.W.P."§! £GFX_right_arrow 60 Close Air Suppor"
 
  BUL_reduced_faction_interaction_cost_tt:0 "Decision cost to activate any §YFaction Management§! decisions is halved."
 
@@ -139,7 +139,7 @@ MAN_internal_factions:0 "Faction Management"
   SYSTEM_CHANGE_OY_BONUS_10:0 "Increase pro-government Propaganda"
   SYSTEM_CHANGE_OY_BONUS_11:0 "Anti-Communism Efforts"
   SYSTEM_CHANGE_OY_BONUS_12:0 "Stop Communism on the rise"
-  SYSTEM_CHANGE_OY_BONUS_12:0 "Nation Collapse"
+  SYSTEM_CHANGE_OY_BONUS_12:0 "Nation Colapse"
   SYSTEM_CHANGE_OY_BONUS_13:0 "Communiests are everywhere"
   SYSTEM_CHECKING_1:0 ""
   750lesswork_right:0 "Use if available §R750§! volunteer to construct:\n §G1§! §YMilitary Factory§!/ Count: [?times_clicked]/10"
@@ -222,8 +222,8 @@ MAN_internal_factions:0 "Faction Management"
   MAN_companies_benefits: "Funding for All §YZaibatsu's§!"
   KPT_benefits: "Benefits for Kwantung"
 
-    Abose_button_left_side:0 "§5Take Control of Administrative Assets§!/ Count: [?worker_abose] / Y4§!"
-    Abose_button_middle_side:0 "§5Take Control of Industrial Assets§!/ Count: [?worker_abose] / §Y7§!"
+    Abose_button_left_side:0 "§5Take Control of Administrative Assets§!/ Count: [?worker_abose]"
+    Abose_button_middle_side:0 "§5Take Control of Industrial Assets§!/ Count: [?worker_abose]"
     Abose_button_right_side:0 "§5Take control over Key Assets§!/ Count: [?worker_abose]"
 
 
@@ -293,7 +293,7 @@ UNLOCK_1_path: "Unlocks §3Form a Corporate-State Partnership§!"
 UNLOCK_2_path: "Unlocks §ONegotiate Joint Oversight of Industry§!"
 UNLOCK_3_path: "Unlocks §YSeize Corporate Assets for the State§!"
 
-MAN_civie_right:0 "§RBuild a civilian factory in Liaoning§!  Count: [?workers_civs]"
+MAN_civie_right:0 "§RBuild a civilian factory in Liaoning§!  Count: [?worker_civs]"
 MAN_mills_right:0 "§RBuild a military factory in Liaoning§!  Count: [?worker_mills]"
 
 already_research_artillery_gives_bonuses:0 "Each artillery research already completed will grant a cumulative §Y25%§! bonus to artillery research"
@@ -435,7 +435,7 @@ contexted_zone_cancel:0 "Stop Heavy Regional Stabilization"
 right_side_workers:0 "§RIndiscriminate Recruitment Campaign§!"
 right_side_workers_cancel:0 "Stop Indiscriminate Recruitment Campaign"
 
-MAN_economic_retadism_desc:0 "We will ensure that the economy remains stable, no matter the cost.\n§YStability§! shows the Workforce Stages\n\nAvailable Volunteers: §Y[?logs]§!\nMonthly Volunteers Gain: §Y[?counter_man]§! \n§6Buildings Volunteer Usage§!: §Y[?counter_building_usage]§! \n§6Force Recruitment of Volunteers§!: §Y[?counter_man_total]§!"
+MAN_economic_retadism_desc:0 "We will ensure that the economy remains stable, no matter the cost.\n§YStability§! shows the Workforce Stages\n\nAvailable Volunteers: §Y[?logs]§!\nGaining Monthly: §Y[?counter_man]§! \n§6Total Volunteers Recruited§!: §Y[?counter_man_total]§!"
 
 recruitment_level:"[recruitment_level_text]"
 recruitment_level_1:"Normal Recruit."
@@ -603,7 +603,7 @@ monthly_rcc_terr:"§YMonthly Recrutments§! in §2Reorganised China§!"
 
 
 MAN_mills:0 "§YBuild a military factory in Liaoning§!  Count: [?worker_mills]"
-MAN_civie:0 "§YBuild a civilian factory in Liaoning§!  Count: [?workers_civs]"
+MAN_civie:0 "§YBuild a civilian factory in Liaoning§!  Count: [?worker_civs]"
 
 MAN_doky:0 "§YBuild a Dockyard in Jehol§!  Count: [?worker_cost_3] / 20"
 MAN_doky_LaynaLazar_twitch_eyes:0 "§4Build a dockyard in Jehol§!  Count: [?worker_cost_3] / 10"
@@ -698,20 +698,20 @@ man_workers_150_digits:0 "Increase volunteers Recrutments by: §G150%§!"
   SPR_deploy_rep_prisoners:0 "Will deploy §Y2§! División de Remanentes Republicanos Divisions in §Yevery state controled§!."
   SPA_rep_deploy_rep_prisoners:0 "Will deploy §Y12§! División de Frente Popular Divisions in §YValencia§!."
   afrika_army_tooltip: "Spawn §Y2§! fully equipped 30 width Spanish Artillery divisions in Galicia"
-  afrika_small_army_tooltip: "Spawn §Y5§! fully equipped 30 width Spanish Africa divisions in Galicia"
+  afrika_small_army_tooltip: "Spawn §Y3§! fully equipped 30 width Spanish Africa divisions in Galicia"
   cut_half_imports_allies: "Will cut all allied lend-leases to Republicans by §Yhalf§!"
   prevent_cut_half_imports_axis: "Germany will be able to send §Yinfantry Equipment§! and §YArtillery§! via §YOperation Feuerzauber§! decision"
   sevilla_spawnins_tooltip: "When completing this focus, all spawned-in units will be in Sevilla."
   granada_spawnins_tooltip: "When completing this focus, all spawned-in units will be in Granada."
-  secure_granada: "§YGranada§! will be fortified by the Nationalists, shifting to their control and blocking the fight over it §Rbut§! we lose complete control over §YExtremadura§!\nGain 6 poorly-trained units with §Y6 infantry§! battalions around §YGranada§!.\n"
+  secure_granada: "§YGranada§! will be fortified by the Nationalists, shifting to their control and blocking the fight over it §Rbut§! we lose complete control over §YExtremadura§!\nGain 8 poorly-trained units with §Y6 infantry§! battalions around §YGranada§!.\n"
   secure_sevilla: "§YSevilla§! will be fortified by the Nationalists, shifting to their control and blocking the fight over it.\nGain 6 poorly-trained units with §Y5 infantry§! battalions around §YSevilla§!"
   galicia_italian_1_units_tooltip: "Spawn §Y3§! fully equipped 30 width Italian Artillery divisions in Galicia\n§YLimit of Blackshirts goes to:§! §G6§!"
   galicia_italian_2_units_tooltip: "Spawn §Y3§! fully equipped 30 width Italian Blackshirts divisions in Galicia\n§YLimit of Blackshirts goes to:§! §G12§!"
   galician_regulars_italians_units_tooltip: "Spawn §Y5§! fully equipped 30 width Italian Artillery divisions in Galicia"
 
-  Murcia_soviet_1_units_tooltip: "Spawn §Y2§! half equipped 30 width Mountaineer International divisions in Murcia\n"
-  Murcia_soviet_2_units_tooltip: "Spawn §Y2§! half equipped 30 width Mountaineer International divisions in Murcia\n"
-  Murcia_interrnational_1_units_tooltip: "Spawn §Y4§! half equipped 30 width Soviet International divisions in Murcia"
+  Murcia_soviet_1_units_tooltip: "Spawn §Y2§! fully equipped 30 width Mountaineer International divisions in Murcia\n"
+  Murcia_soviet_2_units_tooltip: "Spawn §Y2§! fully equipped 30 width Mountaineer International divisions in Murcia\n"
+  Murcia_interrnational_1_units_tooltip: "Spawn §Y4§! fully equipped 30 width Soviet International divisions in Murcia"
 
   spanish_horses_spawn_ins:0 "Spawn §Y4§! fully equipped 30 width Spanish Horse divisions in Galicia"
   spanish_horses_spawn_ins_rep:0 "Spawn §Y4§! fully equipped 30 width Spanish Horse divisions in Murcia"
@@ -792,23 +792,21 @@ SPR_moto_center_debuff:0 "§Rbut§!:\n§YMotorized Infantry§!:\n    £GFX_produ
 SPR_arty_center_debuff:0 "§Rbut§!:\n§YArtillery§!:\n    £GFX_production_cost  Production Cost: §G-10%§!\n"
 SPR_car_center_debuff:0 "§Rbut§!:\n§YArmor Car§!:\n    £GFX_production_cost  Production Cost: §G-10%§!\n"
 
-remove_days_from_colapse_0_fuck_you:"Accelerate the §REconomical Collapse§! by §Y250§! days"
-remove_days_from_colapse_1:"Accelerate the §REconomical Collapse§! by §Y150§! days"
-remove_days_from_colapse_2:"Accelerate the §REconomical Collapse§! by §Y100§! days"
-remove_days_from_colapse_3:"Accelerate the §REconomical Collapse§! by §Y50§! days"
-add_days_from_colapse_0:"§3Delay§! the §REconomical Collapse§! by §Y200§! days"
-add_days_from_colapse_1:"§3Delay§! the §REconomical Collapse§ by §Y150§! days"
-add_days_from_colapse_2:"§3Delay§! the §REconomical Collapse§! by §Y100§! days"
-add_days_from_colapse_3:"§3Delay§! the §REconomical Collapse§! by §Y50§! days"
-add_days_from_colapse_decisions:"§3Delay§! the §REconomical Collapse§! by §Y10§! days"
-add_days_from_colapse_1_decisions:"§3Delay§! the §REconomical Collapse§! by §Y14§! days"
-add_days_from_colapse_2_decisions:"§3Delay§! the §REconomical Collapse§! by §Y18§! days"
+remove_days_from_colapse_1:"Accelerate the §REconomical Colapse§! by §Y150§! days"
+remove_days_from_colapse_2:"Accelerate the §REconomical Colapse§! by §Y100§! days"
+remove_days_from_colapse_3:"Accelerate the §REconomical Colapse§! by §Y50§! days"
+add_days_from_colapse_0:"§3Delay§! the §REconomical Colapse§! by §Y200§! days"
+add_days_from_colapse_1:"§3Delay§! the §REconomical Colapse§! by §Y150§! days"
+add_days_from_colapse_2:"§3Delay§! the §REconomical Colapse§! by §Y100§! days"
+add_days_from_colapse_3:"§3Delay§! the §REconomical Colapse§! by §Y50§! days"
+add_days_from_colapse_decisions:"§3Delay§! the §REconomical Colapse§! by §Y10§! days"
+add_days_from_colapse_1_decisions:"§3Delay§! the §REconomical Colapse§! by §Y14§! days"
+add_days_from_colapse_2_decisions:"§3Delay§! the §REconomical Colapse§! by §Y18§! days"
 delay_of_the_delay_colapse:"§3Delay days double§! when:\n     -§YSecond Development Plan§! is active"
 delay_of_the_delay_colapse_autarky:"§3Delay days double§! when:\n     -§YSecond Development Plan§! is active\nBut Resources ammount will be cut in half"
 delay_of_the_delay_colapse_autarky_2:"§3Delay days double§! when:\n     -§YSecond Development Plan§! is active\nBut §YConsumer Goods§! and  §YFactories§! will be §Rremoved§!"
 delay_of_the_delay_colapse_autarky_3:"§3Delay days double§! when:\n     -§YSecond Development Plan§! is active\nBut §YConsumer Goods§! will be §Rremoved§! \n      §YFactory Output§! will be §Rremoved§!"
-COLAPSE_WILL_HAPPNE_WE_GOONA_DIE:"§REconomical Collapse§!"
-colapsing_economy_decay:"§RRotting Industry§!"
+COLAPSE_WILL_HAPPNE_WE_GOONA_DIE:"§REconomical Colapse§!"
 
 SPR_RIGHT_ECO:"§OSpanish National-Syndicalist Autarky Economy§!"
 SPR_MIDDLE_ECO:"§YSpanish Technocratic Developmentalism Economy§!"
@@ -822,7 +820,7 @@ SPR_MIDDLE_ECO_modif:"Modify§YSpanish Technocratic Developmentalism Economy§! 
 SPR_LEFT_ECO_modif:"Modify §gSpanish Traditionalist Distributism Economy§! by:"
 
 
-all_matters_in_a_dying_economy:"\n§YFocuses§! and §YDecisions§! affect the §REconomical Collapse!, each giving or taking days from the inevitable...\n "
+all_matters_in_a_dying_economy:"\n§YFocuses§! and §YDecisions§! affect the §REconomical Colapse§!, each giving or taking days from the inevitable...\n "
 
 circuv_non_interv_tooltip_1:"§YInfantry Equipment§! send to §YNationalist Spain§!:  [?counter_guns_ger_1]"
 circuv_non_interv_tooltip_2:"§YArtillery§! send to §YNationalist Spain§!:  [?counter_arty_ger_1]\n"
@@ -841,13 +839,13 @@ CSG_LIMIT_SPR:"[root.check_csg_spr_right]"
   SPR_csg_2_eco:0 "Current §RMonthly§! §YConsumer Goods§! gain:\n|0.1%||§Y0.2%§!||0.3%||0.4%||0.5%||0.6%||0.7%||0.8%||0.9%||1.0%|"
   SPR_csg_1_eco:0 "Current §RMonthly§! §YConsumer Goods§! gain:\n|§Y0.1%§!||0.2%||0.3%||0.4%||0.5%||0.6%||0.7%||0.8%||0.9%||1.0%|"
 
-right_side_csg_colapse:0 "Economical Collapse"
+right_side_csg_colapse:0 "Economical Colapse"
 
 the_five_reatrd_time:"This focus will §Ractivate§!: §YThe Development Plan§!"
 the_five_reatrd_time_2:"This focus will §Ractivate§!: §YSecond Development Plan§!"
 
  SPR_navy_prepare_the_armata:0 "Armada Española"
-  cic_constructruction_boost_tooltip_spr_1:"Maxiumum construction line speed boost: §Y15%§!"
+  cic_constructruction_boost_tooltip_spr_1:"Maxiumum construction line speed boost: §Y20%§!"
   
 
  SPR_1_dev_year_plan_decisions:0 "The Development Plan"
@@ -948,8 +946,8 @@ SPR_colapse_of_the_noob_3:"§OSeverely Elevated Interest Rates§!"
 SPR_colapse_of_the_noob_4:"§RUnsustainable Interest Rates§!"
 reduce_csg_mouth_gain_for_fix:"Decrease §RMonthly§! §YConsumer Goods§! to reduce Interest Rate"
 
-SPR_economic_colapse:"Spanish Economy §RCollapse...§!"
-SPR_ECONOMIC_COLAPSE:"§RSpanish Economy Collapse!"
+SPR_economic_colapse:"Spanish Economy §RColapsed...§!"
+SPR_ECONOMIC_COLAPSE:"§RSpanish Economy Colapse§!"
 SPR_state_marked_max_tooltip:"All states have been §RMarked§!"
 
 plant_steel_and_civs_var:" Expanding §YMetallurgic Sectors§!"
@@ -1062,27 +1060,27 @@ industrial_mill_toggle_3:"-£GFX_military_texticon £GFX_military_texticon £GFX
 industrial_mill_toggle_4:"-£GFX_military_texticon £GFX_military_texticon £GFX_military_texticon £GFX_military_texticon"
 ####### military points\
 
-side_industrial_bonuses_c1:"£GFX_civ_factory_output §YCivilian Production Speed§!: §G+6.0%§! / £GFX_industry_texticon §YFactory Output§!: §R-7.5%§!\n£GFX_civ_factory_output  §YMarket Construction Speed§!: §G+6.0%§! "
-side_industrial_bonuses_c2:"£GFX_civ_factory_output §YCivilian Production Speed§!: §G+12.0%§! / £GFX_industry_texticon §YFactory Output§!: §R-2.5%§!\n£GFX_civ_factory_output  §YMarket Construction Speed§!: §G+12.0%§! "
-side_industrial_bonuses_c3:"£GFX_civ_factory_output §YCivilian Production Speed§!: §G+18.0%§! / £GFX_industry_texticon §YFactory Output§!: §R-5.0%§!\n£GFX_civ_factory_output  §YMarket Construction Speed§!: §G+18.0%§! "
-side_industrial_bonuses_c4:"£GFX_civ_factory_output §YCivilian Production Speed§!: §G+25.0%§! / £GFX_industry_texticon §YFactory Output§!: §R-7.5%§!\n£GFX_civ_factory_output  §YMarket Construction Speed§!: §G+25.0%§! "
+side_industrial_bonuses_c1:"£GFX_civ_factory_output §YCivilian Production Speed§!: §G+6.0%§! / £GFX_industry_texticon §YFactory Output§!: §R-7.5%§!\n£GFX_civ_factory_output  §YMarket Construction Speed§!: §G+5.0%§! "
+side_industrial_bonuses_c2:"£GFX_civ_factory_output §YCivilian Production Speed§!: §G+12.0%§! / £GFX_industry_texticon §YFactory Output§!: §R-15.0%§!\n£GFX_civ_factory_output  §YMarket Construction Speed§!: §G+10.0%§! "
+side_industrial_bonuses_c3:"£GFX_civ_factory_output §YCivilian Production Speed§!: §G+18.0%§! / £GFX_industry_texticon §YFactory Output§!: §R-22.5%§!\n£GFX_civ_factory_output  §YMarket Construction Speed§!: §G+15.0%§! "
+side_industrial_bonuses_c4:"£GFX_civ_factory_output §YCivilian Production Speed§!: §G+25.0%§! / £GFX_industry_texticon §YFactory Output§!: §R-25.0%§!\n£GFX_civ_factory_output  §YMarket Construction Speed§!: §G+20.0%§! "
 
 
-side_industrial_bonuses_m1:"£GFX_consumer_goods_oak_icon Consumer Goods: §Y+0%§! / £GFX_industry_texticon §YFactory Output§!: §G+2.5%§! / £GFX_shipyard_texticon  §YDockyard Output§!: §G+2.5%§!"
-side_industrial_bonuses_m2:"£GFX_consumer_goods_oak_icon Consumer Goods: §Y+2.5%§! / £GFX_industry_texticon §YFactory Output§!: §G+5.0%§! / £GFX_shipyard_texticon  §YDockyard Output§!: §G+5.0%§!"
-side_industrial_bonuses_m3:"£GFX_consumer_goods_oak_icon Consumer Goods: §Y+5.0%§! / £GFX_industry_texticon §YFactory Output§!: §G+7.5%§! / £GFX_shipyard_texticon  §YDockyard Output§!: §G+7.5%§!"
-side_industrial_bonuses_m4:"£GFX_consumer_goods_oak_icon Consumer Goods: §Y+6.0%§! / £GFX_industry_texticon §YFactory Output§!: §G+10.0%§! / £GFX_shipyard_texticon  §YDockyard Output§!: §G+10.0%§!"
+side_industrial_bonuses_m1:"£GFX_consumer_goods_oak_icon Consumer Goods: §Y+1.5%§! / £GFX_industry_texticon §YFactory Output§!: §G+5.0%§! / £GFX_shipyard_texticon  §YDockyard Output§!: §G+5.0%§!"
+side_industrial_bonuses_m2:"£GFX_consumer_goods_oak_icon Consumer Goods: §Y+2.5%§! / £GFX_industry_texticon §YFactory Output§!: §G+10.0%§! / £GFX_shipyard_texticon  §YDockyard Output§!: §G+10.0%§!"
+side_industrial_bonuses_m3:"£GFX_consumer_goods_oak_icon Consumer Goods: §Y+4.0%§! / £GFX_industry_texticon §YFactory Output§!: §G+15.0%§! / £GFX_shipyard_texticon  §YDockyard Output§!: §G+15.0%§!"
+side_industrial_bonuses_m4:"£GFX_consumer_goods_oak_icon Consumer Goods: §Y+6.0%§! / £GFX_industry_texticon §YFactory Output§!: §G+20.0%§! / £GFX_shipyard_texticon  §YDockyard Output§!: §G+20.0%§!"
 
 
-side_industrial_bonuses_c1_tooltip_moderate:" £GFX_civ_factory_output §YCivilian Production Speed§!: §G+6.0%§! \n £GFX_industry_texticon §YFactory Output§!: §y0%§!\n £GFX_civ_factory_output  Market Construction Speed: §G+6.0%§! "
-side_industrial_bonuses_c2_tooltip_moderate:" £GFX_civ_factory_output §YCivilian Production Speed§!: §G+12.0%§! \n £GFX_industry_texticon §YFactory Output§!: §R-2.5%§!\n £GFX_civ_factory_output  Market Construction Speed: §G+12.0%§! "
-side_industrial_bonuses_c3_tooltip_moderate:" £GFX_civ_factory_output §YCivilian Production Speed§!: §G+18.0%§! \n £GFX_industry_texticon §YFactory Output§!: §R-5.0%§!\n £GFX_civ_factory_output  Market Construction Speed: §G+18.0%§! "
-side_industrial_bonuses_c4_tooltip_moderate:" £GFX_civ_factory_output §YCivilian Production Speed§!: §G+25.0%§! \n £GFX_industry_texticon §YFactory Output§!: §R-7.5%§!\n £GFX_civ_factory_output  Market Construction Speed: §G+25.0%§! "
+side_industrial_bonuses_c1_tooltip_moderate:" £GFX_civ_factory_output §YCivilian Production Speed§!: §G+6.0%§! \n £GFX_industry_texticon §YFactory Output§!: §R-7.5%§!\n £GFX_civ_factory_output  Market Construction Speed: §G+5.0%§! "
+side_industrial_bonuses_c2_tooltip_moderate:" £GFX_civ_factory_output §YCivilian Production Speed§!: §G+12.0%§! \n £GFX_industry_texticon §YFactory Output§!: §R-10.0%§!\n £GFX_civ_factory_output  Market Construction Speed: §G+10.0%§! "
+side_industrial_bonuses_c3_tooltip_moderate:" £GFX_civ_factory_output §YCivilian Production Speed§!: §G+18.0%§! \n £GFX_industry_texticon §YFactory Output§!: §R-15.0%§!\n £GFX_civ_factory_output  Market Construction Speed: §G+15.0%§! "
+side_industrial_bonuses_c4_tooltip_moderate:" £GFX_civ_factory_output §YCivilian Production Speed§!: §G+25.0%§! \n £GFX_industry_texticon §YFactory Output§!: §R-20.0%§!\n £GFX_civ_factory_output  Market Construction Speed: §G+20.0%§! "
 
-side_industrial_bonuses_m1_tooltip_moderate:" £GFX_consumer_goods_oak_icon Consumer Goods: §Y0%§! \n £GFX_industry_texticon §YFactory Output§!: §G+2.5%§!\n £GFX_shipyard_texticon  §YDockyard Output§!: §G+2.5%§!"
-side_industrial_bonuses_m2_tooltip_moderate:" £GFX_consumer_goods_oak_icon Consumer Goods: §Y+2.0%§! \n £GFX_industry_texticon §YFactory Output§!: §G+5.0%§!\n £GFX_shipyard_texticon  §YDockyard Output§!: §G+5.0%§!"
-side_industrial_bonuses_m3_tooltip_moderate: "£GFX_consumer_goods_oak_icon Consumer Goods: §Y+5.0%§! \n £GFX_industry_texticon §YFactory Output§!: §G+7.5%§!\n £GFX_shipyard_texticon  §YDockyard Output§!: §G+7.5%§!"
-side_industrial_bonuses_m4_tooltip_moderate:" £GFX_consumer_goods_oak_icon Consumer Goods: §Y+6.0%§! \n £GFX_industry_texticon §YFactory Output§!: §G+10.0%§!\n £GFX_shipyard_texticon  §YDockyard Output§!: §G+10.0%§!"
+side_industrial_bonuses_m1_tooltip_moderate:" £GFX_consumer_goods_oak_icon Consumer Goods: §Y+1.5%§! \n £GFX_industry_texticon §YFactory Output§!: §G+5.0%§!\n £GFX_shipyard_texticon  §YDockyard Output§!: §G+5.0%§!"
+side_industrial_bonuses_m2_tooltip_moderate:" £GFX_consumer_goods_oak_icon Consumer Goods: §Y+2.5%§! \n £GFX_industry_texticon §YFactory Output§!: §G+10.0%§!\n £GFX_shipyard_texticon  §YDockyard Output§!: §G+10.0%§!"
+side_industrial_bonuses_m3_tooltip_moderate: "£GFX_consumer_goods_oak_icon Consumer Goods: §Y+4.0%§! \n £GFX_industry_texticon §YFactory Output§!: §G+15.0%§!\n £GFX_shipyard_texticon  §YDockyard Output§!: §G+15.0%§!"
+side_industrial_bonuses_m4_tooltip_moderate:" £GFX_consumer_goods_oak_icon Consumer Goods: §Y+6.0%§! \n £GFX_industry_texticon §YFactory Output§!: §G+20.0%§!\n £GFX_shipyard_texticon  §YDockyard Output§!: §G+20.0%§!"
 
 SPR_civs_no_pointers:"§gState Industralisation§!"
 SPR_civs_improved_pointers:"§4Fast State Industralisation§!"
@@ -1153,7 +1151,6 @@ cancel_toggle_button_military_point:"§gFold Decisions for §GMilitary Expansion
 
 industrial_points_needed_4:"At least 4 Industrial Point"
 gun_export_points_needed_4:"At least 4 Exported Deliveried"
-gun_export_points_needed_4_new_thing:"At least §Y4§! Exported Deliveried or §412§! Export Point"
 industrial_submisiion_failure:"Will lose 1 Industrial Point "
 export_points_tooltip:0 "§YAdd§!: §Y1§! Export Point"
 export_points_2_tooltip:0 "§YAdd§!: §Y2§! Export Point"
@@ -1241,8 +1238,8 @@ center_path_reward_dub_tooltip:"Debuffs picked get double rewarded in §YRationa
 RIGHT_MARKED:"Marked:§RFalangist§!"
 LEFT_MARKED:"Marked:§gCarlist§!"
 
-RIGHT_csg_increase_2:"\n§RMost likely will Increase§! Bad Outcomes §Yby§!:\n    -Events in the §YSecond Phase§! and §RThird Phase§!\n    -Provides §Y5%§! monthly chance to gain:\n §YConsumer Goods§!: §Y+0.4%§!\n\n§6Provides monthly:§! §Y3000.00 £GFX_civ_factory_output §!"
-RIGHT_csg_increase_1:"\n§RMay Increase §! Bad Outcomes §Yby§!:\n    -Events in the §YSecond Phase§! and §RThird Phase§!\n    -Provides §Y5%§! monthly chance to gain:\n §YConsumer Goods§!: §Y+0.4%§!\n \n§6Provides monthly:§! §Y3000.00 £GFX_civ_factory_output §!"
+RIGHT_csg_increase_2:"\n§RMost likely will Increase§! Bad Outcomes §Yby§!:\n    -Events in the §YSecond Phase§! and §RThird Phase§!\n    -Provides §Y10%§! monthly chance to gain:\n §YConsumer Goods§!: §Y+0.4%§!\n\n§6Provides monthly:§! §Y3000.00 £GFX_civ_factory_output §!"
+RIGHT_csg_increase_1:"\n§RMay Increase §! Bad Outcomes §Yby§!:\n    -Events in the §YSecond Phase§! and §RThird Phase§!\n    -Provides §Y10%§! monthly chance to gain:\n §YConsumer Goods§!: §Y+0.4%§!\n \n§6Provides monthly:§! §Y3000.00 £GFX_civ_factory_output §!"
 
 RIGHT_csg_decrease_2:"\n§6May Decrease§! Bad Outcomes §Yby§!:\n    -Events in the §YSecond Phase§! and §RThird Phase§!\n    -Provides §Y10%§! monthly chance to gain:\n §YConsumer Goods§!: §Y-0.4%§!\n Decrease §RMonthly§! §YConsumer Goods§! by: §G-0.1%§!"
 RIGHT_csg_decrease_1:"\n§6Most likely will Decrease§! Bad Outcomes §Yby§!:\n    -Events in the §YSecond Phase§! and §RThird Phase§!\n    -Provides §Y10%§! monthly chance to gain:\n §YConsumer Goods§!: §Y-0.4%§!"
@@ -1264,7 +1261,7 @@ AISA_trait:"Air Lines of Spain S.A."
 
 plane_ic_reduction_tooltip:"§YFighters§!: Production Cost: §R+10.00%§!"
 
-bring_cic_to_the_state:"\n§6Provides monthly:§! §Y3000.00 £GFX_civ_factory_output §!"
+bring_cic_to_the_state:"\n§6Provides monthly:§! §Y6000.00 £GFX_civ_factory_output §!"
 spr_left_war_tooltip:"§REvery month one Civilian Factories will be converted to one Military Factories.§!"
 
 oskar_diddler_tooltip:0 "§YOskar Dirlewanger §! becomes a General.\nWith the following §Yskills§!:\n£trait_attack 1 £trait_defense 1 £trait_planning 1 £trait_logistics 1\n§YReckless§! and §YSubstance Abuser§!"
@@ -1311,8 +1308,6 @@ Send_the_tanks_axis:"§YMedium Tanks§! to §gGermany§!"
 Send_the_tanks_axis_2:"§YHeavy Tanks§! to §gGermany§!"
 Send_the_planes_axis:"§YFighters§! to §gGermany§!"
 Send_the_bombers_axis:"§YTactical Bombers§! to §gGermany§!"
-Send_the_planes_japan:"§YFighters§! to Japan"
-Send_the_bombers_japan:"§YTactical Bombers§! to Japan"
 
 spanish_inquiz_tech:"Barril de la Inquisición"
 Hispano-Suiza:0 "Hispano-Suiza"
@@ -1352,7 +1347,7 @@ infrastructure_mission_reward_3:0 "Integrated Infrastructure Network"
  SPR_army_maybe_maybe_not_dismantle:0 "if§R Republican§! didn't completed the focus §YDisband the Army§!:\n   Gain §Y4§! well-trained units with §Y11 infantry§! and §Y4 artillery§! battalions and §YRecon§! and §YEngineer§! Support.\nif§R Republican§! completed the focus §YDisband the Army§!:\n   Gain just §Y2§! well-trained units with §Y11 infantry§! and §Y4 artillery§! battalions and §YRecon§! and §YEngineer§! Support.\n"
  SPN_army_maybe_maybe_not_dismantle:0 "if§R Nationalis§! didn't completed the focus §YSecure Granada§! or §YSecure Sevilla§!:\n   Gain §Y4§! well-trained units with §Y6 infantry§! and §Y4§! poorly-trained units with §Y5 infantry§!.\n"
 
-tooltip_france_bunkers_1:"When Spain goes §OFalangist§!, the border will have Level §Y3§! forts in non-mountain provinces and Level §Y3§! forts in mountain provinces."
+tooltip_france_bunkers_1:"When Spain goes §OFalangist§!, the border will have Level §Y2§! forts in non-mountain provinces and Level §Y2§! forts in mountain provinces."
 tooltip_france_bunkers_2:"When Spain goes §OFalangist§!, there will be  §Rno fortifications§! from our part."
 
 founding_of_INI:"§YInstituto Nacional de Industria§! will be:\nThe Backbone fo the §YSpanish industry and Economy§! by §RIntegrating all Companies of Spain. §!"
@@ -1373,7 +1368,7 @@ colapsing_nation_2_1_fix:"Monthly Division Defense: §G+0.1%§!"
 colapsing_nation_2_2_fix:"Monthly Division Defense: §G+0.15%§!"
 
 Fix_naval_cranes_issues:"Fix §4Expansion Dry Dockyard Sectors§! "§YCollapsing Cranes§! issue by completing this focus."
-SPR_shadow_civvies:"Helelphay omfray aboveyay"
+
 
 spain.700.d:"With Allied ships lurking just beyond the horizon and rumors of an imminent invasion growing louder by the day, the Spanish government has taken decisive action. The Guardia Costera Española, once a relatively modest force tasked with patrolling the coastline, has been transformed into a proper coastal defense unit."
 spain.901.d: "With the launch of the Second Phase of the Second Development Plan, both economists and party officials braced themselves for potential fiscal turbulence. Concerns rippled through ministries and economic councils, with many anticipating inflation, budget shortfalls, or even a downturn in national productivity. Yet as the financial year draws to a close, the feared consequences have not materialized. Some whisper that we merely avoided disaster by chance, while others credit sound leadership and pragmatic planning. Regardless of the reason, what was once a looming threat has faded into a cautious relief. \n For now, the economy holds firm. The future, however, remains uncertain."
@@ -1395,7 +1390,7 @@ spain.100t1.d:"Behind closed doors in Madrid, the Confederación Española de De
 spain.1111.d: "Government oversight of private enterprise has intensified as state inspectors uncover inefficiencies and profiteering in key industries. Several firms with close ties to the old liberal order have been forced into liquidation and will be used later for better and more important industrial sectors."
 spain.1112.d: "Thanks to disciplined planning and loyal collaboration between the syndicates' advisors and the state, the prices and consumer goods in our great nation have been improving at a lower price, showing that our economic way of thinking is much better than the old ways."
 
-spain.969.d: "Bathed in the tranquility of a clear morning, Emilio watched the horizon from his balcony. The news had just arrived—the Development Plan had worked. Following a long era of economic struggle, finally breaking free from years of stifling control and instability, spain was finally entering a period of rapid growth."
+spain.969.d: "Bathed in the tranquility of a clear morning, Emilio watched the horizon from his balcony. The news had just arrived—the Development Plan had worked. Following a long era of economic struggle, finally breaking free from years of stifling control and instability, spain was finally entering a period of rapid growth.\n\n......"
 
 spain.966.d: "Events move with a force greater than any single man. I have spent my life believing that discipline and resolve could shape the destiny of a nation, yet the weight of the present hour presses heavily upon me. There are moments when even the firmest convictions seem swallowed by uncertainty.\n\nIf the road ahead leads to silence, let it not be said that it came from cowardice. Rather, it came from a fatigue of the spirit\n\nMay Spain find the peace that has escaped her for so long.\n\n long live Spain."
 
@@ -1410,5 +1405,3 @@ spain.22t4.d: "The Development Plan was supposed to be the backbone of a new and
 spain.22t5.d: "The Development Plan was supposed to be the backbone of a new and modern Spain but that said backbone is snapping under its own weight. \nAt the newly finished storage complex, a fuel silo,  constructed at the best standards and high quality steel,has spontaneously ignited. The resulting inferno is consuming months of stockpiled reserves in a matter of hours.\nMaterials lost and progress lost to finish The Development Plan"
 
 spain.22t6.d: "The Development Plan was supposed to be the backbone of a new and modern Spain but that said backbone is snapping under its own weight. \nAt one of the newly build dockyards, the cranes that have been build with the best quality of materials, has spontaneously collapsed and crash.Several buildings and the dry dock itself got damage.\nMaterials lost and progress lost to finish The Development Plan"
-
-spain.22t9.d: "We are not ready to be at war against the Soviets. The coast is open to a potential Allied invasion at any time, §OThe Development Pln§! Is still in the making, and we are not close to finishing it. Drag in a war that will just derail the already fragile economy"

@@ -633,7 +633,6 @@ instant_effect = {
 		requested_factories = 3
 		progress = 0.3
 		efficiency = 75
-		industrial_manufacturer = mio:USA_rock_island_arsenal_organization
 	}
 
 	add_equipment_production = {	
@@ -644,7 +643,6 @@ instant_effect = {
 		requested_factories = 3
 		progress = 0.3
 		efficiency = 75
-		industrial_manufacturer = mio:USA_rock_island_arsenal_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -654,7 +652,6 @@ instant_effect = {
 		requested_factories = 3
 		progress = 0.3
 		efficiency = 75
-		industrial_manufacturer = mio:USA_rock_island_arsenal_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -664,7 +661,6 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.3
 		efficiency = 75
-		industrial_manufacturer = mio:USA_rock_island_arsenal_organization
 	}
 	
 	add_equipment_production = {
@@ -675,7 +671,6 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.3
 		efficiency = 75
-		industrial_manufacturer = mio:USA_rock_island_arsenal_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -685,7 +680,6 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 75
-		industrial_manufacturer = mio:USA_rock_island_arsenal_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -706,7 +700,6 @@ instant_effect = {
 		requested_factories = 4
 		progress = 0.4
 		efficiency = 75
-		industrial_manufacturer = mio:USA_ford_motor_company_organization
 	}
 	add_equipment_production = {
 		equipment = {

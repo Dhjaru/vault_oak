@@ -2,9 +2,9 @@ state = {
 	id = 603
 	name = "STATE_603"
 	resources = {
-			steel = 75
+			steel = 68
 			chromium = 40
-				aluminium = 30
+				aluminium = 20
 	}
 
 	history = {
@@ -12,7 +12,7 @@ state = {
 		add_core_of = CHI
 		add_dynamic_modifier = { modifier = CHI_tougher_resistance3 }
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			arms_factory = 2
 			air_base = 4
 

@@ -1,7 +1,5 @@
 ﻿l_english:
-  modifier_production_cost_industrial_complex_factor:0 "§YCivilian Factory§! Production Cost"
-  modifier_production_cost_arms_factory_factor:0 "§YMilitary Factory§! Production Cost"
-  modifier_production_cost_dockyard_factor:0 "§YDockyard§! Production Cost"
+
  COUNTRY_SELECTION_CHARACTER_DESC: "$NAME|Y$ $DESC|$\n$TRAITS_DESC|$"
  CARRIER_DEFENSIVE_STANCE_SELECTION_0: "Fully defensive"
  CARRIER_DEFENSIVE_STANCE_SELECTION_1: "Cautious"
@@ -1315,9 +1313,6 @@ BUTTON_OK:0 "OK"
  alert_battleplans_with_no_divs_delayed:0 "§HYou should assign some divisions to the battleplans.§!"
  FOCUS_REWARD:0 "Effect"
  FOCUS_REWARD_TOOLTIP:0 "§HEffect§!:"
- FOCUS_EVERY_MEMBER:0 "For every member:"
- FOCUS_ORIGINATOR:0 "For the focus taker:"
- FOCUS_OTHER_MEMBERS:0 "For other members:"
  FOCUS_SINGLE_PREREQ:0 "§RRequires $FOCUS$§!"
  FOCUS_SINGLE_PREREQ_HAS:0 "§GRequires $FOCUS$§!"
  FOCUS_MIX_PREREQ_HEADER:0 "§HRequires all of the following:\n§!"

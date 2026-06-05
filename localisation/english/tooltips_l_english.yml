@@ -1,58 +1,4 @@
 ﻿l_english:
-academy_weekly_manpower_tooltip:0 "£manpower_texticon  Weekly Manpower §G+§![?scaled_weekly_manpower|0+]"
-academy_weekly_training_speed_tooltip_gain:0 "£training_speed_texticon  Weekly Training time §Y-0.5%§!"
-academy_weekly_training_speed_tooltip_current:0 "Current Effect:\n £training_speed_texticon  Training time §Y[?academy_weekly_training_speed|1%]§!"
-academy_weekly_special_forces_tooltip_gain:0 "£specops_texticon  Weekly Special Forces Minimum Capacity §G+[academy_special_forces_gain_major]§!"
-academy_weekly_special_forces_tooltip_current:0 "Current Effect: \n £specops_texticon Special Forces Minimum Capacity §G+[?academy_special_forces_capacity]§!"
-academy_experience_tooltip_acurrent:0 "Current Effect: \n £army_experience Army Experience Gain §G+[?academy_experience_gain|3]§!"
-academy_experience_tooltip_gain:0 "£army_experience Weekly Army Experience Gain Increase §G+0.005§!"
-academy_pp_tooltip_acurrent:0 "Current Effect: \n £GFX_pol_power Political Power Gain §G+[?academy_weekly_pp|3]§!"
-academy_pp_tooltip_gain:0 "£GFX_pol_power Weekly Political Power Gain §G+0.002§!"
-zbearer_of_fort_defense:0 "Spirit of the Division Command"
-zbearer_of_cas_reduction:0 "Spirit of the Academy"
-zbearer_of_terrain_penalty:0 "Spirit of the Academy"
-academy_over_time:0 "Officer Corps"
-academy_weekly_manpower:0 "Officer Corps"
-air_power_projection_spirit_cas_reduction:0 "Camouflage Expert"
-bold_attack_spririt:1 "Reliable Command"
-static_warfare_spirit_fort_tt:0 "£defence_texticon Fort Defense §G+5.0%§!"
-
-
-
-
-
-
-
-
-
-doctrine_milestone_majors_no_bonus_tt:0 "§HCompleting all Milestones will unlock:§!\n§YFirst Tier§!:\n  Completing both §YSpirit of Infantry and Armor§!:\n     Factory Output: §G+10%§!\n\n§YSecond Tier§!:\n  §YInfantry Tactics§!:\n     §Y1x§! §G75%§! Research bonus for: §YArmor Technology§!\n     §Y1x§! §G75%§! Research bonus for: §YTank Upgrades§!\n  §YArmor Tactics§!:\n     §Y1x§! §G75%§! Research bonus for: §YArtillery§!\n     §Y1x§! §G75%§! Research bonus for: §YInfantry Equipment§!\n  Completing both §YArmor and Infantry Tactics§!:\n     Gain §G1§! Research Slot.\n     Factory Output: §G+10%§!\n  §YCombat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n\n§YThird Tier§!:\n  §YAdvanced Infantry and Armored Tactics§!:\n     Create units in §YCapital§! depending on your choice.\n  §YAdvanced Combat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!"
-doctrine_milestone_eng_tt:0 "§HCompleting all Milestones will unlock:§!\n§YFirst Tier§!:\n  §YAll Subdoctrines§!:\n     All other tier 2 subdoctrines gain:\n     Add §Y0.1 £GFX_doctrine_mastery Mastery§! per day\n     Track £GFX_doctrine_mastery mastery gain factor: §G+10%§!\n  Completing both §YSpirit of Infantry and Armor§!:\n     Factory Output: §G+10%§!\n\n§YSecond Tier§!:\n  §YAll Subdoctrines§!:\n     Add §Y0.1 £GFX_doctrine_mastery Mastery§! per day\n     All other tier 3 subdoctrines gain:\n     Track £GFX_doctrine_mastery mastery gain factor: §G+10%§!\n  §YInfantry Tactics§!:\n     All Armor Military Industrial Organizations:\n     Requirement for Size Up: §G-20%§!\n     Research Bonus: §G+50%§!\n  §YArmor Tactics§!:\n     All Artillery Military Industrial Organizations:\n     Requirement for Size Up: §G-20%§!\n     Research Bonus: §G+50%§!\n  Completing both §YArmor and Infantry Tactics§!:\n     Gain §G1§! Research Slot.\n     Factory Output: §G+10%§!\n  §YCombat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n\n§YThird Tier§!:\n  §YAdvanced Infantry and Armored Tactics§!:\n     Create units in §YCapital§! depending on your choice.\n  §YAdvanced Combat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!"
-doctrine_milestone_majors_tt:0 "§HCompleting all Milestones will unlock:§!\n§YFirst Tier§!:\n  §YAll Subdoctrines§!:\n     All other tier 2 subdoctrines gain:\n     Track £GFX_doctrine_mastery mastery gain factor: §G+10%§!\n  Completing both §YSpirit of Infantry and Armor§!:\n     Factory Output: §G+10%§!\n\n§YSecond Tier§!:\n  §YAll Subdoctrines§!:\n     All other tier 3 subdoctrines gain:\n     Track £GFX_doctrine_mastery mastery gain factor: §G+10%§!\n  §YInfantry Tactics§!:\n     §Y1x§! §G75%§! Research bonus for: §YArmor Technology§!\n     §Y1x§! §G75%§! Research bonus for: §YTank Upgrades§!\n  §YArmor Tactics§!:\n     §Y1x§! §G75%§! Research bonus for: §YArtillery§!\n     §Y1x§! §G75%§! Research bonus for: §YInfantry Equipment§!\n  Completing both §YArmor and Infantry Tactics§!:\n     Gain §G1§! Research Slot.\n     Factory Output: §G+10%§!\n  §YCombat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n\n§YThird Tier§!:\n  §YAdvanced Infantry and Armored Tactics§!:\n     Create units in §YCapital§! depending on your choice.\n  §YAdvanced Combat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!"
-doctrine_milestone_engitajap_tt:0 "§HCompleting all Milestones will unlock:§!\n§YFirst Tier§!:\n  §YAll Subdoctrines§!:\n     All other tier 2 subdoctrines gain:\n     Track £GFX_doctrine_mastery mastery gain factor: §G+10%§!\n  Completing both §YSpirit of Infantry and Armor§!:\n     Factory Output: §G+10%§!\n\n§YSecond Tier§!:\n  §YAll Subdoctrines§!:\n     All other tier 3 subdoctrines gain:\n     Track £GFX_doctrine_mastery mastery gain factor: §G+10%§!\n  §YInfantry Tactics§!:\n     All Armor Military Industrial Organizations:\n     Requirement for Size Up: §G-20%§!\n     Research Bonus: §G+50%§!\n  §YArmor Tactics§!:\n     All Artillery Military Industrial Organizations:\n     Requirement for Size Up: §G-20%§!\n     Research Bonus: §G+50%§!\n  Completing both §YArmor and Infantry Tactics§!:\n     Gain §G1§! Research Slot.\n     Factory Output: §G+10%§!\n  §YCombat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n\n§YThird Tier§!:\n  §YAdvanced Infantry and Armored Tactics§!:\n     Create units in §YCapital§! depending on your choice.\n  §YAdvanced Combat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!"
-doctrine_milestone_tt:0 "§HCompleting all Milestones will unlock:§!\n§YFirst Tier§!:\n  §YAll Subdoctrines§!:\n     All other tier 2 subdoctrines gain:\n     Add §Y0.1 £GFX_doctrine_mastery Mastery§! per day\n     Track £GFX_doctrine_mastery mastery gain factor: §G+10%§!\n  Completing both §YSpirit of Infantry and Armor§!:\n     Factory Output: §G+10%§!\n\n§YSecond Tier§!:\n  §YAll Subdoctrines§!:\n     All other tier 3 subdoctrines gain:\n     Add §Y0.1 £GFX_doctrine_mastery Mastery§! per day\n     Track £GFX_doctrine_mastery mastery gain factor: §G+10%§!\n  §YInfantry Tactics§!:\n     All Armor Military Industrial Organizations:\n     Requirement for Size Up: §G-30%§!\n     Research Bonus: §G+75%§!\n  §YArmor Tactics§!:\n     All Artillery Military Industrial Organizations:\n     Requirement for Size Up: §G-30%§!\n     Research Bonus: §G+75%§!\n  Completing both §YArmor and Infantry Tactics§!:\n     Gain §G1§! Research Slot.\n     Factory Output: §G+10%§!\n  §YCombat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n     §YRandom Core State§!:\n       Add §G3§! Building Slots\n       Add §G3§! §YCivilian Factory§!\n\n§YThird Tier§!:\n  §YAdvanced Infantry and Armored Tactics§!:\n     Create units in §YCapital§! depending on your choice.\n  §YAdvanced Combat Support Tactics§!:\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!\n     §YRandom Core State§!:\n       Add §G5§! Building Slots\n       Add §G5§! §YMilitary Factory§!" #\n  §YStrategic Emphasis§!:\n     Factory Output: §G+5%§!\n     Tank Production Capacity: §G+10§!\n     Air Production Capacity: §G+20§!
-ENG_africa_bonuses_tt:0 "§YAll Allies§!:\n  Add §YOperation Compass§!, which grants\n§YArmor technology§!:\n  Reliability: §G+5%§!\nHP:§G+60.00%§!\n§YLand Doctrine§! mastery gain: §G+50%§!\nTaking §YTobruk, Bengasi and El Agheila§! will each increase the HP bonus by a further §G+10%§!\n§RIs removed after 1st of April 1941§!"
-MW_volksturm_bonuses_tt:0 "£GFX_unit_category_all_infantry_icon_small §YInfantry & Mot/Mech§!\n£GFX_unit_category_all_armor_icon_small §YTanks & Armor Variants§!:\n§YForest§!\n Defense: §G+5%§!\n§YUrban§!\n Defense: §G+5%§!\n§YHills§!\n Defense: §G+5%§!\n£GFX_unit_category_garrison_infantry_icon_small £GFX_unit_category_bicycle_infantry_icon_small §YGarrisons and Bicycle Battalions§!:\n§YForest§!\n Defense: §G+10%§!\n§YUrban§!\n Defense: §G+10%§!\n§YHills§!\n Defense: §G+10%§!"
-
-
-sfp_recon_more_expensive_tt:0 "§YAll Recon Companies§!:\n Extra Cost Requirement: §R+60%§!"
-sfp_tank_fort_attack_tt:0 "£GFX_unit_category_all_armor_icon_small §YTanks & Armor Variants§!:\n §YFort§!\n  Attack: §G+5%§!"
-sfp_aggresive_bonus_tt:0 "£GFX_unit_category_all_infantry_icon_small §YInfantry & Mot/Mech§!:\n§YForest§!, §YUrban§!, §YHills§!, §YJungle§!, §YMarsh§!, §YMountain§! \n Attack: §G+5%§! \n Defense: §R-5%§!"
-GBP_assault_gun_bonuses_tt:0 "£GFX_unit_category_assault_gun_company_icon_small §YAssault Gun Company§!:\nHeavy Infantry battalions:\n  Soft Attack:  §G+10.00%§!\n  Hard Attack: §G+10.00%§!"
-gbp_sf_bonus_tt:0 "£GFX_unit_category_special_forces_icon_small All Special Forces:\n§YAttack in Rough Terrain§!: §G+3%§!"
-gbp_infiltration_bonus:0 "Infiltration Bonus"
-gbp_infiltration_bonus_tt:0 "£GFX_unit_category_front_line_icon_small §YAll Frontline Battalions§!:\n§YForest§!\n Movement: §G+5%§!\n§YUrban§!\n Movement: §G+5%§!\n§YHills§!\n Movement: §G+5%§!\n§YJungle§!\n Movement: §G+5%§!\n§YMarsh§!\n Movement: §G+5%§!"
-disable_lend_lease_tt:0 "Prevents this country from sending any equipment through §YLend-Lease§!."
-FRA_LEND_LEASE_REQUIRES_REFUS_ABSURDE_TT:0 "§YFrance§! must complete the §YRefus Absurde§! national focus before using §YLend-Lease§!."
-POL_LEND_LEASE_REQUIRES_NOT_YET_LOST_TT:0 "§YPoland§! must complete the §YNot Yet Lost!§! national focus before using §YLend-Lease§!."
-POR_LEND_LEASE_DISABLED_TT:0 "§YPortugal§! cannot send or receive equipment through §YLend-Lease§!."
-AI_LICENSE_REQUEST_DISABLED_TT:0 "§YAI countries§! do not grant production licenses."
-SOV_LEND_LEASE_REQUIRES_GREAT_PATRIOTIC_WAR_TT:0 "§YSoviet Union§! must complete the §YThe Great Patriotic War§! national focus before using §YLend-Lease§!."
-CHI_LEND_LEASE_DISABLED_TT:0 "§YChina§! cannot send or receive equipment through §YLend-Lease§!."
-SPN_LEND_LEASE_DISABLED_TT:0 "§YRepublican Spain§! cannot receive equipment through §YLend-Lease§!."
-SPR_LEND_LEASE_REQUIRES_SCW_OVER_TT:0 "§YNationalist Spain§! cannot receive equipment through §YLend-Lease§! until the §YSpanish Civil War§! has ended."
-ETH_LEND_LEASE_DISABLED_TT:0 "§YEthiopia§! cannot receive equipment through §YLend-Lease§!."
-tactic_advanced_counter_arty_tt:0 "Requires at least §Y75% of maximum planning§! to activate. When triggered, this tactic will §Gcounter§! enemy §YSuppressive Barrage§!, §YWell-Planned Attack§! and §YOverwhelming Fire§!."
-MW_assault_gun_bonuses_tt:0 "£GFX_unit_category_assault_guns_icon_small §YAssault Guns§!:\n §YUrban§!:\n  Attack: §G+5.00%§!\n  Defense: §G+5.00%§!\n£GFX_unit_category_assault_gun_company_icon_small §YAssault Gun Company§!:\nHeavy Infantry battalions:\n  Soft Attack:  §G+10.00%§!\n  Hard Attack: §G+10.00%§!"
 JAP_scripted_final_offensive_tt:0 "The Chinese advance will be halted for §Y365§! days. During this time, we will reclaim up to §Y6§! states, but at the cost of §Rreduced military effectiveness against the Allies§! (penalties scale with our current progress in the Pacific)."
 china_less_than_4_developed:0 "At most 4 developments"
 italian_plunder:0 "Italian Plunder"
@@ -111,10 +57,6 @@ ITA_victory_in_desert_conditions_tt:0 "One of the following must be true:\nAll o
 ITA_evac_africa_tt:0 "The amount of §Yresources§! and §Yindustry§! moved to §YNorthern Italy§! depends on how much of Africa we still hold. Oil expansions are taken into account. All states from §YCasablanca§! to §YCairo§! can be evacuated as well as oil from §YIraq§!."
 JAP_factory_for_each_china_state_tt:0 "§YOne§! Military Factory will spawn in random core state §Yfor each§! conquered Chinese state."
 INFO_POPUP_CLOSE_TOOLTIP: "§GRight Click§! to dismiss."
-
-FOCUS_SIDE_MESSAGE_UNLOCKED_TOOLTIP:0 "Focus Completedimage.png.\n\n"
-FOCUS_SIDE_MESSAGE_UNLOCKED_DESC:0 "Joint national focus\n$FOCUS|Y$\nhas been completed.\n\n"
-FOCUS_SIDE_MESSAGE_CLICK_ACTION:0 ""
 JAP_unlocks_mitsu_stuff_tt:0 "§GUnlocks§! traits for §YMilitary Industrial Organization§!: Mitsubishi."
 summer_offensive_sov_flag:0 "Operation Bagration"
 summer_offensive_ger_flag:0 "German Summer Offensive"
@@ -230,8 +172,8 @@ MANspace:0 "                   "
 MAN_balls:0 "§YUnlocks decisions for Improved Research Bonuses with Increasing Research Speed §!"
 MAN_short:0 "§YUnlocks Imports from Japan and Research!"
 
-MAN_speed_long:0 "§4Expand Construction Sector§! Count: [?workeers_CSS]/§Y15§!"
-MAN_speed:0 "§4Expand Construction Sector§! Count: [?workeers_CSS]/§Y10§!"
+MAN_speed_long:0 "§4Expand Construction Sector§! Count: [?workeers_CSS]/15"
+MAN_speed:0 "§4Expand Construction Sector§! Count: [?workeers_CSS]/10"
 
 ######guns#->right side
 MAN_research_guns_long:0 "Small Funding Allocation for Infantry Research"
@@ -278,7 +220,7 @@ RCC_old_ways_assault_tooltip:0 "§YInfantry & Mot/Mech Battalion HP§W will be e
 
 B111:0 "Buildings construction Speed |§G +1.00%§! £GFX_right_arrow §G +2.00%§!|"
 B112:0 "Cost of building |§G +1.00%§! £GFX_right_arrow §G +2.00%§!|"
-B222:0 "Decision cost:\n        Cap Increase: §G10§! £GFX_right_arrow §G15§!\n        §R1500§! £GFX_right_arrow §R1800§! volunteers\n        §O 3 £GFX_civ_factory §! £GFX_right_arrow §O 1 £GFX_civ_factory §!"
+B222:0 "Decision cost:\n        Cap Increase: §G10§! £GFX_right_arrow §G15§!\n        §R1500§! £GFX_right_arrow §R2250§! volunteers\n        §O 4 £GFX_civ_factory §! £GFX_right_arrow §O 2 £GFX_civ_factory §!"
 
 B112:0 "Cost of building it £GFX_right_arrow  §R500§! volunteers"
 B113:0 "Amount of divisions £GFX_right_arrow  §Y3§! "
@@ -302,7 +244,7 @@ MAN_slaves:0 "§4Recruit volunteer§!"
 
    loggs_pacifist_tooltip:0 "Will recruit monthly:"
       loggies_pacifism_100_tooltip:0 " £GFX_right_arrow §G+75§! volunteer workers"
-      import_codex_focus_tooltip:"Completing §3Appease the Bandits§!:\nWill recruit monthly:\n£GFX_right_arrow §G+75§! volunteer workers\n\nCompleting §RCrack Down on Banditry§!:\nWill recruit monthly:\n£GFX_right_arrow §G+150§! volunteer workers"
+
       loggies_pacifism_200_tooltip:0 " £GFX_right_arrow §G+150§! volunteer workers"
 
 
@@ -323,7 +265,7 @@ loggi_60k:0 "Recruit §G6000§! new volunteer workers."
 loggi_80k:0 "Recruit §G8000§! new volunteer workers."
 loggi_100k:0 "Recruit §G10000§! new volunteer workers."
 
-neddie_5k:0 "Uses §R500§! volunteer workers."
+neddie_5k:0 "Uses §R5k§! volunteer workers."
 neddie_10k:0 "Uses §R10k§! volunteer workers."
 neddie_15k:0 "Uses §R15k§! volunteer workers."
 neddie_20k:0 "Uses §R20k§! volunteer workers."
@@ -701,7 +643,7 @@ efficiency_base_tooltip:0 "Production Efficiency Base: $RIGHT|+=%$\n"
  RCC_river:0 "Light Infantry:\n    §YRiver§!:\n    Attack: §G+10%§!\n    Movement: §G+5%§!\n  §YMarsh§!:\n    Attack: §G+10%§!\n    Movement: §G+5%§!"
  RCC_river_1:0 "Infantry:\n    §YRiver§!:\n    Attack: §G+10%§!\n    Movement: §G+5%§!\n  §YMarsh§!:\n    Attack: §G+10%§!\n    Movement: §G+5%§!"
  RCC_river_2:0 "All Artillery:\n    §YRiver§!:\n    Attack: §G+10%§!\n    Movement: §G+5%§!\n  §YMarsh§!:\n  Movement: §G+5%§!"
- horse_japan_tech:0 "Cavalry Recon Detachment :\n    §YReconnaissance§!:  §G+1§!\n    Supply Consumption: §G-0.01§!\n    Soft Attack: §G+100%§!\n    Hard Attack: §G+100%§!"
+ horse_japan_tech:0 "Cavalry Recon Detachment:\n    §YReconnaissance§!: §G+1§!"
 
 
 ########            ########          ##############################     ########          ########          ######## 
@@ -1116,7 +1058,7 @@ MAN_frontline_special_tard_special:0 "§3Expand Special Equipment Production§!"
 MAN_frontline_special_tard_special_desc:0 ""
 MAN_elites_of_the_pacific_black:0 "Manchurian Commandos"
 MAN_elites_of_the_pacific_black_desc:0 ""
-MAN_frontline_infantry_4_right:0 "Indigenous Artillery Training"
+MAN_frontline_infantry_4_right:0 "Indigenous Artillery Production"
 MAN_frontline_infantry_4_right_desc:0 ""
 ################
 MAN_navy_1:0 "Marine Forces"
@@ -1472,11 +1414,6 @@ ENG_operation_compass_tt3:0 "HP: §G+70%§!\n§YArmor Technology§!:\n    Reliab
 ENG_operation_compass_tt4:0 "HP: §G+80%§!\n§YArmor Technology§!:\n    Reliability: §G+5%§!"
 ENG_operation_compass_tt5:0 "HP: §G+90%§!\n§YArmor Technology§!:\n    Reliability: §G+5%§!"
 
-ENG_africa_mastery_gain_bonus_tt:0 "[Root.ENG_get_africa_mastery_gain]"
-ENG_africa_mastery_gain_bonus_tt1:0 ""
-ENG_africa_mastery_gain_bonus_tt2:0 "§YLand Doctrine mastery gain§!: §G+50%§!\n(Excluding France during Battle of France)"
-ENG_africa_mastery_gain_bonus_tt3:0 "§YLand Doctrine mastery gain§!: §G+25%§!"
-
 
 ENG_bombers_production_tt:0 "[Root.ENG_get_bomber_cost]"
 ENG_bombers_production_tt1:0 ""
@@ -1591,7 +1528,7 @@ ENG_containment_upgrade_3_tt:0 "Modify §YProsperity of the Empire§! by\nWar Su
 
 ENG_stability_upgrade_tt:0 "Modify §YProsperity of the Empire§! by\nStability: §G+10%§!"
 
-ENG_output_upgrade_tt:0 "Modify §YProsperity of the Empire§! by\nFactory Output: §G+5%§!"
+ENG_output_upgrade_tt:0 "Modify §YProsperity of the Empire§! by\nFactory Output: §G+10%§!"
 
 ENG_ministry_of_supply_preview_tt:0"If you have completed focus §YAppeasement§!:\nModify §YProsperity of the Empire§! by\nConsumer Goods Factories: §Y-4%§!                               If you have completed focus §YContainment§!\nModify §YProsperity of the Empire§! by\nProduction Efficiency Cap: §G+3%§!"
 
@@ -2097,10 +2034,10 @@ CHI_modify_army_intro:0 "Modify §Y$CHI_army_spirit$§! by"
 RCC_train_hp_tt:0 "§YTrains§!: Armor: §G+50%§! 
 
  CHI_unprofessional_army_tt:0 "[Root.CHI_get_army_bonus]"
- CHI_unprofessional_army_tt1:0 "\nArmor Research Speed: §G+20%§!\n§YLight Infantry Battalion:§!\nInfantry Equipment: §G-50§!\nHP: §R-5§!\nMaximum Organization: §R-15§!\nDefense/Soft and Hard attack: §R-20%§!\n§YTrains§!: Armor: §G+150§!" 
- CHI_unprofessional_army_tt2:0 "\nArmor Research Speed: §G+20%§!\n§YLight Infantry Battalion:§!\nInfantry Equipment: §G-50§!\nHP: §R-5§!\nMaximum Organization: §R-15§!\nDefense/Soft and Hard attack: §R-20%§!\n§YField guns§!: Soft Attack: §G+5%§!, Hard Attack: §G+5%§!, Breakthrough: §G+5%§!, §YInfantry Equipment§!: Soft Attack: §G+5%§!, Hard Attack: §G+5%§!, Defense: §G+10%§!\n§YTrains§!: Armor: §G+200§!"
- CHI_unprofessional_army_tt3:0 "\nArmor Research Speed: §G+20%§!\n§YLight Infantry Battalion:§!\nInfantry Equipment: §G-50§!\nHP: §R-5§!\nMaximum Organization: §R-15§!\nDefense/Soft and Hard attack: §R-20%§!\n§YTrains§!: Armor: §G+150§!\n§YEvery Tank Type§!:\n    Fuel Usage: §G-60%§!" 
- CHI_unprofessional_army_tt4:0 "\nArmor Research Speed: §G+20%§!\n§YLight Infantry Battalion:§!\nInfantry Equipment: §G-50§!\nHP: §R-5§!\nMaximum Organization: §R-15§!\nDefense/Soft and Hard attack: §R-20%§!\n§YEvery Tank Type§!:\n    Fuel Usage: §G-60%§!\n§YField guns§!: Soft Attack: §G+5%§!, Hard Attack: §G+5%§!, Breakthrough: §G+5%§!, §YInfantry Equipment§!: Soft Attack: §G+5%§!, Hard Attack: §G+5%§!, Defense: §G+10%§!\n§YTrains§!: Armor: §G+200§!"
+ CHI_unprofessional_army_tt1:0 "Armor Research Speed: §G+20%§!\n§YLight Infantry Battalion:§!\nInfantry Equipment: §G-50§!\nHP: §R-5§!\nMaximum Organization: §R-15§!\nDefense/Soft and Hard attack: §R-20%§!\n§YTrains§!: Armor: §G+150§!" 
+ CHI_unprofessional_army_tt2:0 "Armor Research Speed: §G+20%§!\n§YLight Infantry Battalion:§!\nInfantry Equipment: §G-50§!\nHP: §R-5§!\nMaximum Organization: §R-15§!\nDefense/Soft and Hard attack: §R-20%§!\n§YField guns§!: Soft Attack: §G+5%§!, Hard Attack: §G+5%§!, Breakthrough: §G+5%§!, §YInfantry Equipment§!: Soft Attack: §G+5%§!, Hard Attack: §G+5%§!, Defense: §G+10%§!\n§YTrains§!: Armor: §G+200§!"
+ CHI_unprofessional_army_tt3:0 "Armor Research Speed: §G+20%§!\n§YLight Infantry Battalion:§!\nInfantry Equipment: §G-50§!\nHP: §R-5§!\nMaximum Organization: §R-15§!\nDefense/Soft and Hard attack: §R-20%§!\n§YTrains§!: Armor: §G+150§!\n§YEvery Tank Type§!:\n    Fuel Usage: §G-50%§!" 
+ CHI_unprofessional_army_tt4:0 "Armor Research Speed: §G+20%§!\n§YLight Infantry Battalion:§!\nInfantry Equipment: §G-50§!\nHP: §R-5§!\nMaximum Organization: §R-15§!\nDefense/Soft and Hard attack: §R-20%§!\n§YEvery Tank Type§!:\n    Fuel Usage: §G-50%§!\n§YField guns§!: Soft Attack: §G+5%§!, Hard Attack: §G+5%§!, Breakthrough: §G+5%§!, §YInfantry Equipment§!: Soft Attack: §G+5%§!, Hard Attack: §G+5%§!, Defense: §G+10%§!\n§YTrains§!: Armor: §G+200§!"
 
  CHI_ledo_road_built:0 "The Alternative Lend-Lease Routes have been finished"
  CHI_maximum_lend_lease_routes_reached_tt:0 "§YWe have reached our lend-lease limit via other possible routes already§!"
@@ -2400,7 +2337,6 @@ JAP_air_bonus_tt3:0 "§YClose Air Support§!: Ground Attack: §G+10%§!\n§YTact
  SOV_bureau_tt:0 "Completing this focus will give 500 §H1939 Medium Tanks§! and 400 §H1940 Heavy Tanks§!, if the respective chassises are researched"
  ############ENG TOOLTIPS##############
  ENG_development_explanation:0 "Every year, until §Y1939§!, the development focuses will increase the number of given Political Power by 100."
- ENG_development_explanation_half:0 "Every year, until §Y1939§!, the development focuses will increase the number of given Political Power by 50."
  UK_cant_civs_tt:0 "§YModernize Home Industry§! §Rwill no longer be available§!"
  ENG_secretary_of_state_for_the_colonies_tt:0 "All Commonwealth nations will gain the following\nPolitical Power Gain §G+10%§!\nStability §G+10%§!\nEconomy Laws Cost §G-33%§!\nMobilization Laws Cost §G-33%§!\nTrade Laws Cost §G-33%§! "
  ENG_trading_idea_tt:0 "Gains cheaper trade with all §YAllied Countries§!.\n§YAllied Countries§! Modify §YCommonwealth Trading§! by \nThe §YDominion of Canada§!:\nTarget country trade cost: §G-50%§!"
@@ -2467,7 +2403,7 @@ USA_escalation_is_over_3:0 "$JAP_macro_polo4$ "
 
 
 USA_give_all_allies_buff_tt2:0 "§YAll Allied Countries§!:\nModify §YCash and Carry§!, by (Consumer Goods: §Y+2.0%§!, £prod_eff_cap Production Efficiency Cap: §G+2.5%§!, Factory Output: §G+5.0%§!).\n"
-USA_give_all_allies_buff_tt:0 "Add Supplier of Democracy, which grants ((§YAll Allied Countries§!)Target country trade cost: §G-50.00%§!)\nResources to Market: §Y+10.0%§!.\n"
+USA_give_all_allies_buff_tt:0 "Add Supplier of Democracy, which grants ((§YAll Allied Countries§!)Target country trade cost: §G-50.00%§!)\nResources to Market: §Y+20.0%§!.\n"
 USA_landon_tt:0"Modify §YEconomy of the United States§! by\n§YMilitary Factory§! construction speed: §G+25%§!\n§YDockyard§! construction speed: §G+25%§!"
 USA_fdr_tt:0"Modify §YEconomy of the United States§! by\nConsumer Goods Factories: §Y-3.5%§!"
 
@@ -2596,7 +2532,7 @@ USA_spawn_in_china_5:0 "Completing this §YNational Focus§! will give §YChina�
  USA_island_hopping17_tt:0 "\nThe Axis' §YOffensives in the East§! will be §Rdecreased§! by the following amount:\n(§YSoviet Union§!) Attack bonus against country: §R-9%§!\n(§YSoviet Union§!) Defense bonus against country: §R-9%§!"
 
  
- GER_africa_mastery_gain_bonus_tt:0 "§YLand Doctrine mastery gain§!: §G+50%§!\n(Excluding Germany and Italy)"
+
  GER_aatlantic_wall_0_tt:0 "\nThe Axis' §YOffensives in the East§! will be §Rboosted§! by the following amount:\n(§YSoviet Union§!) Attack bonus against country: §G+4%§!\n(§YSoviet Union§!) Defense bonus against country: §G+4%§!"
  GER_aatlantic_wall_1_tt:0 "\nThe Axis' §YOffensives in the East§! will be §Rboosted§! by the following amount:\n(§YSoviet Union§!) Attack bonus against country: §G+3%§!\n(§YSoviet Union§!) Defense bonus against country: §G+3%§!"
  GER_aatlantic_wall_2_tt:0 "\nThe Axis' §YOffensives in the East§! will be §Rboosted§! by the following amount:\n(§YSoviet Union§!) Attack bonus against country: §G+2%§!\n(§YSoviet Union§!) Defense bonus against country: §G+2%§!"
@@ -3233,8 +3169,6 @@ AST_war_eco_tt:0 "When war,\n§YAustralian Politics and Economy§! will disappea
  AST2_con_good_fac_tt2:0 "Consumer Goods: §Y-5.0%§!"
  AST2_fac_out_tt1:0 "Factory Output: §G+6.00%§!"
  AST_xp_gain_flat:0 "Army Experience Gain: §G+0.04§! daily"
-AST_xp_gain_2:0 "Army Experience Gain: §G+0.03§! daily"
-SAF_xp_gain_2:0 "Army Experience Gain: §G+0.03§! daily"
  
  AST2_prod_max_eff_tt1:0 "Production Efficiency Cap: §G+5.00%§!"
  ast_singapore_strat_tt:0 "Adds §YSingapore§! to the Fortress Australia mechanic. Losing both §YSingapore§! and §YPapua§! will remove our core bonuses."
@@ -3264,7 +3198,7 @@ JAP_starting_research_speed:0 "[Root.jap_get_research_bonus]"
 JAP_starting_research_speed1:0 "Electronics research speed §R-10%§!\nIndustrial research speed §R-10%§!"
 JAP_research_speed_boost_dynamic:0 "Electronics research speed §G+10%§!\nIndustrial research speed §G+10%§!"
 
-tank_fuel_bonus_tt:0 "§YEvery Tank Type§!:\n    Fuel Usage: §G-60%§!"
+tank_fuel_bonus_tt:0 "§YEvery Tank Type§!:\n    Fuel Usage: §G-50%§!"
 JAP_research_speed_boost:0 "Electronics research speed §G+20%§!\nIndustrial research speed §G+20%§!"
 JAP_con_good_fac_tt1:0 "Consumer Goods: §Y2.0%§!"
 JAP_base_tt1:0 "Production Efficiency Base: §G+5.00%§!"
@@ -3274,7 +3208,6 @@ JAP_prod_speed_civ_tt1:0 "§YCivilian Factory§! construction speed: §R-10.00%�
 JAP_rivalry_category_tt:0 "Unlocks £decision_icon_small! the Decision Category: §YLiaison Conferences§!.\n"
 JAP_marco_polo_tt:0 "Unlocks £decision_icon_small! the Decision Category: §YMarco Polo Bridge Incident§!.\n"
 JAP_pacific_war_explanation_category_tt:0 "Unlocks £decision_icon_small! the Decision Category: §YNanshin-ron§!.\n"
-JAP_is_losing_pacific_tt:0 "§YThe Pacific War§! national spirit is at §RLosing§! or §RLost§!"
 JAP_cost:0 "Land Doctrine Cost: §G-10.00%§! \nRecruitable Population: §Y2.00%§!"
 JAP_stab_down_tt1:0 "Stability: §R-15%§!"
 JAP_prod_max_eff_tt1:0 "Production Efficiency Cap: §G+4%§!"
@@ -3302,16 +3235,6 @@ the_sun_has_risen_over_asia:0 "With the fall of the last of Western colonial hol
 extra_super:0 "Unlocks §YImproved Aluminium Alloys§! for §YMitsubishi Aircraft§!"
 lake_khasan:0 "Battle of Lake Khasan Concluded"
 man_resource_gain:0 "Resource Gain Efficiency: §G+10.00%§!"
-
-# Commonwealth joint focus tooltips
-COMMON_asw_task_force_spawn_tt:0 "Spawns in an anti-submarine task force consisting of 18 destroyers and 2 carriers"
-COMMON_commonwealth_industrial_coordination_tt:0 "If §YUK§! has completed the §RAppeasement§! Focus, this will give each Commonwealth nation §Y1§! civilian factory.\nIf §YUK§! has completed §RContainment§!, this will give each Commonwealth nation §Y1§! military factory and §Y15§! Army XP."
-COMMON_emergency_draft_tt:0 "Spawns 15 light infantry divisions."
-COMMON_emergency_draft_casualties_tt:0 "Has taken more than §Y1,000,000§! casualties"
-COMMON_continue_the_fight_divisions_tt:0 "Spawns §Y5 War Hero Heavy Infantry§! divisions in §YLondon§! if the United Kingdom still controls it; otherwise in the §YMaldives§!."
-COMMON_form_tiger_force_tt:0 "Adds §Y150§! of your §Ylatest researched tactical bomber§! equipment to the stockpile."
-COMMON_allow_volunteers_to_china_tt:0 "Allows you to send volunteers to China"
-AXIS_authorize_volunteers_to_japan_tt:0 "Allows you to send volunteers to §YJapan§!."
 
    #saf stuff rework
    SAF_modify_g_d_tt:0 "Modify §YThe Remnants of the Great Depression§! by:"

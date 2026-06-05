@@ -19,8 +19,8 @@ state = {
 			favorable_approach = 12815
 		}
 		buildings = {
-			
-			infrastructure = 1
+			arms_factory = 1
+			infrastructure = 3
 			industrial_complex = 1
 			air_base = 10
 
