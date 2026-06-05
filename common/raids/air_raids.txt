@@ -2457,7 +2457,7 @@ types = {
 							}
 							damage_building = {
 								tags = assembly
-								damage = 2 # levels of damage
+								damage = 0 # levels of damage
 								province = var:ROOT.target_province
 								repair_speed_modifier = -0.5
 							}
@@ -2484,19 +2484,19 @@ types = {
 					var:target_state = {
 							damage_building = {
 								tags = civilian_factories
-								damage = 6 # levels of damage
+								damage = 3 # levels of damage
 								province = var:ROOT.target_province
 								repair_speed_modifier = -0.1
 							}
 							damage_building = {
 								tags = military_factories
-								damage = 8 # levels of damage
+								damage = 4 # levels of damage
 								province = var:ROOT.target_province
 								repair_speed_modifier = -0.1
 							}
 							damage_building = {
 								tags = assembly
-								damage = 3 # levels of damage
+								damage = 0 # levels of damage
 								province = var:ROOT.target_province
 								repair_speed_modifier = -0.5
 							}
@@ -2523,26 +2523,26 @@ types = {
 					var:target_state = {
 						damage_building = {
 							tags = civilian_factories
-							damage = 12 # levels of damage
+							damage = 5 # levels of damage
 							province = var:ROOT.target_province
 							repair_speed_modifier = -0.1
 						}
 						damage_building = {
 							tags = military_factories
-							damage = 18 # levels of damage
+							damage = 8 # levels of damage
 							province = var:ROOT.target_province
 							repair_speed_modifier = -0.1
 						}
 						damage_building = {
 							tags = assembly
-							damage = 4 # levels of damage
+							damage = 1 # levels of damage
 							province = var:ROOT.target_province
 							repair_speed_modifier = -0.5
 						}
 					}
 			    }
 				actor_effects = {
-						raid_damage_units = {
+					raid_damage_units = {
 						plane_loss = 10
 						ratio = no
 					}
