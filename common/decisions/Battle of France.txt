@@ -43,21 +43,21 @@ operations = {
 				}
 			}
 		}
-		timeout_effect = {
-			539 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					instant_build = yes
-					level = 2
-				}
-				add_building_construction = {
-					type = industrial_complex
-					instant_build = yes
-					level = 2
-				}
-			}	
-		}
+		#timeout_effect = {
+			#539 = {
+				#add_extra_state_shared_building_slots = 4
+				#add_building_construction = {
+					#type = arms_factory
+					#instant_build = yes
+					#level = 2
+				#}
+				#add_building_construction = {
+					#type = industrial_complex
+					#instant_build = yes
+					#level = 2
+				#}
+			#}	
+		#}
 
 		ai_will_do = {
 			factor = 1
@@ -150,21 +150,21 @@ operations = {
 				}
 			}
 		}
-		timeout_effect = {
-			539 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					instant_build = yes
-					level = 2
-				}
-				add_building_construction = {
-					type = industrial_complex
-					instant_build = yes
-					level = 2
-				}
-			}
-		}
+		#timeout_effect = {
+			#539 = {
+				#add_extra_state_shared_building_slots = 4
+				#add_building_construction = {
+					#type = arms_factory
+					#instant_build = yes
+					#level = 2
+				#}
+				#add_building_construction = {
+					#type = industrial_complex
+					#instant_build = yes
+					#level = 2
+				#}
+			#}	
+		#}
 
 		ai_will_do = {
 			factor = 1
@@ -256,21 +256,21 @@ operations = {
 				}
 			}
 		}
-		timeout_effect = {
-			539 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					instant_build = yes
-					level = 2
-				}
-				add_building_construction = {
-					type = industrial_complex
-					instant_build = yes
-					level = 2
-				}
-			}
-		}
+		#timeout_effect = {
+			#539 = {
+				#add_extra_state_shared_building_slots = 4
+				#add_building_construction = {
+					#type = arms_factory
+					#instant_build = yes
+					#level = 2
+				#}
+				#add_building_construction = {
+					#type = industrial_complex
+					#instant_build = yes
+					#level = 2
+				#}
+			#}	
+		#}
 
 		ai_will_do = {
 			factor = 1
@@ -359,21 +359,21 @@ operations = {
 			}
 		}
 
-		timeout_effect = {
-			539 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					instant_build = yes
-					level = 2
-				}
-				add_building_construction = {
-					type = industrial_complex
-					instant_build = yes
-					level = 2
-				}
-			}
-		}
+		#timeout_effect = {
+			#539 = {
+				#add_extra_state_shared_building_slots = 4
+				#add_building_construction = {
+					#type = arms_factory
+					#instant_build = yes
+					#level = 2
+				#}
+				#add_building_construction = {
+					#type = industrial_complex
+					#instant_build = yes
+					#level = 2
+				#}
+			#}	
+		#}
 
 		ai_will_do = {
 			factor = 1
@@ -462,21 +462,21 @@ operations = {
 				}
 			}
 		}
-		timeout_effect = {
-			539 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					instant_build = yes
-					level = 2
-				}
-				add_building_construction = {
-					type = industrial_complex
-					instant_build = yes
-					level = 2
-				}
-			}
-		}
+		#timeout_effect = {
+			#539 = {
+				#add_extra_state_shared_building_slots = 4
+				#add_building_construction = {
+					#type = arms_factory
+					#instant_build = yes
+					#level = 2
+				#}
+				#add_building_construction = {
+					#type = industrial_complex
+					#instant_build = yes
+					#level = 2
+				#}
+			#}	
+		#}
 
 		ai_will_do = {
 			factor = 1
