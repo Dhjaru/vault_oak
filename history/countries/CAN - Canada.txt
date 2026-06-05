@@ -339,7 +339,6 @@ if = {
 		basic_medium_battery = 1 
 		basic_heavy_battery = 1
 		basic_dp_light_battery = 1 
-		basic_cruiser_armor_scheme = 1
 		improved_sonar = 1 
 		improved_depth_charges = 1
 	}
@@ -358,7 +357,6 @@ if = {
 
 
 add_ideas = {
-	CAN_volunteers3
 	disarmed_nation
 	GER_aatlantic_wall_4
 	CAN_reciprocal_trade_1
@@ -381,7 +379,7 @@ set_popularities = {
 }
 
 
-set_convoys = 200
+set_convoys = 150
 set_stability = 0.5
 set_war_support = 0.10
 

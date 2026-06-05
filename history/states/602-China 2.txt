@@ -15,9 +15,9 @@ state = {
 		add_core_of = CHI
 		add_dynamic_modifier = { modifier = CHI_tougher_resistance2 }
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 3
 			air_base = 4
 
 		}
@@ -33,17 +33,14 @@ state = {
 
 		}
 		victory_points = {
-			7097 10 
+			7097 6
 		
 		}
 		victory_points = {
-			12350 1
+			12350 6
 		
 		}
-		victory_points = {
-			1628 1
 		
-		}
 
 	}
 
