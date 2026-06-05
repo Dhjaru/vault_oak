@@ -342,7 +342,7 @@ ITA_iri_projects = {
 		remove_effect = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -493,7 +493,7 @@ ITA_iri_projects = {
 		remove_effect = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -1642,11 +1642,11 @@ ITA_balance_of_power_category = {
 			custom_effect_tooltip = "Clickable every 180 days"
 			ITA_bop_medium_decrease_effect = yes
 			custom_effect_tooltip = ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
-			#add_to_variable = {
-				#var = ITA_political_power_gain_modifier
-				#value = -0.1
-				#tooltip = political_power_gain_daily_tooltip
-			#}
+			add_to_variable = {
+				var = ITA_political_power_gain_modifier
+				value = -0.1
+				tooltip = political_power_gain_daily_tooltip
+			}
 			add_to_variable = {
 				var = ITA_iri_production_speed_industrial_complex_factor
 				value = -0.1
@@ -2276,6 +2276,9 @@ ITA_prepare_to_invade_the_cairo = {
 				transfer_state = 665
 			}
 			hidden_effect = { 
+				ITA = {
+					set_country_flag = ITA_took_over_tunisia
+				}
 				458 = {	
 					set_demilitarized_zone = no
 				}
@@ -2337,8 +2340,8 @@ ITA_prepare_to_invade_the_cairo = {
 									logistics_company = { x = 1 y = 0 }
 									anti_air_company = { x = 1 y = 1 }
 									field_gun_support = { x = 1 y = 2 }
-									field_hospital = { x = 1 y = 3 }
-									military_police = { x = 1 y = 4 }
+									military_police = { x = 1 y = 3 }
+								
 								}
 							}
 							division_template = {
@@ -2374,8 +2377,8 @@ ITA_prepare_to_invade_the_cairo = {
 									logistics_company = { x = 1 y = 0 }
 									anti_air_company = { x = 1 y = 1 }
 									field_gun_support = { x = 1 y = 2 }
-									field_hospital = { x = 1 y = 3 }
-									military_police = { x = 1 y = 4 }
+									military_police = { x = 1 y = 3 }
+								
 								}
 							}
 						}
@@ -2419,8 +2422,8 @@ ITA_prepare_to_invade_the_cairo = {
 									logistics_company = { x = 1 y = 0 }
 									anti_air_company = { x = 1 y = 1 }
 									field_gun_support = { x = 1 y = 2 }
-									field_hospital = { x = 1 y = 3 }
-									military_police = { x = 1 y = 4 }
+									military_police = { x = 1 y = 3 }
+							
 								}
 							}
 							division_template = {
@@ -2461,8 +2464,8 @@ ITA_prepare_to_invade_the_cairo = {
 									logistics_company = { x = 1 y = 0 }
 									anti_air_company = { x = 1 y = 1 }
 									field_gun_support = { x = 1 y = 2 }
-									field_hospital = { x = 1 y = 3 }
-									military_police = { x = 1 y = 4 }
+									military_police = { x = 1 y = 3 }
+								
 								}
 							}
 						}

@@ -111,11 +111,7 @@ ideas = {
 				attack_bonus_against = 0.3
 				defense_bonus_against = 0.1
 			}		
-			targeted_modifier = {
-				tag = CZE
-				attack_bonus_against = 0.3
-				defense_bonus_against = 0.1
-			}
+			
 			targeted_modifier = {
 				tag = SPR
 				attack_bonus_against = 0.3
@@ -970,11 +966,11 @@ ideas = {
 				experience_gain_factor = -0.2
 				
 				
-				
+				land_mastery_gain_factor = -0.4
 				mobilization_laws_cost_factor = -0.5
 				mobilization_speed = 0.2	
 				experience_gain_army_factor = -0.5
-				land_mastery_gain_factor = -0.5
+			
 				 
 
 				custom_modifier_tooltip = SOV_stavka_tt
@@ -998,12 +994,12 @@ ideas = {
 				army_morale_factor = 0.025
 				minimum_training_level = -0.05
 				
-				
+				land_mastery_gain_factor = -0.4
 				
 				mobilization_laws_cost_factor = -0.5
 				mobilization_speed = 0.2		
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+				
 				 
 
 				custom_modifier_tooltip = SOV_stavka_tt
@@ -1032,7 +1028,7 @@ ideas = {
 #				mobilization_laws_cost_factor = -0.5
 #				mobilization_speed = 0.2	
 #				experience_gain_army_factor = -0.38
-				#land_mastery_gain_factor = -0.38
+			
 #				 
 #
 #				custom_modifier_tooltip = SOV_stavka_tt
@@ -1062,13 +1058,13 @@ ideas = {
 				minimum_training_level = 0.1
 				
 				
-				
+				land_mastery_gain_factor = -0.4
 				mobilization_laws_cost_factor = -0.5
 				mobilization_speed = 0.2			
 				command_power_gain_mult = 0.3
 				max_command_power = 100	
 				experience_gain_army_factor = -0.4
-				land_mastery_gain_factor = -0.4
+			
 				 
 
 				custom_modifier_tooltip = SOV_stavka_tt
@@ -1105,7 +1101,7 @@ ideas = {
 #				command_power_gain_mult = 0.3
 #				max_command_power = 100			
 #				experience_gain_army_factor = -0.33
-				#land_mastery_gain_factor = -0.33
+			
 #				 
 #
 #				custom_modifier_tooltip = SOV_stavka_tt
@@ -1136,11 +1132,11 @@ ideas = {
 				minimum_training_level = -0.2
 				
 				
-				
+				land_mastery_gain_factor = -0.4
 				mobilization_laws_cost_factor = -0.5
 				mobilization_speed = 0.2		
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+			
 				
 
 				custom_modifier_tooltip = SOV_stavka_tt
@@ -1201,13 +1197,13 @@ ideas = {
 				minimum_training_level = -0.2
 				
 				army_strength_factor = 0.1
-				
+				land_mastery_gain_factor = -0.4
 				mobilization_laws_cost_factor = -0.5
 				mobilization_speed = 0.2	
 				command_power_gain_mult = 0.3
 				max_command_power = 100		
 				experience_gain_army_factor = -0.4
-				land_mastery_gain_factor = -0.4
+		
 				 
 
 				custom_modifier_tooltip = SOV_stavka_tt
@@ -1782,9 +1778,8 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
-				production_factory_max_efficiency_factor = 0.04
-				production_factory_start_efficiency_factor = -0.02
-				line_change_production_efficiency_factor = -0.02
+				production_factory_max_efficiency_factor = 0.035
+				line_change_production_efficiency_factor = -0.03
 				license_production_speed = 0.05
 				production_cost_tank_assembly_factor = -0.25
 				production_cost_air_assembly_factor = -0.25
@@ -1857,9 +1852,9 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
-				production_factory_max_efficiency_factor = 0.08
-				production_factory_start_efficiency_factor = -0.04
-				line_change_production_efficiency_factor = -0.04
+				production_factory_max_efficiency_factor = 0.07
+	
+				line_change_production_efficiency_factor = -0.06
 				license_production_speed = 0.1 
 				production_cost_tank_assembly_factor = -0.25
 				production_cost_air_assembly_factor = -0.25
@@ -1932,9 +1927,8 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
-				production_factory_max_efficiency_factor = 0.12
-				production_factory_start_efficiency_factor = -0.06
-				line_change_production_efficiency_factor = -0.06
+				production_factory_max_efficiency_factor = 0.105
+				line_change_production_efficiency_factor = -0.1
 				license_production_speed = 0.15
 				production_cost_tank_assembly_factor = -0.25
 				production_cost_air_assembly_factor = -0.25
@@ -2006,9 +2000,8 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
-				production_factory_max_efficiency_factor = 0.16
-				production_factory_start_efficiency_factor = -0.08
-				line_change_production_efficiency_factor = -0.08
+				production_factory_max_efficiency_factor = 0.14
+				line_change_production_efficiency_factor = -0.13
 				license_production_speed = 0.2
 				production_cost_tank_assembly_factor = -0.25
 				production_cost_air_assembly_factor = -0.25
@@ -2852,12 +2845,12 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.025
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				
 				min_export = -0.05
 				army_core_attack_factor = -0.15
 				army_core_defence_factor = -0.15
 				weekly_convoys_war_support = 0.004
+				weekly_bombing_war_support = 0.006
 				custom_modifier_tooltip = SOV_no_naval_invasions_tt
 			}
 
@@ -2884,15 +2877,15 @@ ideas = {
 				#experience_gain_army = -0.1
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.025
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+
 				min_export = -0.05
 				experience_gain_army_factor = -0.25
-				land_mastery_gain_factor = -0.25
+			
 				fuel_gain_factor = 0.3
 				army_core_attack_factor = -0.15
 				army_core_defence_factor = -0.15
 				weekly_convoys_war_support = 0.004
+				weekly_bombing_war_support = 0.006
 				}
 
 			rule = {
@@ -2941,6 +2934,8 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_synthetic_refinery_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 				production_speed_bunker_factor = -0.25
 			}
 		}
@@ -2964,6 +2959,8 @@ ideas = {
 				production_speed_arms_factory_factor = 0.10
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_synthetic_refinery_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 				production_speed_bunker_factor = -0.5
 				conversion_cost_civ_to_mil_factor = 0.1
 
@@ -4577,9 +4574,7 @@ ideas = {
 			cost = 250
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05	
+				consumer_goods_expected_value = -0.02
 				training_time_army_factor = -0.1
 				global_building_slots_factor = 0.1
 				war_support_weekly = 0.004
@@ -4611,8 +4606,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = -0.05	
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05	
 				production_factory_max_efficiency_factor = 0.04
 				training_time_army_factor = -0.1
 				global_building_slots_factor = 0.1

@@ -38,15 +38,3 @@ ideas = {
 		}
 	}
 }
-ideas = {
-    country = {
-        attach_to_china = {
-            picture = generic_army
-
-            modifier = {
-            	war_support_factor = 0.05
-                experience_gain_army = 0.03
-            }
-        }
-    }
-}

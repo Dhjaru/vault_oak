@@ -70,7 +70,7 @@ BUL_henschel = {
 		}
 
 	equipment_type = { armor }
-	research_categories = { mio_cat_eq_all_heavy_tank }
+	research_categories = { mio_cat_eq_all_heavy_tank tank_upgrade }
 
 	initial_trait = {
 		name = heavy_tank_designer
@@ -357,7 +357,6 @@ BUL_Krupp = {
 	
 	allowed = {	
 		OR = {
-			original_tag = HUN
 			original_tag = SPR
 			original_tag = BUL
 			original_tag = EFR
@@ -378,7 +377,6 @@ BUL_ger_MAN = {
 	
 	allowed = {	
 		OR = {
-			original_tag = HUN
 			original_tag = SPR
 			original_tag = BUL
 			original_tag = EFR

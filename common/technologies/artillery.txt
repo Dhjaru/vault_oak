@@ -56,11 +56,17 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = POR
+				factor = 1000
+			}
 			
 		}
 						
 		categories = {
 			artillery
+			inf_artillery
+
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -90,10 +96,15 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = POR
+				factor = 1000
+			}
 		}
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	}							
 
@@ -128,10 +139,15 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = POR
+				factor = 1000
+			}
 		}
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -162,10 +178,15 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = POR
+				factor = 1000
+			}
 		}
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -199,6 +220,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -232,6 +254,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		
@@ -286,6 +309,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	}
 
@@ -305,6 +329,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		
@@ -339,6 +364,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		
@@ -384,6 +410,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}	
 		
 		ai_will_do = {
@@ -426,6 +453,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	
 		ai_will_do = {
@@ -458,6 +486,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	
 		ai_will_do = {
@@ -495,6 +524,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -525,6 +555,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	
 		ai_will_do = {
@@ -555,6 +586,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	
 		ai_will_do = {
@@ -590,6 +622,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -628,6 +661,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	}
 
@@ -666,6 +700,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	
 		ai_will_do = {
@@ -713,6 +748,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	
 		ai_will_do = {
@@ -746,6 +782,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -784,6 +821,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		
@@ -824,6 +862,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		
@@ -859,6 +898,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -915,6 +955,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		
@@ -990,6 +1031,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		
@@ -1030,6 +1072,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		ai_will_do = {
 			factor = 20
@@ -1070,6 +1113,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		
@@ -1112,6 +1156,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1136,6 +1181,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1168,6 +1214,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1212,6 +1259,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1272,6 +1320,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 	   
@@ -1365,6 +1414,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 	   
@@ -1406,6 +1456,7 @@ technologies = {
 
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1487,6 +1538,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1538,6 +1590,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1575,6 +1628,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1616,6 +1670,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1664,6 +1719,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1706,6 +1762,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1766,6 +1823,7 @@ technologies = {
 		}		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 				
@@ -1815,6 +1873,7 @@ technologies = {
 			
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -1852,6 +1911,7 @@ technologies = {
 		}			
 		categories = {
 			artillery
+			inf_artillery
 		}
 		artillery_siege_support = {	
 			jungle = {
@@ -1906,6 +1966,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		artillery_siege_support = {	
 			urban = {
@@ -1953,6 +2014,7 @@ technologies = {
 				
 		categories = {
 			artillery
+			inf_artillery
 		}
 		
 		ai_will_do = {
@@ -2010,6 +2072,7 @@ technologies = {
 		
 		categories = {
 			rocketry
+			
 		}
 	}
 
@@ -2047,6 +2110,7 @@ technologies = {
 		
 		categories = {
 			rocketry
+			
 		}
 	}
 	
@@ -2085,6 +2149,7 @@ technologies = {
 		categories = {
 			rocketry
 			artillery
+			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -2113,6 +2178,7 @@ technologies = {
 			rocketry
 			artillery
 			mot_rockets
+			inf_artillery
 		}
 	}
 
@@ -2179,6 +2245,7 @@ technologies = {
 		categories = {
 			rocketry
 			artillery
+			inf_artillery
 		}
 	}
 
@@ -2205,6 +2272,7 @@ technologies = {
 		categories = {
 			rocketry
 			artillery
+			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -2239,6 +2307,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 			cat_anti_tank
 		}
 		special_project_specialization = { specialization_land }
@@ -2275,6 +2344,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 			cat_anti_tank
 		}
 		
@@ -2325,6 +2395,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 			cat_anti_tank
 		}
 	}
@@ -2358,6 +2429,7 @@ technologies = {
 		}
 		categories = {
 			artillery
+			inf_artillery
 			cat_anti_tank
 		}
 		special_project_specialization = { specialization_land }
@@ -2438,6 +2510,7 @@ technologies = {
 		}
 		categories = {
 			artillery
+			inf_artillery
 			cat_anti_tank
 		}
 		special_project_specialization = { specialization_land }
@@ -2486,6 +2559,7 @@ technologies = {
 		}
 		categories = {
 			artillery
+			inf_artillery
 			cat_anti_tank
 		}
 		special_project_specialization = { specialization_land }
@@ -2512,6 +2586,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 			cat_anti_tank
 		}
 		special_project_specialization = { specialization_land }
@@ -2557,6 +2632,7 @@ technologies = {
 						
 		categories = {
 			artillery
+			inf_artillery
 		}	
 		special_project_specialization = { specialization_land }
 	}
@@ -2590,6 +2666,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	}
 
@@ -2628,6 +2705,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -2664,6 +2742,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -2700,6 +2779,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			inf_artillery
 		}
 	}
 ###firecontrol
@@ -2731,6 +2811,7 @@ technologies = {
 						
 		categories = {
 			artillery
+			inf_artillery
 		}
 	}
 

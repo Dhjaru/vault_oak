@@ -426,6 +426,54 @@ ideas = {
 				
 				}
 			}
+			ENG_africa_mastery_gain_bonus_spirit = {
+
+				name = "Operation Compass"
+				
+				picture = GFX_idea_GER_afrika_campaign
+			
+				allowed = {
+					always = no # Triggered via event
+				}
+
+				cancel = {
+					
+				}
+
+				targeted_modifier = {
+				}
+				modifier = {
+					land_mastery_gain_factor = 0.5
+					
+				}
+				
+				
+				removal_cost = -1
+			}
+			ENG_africa_mastery_gain_bonus_spirit2 = {
+
+				name = "Operation Compass"
+				
+				picture = GFX_idea_GER_afrika_campaign
+			
+				allowed = {
+					always = no # Triggered via event
+				}
+
+				cancel = {
+					
+				}
+
+				targeted_modifier = {
+				}
+				modifier = {
+					land_mastery_gain_factor = 0.25
+					
+				}
+				
+				
+				removal_cost = -1
+			}
 			ENG_afrika_campaign = {
 
 				name = "Operation Compass"
@@ -1240,8 +1288,10 @@ ideas = {
 			picture = ENG_africa_hopping0
 			removal_cost = -1
 			modifier = {
+			
 				custom_modifier_tooltip = GER_aatlantic_wall_0_tt
 				custom_modifier_tooltip = ENG_operation_compass_tt
+				custom_modifier_tooltip = ENG_africa_mastery_gain_bonus_tt
 			}
 		}
 		GER_aatlantic_wall_1 = {
@@ -1254,6 +1304,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = GER_aatlantic_wall_1_tt
 				custom_modifier_tooltip = ENG_operation_compass_tt
+				custom_modifier_tooltip = ENG_africa_mastery_gain_bonus_tt
 			}
 		}
 		GER_aatlantic_wall_2 = {
@@ -1266,6 +1317,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = GER_aatlantic_wall_2_tt
 				custom_modifier_tooltip = ENG_operation_compass_tt
+				custom_modifier_tooltip = ENG_africa_mastery_gain_bonus_tt
 			}
 		}
 		GER_aatlantic_wall_3 = {
@@ -1278,6 +1330,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = GER_aatlantic_wall_3_tt
 				custom_modifier_tooltip = ENG_operation_compass_tt
+				custom_modifier_tooltip = ENG_africa_mastery_gain_bonus_tt
 			}
 		}
 		GER_aatlantic_wall_4 = {
@@ -1290,6 +1343,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = GER_aatlantic_wall_4_tt
 				custom_modifier_tooltip = ENG_operation_compass_tt
+				custom_modifier_tooltip = ENG_africa_mastery_gain_bonus_tt
 
 			}
 		}
@@ -1303,6 +1357,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = GER_aatlantic_wall_5_tt
 				custom_modifier_tooltip = ENG_operation_compass_tt
+				custom_modifier_tooltip = ENG_africa_mastery_gain_bonus_tt
 
 			}
 			
@@ -1318,6 +1373,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = GER_aatlantic_wall_6_tt
 				custom_modifier_tooltip = ENG_operation_compass_tt
+				custom_modifier_tooltip = ENG_africa_mastery_gain_bonus_tt
 
 			}
 			
@@ -1332,6 +1388,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = GER_aatlantic_wall_7_tt
 				custom_modifier_tooltip = ENG_operation_compass_tt
+				custom_modifier_tooltip = ENG_africa_mastery_gain_bonus_tt
 
 			}
 			
@@ -1346,6 +1403,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = GER_aatlantic_wall_8_tt
 				custom_modifier_tooltip = ENG_operation_compass_tt
+				custom_modifier_tooltip = ENG_africa_mastery_gain_bonus_tt
 
 			}
 			
@@ -2348,6 +2406,88 @@ ideas = {
 			}
 		}
 
+		ENG_raj_is_ai = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		ENG_can_is_ai = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+				industrial_capacity_factory = 0.075
+			}
+			equipment_bonus = {			
+				medium_tank_chassis = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				
+			}	
+		}
+		ENG_saf_is_ai = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+			production_speed_industrial_complex_factor = 0.1
+					
+			}
+			equipment_bonus = {
+				heavy_tank_chassis = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				
+			}	
+		}
+		ENG_ast_is_ai = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+			industrial_capacity_factory = 0.05
+					
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				destroyer = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				light_cruiser = {
+					build_cost_ic = -0.04 instant = yes
+				}
+			}	
+		}
 		ENG_controls_malta = {
 			
 			allowed = {
@@ -4204,8 +4344,8 @@ ideas = {
 			traits = { nuclear_scientist }
 		}
 		
-		frank_whittle = {
-			
+		ENG_frank_whittle = {
+			name = "Frank Whittle"
 			allowed = {
 				original_tag = ENG
 			}

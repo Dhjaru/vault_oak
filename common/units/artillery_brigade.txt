@@ -31,7 +31,7 @@ sub_units = {
 		manpower = 500
 		max_strength = 5
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		training_time = 80
 		weight = 0.5
 		initiative = 0.01
@@ -96,6 +96,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_light_artillery		
+			category_mot_arty
 		}
 
 		combat_width = 2
@@ -107,7 +108,7 @@ sub_units = {
 		}
 		max_strength = 5
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		training_time = 80
 		weight = 0.6
 		initiative = 0.01
@@ -187,7 +188,7 @@ sub_units = {
 		manpower = 500
 		max_strength = 5
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		training_time = 80
 		weight = 0.5
 		initiative = 0.01
@@ -251,6 +252,7 @@ sub_units = {
 			category_front_line
 			category_army
 			category_line_artillery
+			category_mot_arty
 			category_field_gun		
 		}
 
@@ -264,7 +266,7 @@ sub_units = {
 			
 		max_strength = 5
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		training_time = 80
 		weight = 0.6
 		initiative = 0.01
@@ -347,7 +349,7 @@ sub_units = {
 		manpower = 400
 		max_strength = 5
 		max_organisation = 3
-		default_morale = 0.15
+		default_morale = 0.13
 		training_time = 70
 		weight = 0.4
 		initiative = 0.01
@@ -407,6 +409,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_pack_artillery
+			category_mot_arty
 		}
 
 		combat_width = 2
@@ -419,7 +422,7 @@ sub_units = {
 		manpower = 400
 		max_strength = 5
 		max_organisation = 3
-		default_morale = 0.15
+		default_morale = 0.13
 		training_time = 70
 		weight = 0.4
 		initiative = 0.01
@@ -494,7 +497,7 @@ sub_units = {
 		manpower = 550
 		training_time = 85
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		max_strength = 5
 		maximum_speed = -0.23	
 		weight = 0.6
@@ -574,6 +577,7 @@ sub_units = {
 			category_army
 			category_heavy_artillery
 			category_line_artillery
+			category_mot_arty
 		}
 
 		combat_width = 2
@@ -586,7 +590,7 @@ sub_units = {
 		manpower = 550
 		training_time = 85
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		max_strength = 5
 		weight = 0.7
 		initiative = 0.01
@@ -686,7 +690,7 @@ sub_units = {
 		manpower = 500
 		experience_loss_factor = -0.01
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		max_strength = 5
 		training_time = 80
 		weight = 0.5
@@ -751,6 +755,7 @@ sub_units = {
 			category_army
 			category_line_artillery	
 			category_rocket_artillery
+			category_mot_arty
 		}		
 
 		combat_width = 2
@@ -762,7 +767,7 @@ sub_units = {
 		
 		manpower = 500
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		max_strength = 5
 		training_time = 80
 		weight = 0.6
@@ -842,7 +847,7 @@ sub_units = {
 		manpower = 500
 		max_strength = 2
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		training_time = 80
 		weight = 0.5
 		initiative = 0.01

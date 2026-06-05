@@ -2172,10 +2172,6 @@ spriteTypes = {
 		name = "GFX_idea_SLO_durcanskys_ideas"
 		texturefile = "gfx/interface/ideas/slovakia/SLO_slovak_flag.dds"
 	}	
-	spriteType = {
-		name = "GFX_idea_SLO_hlinka_collaborators"
-		texturefile = "gfx/interface/ideas/slovakia/SLO_hlinka_collaborators.dds"
-	}	
 	
 	spriteType = {
 		name = "GFX_idea_SLO_life_in_new_slovakia"

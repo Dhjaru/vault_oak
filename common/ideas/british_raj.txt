@@ -1285,6 +1285,7 @@ ideas = {
 				conscription_factor = -0.70
 				consumer_goods_expected_value = 0.03
 				industrial_capacity_factory = -0.05
+				production_speed_dockyard_factor = -0.8
 				min_export = 0.1
 			}
 		}
@@ -1311,6 +1312,7 @@ ideas = {
 				conscription_factor = -0.65
 				consumer_goods_expected_value = 0.02
 				industrial_capacity_factory = -0.025
+				production_speed_dockyard_factor = -0.8
 				min_export = 0.1
 			}
 		}
@@ -1564,25 +1566,6 @@ ideas = {
 			name = RAJ_commits_asia_idea
 			allowed = {
 				original_tag = AST
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				conscription_factor = 0.10
-				industrial_capacity_factory = 0.1
-			}
-		}
-
-		RAJ_commits_north_america_idea = {
-			picture = SPR_anarchist_public_transport
-			name = RAJ_commits_north_america_idea
-			allowed = {
-				original_tag = CAN
 			}
 
 			allowed_civil_war = {

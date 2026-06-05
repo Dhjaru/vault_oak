@@ -29,9 +29,10 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		max_strength = 10
 		training_time = 80
+		is_artillery_brigade = yes
 		weight = 0.4
 		initiative = 0.01
 		supply_consumption = 0.04
@@ -101,6 +102,7 @@ sub_units = {
 			category_front_line
 			category_army
 			category_line_artillery
+			category_mot_arty
 			category_anti_tank
 		}		
 		
@@ -113,7 +115,7 @@ sub_units = {
 		manpower = 500
 		fuel_capacity = 50
 		max_organisation = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		max_strength = 10
 		training_time = 80
 		weight = 0.4
