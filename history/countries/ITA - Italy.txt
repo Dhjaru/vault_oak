@@ -22,7 +22,6 @@ add_ideas = {
 	ITA_subs_1
 	ITA_bad_engine_1
 	italy_no_africa_first
-	ITA_regia_aeronautica
 }
 
 ITA_initiate_balance_of_power_effect = yes 
@@ -95,11 +94,12 @@ set_variable = { ITA_re_land_reinforce_rate = 0 }
 set_variable = { ITA_re_army_speed_factor = 0 }
 set_variable = { ITA_re_army_army_org_factor = 0 }
 set_variable = { ITA_re_org_loss_when_moving = 0 }
+set_variable = { ITA_re_conscription = 0.01}
 
 set_variable = { ITA_re_army_morale_factor = 0 }
 set_variable = { ITA_re_army_leader_cost_factor = 0 }
 set_variable = { ITA_re_experience_gain_army_factor = -0.6 }
-set_variable = { ITA_land_mastery_gain_factor = -0.3 }
+set_variable = { ITA_land_mastery_gain_factor = -0.6 }
 set_variable = { ITA_re_experience_gain_factor = 0 }
 set_variable = { ITA_re_army_core_defence_factor = 0 }
 set_variable = { ITA_re_army_core_attack_factor = 0 }
@@ -142,6 +142,7 @@ set_variable = { ITA_ra_air_range_factor = 0 }
 set_variable = { ITA_ra_air_superiority_efficiency = 0 }
 set_variable = { ITA_ra_air_intercept_efficiency = 0 }
 
+add_dynamic_modifier = { modifier = ITA_regia_aeronautica_dynamic_modifier }
 
 
 #REGIA MARINA

@@ -162,12 +162,6 @@ if = {
 		icon = "gfx/interface/technologies/land/hun/L3.tga"
 	}
 }
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		mtg_transport = 1 
-	}
-}
 set_rule = { can_send_volunteers = yes }
 add_ideas = {
 	ROM_ger_trade_treaty

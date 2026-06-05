@@ -13,24 +13,12 @@ focus_tree = {
 	default = no
 	
 	continuous_focus_position = { x = 500 y = 1500}
-
-	# Joint UK–Raj Pacific / Burma / Singapore branch (root joint id; chain defined in ENG_RAJ_burma_joint.txt)
-	shared_focus = ENG_crimson_sun
-
-	# Commonwealth joint area (definitions in commonwealth_joint.txt)
-	shared_focus = COMMON_strengthen_commonwealth_ties
-	shared_focus = COMMON_joint_commonwealth_training
-	shared_focus = COMMON_commonwealth_combined_programs
-	shared_focus = COMMON_support_china
-	shared_focus = COMMON_allow_volunteers_to_china
-	shared_focus = COMMON_invade_iraq
-
 	focus = {
 		id = ENG_shadow_over_europe
 		icon = GFX_shadow_over_europe
 		x = 25
 		y = 0
-		cost = 4.285
+		cost = 5
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -49,7 +37,7 @@ focus_tree = {
 					}
 			}
 			
-			add_political_power = 10
+			add_political_power = 50
 			add_war_support = 0.05
 			
 		}
@@ -117,9 +105,27 @@ focus_tree = {
 		}
 
 		completion_reward = {
+				navy_experience = 25
 				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes 
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
 							size > 0
@@ -1011,7 +1017,7 @@ focus_tree = {
 			custom_effect_tooltip = ENG_output_upgrade_tt
 
 			add_to_variable = {
-				ENG_industrial_capacity_factory_var = 0.05
+				ENG_industrial_capacity_factory_var = 0.10
 			}
 
 			add_political_power = 150
@@ -1260,7 +1266,7 @@ focus_tree = {
 			custom_effect_tooltip = ENG_output_upgrade_tt
 
 			add_to_variable = {
-				ENG_industrial_capacity_factory_var = 0.05
+				ENG_industrial_capacity_factory_var = 0.10
 			}
 			add_political_power = 100
 			
@@ -1342,7 +1348,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				ENG_operative_slot = 1
-				tooltip = agency_3_tt
+				tooltip = gency_3_t
 			}
 			
 			ENG = {
@@ -1405,7 +1411,7 @@ focus_tree = {
 		relative_position_id = ENG_blood_toil_tears_sweat
 		x = 1
 		y = 1
-		cost = 4
+		cost = 5
 		completion_reward = {
 			add_political_power = 200
 			#custom_effect_tooltip = ENG_churchill_ministry_tt
@@ -1468,7 +1474,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			custom_effect_tooltip = ENG_increase_colonial_expenses_tank_assembly_tt
 			#add_political_power = 100
 			#custom_effect_tooltip = available_political_advisor
 			#show_ideas_tooltip = william_ormsby_gore
@@ -1551,8 +1556,7 @@ focus_tree = {
 			unlock_decision_tooltip = ENG_dev_raj
 			unlock_decision_tooltip = ENG_dev_ast
 			unlock_decision_tooltip = ENG_dev_saf
-			unlock_decision_tooltip = ENG_dev_nzl
-
+			
 		}
 
 	}
@@ -1767,10 +1771,10 @@ focus_tree = {
 					}
 			}
 			
-			air_experience = 55
+			air_experience = 80
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.4
 				uses = 2
 				category = air_doctrine
 			}
@@ -2101,7 +2105,7 @@ focus_tree = {
 
 		    add_doctrine_cost_reduction = {
 			    name = land_doc_bonus
-		        cost_reduction = 0.5
+		        cost_reduction = 0.4
 			     uses = 3
 			     category = air_doctrine
 		    }
@@ -2193,7 +2197,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.4
 				uses = 1
 				category = air_doctrine
 			}
@@ -2440,7 +2444,7 @@ focus_tree = {
 		x = -5
 		y = 2
 
-		cost = 4
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2455,10 +2459,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 40
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.4
 				uses = 2
 				category = land_doctrine
 			}
@@ -2621,7 +2625,7 @@ focus_tree = {
 		completion_reward = {
 				add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.4
 				uses = 1
 				category = land_doctrine
 				}
@@ -2713,7 +2717,7 @@ focus_tree = {
 				load_oob = ENG_paratroopers_divs
 			}
 			add_mastery = {
-				amount = 20
+				amount = 30
 				folder = land
 			
 			}
@@ -2913,7 +2917,7 @@ focus_tree = {
 				boiling_vessel = 1
 			}
 			add_mastery = {
-				amount = 20
+				amount = 30
 				folder = land
 			
 			}
@@ -2993,6 +2997,234 @@ focus_tree = {
 			}
 			add_to_variable = {
 				ENG_crypto_strength_var = 2
+			}
+        }
+    }
+	focus = {
+        id = ENG_crimson_sun
+        icon = GFX_shadow_over_asia
+		prerequisite = { focus = ENG_churchill_war_minsistry }
+		prerequisite = {  focus = ENG_arms_purchases_in_the_us }
+		relative_position_id = ENG_blood_toil_tears_sweat
+        x = -8
+        y = 2
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+
+        completion_reward = {
+			422 = {
+				strategic_state_location = {
+					favorable_approach3 = 4219 # Province ID
+				}
+				set_building_level = {
+					type = air_base
+					level = 8
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						limit_to_coastal  = yes	
+					}
+				}
+				set_building_level = {
+					type = naval_base
+					level = 8
+					province = 10201
+				}
+				set_building_level = {
+					type = naval_supply_hub
+					level = 1
+					province = 10201
+				}
+				set_building_level = {
+					type = naval_headquarters
+					level = 1
+					province = 10201
+				}
+			}
+        }
+    }
+	focus = {
+        id = ENG_reinforce_empire
+        icon = GFX_ENG_general_rearmament
+		prerequisite = {
+			focus = ENG_crimson_sun
+		}
+		relative_position_id = ENG_crimson_sun
+        x = 0
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+
+        completion_reward = {
+			430 = {
+				strategic_state_location = {
+					favorable_approach3 = 9993 # Province ID
+				}
+				set_building_level = {
+					type = air_base
+					level = 8
+				}
+			}
+			432 = {
+				strategic_state_location = {
+					favorable_approach3 = 10090 # Province ID
+				}
+				set_building_level = {
+					type = air_base
+					level = 8
+				}
+			}
+        }
+    }
+	focus = {
+        id = ENG_secure_burma_road
+        icon = GFX_burma_road
+		prerequisite = {
+			focus = ENG_reinforce_empire
+		}
+		relative_position_id = ENG_reinforce_empire
+        x = -1
+        y = 1
+        cost = 2
+        ai_will_do = {
+            factor = 1
+        }
+
+        completion_reward = {
+			640 = {
+				set_building_level = {
+					type = air_base
+					level = 6
+				}
+			}
+			288 = {
+				set_building_level = {
+					type = air_base
+					level = 6
+				}
+			}
+			434 = {
+				set_building_level = {
+					type = air_base
+					level = 6
+				}
+			}
+			823 = {
+				set_building_level = {
+					type = air_base
+					level = 6
+				}
+			}
+        }
+    }
+	focus = {
+        id = ENG_singapore_strategy
+        icon = GFX_ENG_singapur_strategy
+		prerequisite = {
+			focus = ENG_reinforce_empire
+		}
+		relative_position_id = ENG_reinforce_empire
+        x = 1
+        y = 1
+        cost = 2
+        ai_will_do = {
+            factor = 1
+        }
+
+        completion_reward = {
+			333 = {
+				strategic_state_location = {
+					favorable_approach3 = 4219 # Province ID
+				}
+				set_building_level = {
+					type = air_base
+					level = 8
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						limit_to_naval_base  = yes	
+					}
+				}
+			}
+			672 = {
+				strategic_state_location = {
+					favorable_approach3 = 12181 # Province ID
+				}
+				set_building_level = {
+					type = air_base
+					level = 8
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						limit_to_naval_base  = yes	
+					}
+				}
+			}
+        }
+    }
+	focus = {
+        id = ENG_last_line_of_defense
+        icon = GFX_last_line
+		prerequisite = {
+			focus = ENG_singapore_strategy
+			focus = ENG_secure_burma_road
+		}
+		relative_position_id = ENG_singapore_strategy
+		available = {
+			RAJ = {
+				NOT = {
+					has_full_control_of_state = 431
+				}
+			}
+		}
+        x = -1
+        y = 1
+        cost = 2
+        ai_will_do = {
+            factor = 1
+        }
+
+        completion_reward = {
+			add_timed_idea = {
+				idea = ENG_defense_of_india
+				days = 90
+			}
+			RAJ = {
+				add_timed_idea = {
+					idea = ENG_defense_of_india
+					days = 90
+				}
+			}
+			444 = {
+				add_core_of = RAJ
+			}
+			440 = {
+				add_core_of = RAJ
+			}
+			442 = {
+				add_core_of = RAJ
+			}
+			445 = {
+				add_core_of = RAJ
+			}
+			443 = {
+				add_core_of = RAJ
+			}
+			444 = {
+				add_core_of = RAJ
 			}
         }
     }
@@ -3453,10 +3685,7 @@ focus_tree = {
         }
 
         completion_reward = {
-			
-			custom_effect_tooltip = ENG_africa_bonuses_tt
-			hidden_effect = {
-				every_country = {
+			every_country = {
 				limit = {
 					OR = {
 						is_in_faction_with = ENG
@@ -3467,23 +3696,8 @@ focus_tree = {
 					}
 				}
 				add_ideas = ENG_afrika_campaign
-
-				
 			}
-				every_country = {
-					limit = {
-						OR = {
-							is_in_faction_with = ENG
-							tag = ENG
-						}
-						NOT = {
-							tag = FRA
-						}
-					}
-	
-					add_ideas = ENG_africa_mastery_gain_bonus_spirit
-					
-				}
+			hidden_effect = {
 				every_country = {
 					limit = {
 						is_in_faction_with = ENG
@@ -3797,7 +4011,7 @@ focus_tree = {
 			custom_effect_tooltip = ENG_spawn_airfield_tt
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.4
 				uses = 3
 				category = land_doctrine
 			}
@@ -3815,7 +4029,7 @@ focus_tree = {
 				}
 				add_doctrine_cost_reduction = {
 					name = land_doc_bonus
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 2
 					category = land_doctrine
 				}

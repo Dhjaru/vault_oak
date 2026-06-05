@@ -22,6 +22,13 @@ country_event = {
 			SPN = {
 				set_cosmetic_tag = SPR_republican_spain
 			}
+			SOV = {
+				diplomatic_relation = {
+					country = SPN
+					relation = military_access
+					active = yes
+				}
+			}
 			every_country = {
 				set_variable = { var = super_event value = 5 }			
 			}
@@ -30,7 +37,7 @@ country_event = {
 			}
 	
 			set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 14 } # Make AI avoid attacking for a few days
-			add_named_threat = { threat = 7.2 name = SPR_civil_war_threat }
+			add_named_threat = { threat = 5 name = SPR_civil_war_threat }
 		}	
 		hidden_effect = {
 				SPN = {
@@ -1735,6 +1742,20 @@ country_event = {
 							owner = SPR
 							count = 1
 							allow_spawning_on_enemy_provs = yes
+							prioritize_location = 1048
+						}
+						create_unit = {
+							division = "division_template = \"Brigada de la Guardia Civil\" start_experience_factor = 0.3" 
+							owner = SPR
+							count = 1
+							allow_spawning_on_enemy_provs = yes
+							prioritize_location = 7098
+						}
+						create_unit = {
+							division = "division_template = \"Brigada de la Guardia Civil\" start_experience_factor = 0.3" 
+							owner = SPR
+							count = 1
+							allow_spawning_on_enemy_provs = yes
 							prioritize_location = 7098
 						}
 						create_unit = {
@@ -1811,54 +1832,6 @@ country_event = {
 				}
 				add_ideas = SPA_death_before_surrender
 				set_global_flag = spanish_civil_war # Start civil war - used in many triggers
-				every_country = {
-					limit = {
-						NOT = { original_tag = SPR }
-						OR = {
-							tag = GER
-							tag = POR
-							tag = BUL
-							tag = ITA
-							tag = ROM
-							tag = CZE
-							tag = SLO
-							tag = HUN
-						}
-						NOT = { has_war_with = SPR }
-					}
-					diplomatic_relation = {
-						country = SPR
-						relation = military_access
-						active = yes
-					}
-				}
-				 
-				every_country = {
-					limit = {
-						NOT = { original_tag = SPR }
-						OR = {
-							is_in_faction_with = ENG
-							tag = FRA
-							tag = POL
-						}
-						NOT = { has_war_with = SPN }
-					}
-					diplomatic_relation = {
-						country = SPN
-						relation = military_access
-						active = yes
-					}
-				}
-				SOV = {
-					if = {
-						limit = { NOT = { has_war_with = SPN } }
-						diplomatic_relation = {
-							country = SPN
-							relation = military_access
-							active = yes
-						}
-					}
-				}
 				country_event = { id = lar_spain.6 days = 7 } # SCW notification event for the player
 			}
 		}
@@ -7566,13 +7539,13 @@ country_event = {
 				set_rule = {
 					can_access_market = yes
 				}
-				#add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = { type = industrial_complex level = 5 }
 				add_political_power = 50
 				
 			
 				add_doctrine_cost_reduction = {
 					name = scw_bonus
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 2
 					category = land_doctrine
 				}
@@ -7608,7 +7581,7 @@ country_event = {
 				}
 				add_doctrine_cost_reduction = {
 					name = scw_bonus
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 2
 					category = land_doctrine
 				}
@@ -7623,7 +7596,7 @@ country_event = {
 				}
 				add_doctrine_cost_reduction = {
 					name = scw_bonus
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 2
 					category = air_doctrine
 				}
@@ -7637,7 +7610,7 @@ country_event = {
 				}
 				add_doctrine_cost_reduction = {
 					name = scw_bonus
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 1
 					category = land_doctrine
 				}
@@ -7653,13 +7626,13 @@ country_event = {
 				}
 				add_doctrine_cost_reduction = {
 					name = scw_bonus
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 3
 					category = land_doctrine
 				}	
 				add_doctrine_cost_reduction = {
 					name = scw_bonus
-					cost_reduction = 0.5
+					cost_reduction = 0.4
 					uses = 2
 					category = air_doctrine
 				}

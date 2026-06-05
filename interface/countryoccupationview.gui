@@ -484,16 +484,17 @@ guiTypes = {
 		}
 		
 		positionType = {
+			# to align them right
 			name = "return_territory_button_pos_for_non_resistance"
-			position = { x = -10000 y = -10000 }
+			position = { x = 178 y = 82 }
 		}
 		buttonType = {
 			name = "return_territory_button"
-			position = { x = -10000 y = -10000 }
+			position = { x = -200 y = 84 }
 			quadTextureSprite = "GFX_occupation_release_button"
 	 		buttonFont = "hoi_18mbs"
 			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
+			buttonText = "RETURN_TERRITORY"
 		}
 		
 		buttonType = {

@@ -2286,7 +2286,6 @@ JAP_pacific_war_explanation_category = {
 			hidden_effect = {
 				USA = {
 					add_to_tech_sharing_group = us_research
-					remove_ideas = USA_procurement_click_tracker
 				}
 				CHI = {
 					add_to_tech_sharing_group = us_research
@@ -2336,7 +2335,34 @@ JAP_pacific_war_explanation_category = {
 							}    
 						}
 					}	
-					
+					JAP = {
+						set_variable = {
+							var = JAP_current_occupied_states_var
+							value = 0
+						}
+						set_variable = {
+							var = JAP_max_occupied_states_var
+							value = 0
+						}
+						set_variable = {
+							var = JAP_factory_output_modifier
+							value = 0.3
+						}
+						set_variable = {
+							var = JAP_dockyard_output_modifier
+							value = 0.25
+						}
+					}
+					MAN = {
+						set_variable = {
+							var = JAP_factory_output_modifier
+							value = 0.3
+						}
+						set_variable = {
+							var = JAP_dockyard_output_modifier
+							value = 0.25
+						}
+					}
 				}
 				
 				
@@ -2378,7 +2404,7 @@ JAP_pacific_war_explanation_category = {
 						}
 						add_to_variable = { 
 							var = CHI_land_mastery_gain_factor_var 
-							value = 0.4
+							value = 0.2
 							tooltip = land_mastery_tp
 						}
 						if = {
@@ -2453,48 +2479,43 @@ JAP_pacific_war_explanation_category = {
 							add_to_faction = PRC
 						}
 					}
-					if = {
+					JAP = {
+						add_timed_idea = {
+							idea = JAP_freeze_front_idea
+							days = 180
+						}
+					}
+					every_state = {
 						limit = {
-							has_global_flag = JAP_did_freeze_frontlines_flag
-						}
-						JAP = {
-							add_timed_idea = {
-								idea = JAP_freeze_front_idea
-								days = 180
+							OR = {
+								state = 671
+								is_core_of = CHI
 							}
-						}
-						every_state = {
-							limit = {
-								OR = {
-									state = 671
-									is_core_of = CHI
-								}
-								NOT = {
-									state = 745
-									state = 524
-									is_core_of = MAN
-									
-								}
+							NOT = {
+								state = 745
+								state = 524
+								is_core_of = MAN
 								
 							}
-							remove_dynamic_modifier = { modifier = JAP_freeze_front_dynamic  }
+							
 						}
-						every_state = {
-							limit = {
-								OR = {
-									state = 671
-									is_core_of = CHI
-								}
-								NOT = {
-									state = 745
-									state = 524
-									is_core_of = MAN
-									
-								}
+						remove_dynamic_modifier = { modifier = JAP_freeze_front_dynamic  }
+					}
+					every_state = {
+						limit = {
+							OR = {
+								state = 671
+								is_core_of = CHI
+							}
+							NOT = {
+								state = 745
+								state = 524
+								is_core_of = MAN
 								
 							}
-							add_dynamic_modifier = { modifier = JAP_freeze_front_dynamic days = 180 }
+							
 						}
+						add_dynamic_modifier = { modifier = JAP_freeze_front_dynamic days = 180 }
 					}
 					if = {
 						limit = {
@@ -2506,18 +2527,58 @@ JAP_pacific_war_explanation_category = {
 						}
 						every_state = {
 							limit = {
-					
-								is_core_of = CHI
-								
-								
-								NOT = {
-									state = 745
-									state = 524
-									is_core_of = MAN
-									
-								}
-								
+								OR = {
+								state = 608
+								state = 621
+								state = 746
+								state = 622
+								state = 614
+								state = 607
+								state = 608
+								state = 597
 							
+								state = 606
+								state = 613
+								state = 749
+								state = 596
+								state = 595
+								state = 593
+								state = 592
+								state = 594
+								state = 599
+								state = 325
+								state = 747
+								state = 601
+								state = 604
+								state = 750
+								state = 605
+								state = 620
+								state = 602
+								state = 751
+								state = 752
+								state = 753
+								state = 603
+								state = 600
+								state = 748
+								state = 744
+								state = 598
+								state = 822
+								state = 821
+								state = 820
+								state = 615
+								state = 591
+								state = 840
+								state = 839
+
+								state = 283
+								state = 616
+								state = 754
+								state = 604
+								state = 755
+								state = 756
+								state = 759
+
+								}
 							}
 							remove_province_modifier = {
 								static_modifiers = { china_speed }
@@ -7746,7 +7807,6 @@ JAP_evac_cat = {
 				}
 				NOT = {
 					state = 609
-					state = 839
 					is_core_of = RCC
 					is_core_of = MAN
 					has_state_flag = JAP_plunder_state_flag
@@ -8844,7 +8904,7 @@ JAP_intervene_in_china_decision = {
 		}
 		highlight_states = {
 			highlight_provinces = { 
-				13734 
+				1553 
 			
 			}
 		}
@@ -8861,7 +8921,7 @@ JAP_intervene_in_china_decision = {
 			}
 			RAJ = {
 			
-				controls_province = 13734
+				controls_province = 1553
 				
 				
 			}
@@ -10221,16 +10281,14 @@ JAP_interservice_rivalry = {
 		complete_effect = {
 			add_manpower = 50000
 			hidden_effect = {
-				
 				if = {
 					limit = {
 						has_idea = jap_kwantung_army_4
-
 					}
 					army_experience = 600
 				}
 				else = {
-					army_experience = 46
+					army_experience = 45
 				}
 			}
 			custom_effect_tooltip = JAP_get_30xp_tt

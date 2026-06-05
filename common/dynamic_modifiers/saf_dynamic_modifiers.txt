@@ -135,7 +135,6 @@ volk_afrika = {
 
     required_garrison_factor = 0.15
 	resistance_activity= 0.15
-    compliance_gain = -0.02
-    production_speed_buildings_factor = 0.1
+    compliance_gain = -0.01
 }
 

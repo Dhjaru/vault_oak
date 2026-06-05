@@ -1821,12 +1821,12 @@ ideas = {
 			picture = SPR_compania_telefonica_nacional
 
 			cost = 100
-			research_bonus = {industry = 0.10 armor = -0.15 artillery =  -0.15 } 
+			research_bonus = {industry = 0.10 armor = -0.15 }  
             traits = { industrial_research_trait }	
 
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
-				consumer_goods_factor= -0.05
+				consumer_goods_factor= -0.075
 				stability_factor = -0.05
 			}
 		}
@@ -1860,7 +1860,7 @@ ideas = {
 			
 			picture = GFX_focus_spr_hasa
 			
-			cost = 75
+			cost = 100
 			research_bonus = { air_equipment = 0.10 tactical_bomber = 0.05 } 
 			traits = { aircraft_research_trait }		
 
@@ -1873,7 +1873,7 @@ ideas = {
 					supply_consumption = 0.05
 
 				}
-				medium_plane_airframe = {
+				large_plane_airframe = {
 					build_cost_ic = -0.05
 					reliability = -0.05
 				}
@@ -1887,7 +1887,7 @@ ideas = {
 			
 			picture = GFX_idea_SPR_hispano_aviacion
 			
-			cost = 75
+			cost = 100
 			research_bonus = { air_equipment = 0.15 tactical_bomber = -0.10 } 
 			traits = { aircraft_research_trait }		
 
@@ -1899,7 +1899,7 @@ ideas = {
 					build_cost_ic = -0.025
 					
 				}
-				medium_plane_airframe = {
+				large_plane_airframe = {
 					build_cost_ic = 0.025
 				}
 			}
@@ -1923,10 +1923,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				heavy_tank_chassis = {
-					build_cost_ic = -0.05
-				}
-				medium_tank_chassis = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.03
 				}
 			}
 		}
@@ -2174,10 +2171,9 @@ ideas = {
 				or = {
 					has_completed_focus = SPA_ENCASO
 					has_completed_focus = SPA_sideline_the_reactionary
-					has_completed_focus = SPA_look_at_the_Americans
 				}
 			}
-			cost = 85
+			cost = 125
 			research_bonus = {
 				electronics = 0.20
 			}
@@ -2185,8 +2181,6 @@ ideas = {
 			traits = { refinery_concern }
 			
 			modifier = {
-				fuel_gain_factor = 0.1
-				state_resources_rubber_factor = 0.2
 			}
 		}
 
@@ -2201,15 +2195,14 @@ ideas = {
 			available = {
 				
 			}
-			cost = 85
+			cost = 125
 			research_bonus = {
-				electronics = 0.35
+				electronics = 0.25
 			}
 			
 			traits = { OAK_trait_electrical_concern }
 			
 			modifier = {
-				cic_construction_boost = 0.1
 			}
 		}
 
@@ -2225,7 +2218,6 @@ ideas = {
 				OR= {
 					has_completed_focus = SPA_ENDASCA
 					has_completed_focus = SPA_vertical_syndicates
-					has_completed_focus = SPA_squash_separatism
 				}
 			}
 
@@ -2235,8 +2227,7 @@ ideas = {
 			
 			
 			modifier = {
-				country_resource_aluminium = 300
-				political_power_factor = -0.1
+				country_resource_aluminium = 100
 			}
 		}
 
@@ -2249,13 +2240,10 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					has_idea_with_trait = aircraft_research_trait
-					has_completed_focus = SPA_national_aircarft_company
-				}
-				
+				has_idea_with_trait = aircraft_research_trait
+				has_completed_focus = SPA_national_aircarft_company
 			}
-			cost = 85
+			cost = 125
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -2264,13 +2252,13 @@ ideas = {
 			}
 			
 			modifier = {
-				military_industrial_organization_funds_gain = 0.15
+				
 			}
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.03
 				}
-				medium_plane_airframe = {
+				large_plane_airframe = {
 					build_cost_ic = -0.1
 				}
 			}
@@ -2283,7 +2271,7 @@ ideas = {
 			allowed = {
 				original_tag = SPR
 			}
-			cost = 100
+			cost = 125
 			available = {
 				has_completed_focus = SPA_CENTE
 			}
@@ -2295,10 +2283,9 @@ ideas = {
 			traits = { construction_company_spr }
 			
 			modifier = {
-				country_resource_steel = 250
-				country_resource_tungsten = 200
-				country_resource_chromium = 350
-				political_power_factor = -0.05
+				country_resource_steel = 75
+				country_resource_tungsten = 75
+				country_resource_chromium = 100
 			}
 		}
 
@@ -2309,7 +2296,7 @@ ideas = {
 			allowed = {
 				original_tag = SPR
 			}
-			cost = 85
+			cost = 125
 			available = {
 				has_completed_focus = SPA_national_company_of_tourism
 			}
@@ -2319,8 +2306,7 @@ ideas = {
 			
 			modifier = {
 				recruitable_population_factor = 0.01
-				political_power_factor = 0.05
-				stability_factor = 0.05
+				political_power_factor = 0.03
 			}
 		}
 		SPR_industria_de_guerra_de_cataluna = {
@@ -2343,11 +2329,9 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.15
-				disp_industry = 0.05
-				conc_industry = -0.2
+				industry = -0.15
 			}
-			cost = 85
+			cost = 125
 			traits = { construction_company }
 			
 			modifier = {
@@ -2374,7 +2358,7 @@ ideas = {
 			traits = { industrial_concern }
 			
 			modifier = {
-				political_power_factor = 0.03
+				political_power_factor = -0.03
 			}
 
 			ai_will_do = {

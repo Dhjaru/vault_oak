@@ -1138,8 +1138,8 @@ NMilitary = {
 	LAND_AIR_COMBAT_ORG_DICE_SIZE = 5,                 -- nr of damage dice (used by air to ground)
 	LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.052,        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 	LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.045,        -- global damage modifier
-	LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.026,    -- air global damage modifier
-	LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.016,    -- global damage modifier
+	LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.024,    -- air global damage modifier
+	LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.02,    -- global damage modifier
 	LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2, -- how many CAS/TAC can enter a combat depending on enemy width there
 	LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2,   -- extra damage dice if our armor outclasses enemy
 	LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 4,   -- extra damage dice if our armor outclasses enemy
@@ -1148,11 +1148,11 @@ NMilitary = {
 	LAND_COMBAT_COLLATERAL_FACTOR = 0.002,		   -- Factor to scale collateral damage to infra and forts with.
 	LAND_COMBAT_FORT_DAMAGE_CHANCE = 11,		-- chance to get a hit to damage on forts. (out of 100)
 	ATTRITION_DAMAGE_ORG = 0.1,					   -- damage from attrition to Organisation
-	ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.0027,		   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
-	ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE =  0.027, -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+	ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.003,		   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+	ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE =  0.03, -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
 	ATTRITION_WHILE_MOVING_FACTOR = 1,
 	BASE_CHANCE_TO_AVOID_HIT = 90,                 -- Base chance to avoid hit if defences left.
-	CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60,	           -- chance to avoid hit if no defences left.
+	CHANCE_TO_AVOID_HIT_AT_NO_DEF = 68,	           -- chance to avoid hit if no defences left.
 	COMBAT_MOVEMENT_SPEED = 0.3,	               -- speed reduction base modifier in combat
 	TACTIC_SWAP_FREQUENCEY = 12,                   -- hours between tactic swaps
 	INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR  = 1.6, -- advantage per leader level for picking a counter
@@ -1201,7 +1201,7 @@ NMilitary = {
 	ARMY_EXP_BASE_LEVEL = 2,
 	UNIT_EXP_LEVELS = { 0.1, 0.2, 0.3, 0.4, 0.5, 0.65, 0.8 },		-- Experience needed to progress to the next level Changed vets to 0.55 instead 0.7 ***
 	FIELD_EXPERIENCE_SCALE = 0.001,
-	FIELD_EXPERIENCE_MAX_PER_DAY = 1.5,				-- Most xp you can gain per day
+	FIELD_EXPERIENCE_MAX_PER_DAY = 2,				-- Most xp you can gain per day
 	EXPEDITIONARY_FIELD_EXPERIENCE_SCALE = 1,		-- reduction factor in Xp from expeditionary forces
 	LEND_LEASE_FIELD_EXPERIENCE_SCALE = 0.0015,		-- Experience scale for lend leased equipment used in combat.
 	LEADER_EXPERIENCE_SCALE = 1.0,
@@ -1318,8 +1318,8 @@ NMilitary = {
 	FLANKED_PROVINCES_COUNT = 3,					-- Attacker has to attack from that many provinces for the attack to be considered as flanking
 	EQUIPMENT_REPLACEMENT_RATIO = 0.1,				-- Equipment min ratio after blocking the equipment type
 	NUKE_DELAY_HOURS = 12,							-- How many hours does it take for the nuclear drop to happen
-	PARADROP_PENALTY = -0.25, 						-- Combat penalty when recently paradropped
-	PARADROP_HOURS = 1000,							-- time paratroopers suffer penalties in combat
+	PARADROP_PENALTY = -0.3, 						-- Combat penalty when recently paradropped
+	PARADROP_HOURS = 48,							-- time paratroopers suffer penalties in combat
 	COMBAT_SUPPLY_LACK_IMPACT = -0.4,				-- combat penalty if out of supply
 	COMBAT_STACKING_START = 7,						-- at what nr of divisions stacking penalty starts
 	COMBAT_STACKING_EXTRA = 1,                      -- extra stacking from directions
@@ -1334,7 +1334,7 @@ NMilitary = {
 	BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0,		-- Division experience drop if unit has same batalion
 	BATALION_CHANGED_EXPERIENCE_DROP = 0.0,			-- Division experience drop if unit has different batalion
 	ARMOR_VS_AVERAGE = 0.05,			                -- how to weight in highest armor & pen vs the division average
-	PEN_VS_AVERAGE = 0.15,
+	PEN_VS_AVERAGE = 0.1,
 
 	DECRYPTION_ADVANTAGE_BONUS = 0.05,				-- How much unit base damage and base defense is increased per decryption level compared to enemies average encryption level (ex: dec. level is 5 and enemy average enc. level is 3 then 5-3 = 2 which gives 10 % increase)
 	
@@ -1578,13 +1578,13 @@ NAir = {
 	COMBAT_MAX_WINGS_AT_ONCE_PORT_STRIKE = 10000,        -- we can really pounce a naval strike and escalate
 	AIR_REGION_SUPERIORITY_PIXEL_SCALE = 0.04,           -- air superiority scale = superiority/(pixels*this)
 	COMBAT_SUP_VS_SUP_ATTACK_CHANCE_SPEED_DIFF = 0.25, 	-- How much diff in speed between aircrafts affects the chance of who attacks first in superiority vs superiority.( Naval air combat only )
-	COMBAT_MULTIPLANE_CAP = 1.50,						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
+	COMBAT_MULTIPLANE_CAP = 1.40,						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
 	COMBAT_DAMAGE_SCALE = 0.3,							-- Higher value = more shot down planes
 	COMBAT_DAMAGE_SCALE_CARRIER = 8,                    -- same as above but used inside naval combat for carrier battles																								   
 	DETECT_CHANCE_FROM_OCCUPATION = 0.15, 				-- How much the controlled provinces in area affects the air detection base value.
 	DETECT_CHANCE_FROM_RADARS = 0.7, 					-- How much the radars in area affects detection chance.
 	DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 2400, -- Max amount of aircrafts in region to give full detection bonus.
-	DETECT_CHANCE_FROM_AIRCRAFTS = 0.7,					-- How much aircrafts in region improves air detection (up to effective count).
+	DETECT_CHANCE_FROM_AIRCRAFTS = 0.8,					-- How much aircrafts in region improves air detection (up to effective count).
 	DETECT_CHANCE_FROM_NIGHT = -0.3,					-- How much the night can reduce the air detection. (see static modifiers to check how weather affects it too.)
 	DETECT_EFFICIENCY_BASE = 0.1,						-- Base value for detection efficiency (once something detected, efficiency says how many airplanes was detected).
 	DETECT_EFFICIENCY_FROM_RADAR = 0.8,					-- How much radars affect the efficiency.
@@ -1599,7 +1599,7 @@ NAir = {
 	NAVAL_STRIKE_CARRIER_MULTIPLIER = 2.4,              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)																																													 
 	NAVAL_STRIKE_AIR_VS_AIR_PASS_CHANCE = 0.9,			-- Balancing value to control
 	FIELD_EXPERIENCE_SCALE = 0.00075,
-	FIELD_EXPERIENCE_MAX_PER_DAY = 1.5,					-- Most xp you can gain per day
+	FIELD_EXPERIENCE_MAX_PER_DAY = 2,					-- Most xp you can gain per day
 	CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.00025,			-- How much the experinence gained by CAS is scaled
 	PARADROP_EXPERIENCE_SCALE = 0.03,					-- How much the experinence gained by paradropping is scaled
 	BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0002,           -- How much the experinence gained by bombing is scaled
@@ -1614,9 +1614,9 @@ NAir = {
 	ACE_EARN_CHANCE_PLANES_MULT = 0.002,				-- The more airplanes the wing shots the higher chance of earning Ace.
 	AIR_AGILITY_TO_NAVAL_STRIKE_AGILITY = 0.01,         		-- conversion factor to bring agility in line with ship AA
 	AIR_DAMAGE_TO_DIVISION_LOSSES = 1.0,				-- factor for conversion air damage to division losses for details statistics of air wings
-	AIR_NAVAL_KAMIKAZE_DAMAGE_MULT = 2.5,				-- Balancing value to increase usual damage to Strength for Kamikaze
-	AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 0.75,          			-- Balancing value to increase usual losses if Kamikaze participating in the battle
-	BASE_KAMIKAZE_DAMAGE = 0.75,                    				-- Base Kamikaze death rate
+	AIR_NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0,				-- Balancing value to increase usual damage to Strength for Kamikaze
+	AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 3.0,          			-- Balancing value to increase usual losses if Kamikaze participating in the battle
+	BASE_KAMIKAZE_DAMAGE = 3.0,                    				-- Base Kamikaze death rate
 	BASE_KAMIKAZE_TARGETING = 2.0,			        		-- Kamikaze can't be a bad target
 	BASE_STRATEGIC_BOMBING_HIT_SHIP_CHANCE = 0.01,		-- Chance to hit a ship in port when it is bombed.
 	BASE_STRATEGIC_BOMBING_HIT_SHIP_DAMAGE_FACTOR = 50,
@@ -2843,7 +2843,7 @@ NNavy = {
 	WARSCORE_GAIN_FOR_SUNK_SHIP_PRODUCTION_COST_FACTOR = 0.0004,				-- sunk ships will give enemy war score relative to cost of a ship that has been sunk
 
 	-- those two work together in the formula f(x) = Y(x/(x+X)) where Y is MAX and X is SLOPE
-	NAVAL_COMBAT_AIR_SUB_DETECTION_MAX = 10.0,
+	NAVAL_COMBAT_AIR_SUB_DETECTION_MAX = 50.0,
 	NAVAL_COMBAT_AIR_SUB_DETECTION_SLOPE = 10.0,						-- lower means sharper curve (ramps up very fast, then flatten out very fast). Must be >0
 
 	NAVAL_COMBAT_AIR_SUB_DETECTION_EXTERNAL_FACTOR = 100.0,					-- Factor applied to the stats of external air planes
@@ -2933,7 +2933,7 @@ NAI = {
 
 	STRIKE_FORCE_TARGET_RECALC_DAYS = 5,					-- Each X days, the AI will reevaluate which regions to put strike forces in (because patrol coverage will change)
 	NAVAL_STRIKE_FORCE_OBJECTIVE_IMPORTANCE = {				-- ordering of this list is important!
-		0.189,	-- invasion suppport
+		0.188,	-- invasion suppport
 		0.25,	-- invasion defense
 		0,0,	-- others ( MineSweeping, MineLaying )
 		0.0625,	-- generic coast defense
@@ -4907,14 +4907,14 @@ NIntel = {
 },
 NDoctrines = {
         DEFAULT_REWARD_MASTERY = 80.0,                         -- How much mastery is required for unlocking a doctrine reward, if no override is set
-        BASE_MASTERY_GAIN_TARGET_MANPOWER = 40000.0,           -- Beyond this amount of manpower contributing to mastery, mastery gain will start having diminishing returns (see doctrines documentation)
+        BASE_MASTERY_GAIN_TARGET_MANPOWER = 200000.0,           -- Beyond this amount of manpower contributing to mastery, mastery gain will start having diminishing returns (see doctrines documentation)
         TRAINING_MASTERY_GAIN_FACTOR = 0,                     -- How much training contributes to doctrine mastery relative to combat/missions
-        MAX_MONTHLY_MASTERY_GAIN = 25.0,                        -- Monthly mastery gain will not exceed this value
+        MAX_MONTHLY_MASTERY_GAIN = 100.0,                        -- Monthly mastery gain will not exceed this value
         MIN_MASTERY_GAIN_PER_DAY = 0.0,                         -- If we have any mastery gain, it will be boosted to be at least this much per day (lower cap)
         MASTERY_BAR_ANIMATION_SPEED_PER_DAILY_MASTERY = 5.0, -- Multiplier of how fast the mastery bar animates based on daily mastery gain
         MASTERY_BAR_MAX_ANIMATION_SPEED = 50.0,               -- Max speed of the mastery bar animation
-        MASTERY_BANK_CONVERSION_RATE = 0.3,                    -- The rate at which mastery gained when a track is finished or empty is "banked"
-        MASTERY_BANK_MAX = 160.0,                               -- The maximum amount of mastery that can be banked
+        MASTERY_BANK_CONVERSION_RATE = 0.2,                    -- The rate at which mastery gained when a track is finished or empty is "banked"
+        MASTERY_BANK_MAX = 0.0,                               -- The maximum amount of mastery that can be banked
         MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0,         -- For each mastery track, military attaches will add this fraction of their visiting country's mastery gain (from units only) in that track
         THEATER_COMMANDER_UNITS_MASTERY_GAIN_FACTOR_PER_SKILL = 0.01,  -- Unit in a theater commander's theater will contribute this fraction of their mastery gain to the theater commander's country, for each skill point they have in attack + defense
 	NAVAL_MISSION_MASTERY_GAIN_FACTORS = {  -- Mastery gain from naval missions is reduced, just like training

@@ -640,7 +640,7 @@ ideas = {
 		modifier = {
 			production_speed_industrial_complex_factor = 0.06
 			cic_construction_boost = 0.06
-			#industrial_capacity_factory = -0.025
+			industrial_capacity_factory = -0.025
 		}
 	}
 	SPR_side_industrial_bonuses_c2 ={
@@ -659,7 +659,7 @@ ideas = {
 		modifier = {
 			production_speed_industrial_complex_factor = 0.12
 			cic_construction_boost = 0.12
-			industrial_capacity_factory = -0.025
+			industrial_capacity_factory = -0.05
 		}
 	}
 	SPR_side_industrial_bonuses_c3 ={
@@ -678,7 +678,7 @@ ideas = {
 		modifier = {
 			production_speed_industrial_complex_factor = 0.18
 			cic_construction_boost = 0.18
-			industrial_capacity_factory = -0.05
+			industrial_capacity_factory = -0.075
 		}
 	}
 	SPR_side_industrial_bonuses_c4 ={
@@ -697,7 +697,7 @@ ideas = {
 		modifier = {
 			production_speed_industrial_complex_factor = 0.25
 			cic_construction_boost = 0.25
-			industrial_capacity_factory = -0.075
+			industrial_capacity_factory = -0.1
 		}
 	}
 
@@ -1829,8 +1829,8 @@ ideas = {
 			
 			
 			modifier = {
-				industrial_capacity_factory = 0.3
-				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 
@@ -2230,7 +2230,7 @@ ideas = {
 			}
 			
 			traits = { spr_cic_theories }
-			cost = 100
+			cost = 125
 			ai_will_do = {
 				factor = 0.5
 			}

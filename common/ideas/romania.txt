@@ -340,6 +340,7 @@ ideas = {
 			}
 
 			cancel = {
+				not = { original_tag = ROM }
 			}
 			
 			modifier = {				
@@ -567,7 +568,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.1 
-				consumer_goods_expected_value = 0.02
+				consumer_goods_expected_value = 0.04
 			}
 		}
 

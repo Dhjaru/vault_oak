@@ -22,7 +22,7 @@ equipments = {
 		lend_lease_cost = 4.5		
 		
 		resources = {
-			steel = 15
+			steel = 12
 			rubber = 4
 		}
 		fuel_consumption = 0.22
@@ -79,7 +79,7 @@ equipments = {
 		
 		build_cost_ic = 15.5
 		resources = {
-			steel = 17
+			steel = 14
 			rubber = 4
 		}
 	}
@@ -113,7 +113,7 @@ equipments = {
 		
 		build_cost_ic = 17
 		resources = {
-			steel = 19
+			steel = 16
 			rubber = 4
 		}
 	}

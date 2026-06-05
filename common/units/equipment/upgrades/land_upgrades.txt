@@ -132,80 +132,71 @@ upgrades = {
 			2 = { #more armor requires more resources
 				steel = 1 
 			}
-			3 = { #more armor requires more resources
-				steel = 2 
-			}
 			4 = {
-				steel = 3
-			}
-			5 = {
-				steel = 4
+				steel = 2
 			}
 			6 = {
-				steel = 5
-			}
-			7 = {
-				steel = 6
+				steel = 3
 			}
 			8 = {
-				steel = 7
+				steel = 4
 			}
 			9 = {
-				steel = 8
+				steel = 5
 		
 			}
 			
 			10 = {
-				steel = 10
+				steel = 6
 		
 			}
 			11 = {
-				steel = 11
+				steel = 6
 				chromium = 1
 		
 			}
 			12 = {
-				steel = 13
+				steel = 7
 				chromium = 1
 		
 			}
 			13 = {
-				steel = 14
+				steel = 7
 				chromium = 2
 		
 			}
 			14 = {
-				steel = 16
+				steel = 8
 				chromium = 2
 		
 			}
 			15 = {
-				steel = 17
+				steel = 8
 				chromium = 3
 		
 			}
 			16 = {
-				steel = 19
+				steel = 9
 				chromium = 3
 			
 			}
 			17 = {
-				steel = 21
-				chromium = 3
+				steel = 9
+				chromium = 4
 			
 			}
 			18 = {
-				steel = 22
+				steel = 10
 				chromium = 4
 		
 			}
 			19 = {
-				steel = 24
-				chromium = 4
+				steel = 10
+				chromium = 5
 		
 			}
 			20 = {
-				steel = 25
+				steel = 11
 				chromium = 5
 			
 			}
@@ -215,16 +206,16 @@ upgrades = {
 		
 
 		
-		armor_value = 0.16
+		armor_value = 0.24
 		#soft_attack = 0.005
 		#hard_attack = 0.005
 		add_stats = {
-			breakthrough = 0.3
+			breakthrough = 0.2
 			build_cost_ic = 0.25
-			hardness = 0.025
-			soft_attack = 0.3
-			hard_attack = 0.3
-			reliability = -0.025
+			hardness = 0.006
+			soft_attack = 0.2
+			hard_attack = 0.2
+			reliability = -0.02
 		}
 	}
 

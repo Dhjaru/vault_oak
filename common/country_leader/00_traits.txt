@@ -2170,7 +2170,6 @@ leader_traits = {
 	}
 	caudilla_3 = {
 		random = no
-		political_power_gain = 0.05
 		stability_factor = -0.05
 		war_support_factor = 0.1
 	}
@@ -2962,8 +2961,9 @@ leader_traits = {
 
 	GERminister_of_armament_and_war_production = {
 		sprite = 10
-		production_factory_max_efficiency_factor = 0.03
-		production_factory_efficiency_gain_factor = 0.2
+		industrial_capacity_factory = 0.15
+		production_factory_max_efficiency_factor = 0.025
+		production_factory_efficiency_gain_factor = 0.15
 		industry_repair_factor = 0.25
 		industry_free_repair_factor = 0.25
 
@@ -3148,7 +3148,19 @@ leader_traits = {
 		experience_gain_army = 0.05
 		land_doctrine_cost_factor = -0.05
 		
-
+		grand_mechanized_offensive_mastery_gain_factor = 0.1
+		infantry_offensive_mastery_gain_factor = 0.1
+		dispersed_support_mastery_gain_factor = 0.1
+		intergrated_support_mastery_gain_factor = 0.1
+		mobile_breach_artillery_mastery_gain_factor = 0.1
+		air_land_battle_mastery_gain_factor = 0.1
+		elastic_defence_mastery_gain_factor = 0.1
+		elastic_defence_2_mastery_gain_factor = 0.1
+		modern_blizkrieg_new_mastery_gain_factor = 0.1
+		tank_destroyer_force_new_mastery_gain_factor = 0.1
+		strategic_defensive_shift_mastery_gain_factor = 0.1
+		human_wave_offensive_mastery_gain_factor = 0.1
+		massed_firepower_mastery_gain_factor = 0.1
 		
 		
 		ai_will_do = {
@@ -3163,7 +3175,21 @@ leader_traits = {
 		land_doctrine_cost_factor = -0.05
 		
 		
-
+		elastic_defence_mastery_gain_factor = 0.2
+		elastic_defence_2_mastery_gain_factor = 0.2
+		modern_blizkrieg_new_mastery_gain_factor = 0.2
+		tank_destroyer_force_new_mastery_gain_factor = 0.2
+		strategic_defensive_shift_mastery_gain_factor = 0.2
+		
+		
+		grand_mechanized_offensive_mastery_gain_factor = 0.1
+		infantry_offensive_mastery_gain_factor = 0.1
+		dispersed_support_mastery_gain_factor = 0.1
+		intergrated_support_mastery_gain_factor = 0.1
+		mobile_breach_artillery_mastery_gain_factor = 0.1
+		air_land_battle_mastery_gain_factor = 0.1
+		human_wave_offensive_mastery_gain_factor = 0.1
+		massed_firepower_mastery_gain_factor = 0.1
 		
 		
 		ai_will_do = {
@@ -3186,7 +3212,22 @@ leader_traits = {
 		land_doctrine_cost_factor = -0.05
 		
 		
-	
+		dispersed_support_mastery_gain_factor = 0.2
+		intergrated_support_mastery_gain_factor = 0.2
+		mobile_breach_artillery_mastery_gain_factor = 0.2
+		air_land_battle_mastery_gain_factor = 0.2
+		
+		
+		
+		grand_mechanized_offensive_mastery_gain_factor = 0.1
+		infantry_offensive_mastery_gain_factor = 0.1
+		elastic_defence_mastery_gain_factor = 0.1
+		elastic_defence_2_mastery_gain_factor = 0.1
+		modern_blizkrieg_new_mastery_gain_factor = 0.1
+		tank_destroyer_force_new_mastery_gain_factor = 0.1
+		strategic_defensive_shift_mastery_gain_factor = 0.1
+		human_wave_offensive_mastery_gain_factor = 0.1
+		massed_firepower_mastery_gain_factor = 0.1
 		
 		
 		equipment_bonus = {
@@ -3206,7 +3247,21 @@ leader_traits = {
 		max_planning = 0.025
 		planning_speed = 0.05
 		
-
+		grand_mechanized_offensive_mastery_gain_factor = 0.2
+		infantry_offensive_mastery_gain_factor = 0.2
+		
+		
+		dispersed_support_mastery_gain_factor = 0.1
+		intergrated_support_mastery_gain_factor = 0.1
+		mobile_breach_artillery_mastery_gain_factor = 0.1
+		air_land_battle_mastery_gain_factor = 0.1
+		elastic_defence_mastery_gain_factor = 0.1
+		elastic_defence_2_mastery_gain_factor = 0.1
+		modern_blizkrieg_new_mastery_gain_factor = 0.1
+		tank_destroyer_force_new_mastery_gain_factor = 0.1
+		strategic_defensive_shift_mastery_gain_factor = 0.1
+		human_wave_offensive_mastery_gain_factor = 0.1
+		massed_firepower_mastery_gain_factor = 0.1
 		
 		
 		
@@ -3221,7 +3276,21 @@ leader_traits = {
 		army_attack_factor = 0.05
 		land_doctrine_cost_factor = -0.05
 		
-	
+		human_wave_offensive_mastery_gain_factor = 0.2
+		massed_firepower_mastery_gain_factor = 0.2
+		
+		
+		grand_mechanized_offensive_mastery_gain_factor = 0.1
+		infantry_offensive_mastery_gain_factor = 0.1
+		dispersed_support_mastery_gain_factor = 0.1
+		intergrated_support_mastery_gain_factor = 0.1
+		mobile_breach_artillery_mastery_gain_factor = 0.1
+		air_land_battle_mastery_gain_factor = 0.1
+		elastic_defence_mastery_gain_factor = 0.1
+		elastic_defence_2_mastery_gain_factor = 0.1
+		modern_blizkrieg_new_mastery_gain_factor = 0.1
+		tank_destroyer_force_new_mastery_gain_factor = 0.1
+		strategic_defensive_shift_mastery_gain_factor = 0.1
 		
 		
 		
@@ -3502,7 +3571,21 @@ leader_traits = {
 		land_doctrine_cost_factor = -0.05
 		
 		
+		elastic_defence_mastery_gain_factor = 0.2
+		elastic_defence_2_mastery_gain_factor = 0.2
+		modern_blizkrieg_new_mastery_gain_factor = 0.2
+		tank_destroyer_force_new_mastery_gain_factor = 0.2
+		strategic_defensive_shift_mastery_gain_factor = 0.2
 		
+		
+		grand_mechanized_offensive_mastery_gain_factor = 0.1
+		infantry_offensive_mastery_gain_factor = 0.1
+		dispersed_support_mastery_gain_factor = 0.1
+		intergrated_support_mastery_gain_factor = 0.1
+		mobile_breach_artillery_mastery_gain_factor = 0.1
+		air_land_battle_mastery_gain_factor = 0.1
+		human_wave_offensive_mastery_gain_factor = 0.1
+		massed_firepower_mastery_gain_factor = 0.1
 		
 		
 		
@@ -7089,7 +7172,7 @@ leader_traits = {
 	spr_ini_united_3 = {
 		random = no
 
-		political_power_gain = -0.15
+		political_power_gain = -0.1
 		production_speed_buildings_factor = 0.05
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
@@ -7101,7 +7184,7 @@ leader_traits = {
 	spr_ini_united_4 = {
 		random = no
 
-		political_power_gain = -0.4
+		political_power_gain = -0.25
 		stability_factor = 0.05
 		production_speed_buildings_factor = 0.075
 		industrial_capacity_factory = 0.1

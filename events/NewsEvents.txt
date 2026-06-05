@@ -1697,7 +1697,7 @@ news_event = {
 			NOT = {
 				TAG = GER
 				TAG = ENG
-				TAG = SLO
+				TAG = CZE
 			}
 		}
 	}
@@ -1711,7 +1711,7 @@ news_event = {
 	}
 	option = {
 		name = news.56.e
-		trigger = { TAG = SLO }
+		trigger = { TAG = CZE }
 	}
 }
 
@@ -1733,7 +1733,7 @@ news_event = {
 				TAG = GER
 				TAG = ENG
 				TAG = FRA
-				TAG = SLO
+				TAG = CZE
 			}
 		}
 	}
@@ -1752,7 +1752,7 @@ news_event = {
 	}
 	option = {
 		name = news.57.e
-		trigger = { TAG = SLO }
+		trigger = { TAG = CZE }
 	}
 }
 
@@ -1774,7 +1774,7 @@ news_event = {
 				TAG = GER
 				TAG = ENG
 				TAG = FRA
-				TAG = SLO
+				TAG = CZE
 			}
 		}
 	}
@@ -1788,7 +1788,7 @@ news_event = {
 	}
 	option = {
 		name = news.58.e
-		trigger = { TAG = SLO }
+		trigger = { TAG = CZE }
 	}
 	option = {
 		name = news.58.f
@@ -1812,7 +1812,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
-				TAG = SLO
+				TAG = CZE
 			}
 		}
 	}
@@ -1822,7 +1822,7 @@ news_event = {
 	}
 	option = {
 		name = news.59.c
-		trigger = { TAG = SLO }
+		trigger = { TAG = CZE }
 	}
 }
 
@@ -4868,7 +4868,7 @@ news_event = {
 	option = {
 		name = news.177.e
 		trigger = {
-			tag = SLO
+			tag = CZE
 			NOT = {
 				has_government = fascism
 			}
@@ -4892,7 +4892,7 @@ news_event = {
 				tag = FRA
 				tag = ENG
 				AND = {
-					tag = SLO
+					tag = CZE
 					has_government = fascism
 				}
 			}
@@ -5985,7 +5985,7 @@ news_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		SLO = {
+		CZE = {
 			save_event_target_as = Czech
 		}
 	}
@@ -5994,7 +5994,7 @@ news_event = {
 	option = {
 		name = news.200.a
 		trigger = {
-			tag = SLO
+			tag = CZE
 		}
 	}
 
@@ -6017,7 +6017,7 @@ news_event = {
 			NOT = {
 				OR = {
 					tag = GER
-					tag = SLO
+					tag = CZE
 					tag = ENG
 				}
 			}
@@ -6037,7 +6037,7 @@ news_event = {
 			NOT = {
 				OR = {
 					tag = GER
-					tag = SLO
+					tag = CZE
 					tag = ENG
 				}
 			}
@@ -9822,7 +9822,7 @@ news_event = {
 			NOT = {
 				TAG = HUN
 				TAG = GER
-				TAG = SLO
+				TAG = CZE
 				TAG = ROM
 				TAG = YUG
 				TAG = POL
@@ -9834,7 +9834,7 @@ news_event = {
 		name = news.295.e
 		trigger = { 
 			OR = {
-				TAG = SLO
+				TAG = CZE
 				TAG = ROM
 				TAG = YUG
 				TAG = POL
@@ -10096,7 +10096,7 @@ news_event = {
 	option = {
 		name = news.303.b
 		trigger = { 
-			TAG = SLO
+			TAG = CZE
 		}
 	}
 	option = {
@@ -10104,7 +10104,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = SLO
+				TAG = CZE
 			}
 		}
 	}
@@ -10130,7 +10130,7 @@ news_event = {
 	option = {
 		name = news.301.b
 		trigger = { 
-			TAG = SLO
+			TAG = CZE
 		}
 	}
 	option = {
@@ -10138,13 +10138,13 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = SLO
+				TAG = CZE
 			}
 		}
 	}
 }
 
-#Hungary and SLOchoslovakia unable to find solution, war looms
+#Hungary and Czechoslovakia unable to find solution, war looms
 news_event = {
 	id = news.305
 	title = news.305.t
@@ -10164,7 +10164,7 @@ news_event = {
 	option = {
 		name = news.302.b
 		trigger = { 
-			TAG = SLO
+			TAG = CZE
 		}
 	}
 	option = {
@@ -10172,7 +10172,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = SLO
+				TAG = CZE
 			}
 		}
 	}
@@ -10318,7 +10318,7 @@ news_event = {
 	option = {
 		name = news.309.b
 		trigger = { 
-			TAG = SLO
+			TAG = CZE
 			OR = {
 				NOT = { country_exists = SLO }
 				AND = {
@@ -10342,7 +10342,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = SLO
+				TAG = CZE
 				AND = {
 					TAG = SLO
 					SLO = { is_subject = yes }
@@ -10390,7 +10390,7 @@ news_event = {
 	option = {
 		name = news.310.b
 		trigger = { 
-			TAG = SLO
+			TAG = CZE
 		}
 	}
 	option = {
@@ -10398,7 +10398,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = SLO
+				TAG = CZE
 			}
 		}
 	}
@@ -10443,7 +10443,7 @@ news_event = {
 		name = news.311.b
 		trigger = { 
 			OR = {
-				TAG = SLO
+				TAG = CZE
 				TAG = SLO
 			}
 		}
@@ -10453,7 +10453,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = HUN
-				TAG = SLO
+				TAG = CZE
 				TAG = SLO
 			}
 		}
@@ -10706,7 +10706,7 @@ news_event = {
 					is_in_faction_with = ROM
 				}
 				AND = {
-					TAG = SLO
+					TAG = CZE
 					is_in_faction_with = ROM
 				}
 			}
@@ -10728,7 +10728,7 @@ news_event = {
 				NOT = {
 					TAG = ROM
 					TAG = POL
-					TAG = SLO
+					TAG = CZE
 					TAG = GER
 					TAG = SOV
 					has_government = communism
@@ -10737,7 +10737,7 @@ news_event = {
 				AND = { 
 					OR = {
 						TAG = POL
-						TAG = SLO
+						TAG = CZE
 					}
 					NOT = { has_government = communism }
 					NOT = { has_government = fascism }
@@ -10754,7 +10754,7 @@ news_event = {
 					NOT = {
 						TAG = ROM
 						TAG = POL
-						TAG = SLO
+						TAG = CZE
 						TAG = GER
 						TAG = SOV
 					}
@@ -10766,7 +10766,7 @@ news_event = {
 				AND = { 
 					OR = {
 						TAG = POL
-						TAG = SLO
+						TAG = CZE
 					}
 					OR = {
 						has_government = communism
@@ -12864,7 +12864,7 @@ news_event = {
 					TAG = SLO
 					TAG = ITA
 					TAG = SPA
-					TAG = SLO
+					TAG = CZE
 					TAG = FIN
 				}				
 			}
@@ -12895,7 +12895,7 @@ news_event = {
 				TAG = SLO
 				TAG = ITA
 				TAG = SPA
-				TAG = SLO
+				TAG = CZE
 				TAG = FIN
 			}
 		}		
@@ -13625,7 +13625,7 @@ news_event = {
 	id = horsttool.11
 	title = "Horsttool"
 	
-	desc = " [From.Getname] gave five military factories to [From.From.Owner.Getname]"
+	desc = " [From.Getname] gave 5 military factories to [From.From.Owner.Getname]"
 	picture = GFX_news_event_001
 	
 	major = yes
@@ -13641,7 +13641,7 @@ news_event = {
 	id = horsttool.12
 	title = "Horsttool"
 	
-	desc = " [From.Getname] gave one civilian factory to [From.From.Owner.Getname]"
+	desc = " [From.Getname] gave 1 civilian factory to [From.From.Owner.Getname]"
 	picture = GFX_news_event_001
 	
 	major = yes

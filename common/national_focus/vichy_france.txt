@@ -252,11 +252,11 @@
 	}
 		
 		completion_reward = {
-			army_experience = 150
+			army_experience = 100
 	 	add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
-				uses = 3
+				cost_reduction = 0.7
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -288,11 +288,11 @@
 	}
 		
 		completion_reward = {
-			army_experience = 150
+			army_experience = 100
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
-				uses = 3
+				cost_reduction = 0.7
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -315,11 +315,11 @@
 		
 	}
 		completion_reward = {
-				army_experience = 150
+				army_experience = 100
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
-				uses = 3
+				cost_reduction = 0.7
+				uses = 2
 				category = land_doctrine
 			}
 				
@@ -342,11 +342,11 @@
 		
 	}
 		completion_reward = {
-			army_experience = 150
+			army_experience = 100
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
-				uses = 3
+				cost_reduction = 0.7
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -369,13 +369,9 @@
 			
 		} 
 	  completion_reward = {
-			add_mastery = {
-				amount = 80
-				folder = land
-			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.7
 				uses = 2
 				category = land_doctrine
 			}
@@ -732,7 +728,7 @@
 		completion_reward = {
 			 add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.7
 				uses = 2
 				category = land_doctrine
 			}
@@ -857,10 +853,6 @@
 		   factor = 50
 		}
 			completion_reward = { 
-				add_mastery = {
-					amount = 80
-					folder = land
-				}
 				mio:FRA_mas_organization = {
 					add_mio_funds = 10000
 				}
@@ -1138,7 +1130,7 @@
 		completion_reward = { 
 				add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.7
 				uses = 2
 				category = land_doctrine
 			}
@@ -1174,7 +1166,7 @@
 	  completion_reward = { 
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.7
 				uses = 2
 				category = land_doctrine
 			}
@@ -1206,7 +1198,7 @@
 		completion_reward = { 
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.7
 				uses = 2
 				category = land_doctrine
 			}
@@ -1238,7 +1230,7 @@
 		completion_reward = { 
 			 add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.7
 				uses = 2
 				category = land_doctrine
 			}
@@ -1270,7 +1262,7 @@
 		completion_reward = { 
 			 add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.7
 				uses = 2
 				category = land_doctrine
 			}
@@ -1296,7 +1288,7 @@
 		completion_reward = { 
 			 add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.7
 				uses = 2
 				category = land_doctrine
 			}
@@ -1318,10 +1310,6 @@
 		   factor = 12
 		}
 		completion_reward = { 
-			add_mastery = {
-				amount = 80
-				folder = land
-			}
 			mio:FRA_mas_organization = {
 				add_mio_funds = 12000
 			}
@@ -1681,10 +1669,6 @@
 		   factor = 100
 		}
 		completion_reward = { 
-			add_mastery = {
-				amount = 80
-				folder = land
-			}
 			mio:FRA_mas_organization = {
 				add_mio_funds = 12000
 			}
@@ -2899,15 +2883,6 @@
 					}		
 				}	
 			}
-			random_core_state = {
-				
-				add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-					type = tank_assembly
-					level = 1
-					instant_build = yes 
-				}
-			}
 			add_tech_bonus = {
 				name = EFR_industry_bopnus
 				bonus = 1
@@ -3900,7 +3875,6 @@
 		available_if_capitulated = yes
 
 		available = {
-			is_ally_with = GER
 			GER = {
 				has_completed_focus = GER_arbeitseinsatz
 			}

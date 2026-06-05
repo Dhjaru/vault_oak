@@ -15170,7 +15170,6 @@ guiTypes = {
 			}
 
 			containerWindowType = {
-				name ="GFX_industry_years_bg"
 
 				iconType = {
 					name ="GFX_industry_techtree_bg"

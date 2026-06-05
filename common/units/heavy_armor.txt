@@ -5,7 +5,6 @@ sub_units = {
 		map_icon_category = armored
 		priority = 2505
 		active = yes
-		is_artillery_brigade = yes
 		
 		type = {
 			armor
@@ -18,7 +17,6 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_heavy_and_super_heavy_tanks
 		}
 
 		combat_width = 2
@@ -29,7 +27,7 @@ sub_units = {
 
 		manpower = 550
 		max_organisation = 3
-		default_morale = 0.08
+		default_morale = 0.1
 		training_time = 80
 		initiative = 0.007
 		max_strength = 3
