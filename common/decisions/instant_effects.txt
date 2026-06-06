@@ -1,5 +1,221 @@
 
 PAR_instant_effect_decisions = {
+	PAR_china_supply_bonus_remove = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 100	
+		}
+		available = {
+			CHI = {
+				surrender_progress < 0.5
+				has_country_flag = CHI_supply_bonus_flag
+				
+			}
+			
+		}	
+		fire_only_once = no
+
+		complete_effect = {
+			CHI = {
+				add_to_variable = { 
+					var = CHI_supply_consumption_factor_var 
+					value = 0.075
+					tooltip = supply_consumption_factor_tooltip
+				}
+				add_to_variable = { 
+					var = attrition_chi_var 
+					value = 0.075
+				}
+				
+				clr_country_flag = CHI_supply_bonus_flag
+			}
+		}	
+	}
+	PAR_china_supply_bonus = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 100	
+		}
+		available = {
+			CHI = {
+				surrender_progress > 0.5
+				NOT = {
+					has_country_flag = CHI_supply_bonus_flag
+				}
+			}
+			
+		}	
+		fire_only_once = no
+
+		complete_effect = {
+			CHI = {
+				add_to_variable = { 
+					var = CHI_supply_consumption_factor_var 
+					value = -0.075
+					tooltip = supply_consumption_factor_tooltip
+				}
+				add_to_variable = { 
+					var = attrition_chi_var 
+					value = -0.075
+				}
+				set_country_flag = CHI_supply_bonus_flag
+			}
+		}	
+	}
+	PAR_china_supply_bonus_remove2 = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 100	
+		}
+		available = {
+			CHI = {
+				surrender_progress < 0.6
+				has_country_flag = CHI_supply_bonus_flag2
+				
+			}
+			
+		}	
+		fire_only_once = no
+
+		complete_effect = {
+			CHI = {
+				add_to_variable = { 
+					var = CHI_supply_consumption_factor_var 
+					value = 0.125
+					tooltip = supply_consumption_factor_tooltip
+				}
+				add_to_variable = { 
+					var = attrition_chi_var 
+					value = 0.075
+				}
+				clr_country_flag = CHI_supply_bonus_flag2
+			}
+		}	
+	}
+	PAR_china_supply_bonus2 = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 100	
+		}
+		available = {
+			CHI = {
+				surrender_progress > 0.6
+				NOT = {
+					has_country_flag = CHI_supply_bonus_flag2
+				}
+			}
+			
+		}	
+		fire_only_once = no
+
+		complete_effect = {
+			CHI = {
+				add_to_variable = { 
+					var = CHI_supply_consumption_factor_var 
+					value = -0.125
+					tooltip = supply_consumption_factor_tooltip
+				}
+				add_to_variable = { 
+					var = attrition_chi_var 
+					value = -0.075
+				}
+				set_country_flag = CHI_supply_bonus_flag2
+			}
+		}	
+	}
+	PAR_china_supply_bonus_remove3 = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 100	
+		}
+		available = {
+			CHI = {
+				surrender_progress < 0.78
+				has_country_flag = CHI_supply_bonus_flag3
+				
+			}
+			
+		}	
+		fire_only_once = no
+
+		complete_effect = {
+			CHI = {
+				add_to_variable = { 
+					var = CHI_supply_consumption_factor_var 
+					value = 0.2
+					tooltip = supply_consumption_factor_tooltip
+				}
+				add_to_variable = { 
+					var = attrition_chi_var 
+					value = 0.075
+				}
+				clr_country_flag = CHI_supply_bonus_flag3
+			}
+		}	
+	}
+	PAR_china_supply_bonus3 = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 100	
+		}
+		available = {
+			CHI = {
+				surrender_progress > 0.78
+				NOT = {
+					has_country_flag = CHI_supply_bonus_flag3
+				}
+			}
+			
+		}	
+		fire_only_once = no
+
+		complete_effect = {
+			CHI = {
+				add_to_variable = { 
+					var = CHI_supply_consumption_factor_var 
+					value = -0.2
+					tooltip = supply_consumption_factor_tooltip
+				}
+				add_to_variable = { 
+					var = attrition_chi_var 
+					value = -0.075
+				}
+				set_country_flag = CHI_supply_bonus_flag3
+			}
+		}	
+	}
+	POL_eight = {
+		fire_only_once = yes
+		
+		icon = generic_megaphone
+   
+		allowed = {
+		   tag = PAR
+		}
+		
+		available = {
+			POL = {
+				NOT = {
+					controls_state = 10
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = POL_halohalo_tt
+			POL = {
+				add_to_variable = { var = POL_max_surrender_limit_offset_modifier value = -1 }
+
+			}
+		}
+
+		cost = 0
+
+
+		ai_will_do = {
+			base = 10000000
+			
+		}
+	}
 	PAR_reset_ledo_road_construction = {
 		allowed = { tag = PAR }
 		ai_will_do = {
@@ -1368,7 +1584,7 @@ PAR_instant_effect_decisions = {
 		}
 			
 		fire_only_once = no
-		days_re_enable = 60
+		days_re_enable = 45
 		fixed_random_seed = no
 
 
@@ -1386,7 +1602,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 10
+						factor = 7
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1402,7 +1618,7 @@ PAR_instant_effect_decisions = {
 					}
 					
 					modifier = {
-						factor = 8
+						factor = 6.5
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1417,7 +1633,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 7
+						factor = 5
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1432,7 +1648,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 5
+						factor = 3.8
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1447,7 +1663,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 3
+						factor = 2.7
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1462,7 +1678,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 2.0
+						factor = 1.6
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1477,7 +1693,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.8
+						factor = .5
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1492,7 +1708,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.6
+						factor = 0.3
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1507,7 +1723,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.4
+						factor = 0.2
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1522,7 +1738,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.2
+						factor = 0.1
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1537,7 +1753,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.1
+						factor = 0.05
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1638,7 +1854,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.1
+						factor = .8
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1653,7 +1869,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.2
+						factor = 1.4
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1668,7 +1884,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.3
+						factor = 1.7
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1683,7 +1899,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.4
+						factor = 2
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1698,7 +1914,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 0.6
+						factor = 3
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -1728,7 +1944,7 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					modifier = {
-						factor = 6
+						factor = 5
 						USA = {
 							check_variable = {
 								var = USA_new_deal_help
@@ -2975,8 +3191,7 @@ PAR_instant_effect_decisions = {
 			}
 			ITA = {
 				NOT = {
-					controls_state = 458
-					controls_state = 665
+					has_country_flag = ITA_took_over_tunisia
 				}
 			}
 			458 = {
@@ -4033,7 +4248,7 @@ PAR_instant_effect_decisions = {
 			base = 5000			
 		}
 		available = {
-			date > 1936.10.1
+			date > 1936.09.1
 			SPN = {
 				NOT = {
 					has_completed_focus = SPR_disband_the_army
@@ -4755,6 +4970,7 @@ PAR_instant_effect_decisions = {
 		}
 		available = {
 			date > 1937.7.1
+			
 				
 		}
 		cost = 0
@@ -11714,38 +11930,7 @@ PAR_instant_effect_decisions = {
 		}
 	}	
 
-	POL_eight = {
-		fire_only_once = yes
-		
-		icon = generic_megaphone
-   
-		allowed = {
-		   tag = PAR
-		}
-		
-		available = {
-			POL = {
-				NOT = {
-					controls_state = 10
-				}
-			}
-		}
-		complete_effect = {
-			custom_effect_tooltip = POL_halohalo_tt
-			POL = {
-				add_to_variable = { var = POL_max_surrender_limit_offset_modifier value = -1 }
-
-			}
-		}
-
-		cost = 0
-
-
-		ai_will_do = {
-			base = 8000
-			
-		}
-	}
+	
 	
 	POL_nine = {
 		fire_only_once = yes
@@ -13495,24 +13680,7 @@ PAR_instant_effect_decisions = {
 		   tag = PAR 
 		}
 		available = {	
-			if = {
-				limit = { 
-					SPR = {
-						has_completed_focus = SPA_en_espana_amanece
-					}
-				}
-				date > 1942.6.1
-			}
-			if = {
-				limit = { 
-					SPR = {
-						NOT = {
-							has_completed_focus = SPA_en_espana_amanece
-						}
-					}
-				}
-				date > 1943.1.1
-			}
+			date > 1943.01.1
 		}	
 		cost = 0
 
@@ -13556,4 +13724,634 @@ PAR_instant_effect_decisions = {
 			
 		}
 	}
+
+	PAR_spansih_win_lose_factories = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			OR = {
+				date > 1939.06.29
+				has_global_flag = scw_over
+			}
+			
+
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							shadow_factories_SPR = 0
+						}
+					}
+				
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 1
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 2
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 3
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+								type = arms_factory
+								level = 3
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 4
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+								type = arms_factory
+								level = 4
+								instant_build = yes
+							}
+						}
+						
+					}else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 5
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = arms_factory
+								level = 5
+								instant_build = yes
+							}
+						}
+						
+					}
+					# Extremadura DONE #
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 6
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 7
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 8
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 9
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+								type = industrial_complex
+								level = 4
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 10
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						
+					}
+					#11
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 11
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 12
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 13
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 14
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+								type = industrial_complex
+								level = 4
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 15
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						
+					}
+					#16
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 16
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						973 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 17
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						973 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 18
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						973 = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 19
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						973 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+								type = industrial_complex
+								level = 4
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR = 20
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						973 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								shadow_factories_SPR > 20
+							}
+						}
+						170 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						788 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						791 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						973 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = industrial_complex
+								level = 5
+								instant_build = yes
+							}
+						}
+						
+					}
+					
+				}
+			}
+		}	
+	
+
 }

@@ -1493,12 +1493,12 @@ on_actions = {
                         }
                     }
                     USA = {
-                        add_to_variable = { var = USA_production_cost_synthetic_rubber_refinery_factor_var value =  -0.2 }
-                        add_to_variable = { var = USA_production_cost_synthetic_refinery_factor_var value =  -0.2 }
+                        add_to_variable = { var = USA_production_cost_synthetic_rubber_refinery_factor_var value =  -0.5 }
+                        add_to_variable = { var = USA_production_cost_synthetic_refinery_factor_var value =  -0.5 }
                     }
                     ENG = {
-                        add_to_variable = { var = ENG_production_speed_synthetic_refinery_factor_var value =  -0.2 }
-                        add_to_variable = { var = ENG_production_speed_synthetic_rubber_refinery_factor_var value =  -0.2 }
+                        add_to_variable = { var = ENG_production_speed_synthetic_refinery_factor_var value =  -0.5 }
+                        add_to_variable = { var = ENG_production_speed_synthetic_rubber_refinery_factor_var value =  -0.5 }
                     }
                     
                 }
