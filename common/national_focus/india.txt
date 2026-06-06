@@ -4686,7 +4686,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_commit_to_asia
 		icon = GFX_focus_attack_australia
-		mutually_exclusive = { focus = RAJ_commit_to_africa }
+		mutually_exclusive = { focus = RAJ_commit_to_africa focus = RAJ_commit_to_north_america }
 		prerequisite = { focus = RAJ_british_army_reforms }
 		relative_position_id = RAJ_british_army_reforms
 		x = 1
@@ -4700,6 +4700,7 @@ focus_tree = {
 		}
 
 		available = {
+			AST = { exists = yes }
 			has_war = yes
 			has_completed_focus = RAJ_submits_to_england
 			
@@ -4722,6 +4723,50 @@ focus_tree = {
 		}
 	}
 	
+
+	focus = {
+		id = RAJ_commit_to_north_america
+		icon = GFX_goal_CAN_coa_army
+		mutually_exclusive = { focus = RAJ_commit_to_asia focus = RAJ_commit_to_africa }
+		prerequisite = { focus = RAJ_british_army_reforms }
+		relative_position_id = RAJ_british_army_reforms
+		x = 0
+		y = 2
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			CAN = { exists = yes }
+			has_war = yes
+			OR = {
+				has_completed_focus = RAJ_submits_to_england
+			}
+
+		}
+
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = yes
+		
+		completion_reward = {
+			
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			CAN = { add_ideas = RAJ_commits_north_america_idea }
+			CAN = { add_manpower = 40000 }
+		}
+	}
+
 	######################
 	### Inida Air Tree ###
 	######################
@@ -5938,6 +5983,18 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		complete_tooltip = {
+			custom_effect_tooltip = RAJ_attempt_industrialization_tt_2
+
+			431 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes 
+				}
+			}
+		}
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_attempt_industrialization_tt_2
@@ -6131,7 +6188,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+		complete_tooltip = {
+			
+			add_offsite_building = {
+				type = arms_factory
+				level = 4
+			}
+		}
 
 		completion_reward = {
 			
