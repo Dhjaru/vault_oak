@@ -153,6 +153,9 @@ country_event = {
 			add_state_core = 147
 		}
 		hidden_effect = {
+			# Soviet administration names after Bessarabia demand succeeds
+			set_province_name = { id = 6727 name = "Belgorod-Dnestrovsky" }
+			set_province_name = { id = 3707 name = "Kishinev" }
 			SOV = {
 				country_event = { days = 1 id = news.10 }
 			}
@@ -197,6 +200,19 @@ country_event = {
 	option = {
 		name = soviet.8.a
 		annex_country = { target = LAT }
+		hidden_effect = {
+			189 = { set_state_name = "Shyaulyay" }
+			11 = { set_state_name = "Kovno" }
+			# Key cities / VPs
+			set_province_name = { id = 9340 name = "Riga" }
+			set_province_name = { id = 310 name = "Daugavpils" }
+			set_province_name = { id = 9262 name = "Liepaya" }
+			set_province_name = { id = 3174 name = "Parnu" }	
+			set_province_name = { id = 6296 name = "Kaunas" }
+			set_province_name = { id = 9483 name = "Shyaulyai" }
+			set_province_name = { id = 3152 name = "Tallin" }
+			set_province_name = { id = 11127 name = "Narva" }
+		}
 	}
 }
 
@@ -716,8 +732,8 @@ country_event = {
 		
 	option = {
 		name = soviet.30.a
-		hidden_effect = {
-			HUN = { 
+		hidden_effect = { 
+			ROM = { 
 				country_event = { days = 2 id = romania.1 }
 			}
 		}
@@ -3506,42 +3522,4 @@ country_event = {
     option = {
         name = "We must consider our options carefully."
     }
-}
-
-# Romania surrenders Bessarabia
-country_event = {
-	id = soviet.1016
-	title = soviet.4.t
-	desc = soviet.4.d
-	picture = GFX_report_event_soviet_army_greeted
-
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-    	days = 1
-	}
-
-	trigger = {
-		tag = SOV
-		date > 1940.6.1
-		NOT = { owns_state = 78 }
-	}
-	
-	option = {
-		name = soviet.4.a
-		SOV = { 
-			transfer_state = 78
-			transfer_state = 80
-			transfer_state = 766
-			add_state_core = 766
-			add_state_core = 146
-			add_state_core = 147
-		}
-		hidden_effect = {
-			SOV = {
-				country_event = { days = 1 id = news.10 }
-			}
-			news_event = { id = news.199 }
-		}
-	}
 }
