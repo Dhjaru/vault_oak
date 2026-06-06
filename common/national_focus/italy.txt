@@ -2040,13 +2040,13 @@ focus_tree = {
 			#	days = 365
 			#}
 		    add_research_slot = 1
-			#custom_effect_tooltip = #ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
-			#add_to_variable = { 
-				#var = ITA_industry_consumer_goods_modifier 
-				#value = 0.05
-				#tooltip = consumer_goods_tooltip
-			#}
-			#custom_effect_tooltip = ITA_state_development_africa_tt
+			custom_effect_tooltip = ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
+			add_to_variable = { 
+				var = ITA_industry_consumer_goods_modifier 
+				value = 0.05
+				tooltip = consumer_goods_tooltip
+			}
+			custom_effect_tooltip = ITA_state_development_africa_tt
 			
 			
 			448 = {
@@ -2096,9 +2096,6 @@ focus_tree = {
 				set_state_category = rural
 				
 			}
-			#custom_effect_tooltip = ITA_state_development_africa_tt2
-			
-			
 			hidden_effect = {
 				271 = {
 				add_building_construction = {
@@ -2116,7 +2113,7 @@ focus_tree = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
-					}
+				}
 
 				
 				add_extra_state_shared_building_slots = 5
@@ -2151,72 +2148,7 @@ focus_tree = {
 				add_compliance = 20
 	
 			}
-				#271 = {
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#834 = {	
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#835 = {
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#550 = {
-#						
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-#					
-#
-				#}
-				#559 = {
-#						
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-#					
-				#}
-				#448 = {
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#450 = {
-#						
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#451 = {
-#					
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#449 = {
-#					
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-
-			}
-			
-			
+			}		
 		}
      }
 	focus = {
@@ -2227,7 +2159,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ITA_massive_colonial_investments
-		cost = 7.145
+		cost = 2.2
 		ai_will_do = {
 			factor = 20
 		}
@@ -2282,7 +2214,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_immigration_ethiopia
-		cost = 2.2
+		cost = 7.145
 		ai_will_do = {
 			factor = 0
 		}
@@ -2458,12 +2390,7 @@ focus_tree = {
 						state = 552 
 					}
 				}
-    			add_extra_state_shared_building_slots = 2
-    			add_building_construction = {
-    				type = industrial_complex
-        			level = 1
-       				instant_build = yes
-				}
+    			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     				type = arms_factory
         			level = 1
@@ -2576,6 +2503,12 @@ focus_tree = {
 
 		completion_reward = {
 			448 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2588,6 +2521,12 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = ITA_libyan_railway_modifier days = 730 scope = ITA }
 			}
 			449 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2600,6 +2539,12 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = ITA_libyan_railway_modifier days = 730 scope = ITA }
 			}
 			450 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2612,6 +2557,12 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = ITA_libyan_railway_modifier days = 730 scope = ITA }
 			}
 			451 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2675,14 +2626,19 @@ focus_tree = {
 				}
 			}
 			451 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-				
-			
 			}
+			
 			#LIBYA
 			if = {
 				limit = {
@@ -2691,6 +2647,12 @@ focus_tree = {
 					}
 				}
 				450 = { #BENGHASI
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2707,6 +2669,12 @@ focus_tree = {
 					}
 				}
 				449 = { #EL AGHELIA
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2723,6 +2691,12 @@ focus_tree = {
 					}
 				}
 				448 = { #TRIPOLI
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 1
