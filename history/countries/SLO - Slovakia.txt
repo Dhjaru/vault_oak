@@ -6,6 +6,7 @@ set_convoys = 25
 set_stability = 0.55
 
 
+set_cosmetic_tag = SLO_czechoslovakia
 
 
 recruit_character = CZE_edvard_beneš
