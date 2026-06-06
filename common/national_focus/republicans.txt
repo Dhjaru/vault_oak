@@ -32,6 +32,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 150
 			custom_effect_tooltip = MANspace
 			custom_effect_tooltip = spawn_republicans_tt2
 			if = {
@@ -67,17 +68,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_SPA_CIVIL_WAR }
 		completion_reward = {
-			#add_stability = 0.03
-			custom_effect_tooltip = SPA_rep_army_modif
-			add_to_variable = {
-				SPA_rep_army_attack_factor_var = -0.03
-				tooltip = army_attack_factor_tooltip
-			}
-			add_to_variable = {
-				SPA_rep_army_defence_factor_var = -0.03
-				tooltip = army_defense_factor_tooltip
-			}
-			army_experience = 10
+			add_stability = 0.10
+			#custom_effect_tooltip = SPA_rep_army_modif
+			#add_to_variable = {
+				#SPA_rep_army_attack_factor_var = -0.03
+				#tooltip = army_attack_factor_tooltip
+			#}
+			#add_to_variable = {
+				#SPA_rep_army_defence_factor_var = -0.03
+				#tooltip = army_defense_factor_tooltip
+			#}
+			army_experience = 200
 			custom_effect_tooltip = SPR_secure_the_guardia_de_asalto_tt
 			SPR = {
 				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -10 }
@@ -114,17 +115,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_SPA_CIVIL_WAR }
 		completion_reward = {
-			#add_stability = 0.03
-			custom_effect_tooltip = SPA_rep_army_modif
-			add_to_variable = {
-				SPA_rep_army_attack_factor_var = -0.03
-				tooltip = army_attack_factor_tooltip
-			}
-			add_to_variable = {
-				SPA_rep_army_defence_factor_var = -0.03
-				tooltip = army_defense_factor_tooltip
-			}
-			army_experience = 5
+			add_stability = 0.10
+			#custom_effect_tooltip = SPA_rep_army_modif
+			#add_to_variable = {
+				#SPA_rep_army_attack_factor_var = -0.03
+				#tooltip = army_attack_factor_tooltip
+			#}
+			#add_to_variable = {
+				#SPA_rep_army_defence_factor_var = -0.03
+				#tooltip = army_defense_factor_tooltip
+			#}
+			army_experience = 200
 		
 			custom_effect_tooltip = SPR_secure_the_guardia_civil_tt_2
 			SPR = {
@@ -169,7 +170,7 @@ focus_tree = {
 						is_ai = no
 					}
 				}
-				add_stability = 0.03
+				add_stability = 0.10
 			}
 			if = {
 				limit = {
@@ -179,7 +180,7 @@ focus_tree = {
 				}
 				add_political_power = -10
 			}
-			army_experience = 15
+			army_experience = 150
 			custom_effect_tooltip = spawn_republicans_tt
 			if = {
 				limit = {
@@ -217,7 +218,7 @@ focus_tree = {
 						is_ai = no
 					}
 				}
-				add_stability = 0.06
+				add_stability = 0.10
 			}
 			if = {
 				limit = {
@@ -229,11 +230,11 @@ focus_tree = {
 			}
 			custom_effect_tooltip = SPA_rep_army_modif
 			add_to_variable = {
-				SPA_rep_army_attack_factor_var = 0.03
+				SPA_rep_army_attack_factor_var = 0.10
 				tooltip = army_attack_factor_tooltip
 			}
 			add_to_variable = {
-				SPA_rep_army_defence_factor_var = 0.03
+				SPA_rep_army_defence_factor_var = 0.10
 				tooltip = army_defense_factor_tooltip
 			}
 			add_popularity = {
