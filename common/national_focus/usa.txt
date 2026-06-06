@@ -616,7 +616,7 @@ focus_tree = {
 				limit = {
 					has_state_flag = USA_finished_ABC_project
 				}
-				add_extra_state_shared_building_slots = 2 
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -1068,11 +1068,11 @@ focus_tree = {
 				days = -50
 			}
 				custom_effect_tooltip = generic_skip_one_line_tt
-			add_to_variable = { 
-				var = USA_new_deal_help 
-				value = 5
-				tooltip = USA_new_deal_help_increase_tt2
-			}
+			#add_to_variable = { 
+				#var = USA_new_deal_help 
+				#value = 5
+				#tooltip = USA_new_deal_help_increase_tt2
+			#}
 		
 			custom_effect_tooltip = USA_spacer_tooltip_tt
 			random_owned_state = {
@@ -1145,10 +1145,10 @@ focus_tree = {
 
 			
 			custom_effect_tooltip = USA_modify_new_deal_tt
-			add_to_variable = {
-				var = USA_production_speed_industrial_complex_factor_var
-				value = 0.2
-				tooltip = industrial_complex_build_speed_factor_tooltip
+				add_to_variable = {
+					var = USA_production_cost_industrial_complex_factor_var
+					value = -0.10
+					tooltip = USA_civ_cost_tt
 			}
 			add_to_variable = {
 				var = USA_consumer_goods_factor_var
@@ -1257,11 +1257,12 @@ focus_tree = {
 		}
 		continue_if_invalid = yes
 		completion_reward = {
-			add_to_variable = { 
-				var = USA_new_deal_help 
-				value = 5
-				tooltip = USA_new_deal_help_increase_tt2
-			}
+			#add_to_variable = { 
+				#var = USA_new_deal_help 
+				#value = 5
+				#tooltip = USA_new_deal_help_increase_tt2
+			#}
+			add_political_power = 100
 			custom_effect_tooltip = USA_lower_crisis_level_by_10_tt
 			add_to_variable = { USA_crisis_level = -10 }
 
@@ -1314,14 +1315,10 @@ focus_tree = {
 			custom_effect_tooltip = USA_modify_new_deal_tt
 			add_to_variable = {
 				var = USA_production_speed_arms_factory_factor_var
-				value = 0.2
+				value = 0.15
 				tooltip = arms_factory_build_speed_factor_tooltip
 			}
-			add_to_variable = {
-				var = USA_production_speed_dockyard_factor_var
-				value = 0.2
-				tooltip = dockyard_build_speed_factor_tooltip
-			}
+		
 	
 			add_to_variable = {
 				var = USA_local_resources_factor_var
@@ -2087,7 +2084,7 @@ focus_tree = {
 		cost = 2.9
 		prerequisite = { focus = USA_keynesian_militarism }
 		available = {
-			has_country_flag = USA_office_of_production_formed_flag
+			has_country_flag = USA_national_defense_mediation_formed_flag
 		}
 		completion_reward = {
 			
@@ -2469,7 +2466,7 @@ focus_tree = {
 		cost = 2.9
 		prerequisite = { focus = USA_a_day_to_live_in_infamy }
 		completion_reward = {
-			add_research_slot = 1			
+			
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = vannevar_bush
 
@@ -2613,7 +2610,8 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt 
 			add_ideas = USA_cheaper_rockets
 
-#heavy tank, V1 ic reduction, land cruiser
+
+			
 		}
 
 	}
@@ -2688,6 +2686,7 @@ focus_tree = {
 				set_technology = { superb_weapons_usa = 1 }
 			}
 			
+			
 		}
 	}
 
@@ -2703,6 +2702,8 @@ focus_tree = {
 		available = {
 			has_army_experience < 100
 		}
+		cancel_if_invalid = no 
+		continue_if_invalid = no
 		prerequisite = { focus = USA_a_day_to_live_in_infamy }
 		completion_reward = {
 			add_ideas = unprepared_for_war
@@ -2780,6 +2781,7 @@ focus_tree = {
 			unlock_decision_tooltip = { decision = USA_victory_program_2 show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = USA_victory_program_3 show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = USA_victory_program_4 show_effect_tooltip = yes }
+			
 		}
 	}
 
@@ -2817,18 +2819,18 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = USA_establish_war_production_board }
 		completion_reward = {
-			custom_effect_tooltip = USA_modify_main_spirit_tt
-			add_to_variable = {
-				var = USA_production_cost_synthetic_rubber_refinery_factor_var
-				value = -0.2
-				tooltip = production_cost_synthetic_rubber_refinery_factor_tooltip
-			}
-			add_to_variable = {
-				var = USA_production_cost_synthetic_refinery_factor_var
-				value = -0.2
-				tooltip = production_cost_synthetic_refinery_factor_tooltip
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
+			#custom_effect_tooltip = USA_modify_main_spirit_tt
+			#add_to_variable = {
+				#var = USA_production_cost_synthetic_rubber_refinery_factor_var
+				#value = -0.2
+				#tooltip = production_cost_synthetic_rubber_refinery_factor_tooltip
+			#}
+			#add_to_variable = {
+				#var = USA_production_cost_synthetic_refinery_factor_var
+				#value = -0.2
+				#tooltip = production_cost_synthetic_refinery_factor_tooltip
+			#}
+			#custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = USA_give_all_resources_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
@@ -2975,7 +2977,7 @@ focus_tree = {
 			}
 			add_power_balance_value = {
 				id = USA_power_balance2
-				value = 0.1
+				value = 0.05
 			}
 		}
 	}
@@ -2997,8 +2999,9 @@ focus_tree = {
 			add_stability = 0.05
 			add_power_balance_value = {
 				id = USA_power_balance2
-				value = 0.3
+				value = 0.25
 			}
+			
 			
 		}
 	}
@@ -3075,6 +3078,7 @@ focus_tree = {
 				}
 
 			}
+			
 		}
 	}
 
@@ -3118,7 +3122,7 @@ focus_tree = {
 					add_ideas = USA_last_crusade2
 				}
 			}
-		
+			
 			
 			
 			
@@ -3146,7 +3150,7 @@ focus_tree = {
 		
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}	
@@ -3362,6 +3366,11 @@ focus_tree = {
 				id = USA_power_balance
 				value = 0.2
 			}
+			add_mastery = {
+				amount = 40
+				folder = land
+			
+			}
 		}
 	}
 	
@@ -3490,7 +3499,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3611,6 +3620,11 @@ focus_tree = {
 				var = USA_max_command_power_var 
 				value = 50
 				tooltip = command_power_tt
+			}
+			add_mastery = {
+				amount = 40
+				folder = land
+			
 			}
 		}
 	}
@@ -4446,16 +4460,42 @@ focus_tree = {
 				date > 1940.1.1
 			}
 			else = {
-				custom_trigger_tooltip = {
-					tooltip = USA_escalation_is_over_3		
-					JAP = {
-						check_variable = {
-							var = JAP_war_escalation_var
-							value = 3
-							compare = greater_than_or_equals
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = USA_escalation_is_over_3		
+						JAP = {
+							check_variable = {
+								var = JAP_war_escalation_var
+								value = 3
+								compare = greater_than_or_equals
+							}
 						}
 					}
+			
+					CHI = {
+						surrender_progress > 0.7
+					}
+					AND = {
+						CHI = {
+							surrender_progress > 0.65
+						}
+						date > 1938.6.1
+					}
+					AND = {
+						CHI = {
+							surrender_progress > 0.6
+						}
+						date > 1939.1.1
+					}
+					AND = {
+						CHI = {
+							surrender_progress > 0.55
+						}
+						date > 1939.6.1
+					}
+					
 				}
+				
 			}
 			
 		}
@@ -7798,7 +7838,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = GER_air_innovation
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}	
@@ -7830,7 +7870,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = GER_air_innovation
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}	
@@ -7859,7 +7899,7 @@ focus_tree = {
 			air_experience = 50
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}

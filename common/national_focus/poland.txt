@@ -14,6 +14,9 @@ focus_tree = {
 
 	continuous_focus_position = { x = 4300 y = 1500	 }
 
+	# Commonwealth combined programs branch (definitions in commonwealth_combined_programs_joint.txt)
+	shared_focus = COMMON_commonwealth_combined_programs
+
 	focus = {
 		id = POL_the_cabinet_of_marian_zyndram
 		icon = GFX_focus_wladyslav
@@ -228,10 +231,7 @@ focus_tree = {
 				POL_production_speed_industrial_complex_factor_var = 0.05
 				tooltip = POL_civ_construction_tt1
 			}
-			add_to_variable = {
-				POL_production_speed_arms_factory_factor_var = -0.05
-				tooltip = POL_mil_construction_tt1
-			}
+			
 			87 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -291,10 +291,7 @@ focus_tree = {
 				POL_production_speed_buildings_factor_var = 0.025
 				tooltip = POL_constra_tt1
 			}
-			add_to_variable = {
-				POL_production_speed_arms_factory_factor_var = -0.075
-				tooltip = POL_mil_construction_tt1
-			}
+			
 		}
 	}
 
@@ -327,10 +324,7 @@ focus_tree = {
 				POL_production_speed_industrial_complex_factor_var = 0.05
 				tooltip = POL_civ_construction_tt1
 			}
-			add_to_variable = {
-				POL_production_speed_arms_factory_factor_var = -0.05
-				tooltip = POL_mil_construction_tt1
-			}
+			
 			add_tech_bonus = {
 				category = construction_tech
 				technology = advanced_machine_tools
@@ -359,6 +353,7 @@ focus_tree = {
 			focus = POL_take_a_neutral_stance
 		}
 		available = {
+			
 			SPR = { 
 				has_war = yes
 			}
@@ -635,11 +630,16 @@ focus_tree = {
 				add_mio_funds = 5000
 			}
 			custom_effect_tooltip = available_air_designer
-			830 = {
-				add_extra_state_shared_building_slots = 2
+			831 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
 					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_assembly
+					level = 1
 					instant_build = yes
 				}
 				
@@ -790,9 +790,14 @@ focus_tree = {
 				add_mio_funds = 3000
 			}
 			830 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = tank_assembly
 					level = 1
 					instant_build = yes
 				}
@@ -1536,7 +1541,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
                 name = land_doc_bonus
-                cost_reduction = 0.4
+                cost_reduction = 0.5
                 uses = 1
                 category = special_forces_doctrine
             }
@@ -2052,7 +2057,7 @@ focus_tree = {
 			air_experience = 30
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -2113,8 +2118,7 @@ focus_tree = {
 				uses = 1
 				bonus = 0.5
 			}
-			add_equipment_to_stockpile = { type = small_plane_cas_airframe amount = 50 producer = POL }
-			add_equipment_to_stockpile = { type = small_plane_airframe amount = 100 producer = POL }
+			add_equipment_to_stockpile = { type = small_plane_airframe amount = 50 producer = POL }
 	
 		}
 	}
@@ -2135,7 +2139,7 @@ focus_tree = {
 	
 		x = 6
 		y = 4
-		cost = 2.96
+		cost = 1.96
 
 		ai_will_do = {
 			factor = 10
@@ -2147,7 +2151,7 @@ focus_tree = {
 			air_experience = 25
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = POL_ludomil_rayski
-			add_equipment_to_stockpile = { type = small_plane_airframe amount = 100 producer = POL }
+			add_equipment_to_stockpile = { type = small_plane_airframe amount = 75 producer = POL }
 		}
 	}
 
@@ -2164,7 +2168,7 @@ focus_tree = {
 	
 		x = 6
 		y = 5
-		cost = 2.96
+		cost = 1.96
 
 		ai_will_do = {
 			factor = 10
@@ -2174,7 +2178,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 150
-			add_equipment_to_stockpile = { type = medium_plane_airframe amount = 75 producer = POL }
+			add_equipment_to_stockpile = { type = medium_plane_airframe amount = 50 producer = POL }
 	
 		}
 	}
@@ -2192,7 +2196,7 @@ focus_tree = {
 	
 		x = 6
 		y = 6
-		cost = 2.96
+		cost = 1.96
 
 		ai_will_do = {
 			factor = 10
@@ -2202,7 +2206,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 150
-			add_equipment_to_stockpile = { type = small_plane_cas_airframe amount = 100 producer = POL }
+			add_equipment_to_stockpile = { type = small_plane_cas_airframe amount = 75 producer = POL }
 	
 		}
 	}
@@ -2223,7 +2227,7 @@ focus_tree = {
 	
 		x = 10
 		y = 4
-		cost = 2.96
+		cost = 1.96
 
 		ai_will_do = {
 			factor = 10
@@ -2237,7 +2241,7 @@ focus_tree = {
 			show_ideas_tooltip = POL_jozef_zajac
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = POL_wladyslaw_kalkus
-			add_equipment_to_stockpile = { type = small_plane_airframe amount = 100 producer = POL }
+			add_equipment_to_stockpile = { type = small_plane_airframe amount = 75 producer = POL }
 		}
 	}
 
@@ -2348,7 +2352,7 @@ focus_tree = {
 	
 		x = 10
 		y = 6
-		cost = 2.96
+		cost = 1.96
 
 		ai_will_do = {
 			factor = 10
@@ -2357,7 +2361,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_equipment_to_stockpile = { type = small_plane_airframe amount = 100 producer = POL }
+			add_equipment_to_stockpile = { type = small_plane_airframe amount = 75 producer = POL }
 			air_experience = 150
 		
 	
@@ -2484,13 +2488,16 @@ focus_tree = {
 				  level = 2
 				  instant_build = yes
 			    }
-				add_extra_state_shared_building_slots = 2
+		    }
+			add_offsite_building = { type = dockyard level = 1 }
+			826 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
-		    }
+			}
 			add_tech_bonus = {
 				name = smomething
 				bonus = 0.4
@@ -2524,14 +2531,14 @@ focus_tree = {
 	   			uses = 1
 		  		category = naval_doctrine
 	  		}
-			85 = {
-				add_extra_state_shared_building_slots = 2
+			add_offsite_building = { type = dockyard level = 1 }
+			826 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
-				
 			}
 	
 		}
@@ -2573,11 +2580,12 @@ focus_tree = {
 	   			uses = 1
 		  		category = trade_interdiction_tree
 	  		}
-			  85 = {
-				add_extra_state_shared_building_slots = 2
+			add_offsite_building = { type = dockyard level = 2 }
+			826 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2606,6 +2614,14 @@ focus_tree = {
 				days = 60
 			}
 			add_offsite_building = { type = dockyard level = 2 }
+			826 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 	
 		}
 	}
@@ -2630,6 +2646,14 @@ focus_tree = {
 
 			navy_experience = 50
 			add_offsite_building = { type = dockyard level = 2 }
+			826 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 	
 		}
 	}
@@ -2670,11 +2694,12 @@ focus_tree = {
 	   			uses = 1
 		  		category = fleet_in_being_tree
 	  		}
-			85 = {
-				add_extra_state_shared_building_slots = 2
+			add_offsite_building = { type = dockyard level = 2 }
+			826 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2705,6 +2730,14 @@ focus_tree = {
 				category = cl_tech
 			}
 			add_offsite_building = { type = dockyard level = 2 }
+			826 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 	
 		}
 	}
@@ -2733,6 +2766,14 @@ focus_tree = {
 				producer = POL
 			}
 			add_offsite_building = { type = dockyard level = 2 }
+			826 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 	
 		}
 	}
@@ -2771,14 +2812,14 @@ focus_tree = {
 			}
 			add_political_power = 25
 			
-			85 = {
-				add_extra_state_shared_building_slots = 2
+			add_offsite_building = { type = dockyard level = 2 }
+			826 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
-				
 			}
 
 	
@@ -2835,8 +2876,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_core_state = {
-			
+			830 = {
+				
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = tank_assembly
@@ -2886,7 +2927,7 @@ focus_tree = {
 			set_capital = {state = 831}
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 250
+				amount = 200
 				producer = ENG
 			}
 			if = {
@@ -4231,7 +4272,7 @@ focus_tree = {
 			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -5191,7 +5232,6 @@ focus_tree = {
 				logistics_skill=2
 			}
 	
-			 add_equipment_to_stockpile = { type = transport_plane_equipment amount = 100 producer = POL }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 1000
