@@ -2781,7 +2781,7 @@ focus_tree = {
 						}
 					}
 				}
-				custom_effect_tooltip = "Will also spawn some resources if Marsa Matruh is held by Italy or its allies."
+				custom_effect_tooltip = "Will spawn some resources if Marsa Matruh is held by Italy or its allies."
 			}
 		
 			else = {
@@ -2901,7 +2901,7 @@ focus_tree = {
 						}
 					}
 				}
-				custom_effect_tooltip = "Will also spawn some resources if Marsa Matruh is held by Italy or its allies."
+				custom_effect_tooltip = "Will spawn some resources if Marsa Matruh is held by Italy or its allies."
 			}
 			
 			else_if = {
@@ -3108,7 +3108,7 @@ focus_tree = {
 						}
 					}
 				}
-				custom_effect_tooltip = "Will also spawn some resources if Cairo is held by Italy or its allies."
+				custom_effect_tooltip = "Will spawn some resources if Cairo is held by Italy or its allies."
 			}
 			
 			else = {
