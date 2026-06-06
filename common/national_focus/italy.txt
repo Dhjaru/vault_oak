@@ -229,8 +229,8 @@ focus_tree = {
 					add_equipment_to_stockpile = { type = motorized_equipment amount = 200 producer = ITA }
 					add_equipment_to_stockpile = { type = horse_equipment amount = 500 producer = ITA }
 					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = ITA }
-					add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 150 producer = ITA }
-					add_equipment_to_stockpile = { type = tac_bomber_equipment_1934 amount = 50 producer = ITA }
+					add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 150 producer = SPR }
+					add_equipment_to_stockpile = { type = tac_bomber_equipment_1934 amount = 50 producer = SPR }
 					add_equipment_to_stockpile = { type = light_tank_chassis_1936 amount = 100 producer = ITA }
 				}
 			}
@@ -273,13 +273,13 @@ focus_tree = {
 				limit = {
 					has_global_flag = scw_over
 				}
-				army_experience = 250
+				army_experience = 205
 			}
 			else = {
-				army_experience = 500
+				army_experience = 375
 			}
-			air_experience = 250
-			add_political_power = 300
+			air_experience = 200
+			add_political_power = 200
 			add_war_support = 0.1
 			hidden_effect = {
 				ITA = {
@@ -341,8 +341,8 @@ focus_tree = {
 					add_equipment_to_stockpile = { type = motorized_equipment amount = 400 producer = ITA }
 					add_equipment_to_stockpile = { type = horse_equipment amount = 1000 producer = ITA }
 					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1000 producer = ITA }
-					add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 250 producer = ITA }
-					add_equipment_to_stockpile = { type = tac_bomber_equipment_1934 amount = 100 producer = ITA }
+					add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 250 producer = SPR }
+					add_equipment_to_stockpile = { type = tac_bomber_equipment_1934 amount = 100 producer = SPR }
 					add_equipment_to_stockpile = { type = light_tank_chassis_1934 amount = 100 producer = ITA }
 					add_equipment_to_stockpile = { type = light_tank_chassis_1936 amount = 100 producer = ITA }
 
@@ -868,7 +868,6 @@ focus_tree = {
 
 			add_to_variable = { ITA_ra_air_doctrine_cost_factor = -0.1 }
 
-			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -939,7 +938,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -2041,13 +2040,13 @@ focus_tree = {
 			#	days = 365
 			#}
 		    add_research_slot = 1
-			#custom_effect_tooltip = #ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
+			custom_effect_tooltip = ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
 			add_to_variable = { 
 				var = ITA_industry_consumer_goods_modifier 
 				value = 0.05
 				tooltip = consumer_goods_tooltip
 			}
-			#custom_effect_tooltip = ITA_state_development_africa_tt
+			custom_effect_tooltip = ITA_state_development_africa_tt
 			
 			
 			448 = {
@@ -2097,9 +2096,6 @@ focus_tree = {
 				set_state_category = rural
 				
 			}
-			#custom_effect_tooltip = ITA_state_development_africa_tt2
-			
-			
 			hidden_effect = {
 				271 = {
 				add_building_construction = {
@@ -2117,7 +2113,7 @@ focus_tree = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
-					}
+				}
 
 				
 				add_extra_state_shared_building_slots = 5
@@ -2152,72 +2148,7 @@ focus_tree = {
 				add_compliance = 20
 	
 			}
-				#271 = {
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#834 = {	
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#835 = {
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#550 = {
-#						
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-#					
-#
-				#}
-				#559 = {
-#						
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-#					
-				#}
-				#448 = {
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#450 = {
-#						
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#451 = {
-#					
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-				#449 = {
-#					
-					#add_dynamic_modifier = {
-						#modifier = ITA_state_development_africa
-						#days = 365
-					#}
-				#}
-
-			}
-			
-			
+			}		
 		}
      }
 	focus = {
@@ -2228,7 +2159,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ITA_massive_colonial_investments
-		cost = 7.145
+		cost = 2.2
 		ai_will_do = {
 			factor = 20
 		}
@@ -2283,7 +2214,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_immigration_ethiopia
-		cost = 2.2
+		cost = 7.145
 		ai_will_do = {
 			factor = 0
 		}
@@ -2459,12 +2390,7 @@ focus_tree = {
 						state = 552 
 					}
 				}
-    			add_extra_state_shared_building_slots = 2
-    			add_building_construction = {
-    				type = industrial_complex
-        			level = 1
-       				instant_build = yes
-				}
+    			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     				type = arms_factory
         			level = 1
@@ -2577,6 +2503,12 @@ focus_tree = {
 
 		completion_reward = {
 			448 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2589,6 +2521,12 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = ITA_libyan_railway_modifier days = 730 scope = ITA }
 			}
 			449 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2601,6 +2539,12 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = ITA_libyan_railway_modifier days = 730 scope = ITA }
 			}
 			450 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2613,6 +2557,12 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = ITA_libyan_railway_modifier days = 730 scope = ITA }
 			}
 			451 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2676,14 +2626,19 @@ focus_tree = {
 				}
 			}
 			451 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-				
-			
 			}
+			
 			#LIBYA
 			if = {
 				limit = {
@@ -2692,6 +2647,12 @@ focus_tree = {
 					}
 				}
 				450 = { #BENGHASI
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2708,6 +2669,12 @@ focus_tree = {
 					}
 				}
 				449 = { #EL AGHELIA
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2724,6 +2691,12 @@ focus_tree = {
 					}
 				}
 				448 = { #TRIPOLI
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -17058,9 +17031,9 @@ focus_tree = {
 				tooltip = local_resources_factor_tooltip
 			}
 			#add_to_variable = { 
-				#var = ITA_industry_consumer_goods_modifier 
-				#value = -0.05 
-				#tooltip = consumer_goods_tooltip
+			#	var = ITA_industry_consumer_goods_modifier 
+			#	value = -0.03 
+			#	tooltip = consumer_goods_tooltip
 			#}
 
 			#custom_effect_tooltip = ITA_modify_military_industry_dynamic_modifier_ns_intro
@@ -17405,7 +17378,17 @@ focus_tree = {
 					}
 					add_resource = {
 						type = steel
-						amount = 12
+						amount = 20
+						#state = 52
+					}
+					add_resource = {
+						type = tungsten
+						amount = 6
+						#state = 52
+					}
+					add_resource = {
+						type = chromium
+						amount = 10
 						#state = 52
 					}
 				}
@@ -17421,8 +17404,18 @@ focus_tree = {
 					}
 					add_resource = {
 						type = steel
-						amount = 12
-						#state = 43
+						amount = 20
+						#state = 52
+					}
+					add_resource = {
+						type = tungsten
+						amount = 6
+						#state = 52
+					}
+					add_resource = {
+						type = chromium
+						amount = 10
+						#state = 52
 					}
 				}
 				
@@ -17437,8 +17430,18 @@ focus_tree = {
 					}
 					add_resource = {
 						type = steel
-						amount = 12
-						#state = 43
+						amount = 20
+						#state = 52
+					}
+					add_resource = {
+						type = tungsten
+						amount = 6
+						#state = 52
+					}
+					add_resource = {
+						type = chromium
+						amount = 10
+						#state = 52
 					}
 				}
 
@@ -17453,8 +17456,18 @@ focus_tree = {
 					}
 					add_resource = {
 						type = steel
-						amount = 12
-						#state = 43
+						amount = 20
+						#state = 52
+					}
+					add_resource = {
+						type = tungsten
+						amount = 6
+						#state = 52
+					}
+					add_resource = {
+						type = chromium
+						amount = 10
+						#state = 52
 					}
 				}
 			}
@@ -17530,10 +17543,10 @@ focus_tree = {
 			}
 			random_core_state = {
 			
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 						type = tank_assembly
-						level = 1
+						level = 2
 						instant_build = yes 
 				}
 			}
@@ -17831,7 +17844,7 @@ focus_tree = {
 			ITA_bop_low_increase_effect = yes
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -18032,7 +18045,7 @@ focus_tree = {
 			
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -18499,7 +18512,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 producer = ITA } 
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -18654,7 +18667,7 @@ focus_tree = {
 				army_experience = 100
 			}
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -18817,7 +18830,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -18997,7 +19010,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -19469,15 +19482,12 @@ focus_tree = {
 
 		completion_reward = {
 
-			#add_to_variable = { ITA_ra_experience_gain_air = 0.05 }
-			add_to_variable = { ITA_ra_air_mission_xp_gain_factor = 0.1 }
-			add_to_variable = { ITA_ra_air_training_xp_gain_factor = 0.2 }
-			add_to_variable = { ITA_ra_army_bonus_air_superiority_factor = 0.10 }
-			
-			add_to_variable = { ITA_ra_air_ace_generation_chance_factor = 0.25 }
-			add_to_variable = { ITA_ra_air_cas_present_factor = 0.1	}	
+			swap_ideas = {
+				remove_idea = ITA_regia_aeronautica
+				add_idea = ITA_regia_aeronautica2
+			}
 
-			custom_effect_tooltip = ITA_OAK_air_innovation_tt	
+			#custom_effect_tooltip = ITA_OAK_air_innovation_tt	
 		
 			#custom_effect_tooltip = available_chief_of_airforce
 			#show_ideas_tooltip = ITA_francesco_pricolo
@@ -19513,7 +19523,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -19695,9 +19705,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		custom_effect_tooltip = ITA_high_octane_fuel_plants_tt
-		add_to_variable = { ITA_ra_air_maximum_speed_factor = 0.1	}	
-		add_to_variable = { ITA_ra_air_agility_factor = 0.1	}
+			if = {
+				limit = {
+					has_completed_focus = ITA_amedeo_mecozzis_assault_wings
+				}
+				swap_ideas = {
+					remove_idea = ITA_regia_aeronautica_amedeo
+					add_idea = ITA_regia_aeronautica_amedeo2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ITA_regia_aeronautica_douhets
+					add_idea = ITA_regia_aeronautica_douhets2
+				}
+			}
+			
 		
 			450 = {
 				add_extra_state_shared_building_slots = 2
@@ -19812,6 +19835,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_mastery = {
+				amount = 20
+				folder = air
+			}
 		}
 
 	}
@@ -19866,6 +19893,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_mastery = {
+				amount = 20
+				folder = air
+			}
 		}
 	}
 
@@ -19887,9 +19918,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		custom_effect_tooltip = ITA_embrace_douhets_ideas_tt
-			add_to_variable = { ITA_ra_air_strategic_bomber_bombing_factor = 0.2 }
-			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05	}
+			swap_ideas = {
+				remove_idea = ITA_regia_aeronautica2
+				add_idea = ITA_regia_aeronautica_douhets
+			}
 			air_experience  = 75
 			add_tech_bonus = {
 				bonus = 1
@@ -19903,7 +19935,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -19948,6 +19980,10 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = strat_bomber_equipment_1939 amount = 200 producer = ITA }   
 			}				
 			}
+			add_mastery = {
+				amount = 20
+				folder = air
+			}
 		}
 	}
 	focus = {
@@ -19971,10 +20007,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-
-			add_to_variable = { ITA_ra_ground_attack_factor = 0.05 }
-			custom_effect_tooltip = ITA_compagnie_auto_avio_sahariane_ra2_tt
-			custom_effect_tooltip = ITA_diving_bombers_dynamic_modifier_add_tt
+			swap_ideas = {
+				remove_idea = ITA_regia_aeronautica2
+				add_idea = ITA_regia_aeronautica_amedeo
+			}
+			
 			air_experience  = 75
 			add_tech_bonus = {
 				bonus = 1
@@ -19988,13 +20025,11 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
-			hidden_effect = {
-				add_ideas = german_dive_bombing
-			}	
+				
 				
 		}
 	}
@@ -20044,6 +20079,10 @@ focus_tree = {
 			mio:ITA_crda_cant_organization = {
 				add_mio_funds = 2000
 			}	
+			add_mastery = {
+				amount = 20
+				folder = air
+			}
 		}
 	}
 	
@@ -20070,7 +20109,7 @@ focus_tree = {
 			navy_experience = 100
 			unlock_decision_tooltip = { decision = ITA_dockyard_early show_effect_tooltip = no }
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 				
@@ -20102,7 +20141,7 @@ focus_tree = {
 			unlock_decision_tooltip = { decision = ITA_dockyard_speed_bonus show_effect_tooltip = no }
 
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}

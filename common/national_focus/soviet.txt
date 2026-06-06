@@ -90,7 +90,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_convoys_explain_tt
 			add_doctrine_cost_reduction = {
 				name = nav_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -189,7 +189,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SOV_create_unit_marine_divisions_tt
 			add_mastery = {
-				amount = 80
+				amount = 30
 				folder = land
 			
 			}
@@ -4664,7 +4664,7 @@ focus_tree = {
 				amount = 300
 			}
 			add_tech_bonus = {
-				uses = 4
+				uses = 3
 				bonus = 1 
 				category = support_tech
 				name = SOV_logistical_corps_expansion
@@ -4694,7 +4694,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -5707,6 +5707,7 @@ focus_tree = {
 			show_unit_leaders_tooltip = SOV_yakov_kreizer	
 			show_unit_leaders_tooltip = SOV_ivan_chernyakhovsky			
 			show_unit_leaders_tooltip = SOV_dmitry_lelyushenko		
+			
 		}
 	}
 
@@ -5734,7 +5735,7 @@ focus_tree = {
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -5914,7 +5915,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -5999,7 +6000,7 @@ focus_tree = {
 			air_experience = 20
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -6211,7 +6212,7 @@ focus_tree = {
 			air_experience = 40
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -6336,7 +6337,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -8228,12 +8229,20 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_research_slot = 1 
+		
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
+			}
+			add_mastery = {
+				amount = 40
+				folder = land
+			}
+			add_mastery = {
+				amount = 40
+				folder = air
 			}
 		}
 	}

@@ -1,5 +1,28 @@
 ideas = {
 	hidden_ideas = {
+		GER_africa_mastery_gain_bonus_spirit = {
+
+			name = "Afrikakorps"
+			
+			picture = GFX_idea_GER_afrika_campaign
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			cancel = {
+				
+			}
+
+			targeted_modifier = {
+			}
+			modifier = {
+				land_mastery_gain_factor = 0.5
+				
+			}
+
+			removal_cost = -1
+		}
 		ROM_ger_trade_treaty = { 
 			name = ROM_trade_treaty_with_germany
 
@@ -1020,6 +1043,7 @@ ideas = {
 				heat_attrition_factor = -0.2
 				army_strength_factor  = 1.2
 				air_defence_factor = 0.2
+				custom_modifier_tooltip = GER_africa_mastery_gain_bonus_tt
 				custom_modifier_tooltip = GER_afrika_spirit_dissappears_tt
 			}
 			
@@ -4383,11 +4407,12 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
-				industrial_capacity_factory = 0.06
+				production_factory_efficiency_gain_factor = 0.04
+				industrial_capacity_factory = 0.04
 				political_power_cost = 0.05
 				resistance_damage_to_garrison = 0.05
-				industry_repair_factor = -0.05								
+				industry_repair_factor = -0.05
+				resistance_target = 0.03				
 			}
 		}
 
@@ -4400,12 +4425,13 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
-				industrial_capacity_factory = 0.12
+				production_factory_efficiency_gain_factor = 0.08
+				industrial_capacity_factory = 0.08
 				political_power_cost = 0.02
 				resistance_damage_to_garrison = 0.075
 				industry_repair_factor = -0.1
-				consumer_goods_expected_value = 0.01				
+				consumer_goods_expected_value = 0.01	
+				resistance_target = 0.06			
 			}
 		}
 
@@ -4418,12 +4444,13 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.15
-				industrial_capacity_factory = 0.18
+				production_factory_efficiency_gain_factor = 0.12
+				industrial_capacity_factory = 0.12
 				political_power_cost = 0.05
 				resistance_damage_to_garrison = 0.125
 				industry_repair_factor = -0.1
-				consumer_goods_expected_value = 0.02				
+				consumer_goods_expected_value = 0.02	
+				resistance_target = 0.09			
 			}
 		}
 
@@ -4436,12 +4463,13 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.2
-				industrial_capacity_factory = 0.24
+				production_factory_efficiency_gain_factor = 0.16
+				industrial_capacity_factory = 0.16
 				political_power_cost = 0.1
 				resistance_damage_to_garrison = 0.15
 				industry_repair_factor = -0.1
-				consumer_goods_expected_value = 0.03			
+				consumer_goods_expected_value = 0.03	
+				resistance_target = 0.12	
 			}
 		}
 
@@ -4454,12 +4482,13 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.25
-				industrial_capacity_factory = 0.3
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.2
 				political_power_cost = 0.15
 				resistance_damage_to_garrison = 0.175
 				industry_repair_factor = -0.1
 				consumer_goods_expected_value = 0.04
+				resistance_target = 0.15
 			}
 		}
 
@@ -4472,12 +4501,13 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.3
-				industrial_capacity_factory = 0.36
+				production_factory_efficiency_gain_factor = 0.24
+				industrial_capacity_factory = 0.24
 				political_power_cost = 0.2
 				resistance_damage_to_garrison = 0.2
 				industry_repair_factor = -0.1
-				consumer_goods_expected_value = 0.05				
+				consumer_goods_expected_value = 0.05	
+				resistance_target = 0.18			
 			}
 		}
 
@@ -4855,6 +4885,7 @@ ideas = {
 			picture = krupp
 			
 			modifier = {
+				production_factory_start_efficiency_factor = 0.05
 				line_change_production_efficiency_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.05
 				political_power_cost = -0.2
@@ -4886,6 +4917,7 @@ ideas = {
 			picture = krupp
 			
 			modifier = {
+				production_factory_start_efficiency_factor = 0.05
 				line_change_production_efficiency_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.05
 				political_power_cost = -0.2
@@ -4917,7 +4949,7 @@ ideas = {
 			picture = GER_swedish_trade
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 				consumer_goods_expected_value = 0.02
 				political_power_cost = 0.1
 			}
@@ -4938,7 +4970,7 @@ ideas = {
 			picture = GER_swedish_trade2
 
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.03
 				consumer_goods_expected_value = -0.03
 				political_power_cost = 0.2
 			}
@@ -6817,10 +6849,7 @@ ideas = {
 
 			name = GER_military_mission
 
-			modifier = {
-				license_production_speed = 0.25
-			}
-			
+		
 			modifier = {
 				land_doctrine_cost_factor = -0.05 
 				air_doctrine_cost_factor = -0.1 
@@ -6905,11 +6934,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			
+				
 				max_planning_factor = 0.1
 				dig_in_speed_factor = 0.2
 				experience_gain_army_factor = -0.5
-				land_mastery_gain_factor = -0.5
+				air_mastery_gain_factor = -0.40
+				
+				
 			}
 		}
 
@@ -6931,7 +6962,8 @@ ideas = {
 				command_power_gain = 0.1
 				dig_in_speed_factor = 0.2
 				experience_gain_army_factor = -0.5
-				land_mastery_gain_factor = -0.5
+				air_mastery_gain_factor = -0.40
+				
 			}
 		}
 		general_staff1 = {
@@ -6953,7 +6985,9 @@ ideas = {
 				dig_in_speed_factor = 0.2
 				experience_gain_army_factor = -0.25
 				experience_gain_factor = -0.25
-				land_mastery_gain_factor = -0.25
+				air_mastery_gain_factor = -0.40
+			
+				
 			}
 		}
 
@@ -6979,7 +7013,8 @@ ideas = {
 				acclimatization_cold_climate_gain_factor = -0.45
 				dig_in_speed_factor = 0.2
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+				land_mastery_gain_factor = -0.4
+				air_mastery_gain_factor = -0.40
 				experience_gain_factor = -0.4
 				command_power_gain_mult = 0.3
 				max_command_power = 100	
@@ -7006,10 +7041,11 @@ ideas = {
 				planning_speed = 0.15
 				dig_in_speed_factor = 0.2
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+				land_mastery_gain_factor = -0.4
 				experience_gain_factor = -0.4
 				command_power_gain_mult = 0.3
 				max_command_power = 100	
+				air_mastery_gain_factor = -0.40
 			}
 		}	
 		general_staff4 = {
@@ -7033,10 +7069,11 @@ ideas = {
 				max_planning = 0.03
 				dig_in_speed_factor = 0.3
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+				land_mastery_gain_factor = -0.4
 				experience_gain_factor = -0.4
 				command_power_gain_mult = 0.3
 				max_command_power  = 100
+				air_mastery_gain_factor = -0.40
 			}
 		}
 		general_staff42 = {
@@ -7060,10 +7097,11 @@ ideas = {
 				max_planning = 0.06
 				dig_in_speed_factor = 0.4
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+				land_mastery_gain_factor = -0.4
 				experience_gain_factor = -0.4
 				command_power_gain_mult = 0.3
 				max_command_power  = 100
+				air_mastery_gain_factor = -0.40
 			}
 			
 		}	
@@ -7088,10 +7126,11 @@ ideas = {
 				max_planning = 0.06
 				dig_in_speed_factor = 0.4
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+				land_mastery_gain_factor = -0.4
 				experience_gain_factor = -0.4
 				command_power_gain_mult = 0.3
 				max_command_power  = 100
+				air_mastery_gain_factor = -0.40
 			}
 			targeted_modifier = {
 				tag = SOV
@@ -7121,10 +7160,11 @@ ideas = {
 				dig_in_speed_factor = 0.1
 				non_core_manpower = 0.02
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+				land_mastery_gain_factor = -0.4
 				experience_gain_factor = -0.4
 				command_power_gain_mult = 0.3
 				max_command_power = 100	
+				air_mastery_gain_factor = -0.40
 			}
 			
 		}		
@@ -7151,10 +7191,11 @@ ideas = {
 				dig_in_speed_factor = 0
 				non_core_manpower = 0.02
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+				land_mastery_gain_factor = -0.4
 				experience_gain_factor = -0.4
 				command_power_gain_mult = 0.3
 				max_command_power = 100	
+				air_mastery_gain_factor = -0.40
 			}
 			
 		}
@@ -7180,7 +7221,8 @@ ideas = {
 				dig_in_speed_factor = 0
 				non_core_manpower = 0.02
 				experience_gain_army_factor = -0.45
-				land_mastery_gain_factor = -0.45
+				land_mastery_gain_factor = -0.4
+				air_mastery_gain_factor = -0.40
 				experience_gain_factor = -0.4
 				command_power_gain_mult = 0.3
 				max_command_power = 100	
@@ -8402,7 +8444,7 @@ ideas = {
 
 			modifier = {	
 				global_building_slots_factor = 0.35
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.1
 				consumer_goods_expected_value = 0.03	
 				production_cost_air_assembly_factor = -0.2
@@ -8446,7 +8488,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.1
 				global_building_slots_factor = 0.8
 				production_speed_arms_factory_factor  = 0.4
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.12
 				political_power_cost = -0.1
 				production_cost_tank_assembly_factor = -0.2		

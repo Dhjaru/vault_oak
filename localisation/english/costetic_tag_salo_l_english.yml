@@ -21,4 +21,20 @@
  MAN_corporate_paradise_fascism: "Manchurian Imperial Corporate State"
  MAN_corporate_paradise_fascism_DEF:0 "Manchurian Imperial Corporate State" 
  MAN_corporate_paradise_fascism_ADJ:0 "Manchurian Imperial Corporate State"
- 
+
+
+ SLO_czechoslovakia_fascism:0 "Great Moravian Empire"
+ SLO_czechoslovakia_fascism_DEF:0 "the Great Moravian Empire"
+ SLO_czechoslovakia_democratic:0 "Czechoslovakia"
+ SLO_czechoslovakia_democratic_DEF:0 "Czechoslovakia"
+ SLO_czechoslovakia_neutrality:0 "Kingdom of Great Moravia"
+ SLO_czechoslovakia_neutrality_DEF:0 "the Kingdom of Great Moravia"
+ SLO_czechoslovakia_communism:0 "Czechoslovak Union"
+ SLO_czechoslovakia_communism_DEF:0 "the Czechoslovak Union"
+ SLO_czechoslovakia_fascism_ADJ:0 "Great Moravian"
+ SLO_czechoslovakia_democratic_ADJ:0 "Czechoslovakian"
+ SLO_czechoslovakia_neutrality_ADJ:0 "Great Moravian"
+ SLO_czechoslovakia_communism_ADJ:0 "Czechoslovakian"
+ SLO_czechoslovakia:0 "Czechoslovakia"
+ SLO_czechoslovakia_DEF:0 "Czechoslovakia"
+ SLO_czechoslovakia_ADJ:0 "Czechoslovakian"

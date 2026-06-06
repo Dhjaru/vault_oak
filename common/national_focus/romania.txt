@@ -14,6 +14,8 @@
 
 	continuous_focus_position = { x = 50 y = 1200 }
 
+	shared_focus = AXIS_authorize_volunteers_to_japan
+
 	focus = {
 		id = ROM_national_recovery
 		bypass = {
@@ -604,7 +606,7 @@
 			46 = {
 				add_resource = {
 					type = oil
-					amount = 45
+					amount = 40
 				}
 			}
 		}
@@ -1496,7 +1498,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = fascist_assault_divisions
+			add_ideas = fascist_assault_divisions_romania
 		}
 	}
 
@@ -1692,11 +1694,21 @@
 			}
 			add_stability = 0.1 
 			46 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes 
+				}
+			}
+			if = {
+				limit = { has_dlc = Gotterdammerung }
+				81 = {
+					add_building_construction = {
+						type = dam
+						level = 1
+						province = 11657
+					}
 				}
 			}
 		}
@@ -2152,7 +2164,7 @@
 		x = -10
 		y = 1
 
-		cost = 3
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 6
@@ -2180,7 +2192,7 @@
 				
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -2200,12 +2212,12 @@
 		id = ROM_acquire_licenses
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_expand_the_air_force }
-		mutually_exclusive = { focus = ROM_local_development }
+		
 		x = -2
 		y = 1
 		relative_position_id = ROM_expand_the_air_force
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -2240,7 +2252,7 @@
 		y = 1
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 5
@@ -2286,7 +2298,7 @@
 		y = 1
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -2309,13 +2321,8 @@
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_ground_support
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
-			add_ideas = ROM_airforce_purchases_abroad
+			add_equipment_to_stockpile = { type = small_plane_airframe amount = 100 producer = GER }
+			add_equipment_to_stockpile = { type = medium_plane_airframe amount = 100 producer = GER }
 		}
 	}
 
@@ -2328,7 +2335,7 @@
 		y = 2
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -2359,9 +2366,7 @@
 					instant_build = yes 
 				}
 			}
-			show_ideas_tooltip = ROM_junkers
-			show_ideas_tooltip = ROM_messerschmitt
-			show_ideas_tooltip = ROM_focke_wulf
+		
 		}
 	}
 
@@ -2374,7 +2379,7 @@
 		y = 2
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -2416,7 +2421,7 @@
 		y = 3
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -2456,7 +2461,7 @@
 						has_tech = ger_fighter_1940
 					}
 				}
-				set_technology = { ger_fighter_1940 = 1 }
+				set_technology = { fighter_1940 = 1 }
 			}
 			if = {
 				limit = {
@@ -2464,7 +2469,7 @@
 						has_tech = ger_fighter_1942
 					}
 				}
-				set_technology = { ger_fighter_1942 = 1 }
+				set_technology = { fighter_1942 = 1 }
 			}
 			if = {
 				limit = {
@@ -2472,23 +2477,39 @@
 						has_tech = ger_fighter_1944
 					}
 				}
-				set_technology = { ger_fighter_1944 = 1 }
+				set_technology = { fighter_1944 = 1 }
 			}
 			if = {
 				limit = {
 					GER = {
-						has_tech = ger_fighter_1941
+						has_tech = ger_tactical_bomber_1938
 					}
 				}
-				set_technology = { ger_fighter_1941 = 1 }
+				set_technology = { tactical_bomber_1939 = 1 }
 			}
 			if = {
 				limit = {
 					GER = {
-						has_tech = ger_fighter_1943
+						has_tech = ger_tactical_bomber_1940
 					}
 				}
-				set_technology = { ger_fighter_1943 = 1 }
+				set_technology = { tactical_bomber_1941 = 1 }
+			}
+			if = {
+				limit = {
+					GER = {
+						has_tech = ger_CAS_1939
+					}
+				}
+				set_technology = { CAS_1939 = 1 }
+			}
+			if = {
+				limit = {
+					GER = {
+						has_tech = ger_CAS_1941
+					}
+				}
+				set_technology = { CAS_1941 = 1 }
 			}
 		}
 	}	
@@ -2497,12 +2518,12 @@
 		id = ROM_local_development
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = ROM_expand_the_air_force }
-		mutually_exclusive = { focus = ROM_acquire_licenses }
+	
 		x = 2
 		y = 1
 		relative_position_id = ROM_expand_the_air_force
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 5
@@ -2537,7 +2558,7 @@
 		y = 1
 		relative_position_id = ROM_local_development
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -2562,7 +2583,7 @@
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -2577,7 +2598,7 @@
 		y = 1
 		relative_position_id = ROM_air_superiority
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -2628,7 +2649,7 @@
 		y = 1
 		relative_position_id = ROM_air_superiority
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -2678,13 +2699,16 @@
 		y = 2
 		relative_position_id = ROM_air_superiority
 
-		cost = 7.143
+		cost =2.9
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
+			GER = {
+				has_completed_track = fighter_operations_KNI
+			}
 
 		}
 
@@ -2712,7 +2736,7 @@
 		y = 3
 		relative_position_id = ROM_air_superiority
 
-		cost = 7.143
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -2787,7 +2811,7 @@
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}	
@@ -2843,7 +2867,7 @@
 			add_ideas = ROM_expand_the_army
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3121,7 +3145,7 @@
 			army_experience = 40
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3334,10 +3358,10 @@
 			}
 			random_core_state = {
 			
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = tank_assembly
-					level = 1
+					level = 2
 					instant_build = yes 
 			}
 			}
@@ -3612,7 +3636,7 @@
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3653,7 +3677,7 @@
 		complete_tooltip = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -3692,7 +3716,7 @@
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}

@@ -14,6 +14,14 @@ focus_tree = {
 		
 	continuous_focus_position = { x = 1400 y = 2100 }
 
+	# Commonwealth joint area (definitions in commonwealth_joint.txt)
+	shared_focus = COMMON_strengthen_commonwealth_ties
+	shared_focus = COMMON_joint_commonwealth_training
+	shared_focus = COMMON_commonwealth_combined_programs
+	shared_focus = COMMON_support_china
+	shared_focus = COMMON_allow_volunteers_to_china
+	shared_focus = COMMON_invade_iraq
+
 	####################################################### POLITICAL SECTION ############################################################
 
 	focus = {
@@ -44,6 +52,7 @@ focus_tree = {
 		    add_ideas = free_trade
 			custom_effect_tooltip = MANspace
 			add_stability = 0.05
+			add_political_power = -40
 		}
 	}
 
@@ -63,7 +72,7 @@ focus_tree = {
 			focus = CAN_keynesianism
 		}
 
-		cost = 7.15
+		cost = 5.15
 
 		ai_will_do = {
 			factor = 3
@@ -85,11 +94,11 @@ focus_tree = {
 			
 			custom_effect_tooltip = CAN_modify_industry_spirit_tt
 			add_to_variable = {
-				CAN_production_speed_industrial_complex_factor_var = 0.15
+				CAN_production_speed_industrial_complex_factor_var = 0.1
 				tooltip = industrial_complex_build_speed_factor_tooltip
 			}
 			add_to_variable = {
-				CAN_production_speed_infrastructure_factor_var = 0.15
+				CAN_production_speed_infrastructure_factor_var = 0.2
 				tooltip = CAN_infra_tt1
 			}
 			
@@ -189,7 +198,7 @@ focus_tree = {
 				tooltip = CAN_constra_tt1
 			}
 			add_to_variable = {
-				CAN_factory_efficiency_gain_factor = 0.15
+				CAN_factory_efficiency_gain_factor = 0.1
 				tooltip = production_factory_efficiency_gain_factor_tooltip
 			}
 			add_to_variable = {
@@ -325,10 +334,10 @@ focus_tree = {
 			custom_effect_tooltip = MANspace
 		    random_owned_controlled_state= {
 				prioritize = { 276 }
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -379,10 +388,10 @@ focus_tree = {
 			custom_effect_tooltip = MANspace
 		    random_owned_controlled_state= {
 				prioritize = { 276 }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -516,7 +525,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_support_provincial_crown_corporations
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 3
@@ -538,15 +547,14 @@ focus_tree = {
 
 			random_owned_controlled_state = {
 				prioritize = { 276 }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			custom_effect_tooltip = MANspace
-			add_equipment_to_stockpile = { type = transport_plane_equipment amount = 100 producer = CAN }
 		}
 	}
 	
@@ -623,10 +631,10 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 276 }
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -779,7 +787,7 @@ focus_tree = {
 
 		completion_reward = {
 			
-			add_war_support = 0.05
+			add_war_support = 0.1
 			custom_effect_tooltip = CAN_modify_industry_spirit_tt
 
 			add_to_variable = {
@@ -903,6 +911,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = CAN_modify_industry_spirit_tt
 			add_to_variable = {
+				CAN_factory_efficiency_gain_factor = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tooltip
+			}
+			add_to_variable = {
 				CAN_production_speed_buildings_factor_var = 0.05
 				tooltip = CAN_constra_tt1
 			}
@@ -1011,6 +1023,10 @@ focus_tree = {
 			add_to_variable = {
 				CAN_industrial_capacity_factory_var = 0.1
 				tooltip = industrial_capacity_factory_tooltip
+			}
+			add_to_variable = {
+				CAN_factory_efficiency_gain_factor = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tooltip
 			}
 			custom_effect_tooltip = MANspace
 		    random_owned_controlled_state= {
@@ -1150,7 +1166,7 @@ focus_tree = {
 
 		prerequisite = { focus = CAN_limited_rearm }
 
-		cost = 7.15
+		cost = 6.435
 
 		ai_will_do = {
 			factor = 3
@@ -1169,7 +1185,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 125
+			add_political_power = 85
 
 		}
 	}
@@ -1291,9 +1307,9 @@ focus_tree = {
 			custom_effect_tooltip = CAN_modify_industry_spirit_tt
 			add_to_variable = {
 				CAN_political_power_gain_var = 0.3
-				tooltip = CAN_pol_power_fac_tt2
+				tooltip = CAN_pol_power_fac_tt3
 			}
-			add_war_support = 0.05
+			add_war_support = 0.1
 			custom_effect_tooltip = MANspace
 			custom_effect_tooltip = ENG_trading_idea_tt
 			hidden_effect = {
@@ -1462,15 +1478,8 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				CZE = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				NOT = {
-					country_exists = CZE	
-				}
+			GER = {
+				has_completed_focus = GER_end_of_czechoslovakia
 			}
 		}
 		
@@ -1606,10 +1615,10 @@ focus_tree = {
 
 			custom_effect_tooltip = MANspace
 			682 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2063,7 +2072,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_a_parliamentary_declaration_of_war
 
-		cost = 7.15
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -2385,7 +2394,7 @@ focus_tree = {
 
 		prerequisite = { focus = CAN_dominion_arsenal}
 
-		cost = 5
+		cost = 7.15
 
 		ai_will_do = {
 			factor = 3
@@ -2714,7 +2723,7 @@ focus_tree = {
 		x = 14
 		y = 3
 
-		cost = 3
+		cost = 2
 
 		ai_will_do = {
 			factor = 3
@@ -2807,7 +2816,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -2888,7 +2897,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = infantry_weapons
 				uses = 1
-				bonus = 0.5
+				bonus = 0.75
 				name = CAN_infantry_equipment_bonus
 			}
 			add_tech_bonus = {
@@ -2985,7 +2994,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    add_war_support = 0.2
+		    add_war_support = 0.1
 			custom_effect_tooltip = MANspace
 
 			if = {
@@ -3109,7 +3118,7 @@ focus = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3220,7 +3229,7 @@ focus = {
 
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -3283,7 +3292,16 @@ focus = {
 					level = 4
 					instant_build = yes
 				}
-		}
+			}
+			random_core_state = {
+				
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = tank_assembly
+					level = 1
+					instant_build = yes 
+				}
+			}
 		}
 	}
 	focus = {
@@ -3648,7 +3666,7 @@ focus = {
 			custom_effect_tooltip = MANspace
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -3746,6 +3764,15 @@ focus = {
 
 			mio:ENG_vickers_armstrong_eng_organization = {
 				add_mio_funds = 5000
+			}
+			random_core_state = {
+				
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = tank_assembly
+					level = 1
+					instant_build = yes 
+				}
 			}
 		}
 	}
@@ -4048,7 +4075,7 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = CAN_modify_army_spirit_tt
 			add_to_variable = {
-				CAN_experience_loss_factor_var = -0.15
+				CAN_experience_loss_factor_var = -0.1
 				tooltip = CAN_xploss_tt1
 			}
 
@@ -4141,7 +4168,7 @@ focus = {
 			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 3
 				category = land_doctrine
 			}
@@ -4273,7 +4300,7 @@ focus = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = special_forces_doctrine
 			}
@@ -4339,6 +4366,15 @@ focus = {
 			mio:CAN_td_board = {
 				add_mio_funds = 2000
 				add_mio_size_up_requirement_factor = -0.25
+			}
+			random_core_state = {
+				
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = tank_assembly
+					level = 1
+					instant_build = yes 
+				}
 			}
 
 		}
@@ -4763,7 +4799,7 @@ focus = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -5135,7 +5171,7 @@ focus = {
 			add_research_slot = 1
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -5403,8 +5439,8 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = available_air_designer
-			show_ideas_tooltip = CAN_victory_aircraft_ltd
+			#show_ideas_tooltip = CAN_victory_aircraft_ltd
+			add_ideas = CAN_victory_aircraft_ltd
 
 		    random_owned_controlled_state ={
 				add_extra_state_shared_building_slots = 2
@@ -5449,7 +5485,7 @@ focus = {
 				bonus = 1
 				uses = 1
 				ahead_reduction = 1
-				technology = jet_engines
+				technology = eng_jet_fighter_1945
 			}
 
 			custom_effect_tooltip = MANspace
@@ -5508,7 +5544,9 @@ focus = {
 		}
 
 		available = {
-
+			ENG = {
+				has_completed_track = fighter_operations_KNI
+			}
 		}
 		
 		bypass = {
@@ -5646,7 +5684,7 @@ focus = {
 		y = 0
 
 		relative_position_id = CAN_king_or_chaos
-		cost = 3.7
+		cost = 2.7
 
 		ai_will_do = {
 			factor = 3
@@ -5679,7 +5717,7 @@ focus = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}

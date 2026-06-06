@@ -1046,9 +1046,14 @@ SOV_socialism_in_one_country = {
 					add_manpower = -100000
 					add_doctrine_cost_reduction = {
 						name = land_doc_bonus
-						cost_reduction = 0.4
+						cost_reduction = 0.5
 						uses = 2
 						category = land_doctrine
+					}
+					add_mastery = {
+						amount = 60
+						folder = land
+					
 					}
 					if = {
 						limit = { 
@@ -1089,9 +1094,14 @@ SOV_socialism_in_one_country = {
 					add_manpower = -100000
 					add_doctrine_cost_reduction = {
 						name = land_doc_bonus
-						cost_reduction = 0.4
+						cost_reduction = 0.5
 						uses = 2
 						category = land_doctrine
+					}
+					add_mastery = {
+						amount = 60
+						folder = land
+					
 					}
 					if = {
 						limit = { 

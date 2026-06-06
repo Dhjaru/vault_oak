@@ -445,7 +445,7 @@ focus_tree = {
 						create_unit = {
 							division = "division_template = \"División de la Guardia de Asalto\" start_experience_factor = 0.3" 
 							owner = SPN
-							count = 4
+							count = 2
 							allow_spawning_on_enemy_provs = yes
 						}
 					}
@@ -456,7 +456,7 @@ focus_tree = {
 						create_unit = {
 							division = "division_template = \"Brigada de la Guardia Civil\" start_experience_factor = 0.3" 
 							owner = SPN
-							count = 4
+							count = 3
 							allow_spawning_on_enemy_provs = yes
 						}
 					}
@@ -557,7 +557,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -574,8 +574,8 @@ focus_tree = {
 						mountaineers = { x = 0 y = 1 }
 						mountaineers = { x = 0 y = 2 }
 
-						mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
+						volkssturm_infantry = { x = 1 y = 0 }
+						volkssturm_infantry = { x = 1 y = 1 }
 						volkssturm_infantry = { x = 1 y = 2 }
 						
 						volkssturm_infantry = { x = 2 y = 0 }
@@ -592,8 +592,7 @@ focus_tree = {
 					}
 					support = {
 						artillery = { x = 0 y = 0 }
-						artillery_heavy_support = { x = 0 y = 1 }
-						recon = { x = 0 y = 2 }
+						recon = { x = 0 y = 1 }
 						anti_air_company = { x = 1 y = 0 }
 						logistics_company = { x = 1 y = 1 }
 						field_hospital = { x = 1 y = 2 }
@@ -610,7 +609,7 @@ focus_tree = {
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
 
-						infantry = { x = 1 y = 0 }
+						volkssturm_infantry = { x = 1 y = 0 }
 						volkssturm_infantry = { x = 1 y = 1 }
 						volkssturm_infantry = { x = 1 y = 2 }
 									
@@ -628,8 +627,7 @@ focus_tree = {
 					}
 					support = {
 						field_gun_support = { x = 0 y = 0 }
-						artillery_heavy_support = { x = 0 y = 1 }
-						recon = { x = 0 y = 2 }
+						recon = { x = 0 y = 1 }
 						anti_air_company = { x = 1 y = 0 }
 						logistics_company = { x = 1 y = 1 }
 						field_hospital = { x = 1 y = 2 }
@@ -637,11 +635,11 @@ focus_tree = {
 				}
 			168 = {	
 					create_unit = {
-						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 1"
+						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
 						owner = SPN
 					}
 					create_unit = {
-						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 1"
+						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
 						owner = SPN
 					}
 				}
@@ -759,7 +757,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.2
+				cost_reduction = 0.3
 				uses = 1
 				category = land_doctrine
 			}
@@ -818,7 +816,7 @@ focus_tree = {
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
 
-							infantry = { x = 1 y = 0 }
+							volkssturm_infantry = { x = 1 y = 0 }
 							volkssturm_infantry = { x = 1 y = 1 }
 							volkssturm_infantry = { x = 1 y = 2 }
 										
@@ -836,8 +834,7 @@ focus_tree = {
 						}
 						support = {
 							artillery = { x = 0 y = 0 }
-							artillery_heavy_support = { x = 0 y = 1 }
-							recon = { x = 0 y = 2 }
+							recon = { x = 0 y = 1 }
 							anti_air_company = { x = 1 y = 0 }
 							logistics_company = { x = 1 y = 1 }
 							field_hospital = { x = 1 y = 2 }
@@ -845,19 +842,19 @@ focus_tree = {
 					}
 					168 = {
 						create_unit = {
-							division = "division_template = \"Legión Popular\" start_experience_factor = 0.6 start_equipment_factor = 1"
+							division = "division_template = \"Legión Popular\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
 							owner = SPN
 						}
 						create_unit = {
-							division = "division_template = \"Legión Popular\" start_experience_factor = 0.6 start_equipment_factor = 1"
+							division = "division_template = \"Legión Popular\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
 							owner = SPN
 						}
 						create_unit = {
-							division = "division_template = \"Legión Popular\" start_experience_factor = 0.6 start_equipment_factor = 1"
+							division = "division_template = \"Legión Popular\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
 							owner = SPN
 						}
 						create_unit = {
-							division = "division_template = \"Legión Popular\" start_experience_factor = 0.6 start_equipment_factor = 1"
+							division = "division_template = \"Legión Popular\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
 							owner = SPN
 						}
 					}	
@@ -913,15 +910,15 @@ focus_tree = {
 			hidden_effect = {
 				168 = {	
 					create_unit = {
-						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 1"
+						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
 						owner = SPN
 					}
 					create_unit = {
-						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 1"
+						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
 						owner = SPN
 					}
 					create_unit = {
-						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 1"
+						division = "division_template = \"Legión Internacional\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
 						owner = SPN
 					}
 				}
@@ -966,7 +963,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 90 producer = SOV } 
 			add_equipment_to_stockpile = { type = tac_bomber_equipment_1934 amount = 60 producer = SOV }   
 			custom_effect_tooltip = MANspace
-			add_ideas = steel_wings_steel_hearts_spirit
+			add_ideas = effective_training_programs_spirit
 		}
 	}
 
@@ -1007,7 +1004,7 @@ focus_tree = {
 			custom_effect_tooltip = MANspace
 			add_timed_idea = {
 				idea = SPA_kill_traitors_and_fascists_idea
-				days = 90
+				days = 160
 			}
 		}
 	}
@@ -1188,7 +1185,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.2
+				cost_reduction = 0.3
 				uses = 1
 				category = land_doctrine
 			}
@@ -1209,7 +1206,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 7.15
+		cost = 25.8
 
 		
 		prerequisite = {
@@ -1277,7 +1274,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1336,7 +1333,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1544,7 +1541,10 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = SPA_rep_army_modif
-
+			add_to_variable = {
+				SPA_rep_army_defence_factor_var =-0.05
+				tooltip = army_defense_factor_tooltip
+			}
 			add_to_variable = {
 				SPA_rep_army_org_factor_var = 0.025
 				tooltip = army_org_factor_tooltip
@@ -1564,24 +1564,9 @@ focus_tree = {
 						regiments = {
 							penal_battalion = { x = 0 y = 0 }
 							penal_battalion = { x = 0 y = 1 }
-							penal_battalion = { x = 0 y = 2 }
+							#penal_battalion = { x = 0 y = 2 }
 
 							penal_battalion = { x = 1 y = 0 }
-							penal_battalion = { x = 1 y = 1 }
-							penal_battalion = { x = 1 y = 2 }
-
-							penal_battalion = { x = 2 y = 0 }
-							penal_battalion = { x = 2 y = 1 }
-							penal_battalion = { x = 2 y = 2 }
-
-							penal_battalion = { x = 3 y = 0 }
-							penal_battalion = { x = 3 y = 1 }
-							penal_battalion = { x = 3 y = 2 }
-							
-							penal_battalion = { x = 4 y = 0 }
-							penal_battalion = { x = 4 y = 1 }
-							penal_battalion = { x = 4 y = 2 }
-										
 						}
 
 						support = {
@@ -1731,7 +1716,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 52 producer = SPR }  
+			add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 60 producer = SPR }  
 			add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 20 producer = FRA }  
 			add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 20 producer = SOV } 
 			add_ace = {
@@ -1747,7 +1732,7 @@ focus_tree = {
 				type = fighter_genius
 			}
 			custom_effect_tooltip = MANspace
-			add_ideas = centralized_control_spirit
+			add_ideas = independent_air_force_spirit
 		}
 	}
 
@@ -1955,7 +1940,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 7.15
+		cost = 25.8
 
 		prerequisite = {
 			focus = SPR_mantain_the_stable_front
@@ -2000,7 +1985,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}

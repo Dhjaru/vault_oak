@@ -466,7 +466,10 @@ SLO_heydrich = {
 	color = rgb { 32 32 32 }
 	color_ui = rgb { 32 32 32 }
 }
-
+SLO_czechoslovakia = {
+	color = rgb { 54  167  156 }
+	color_ui = rgb { 54  167  156 }
+}
 
 EFR_choltitz = {
 	color = rgb { 50 50 50 }
