@@ -14,7 +14,7 @@ USA_td_board = {
 		original_tag = USA
 	}
 	equipment_type = { armor }
-	research_categories = { armor }
+	research_categories = { armor tank_upgrade}
 
 
 	initial_trait = {
@@ -398,7 +398,7 @@ USA_Chrysler_Corporation = {
 	
 	equipment_type = { armor }
 
-	research_categories = { armor }
+	research_categories = { armor tank_upgrade}
 
 	tree_header_text = {
 		text = "Production"
@@ -774,7 +774,7 @@ USA_army_ordnance_department_organization = {
 	}
 
 
-	research_categories = { armor }
+	research_categories = { armor tank_upgrade}
 	
 ###################speicla retards start####################
 	trait = {
@@ -1258,7 +1258,7 @@ USA_Fisher_armaments = {
 	equipment_type = { 
 		armor
 	}
-	research_categories = { armor }
+	research_categories = { armor tank_upgrade}
 
 
 	trait = {
@@ -2824,7 +2824,10 @@ USA_lockheed_organization = {
 	icon = GFX_idea_lockheed
 	
 	allowed = {	
-		tag = USA 
+		OR = {
+			original_tag = USA
+			original_tag = CAN
+		}
 	}
 	
 	equipment_type = {
