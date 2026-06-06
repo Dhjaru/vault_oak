@@ -5,6 +5,7 @@ sub_units = {
 		map_icon_category = armored
 		priority = 2502
 		active = yes
+		is_artillery_brigade = yes
 		
 		type = {
 			armor
@@ -28,7 +29,7 @@ sub_units = {
 		manpower = 600
 		max_organisation = 3
 		max_strength = 3
-		default_morale = 0.1
+		default_morale = 0.08
 		training_time = 80
 		weight = 1.2
 		initiative = 0.007

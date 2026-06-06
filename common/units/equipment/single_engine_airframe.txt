@@ -238,6 +238,8 @@ equipments = {
 			air_production = 10
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 11
 	}
 	
 	# Basic Fighter  1936
@@ -273,6 +275,8 @@ equipments = {
 			air_production = 10
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 11
 	}
 	fighter_equipment_1937 = {
 		year = 1937
@@ -307,6 +311,8 @@ equipments = {
 			air_production = 10
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 11
 
 	}
 	# Improved Fighter  1938
@@ -342,6 +348,8 @@ equipments = {
 			air_production = 10
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 13
 
 	}
 	fighter_equipment_1939 = {
@@ -377,6 +385,8 @@ equipments = {
 		build_cost_ic = 51
 		lend_lease_cost = 23
 		fuel_consumption = 0.023
+		naval_strike_targetting = 15
+		naval_strike_attack = 13
 
 	}
 	# Advanced Fighter  1940
@@ -411,7 +421,9 @@ equipments = {
 			aluminium = 10
 			air_production = 10
 			rubber = 3
-		}	
+		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 15
 
 	}
 	fighter_equipment_1941 = {
@@ -445,7 +457,9 @@ equipments = {
 			aluminium = 10
 			air_production = 10
 			rubber = 3
-		}		
+		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 15
 
 	}
 	# Advanced Fighter  1942
@@ -481,6 +495,8 @@ equipments = {
 			air_production = 10
 			rubber = 4
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 17
 
 	}
 	fighter_equipment_1943 = {
@@ -514,7 +530,9 @@ equipments = {
 			aluminium = 11
 			air_production = 10
 			rubber = 4
-		}		
+		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 17
 	}
 	# Late Fighter  1944
 	fighter_equipment_1944 = {
@@ -549,6 +567,8 @@ equipments = {
 			air_production = 10
 			rubber = 4
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 19
 	}
 	# Basic Jet Fighter
 	jet_fighter_equipment_1945 = {   #### Uneven Lurch of stats bc jets
@@ -584,6 +604,8 @@ equipments = {
 			air_production = 10
 			rubber = 4
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 19
 	}
 	# Improved Jet Fighter
 	jet_fighter_equipment_1947 = {  
@@ -620,6 +642,8 @@ equipments = {
 			air_production = 10
 			rubber = 4
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 19
 	}
 	
 	# Early Carrier Fighter
@@ -655,6 +679,8 @@ equipments = {
 			air_production = 8
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 10.5
 	}
 	# Basic Carrier Fighter
 	cv_fighter_equipment_1936 = {
@@ -689,6 +715,8 @@ equipments = {
 			air_production = 8
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 10.5
 		
 	}
 	cv_fighter_equipment_1937 = {
@@ -724,6 +752,8 @@ equipments = {
 			air_production = 8
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 10.5
 	}
 	# Improved Carrier Fighter
 	cv_fighter_equipment_1938 = {
@@ -759,6 +789,8 @@ equipments = {
 			air_production = 8
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 13
 	}
 	cv_fighter_equipment_1939 = {
 		year = 1939
@@ -828,6 +860,8 @@ equipments = {
 			air_production = 8
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 15
 	}
 	cv_fighter_equipment_1941 = {
 		year = 1941
@@ -862,6 +896,8 @@ equipments = {
 			air_production = 8
 			rubber = 3
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 15
 	}
 	#Advanced Carrier Fighter
 	cv_fighter_equipment_1942 = {
@@ -897,6 +933,8 @@ equipments = {
 			air_production = 8
 			rubber = 4
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 17
 	}
 	cv_fighter_equipment_1943 = {
 		year = 1943
@@ -931,6 +969,8 @@ equipments = {
 			air_production = 8
 			rubber = 4
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 17
 	}
 	cv_fighter_equipment_1944 = {
 		year = 1944
@@ -965,6 +1005,8 @@ equipments = {
 			air_production = 8
 			rubber = 4
 		}
+		naval_strike_targetting = 15
+		naval_strike_attack = 19
 	}
 	CAS_equipment_1935 = {
 		year = 1935
@@ -1001,8 +1043,8 @@ equipments = {
 		maximum_speed = 320 
 		air_agility = 32
 		air_attack = 5
-		air_defence = 13
 		sub_detection = 3
+		air_defence = 12
 		air_bombing = 4
 		air_ground_attack = 17
 		naval_strike_attack = 5.5
@@ -1047,8 +1089,8 @@ equipments = {
 		maximum_speed = 400 
 		air_agility = 36
 		air_attack = 7
-		air_defence = 14
 		sub_detection = 3
+		air_defence = 13
 		air_bombing = 8
 		air_ground_attack = 20
 		naval_strike_attack = 5.5
@@ -1094,8 +1136,8 @@ equipments = {
 		maximum_speed = 440
 		air_agility = 42
 		air_attack = 8
-		air_defence = 15
 		sub_detection = 3
+		air_defence = 14
 		air_bombing = 10
 		air_ground_attack = 23
 		build_cost_ic = 55.5
@@ -1137,8 +1179,8 @@ equipments = {
 		maximum_speed = 480
 		air_agility = 48
 		air_attack = 9
-		air_defence = 16
 		sub_detection = 3
+		air_defence = 15
 		air_bombing = 12
 		air_ground_attack = 26
 		build_cost_ic = 57
@@ -1185,8 +1227,8 @@ equipments = {
 		maximum_speed = 520
 		air_agility = 54
 		air_attack = 10
-		air_defence = 17
 		sub_detection = 3
+		air_defence = 16
 		air_bombing = 14
 		air_ground_attack = 29
 		build_cost_ic = 58.5
@@ -1231,8 +1273,8 @@ equipments = {
 		maximum_speed = 560
 		air_agility = 58
 		air_attack = 11
-		air_defence = 18
 		sub_detection = 3
+		air_defence = 17
 		air_bombing = 12.5
 		air_ground_attack = 32
 		build_cost_ic = 60

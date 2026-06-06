@@ -8,6 +8,7 @@ sub_units = {
 		active = yes
 		special_forces = no
 		marines = no
+		is_artillery_brigade = yes
 		type = {
 			armor
 		}
@@ -28,7 +29,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 10
-		default_morale = 0.3
+		default_morale = 0.08
 		training_time = 80
 		max_strength = 4
 		weight = 0.8
@@ -79,6 +80,7 @@ sub_units = {
 		active = yes
 		special_forces = no
 		marines = no
+		is_artillery_brigade = yes
 		type = {
 			armor
 			amphibious
@@ -101,7 +103,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 10
-		default_morale = 0.3
+		default_morale = 0.08
 		training_time = 80
 		max_strength = 3
 		#fuel_capacity = 100
@@ -150,6 +152,7 @@ sub_units = {
 		map_icon_category = armored
 		priority = 2501
 		ai_priority = 2000
+		is_artillery_brigade = yes
 		active = yes
 		special_forces = no
 		marines = no
@@ -175,7 +178,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 10
-		default_morale = 0.3
+		default_morale = 0.08
 		training_time = 80
 		max_strength = 3
 		#fuel_capacity = 100
@@ -225,6 +228,7 @@ sub_units = {
 		map_icon_category = armored
 		priority = 2501
 		ai_priority = 2000
+		is_artillery_brigade = yes
 		active = yes
 		special_forces = no
 		marines = no
@@ -251,7 +255,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 10
-		default_morale = 0.3
+		default_morale = 0.08
 		training_time = 80
 		max_strength = 3
 		weight = 0.8
@@ -312,6 +316,7 @@ sub_units = {
 		priority = 2501
 		ai_priority = 2000
 		active = yes
+		is_artillery_brigade = yes
 		special_forces = no
 		marines = no
 		#fuel_capacity = 100
@@ -337,7 +342,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 10
-		default_morale = 0.3
+		default_morale = 0.08
 		training_time = 80
 		max_strength = 3
 		weight = 0.8
