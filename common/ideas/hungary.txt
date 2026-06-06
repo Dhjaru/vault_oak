@@ -361,7 +361,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_expected_value = -0.04
+				consumer_goods_expected_value = -0.025
 			}
 		}
 
@@ -499,7 +499,7 @@ ideas = {
 		HUN_italo_hungarian_trade_1 = { 
 			
 			modifier = {
-				consumer_goods_expected_value = -0.03
+				consumer_goods_expected_value = -0.01
 				min_export = 0.05
 				local_resources_factor = 0.05
 			}
@@ -712,7 +712,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.05
-				consumer_goods_expected_value = 0.05
+				consumer_goods_expected_value = 0.10
 			}
 		}
 
@@ -782,7 +782,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				consumer_goods_expected_value = -0.05
+				consumer_goods_expected_value = 0.05
 			}
 		}
 		
