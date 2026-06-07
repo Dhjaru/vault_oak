@@ -4675,7 +4675,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = { flag = JAP_offensive_going_on value = 1 days = 120 }
+			add_mastery = {
+				amount = 40
+				folder = land
 			
+			}
 			if = {
 				limit = {
 					282 = {
@@ -4797,7 +4801,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = { flag = JAP_offensive_going_on value = 1 days = 120 }
+			add_mastery = {
+				amount = 40
+				folder = land
 			
+			}
 			if = {
 				limit = {
 					282 = {
@@ -4923,7 +4931,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = { flag = JAP_offensive_going_on value = 1 days = 120 }
+			add_mastery = {
+				amount = 40
+				folder = land
 			
+			}
 			if = {
 				limit = {
 					282 = {
@@ -5046,7 +5058,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = { flag = JAP_offensive_going_on value = 1 days = 120 }
+			add_mastery = {
+				amount = 40
+				folder = land
 			
+			}
 			if = {
 				limit = {
 					282 = {
