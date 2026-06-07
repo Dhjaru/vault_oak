@@ -2299,6 +2299,20 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					country_exists = HUN
+				}
+				HUN = {
+					transfer_state = 184
+				}
+				184 = {
+					add_core_of = HUN
+				}
+				832 = {
+					add_core_of = HUN
+				}
+			}
+			else  = {
+				limit = {
 					NOT = {
 						country_exists = BUL
 					}
@@ -2427,6 +2441,10 @@ on_actions = {
 				}
 				HUN = {
 	   				transfer_state = 45
+	   				transfer_state = 106
+					106 = {
+						add_core_of = HUN
+					}
 				}
 			}
 			else_if = {

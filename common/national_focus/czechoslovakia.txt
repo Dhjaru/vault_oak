@@ -66,7 +66,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 90
+			factor = 900
 		}
 
 		available = {
@@ -109,7 +109,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 40
+			factor = 400
 		
 			
 		}
@@ -162,7 +162,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 80
+			factor = 800
 		}
 
 		available = {
@@ -213,7 +213,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 80
+			factor = 800
 		}
 
 		available = {
@@ -266,7 +266,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 70
+			factor = 700
 			
 			
 		}
@@ -319,7 +319,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 80
+			factor = 800
 		}
 
 		available = {
@@ -378,7 +378,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 80
+			factor = 800
 		}
 
 		available = {
@@ -438,7 +438,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 80
+			factor = 800
 		}
 
 
@@ -524,7 +524,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 
 		available = {
@@ -572,7 +572,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 90
+			factor = 900
 		}
 
 		available = {
@@ -608,7 +608,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 80
+			factor = 800
 			
 			
 		}
@@ -644,7 +644,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 
 		available = {
@@ -713,7 +713,7 @@ focus_tree = {
 		cost = 7.25
 
 		ai_will_do = {
-			factor = 90
+			factor = 9
 		}
 
 		available = {

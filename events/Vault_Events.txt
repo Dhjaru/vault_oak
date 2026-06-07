@@ -1,0 +1,91 @@
+###########################
+# German Events
+###########################
+
+add_namespace = vault
+
+
+
+# Second Vienna Award
+country_event = {
+	id = vault.1
+	title = germany.20.t
+	desc = germany.20.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	is_triggered_only = yes
+	
+	option = { # Give Hungary Northern Transylvania
+		name = germany.20.a
+		ai_chance = { factor = 100 }
+
+		56 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		add_named_threat = { threat = 3 name = GER_second_vienna_award_HUN_north }
+		HUN = {
+			set_country_flag = GER_second_vienna_award_HUN_north
+			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_north } 
+		}
+		hidden_effect = {
+			GER = {
+			country_event = { id = germany.106 }
+			}
+		}
+	}
+	option = { # Give Hungary all of Transylvania
+		name = germany.20.b
+		ai_chance = { 
+			factor = 0
+		}
+		76 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		add_named_threat = { threat = 3 name = GER_second_vienna_award_HUN_all }
+		HUN = { 
+			set_country_flag = GER_second_vienna_award_HUN_all
+			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_all } 
+		}
+		hidden_effect = {
+			GER = {
+			country_event = { id = germany.106 }
+			}
+		}
+	}
+	option = { # Give Hungary nothing
+		name = germany.20.c
+		ai_chance = { 
+			factor = 0
+		}
+		
+		56 = {
+			add_extra_state_shared_building_slots = 6
+			add_building_construction = {
+				type = arms_factory
+				level = 6
+				instant_build = yes
+			}
+		}
+		HUN = {
+			set_country_flag = GER_second_vienna_award_noland
+			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_noland }
+			country_event = { id = hungary.1 }
+			complete_national_focus = HUN_the_return_of_transylvania
+		}
+		hidden_effect = {
+			GER = {
+			country_event = { id = germany.106 }
+			}
+		}
+	}
+}

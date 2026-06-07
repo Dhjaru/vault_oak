@@ -279,7 +279,7 @@ focus_tree = {
 				army_experience = 375
 			}
 			air_experience = 200
-			add_political_power = 200
+			add_political_power = 300
 			add_war_support = 0.1
 			hidden_effect = {
 				ITA = {
@@ -2159,7 +2159,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ITA_massive_colonial_investments
-		cost = 2.2
+		cost = 7.145
 		ai_will_do = {
 			factor = 20
 		}
@@ -2214,7 +2214,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_immigration_ethiopia
-		cost = 7.145
+		cost = 2.2
 		ai_will_do = {
 			factor = 0
 		}
