@@ -5847,6 +5847,12 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+			add_tech_bonus = {
+				category = tank_upgrade
+				uses = 1
+				bonus = 0.75
+				name = GER_mobile_fortresses 
+			}	
 			
 			every_army_leader = {
 				add_attack = 1
@@ -6136,6 +6142,12 @@ focus_tree = {
 				category = land_doctrine
 			}
 			
+			add_tech_bonus = {
+				category = tank_upgrade
+				uses = 1
+				bonus = 0.75
+				name = GER_mobile_fortresses 
+			}	
 			every_army_leader = {
 				add_planning = 1
 				add_logistics = -1
@@ -6549,6 +6561,12 @@ focus_tree = {
 
 			}
 			
+			add_tech_bonus = {
+				category = tank_upgrade
+				uses = 1
+				bonus = 0.75
+				name = GER_mobile_fortresses 
+			}	
 
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
