@@ -5655,14 +5655,6 @@ foreign_politics = {
 				}
 				country_event = { id = germany.20 }
 			}
-			else_if = {
-				limit = {
-					ROM = {
-						exists = no
-					}
-				}
-				country_event = { id = vault.1 }
-			}
 		}
 	}
 

@@ -3,7 +3,7 @@
 ability = {	
 	GER_force_attack = {
 		name = ABILITY_bewegung_los_los_los
-		desc = ABILITY_bewegung_los_los_los_DESC
+		desc = VAULT_119_ABILITY_GER_FORCE_ATTACK_DESC
 		icon = GFX_ability_chi_force_attack
 		
 		sound_effect = command_power_ability_offensive
@@ -62,7 +62,7 @@ ability = {
 ability = {
 	GER_for_the_fatherland = {
 		name = ABILITY_for_the_fatherland
-		desc = ABILITY_for_the_fatherland_DESC
+		desc = VAULT_119_ABILITY_GER_FOR_THE_FATHERLAND_DESC
 		icon = GFX_ability_jap_last_stand
 		
 		sound_effect = command_power_ability_offensive
@@ -119,7 +119,7 @@ ability = {
 ability = {	
 	ITA_force_attack = {
 		name = ABILITY_avanti
-		desc = ABILITY_avanti_desc
+		desc = VAULT_119_ABILITY_ITA_FORCE_ATTACK_DESC
 		icon = GFX_ability_chi_force_attack
 		
 		sound_effect = ITA_infantry_neutral_combat
@@ -172,7 +172,7 @@ ability = {
 ability = {
 	SOV_last_stand = {
 		name = ABILITY_SOV_LAST_STAND
-		desc = ABILITY_SOV_LAST_STAND_DESC
+		desc = VAULT_119_ABILITY_SOV_LAST_STAND_DESC
 		icon = GFX_SOV_last_stand
 		
 		sound_effect = command_power_ability_offensive
@@ -225,7 +225,7 @@ ability = {
 ability = {
 	SPR_force_attack = {
 		name = ABILITY_bewegung_los_los_los
-		desc = ABILITY_bewegung_los_los_los_DESC
+		desc = VAULT_119_ABILITY_SPR_FORCE_ATTACK_DESC
 		icon = GFX_ability_chi_force_attack
 		
 		sound_effect = command_power_ability_offensive

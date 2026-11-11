@@ -40,7 +40,7 @@ ability = {
 	}
 	force_attack = {
 		name = ABILITY_FORCE_ATTACK
-		desc = ABILITY_FORCE_ATTACK_DESC
+		desc = VAULT_119_ABILITY_FORCE_ATTACK_DESC
 		
 		sound_effect = command_power_ability_offensive
 		
@@ -82,7 +82,7 @@ ability = {
 	
 	last_stand = {
 		name = ABILITY_LAST_STAND
-		desc = ABILITY_LAST_STAND_DESC
+		desc = VAULT_119_ABILITY_LAST_STAND_DESC
 		
 		sound_effect = command_power_ability_offensive
 		

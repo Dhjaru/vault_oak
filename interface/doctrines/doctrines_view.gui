@@ -444,6 +444,11 @@ guiTypes = {
 				smooth_scrolling = yes
 				drag_scroll = { left }
 				
+				background = {
+					name = "scroll_dummy_background" # Without this, scrollbar won't appear
+					spriteType ="GFX_tiled_window_transparent"
+				}
+
 				gridBoxType = {
 					name = "rewards_grid"
 					size = { width = 100%% height = 100%% }

@@ -1856,7 +1856,6 @@ focus_tree = {
 				add_war_support = -0.05
 				add_stability = 0.05
 				add_to_variable = {
-				add_to_variable = {
 					FRA_industry_industrial_capacity_factory_modifier = 0.075
 				}
 				add_to_variable = {
@@ -7076,6 +7075,5 @@ focus_tree = {
 		}
 
 	}
-}
 	
 }
