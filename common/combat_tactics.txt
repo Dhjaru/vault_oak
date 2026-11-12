@@ -8,6 +8,7 @@ phases = { # phase = no is the standard phase
 	tactical_withdrawal
 	seize_bridge
 	hold_bridge
+	street_fighting
 }
 tactic_urban_defense = { 
 	is_attacker = no

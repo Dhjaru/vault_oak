@@ -2,6 +2,7 @@
 sub_units = {
 	
 	artillery_brigade = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 700
@@ -78,6 +79,7 @@ sub_units = {
 		}
 	}
 	artillery_brigade_mot = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 700
@@ -159,6 +161,7 @@ sub_units = {
 		}
 	}
 	field_gun_brigade = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 700
@@ -235,6 +238,7 @@ sub_units = {
 		}
 	}
 	field_gun_brigade_mot = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 700
@@ -391,6 +395,7 @@ sub_units = {
 		
 	}
 	pack_artillery_brigade_mot = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 700
@@ -469,6 +474,7 @@ sub_units = {
 	
 	}
 	artillery_heavy = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 100
@@ -560,6 +566,7 @@ sub_units = {
 		
 	}
 	artillery_heavy_mot = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 0
@@ -661,6 +668,7 @@ sub_units = {
 	
 	}
 	rocket_artillery_brigade = {
+		allow_in_army_hq = yes
 		sprite = "artillery"
 		map_icon_category = infantry
 		priority = 700
@@ -737,6 +745,7 @@ sub_units = {
 	}
 	
 	motorized_rocket_brigade = {
+		allow_in_army_hq = yes
 		sprite = motorized
 		map_icon_category = infantry
 		priority = 700
@@ -818,6 +827,7 @@ sub_units = {
 		
 	}
 	mountain_artillery_brigade = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 700

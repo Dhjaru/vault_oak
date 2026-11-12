@@ -106,8 +106,8 @@ JAP_pacific_war_explanation_category = {
 							artillery = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
 							field_gun_support = { x = 0 y = 2 }
-							military_police = { x = 1 y = 0 }
-							recon = { x = 1 y = 1 }
+							military_police = { x = 0 y = 3 }
+							recon = { x = 0 y = 4 }
 						}
 					}
 				}
@@ -145,8 +145,8 @@ JAP_pacific_war_explanation_category = {
 							artillery = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
 							field_gun_support = { x = 0 y = 2 }
-							military_police = { x = 1 y = 0 }
-							recon = { x = 1 y = 1 }
+							military_police = { x = 0 y = 3 }
+							recon = { x = 0 y = 4 }
 						}
 					}
 				}
@@ -186,7 +186,9 @@ JAP_pacific_war_explanation_category = {
 					has_state_flag = no_china_war_state_flag
 				}
 			}
-			country_exists = EFR
+			POL = {
+				has_capitulated = yes
+			}
 			NOT = {
 				OR = {
 					has_war_with = USA
@@ -229,11 +231,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			
 			JAP = {
-				add_opinion_modifier = { target = EFR modifier = efr_indochina_diplo }
 				set_country_flag = JAP_has_indochina
-			}
-			EFR = {
-				add_opinion_modifier = { target = JAP modifier = jap_indochina_diplo }
 			}
 			hidden_effect = {
 				news_event = { days = 5 id = news.5 }
@@ -252,66 +250,12 @@ JAP_pacific_war_explanation_category = {
 				set_resistance = 0 
 			}
 			JAP = {
-				if = {
-					limit = {
-						286 = {
-							is_owned_by = EFR
-							OR = {
-								is_controlled_by = EFR
-								is_controlled_by = JAP
-							}
-						}
-					}
 					transfer_state = 286
-				}
-				if = {
-					limit = {
-						670 = {
-							is_owned_by = EFR
-							OR = {
-								is_controlled_by = EFR
-								is_controlled_by = JAP
-							}
-						}
-					}
 					transfer_state = 670
-				}
-				if = {
-					limit = {
-						671 = {
-							is_owned_by = EFR
-							OR = {
-								is_controlled_by = EFR
-								is_controlled_by = JAP
-							}
-						}
-					}
 					transfer_state = 671
-				}
-				if = {
-					limit = {
-						741 = {
-							is_owned_by = EFR
-							OR = {
-								is_controlled_by = EFR
-								is_controlled_by = JAP
-							}
-						}
-					}
 					transfer_state = 741
-				}
-				if = {
-					limit = {
-						728 = {
-							is_owned_by = EFR
-							OR = {
-								is_controlled_by = EFR
-								is_controlled_by = JAP
-							}
-						}
-					}
 					transfer_state = 728
-				}
+
 				add_named_threat = { threat = 3 name = france.1.t }
 					
 				hidden_effect = {
@@ -356,8 +300,8 @@ JAP_pacific_war_explanation_category = {
 								artillery = { x = 0 y = 0 }
 								engineer = { x = 0 y = 1 }
 								field_gun_support = { x = 0 y = 2 }
-								military_police = { x = 1 y = 0 }
-								recon = { x = 1 y = 1 }
+								military_police = { x = 0 y = 3 }
+								recon = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -395,8 +339,8 @@ JAP_pacific_war_explanation_category = {
 								artillery = { x = 0 y = 0 }
 								engineer = { x = 0 y = 1 }
 								field_gun_support = { x = 0 y = 2 }
-								military_police = { x = 1 y = 0 }
-								recon = { x = 1 y = 1 }
+								military_police = { x = 0 y = 3 }
+								recon = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -601,8 +545,8 @@ JAP_pacific_war_explanation_category = {
 								artillery = { x = 0 y = 0 }
 								engineer = { x = 0 y = 1 }
 								field_gun_support = { x = 0 y = 2 }
-								military_police = { x = 1 y = 0 }
-								recon = { x = 1 y = 1 }
+								military_police = { x = 0 y = 3 }
+								recon = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -640,8 +584,8 @@ JAP_pacific_war_explanation_category = {
 								artillery = { x = 0 y = 0 }
 								engineer = { x = 0 y = 1 }
 								field_gun_support = { x = 0 y = 2 }
-								military_police = { x = 1 y = 0 }
-								recon = { x = 1 y = 1 }
+								military_police = { x = 0 y = 3 }
+								recon = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -1080,8 +1024,8 @@ JAP_pacific_war_explanation_category = {
 							artillery = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
 							field_gun_support = { x = 0 y = 2 }
-							military_police = { x = 1 y = 0 }
-							recon = { x = 1 y = 1 }
+							military_police = { x = 0 y = 3 }
+							recon = { x = 0 y = 4 }
 						}
 					}
 				}
@@ -1119,8 +1063,8 @@ JAP_pacific_war_explanation_category = {
 							artillery = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
 							field_gun_support = { x = 0 y = 2 }
-							military_police = { x = 1 y = 0 }
-							recon = { x = 1 y = 1 }
+							military_police = { x = 0 y = 3 }
+							recon = { x = 0 y = 4 }
 						}
 					}
 				}
@@ -1972,6 +1916,16 @@ JAP_pacific_war_explanation_category = {
 						province = 13320
 						level = 3
 					}
+
+					add_building_construction = {
+						type = stronghold_network
+						level = 1
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 13318
+					}
 				}
 				648 = {
 					add_building_construction = {
@@ -2284,6 +2238,29 @@ JAP_pacific_war_explanation_category = {
 		complete_effect = {
 			
 			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = RAJ
+							tag = AST 
+							tag = INS 
+							tag = VEN 
+							tag = USA 
+							tag = ENG 
+							tag = FRA 
+							tag = SAF 
+							tag = CAN 
+							tag = BRA
+							tag = BUL
+							tag = SOV 
+							tag = PER 
+							tag = IRQ
+							tag = BEL 
+						}
+
+					}
+					remove_ideas = USA_japan_embargo_trading
+				}
 				USA = {
 					add_to_tech_sharing_group = us_research
 					remove_ideas = USA_procurement_click_tracker
@@ -2292,9 +2269,6 @@ JAP_pacific_war_explanation_category = {
 					add_to_tech_sharing_group = us_research
 				}
 				
-				INS = {
-					add_ideas = INS_dutch_east_indies_surrender
-				}
 				USA = {
 					complete_national_focus = USA_never_at_a_disadvantage
 					activate_decision = USA_tora_tora_countdown
@@ -2374,7 +2348,7 @@ JAP_pacific_war_explanation_category = {
 						}
 						add_to_variable = { 
 							var = CHI_experience_gain_army_factor_var 
-							value = 0.25
+							value = 0.3
 						}
 						add_to_variable = { 
 							var = CHI_land_mastery_gain_factor_var 
@@ -2630,7 +2604,25 @@ JAP_pacific_war_explanation_category = {
 					target = ENG
 					type = annex_everything
 				}
-			}	
+				if = {
+					limit = {
+						country_exists = INS
+					}
+					declare_war_on = {
+						target = INS
+						type = annex_everything
+					}
+				}
+				if = {
+					limit = {
+						country_exists = HOL
+					}
+					declare_war_on = {
+						target = HOL
+						type = annex_everything
+					}
+				}
+			}
 			hidden_effect = {		
 				820 = {
 					remove_dynamic_modifier = { 
@@ -2800,17 +2792,6 @@ JAP_pacific_war_explanation_category = {
 				}
 				if = {
 					limit = {
-						country_exists = HOL
-					}
-					HOL = { 
-						add_to_war = { 
-							targeted_alliance = ENG
-							enemy = JAP
-						}
-					}
-				}
-				if = {
-					limit = {
 						country_exists = NOR
 					}
 					NOR = { 
@@ -2818,12 +2799,6 @@ JAP_pacific_war_explanation_category = {
 							targeted_alliance = ENG
 							enemy = JAP
 						}
-					}
-				}
-				INS = { 
-					add_to_war = { 
-						targeted_alliance = ENG
-						enemy = JAP
 					}
 				}
 				if = {
@@ -2973,6 +2948,15 @@ JAP_pacific_war_explanation_category = {
 						add_to_war = { 
 							targeted_alliance = JAP
 							enemy = USA
+						}
+						if = {
+							limit = {
+								country_exists = HOL
+							}
+							add_to_war = { 
+								targeted_alliance = JAP
+								enemy = HOL
+							}
 						}
 					}
 				}
@@ -10302,13 +10286,11 @@ JAP_interservice_rivalry = {
 		}
 		
 		complete_effect = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = special_bonus
-				bonus = 1
-				uses = 2
-				category = para_tech
-				category = mountaineers_tech
-				category = light_inf_tech	
+				cost_reduction = 0.75
+				uses = 1
+				category = special_forces_doctrine
 			}
 			custom_effect_tooltip = JAP_invasion_debuff_tt
 			hidden_effect = {
@@ -10349,12 +10331,11 @@ JAP_interservice_rivalry = {
 		}
 		
 		complete_effect = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = special_bonus
-				bonus = 1
-				uses = 2
-				category = para_tech
-				category = marine_tech	
+				cost_reduction = 0.75
+				uses = 1
+				category = special_forces_doctrine
 			}
 			custom_effect_tooltip = JAP_invasion_bonus_tt
 			hidden_effect = {

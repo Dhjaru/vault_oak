@@ -593,9 +593,9 @@ focus_tree = {
 					support = {
 						artillery = { x = 0 y = 0 }
 						recon = { x = 0 y = 1 }
-						anti_air_company = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-						field_hospital = { x = 1 y = 2 }
+						anti_air_company = { x = 0 y = 4 }
+						logistics_company = { x = 0 y = 5 }
+						field_hospital = { x = 0 y = 6 }
 					}
 				}
 				division_template = { #MILITIA OF ALL NATION VOLUNTTERS CIVILIANS
@@ -628,9 +628,9 @@ focus_tree = {
 					support = {
 						field_gun_support = { x = 0 y = 0 }
 						recon = { x = 0 y = 1 }
-						anti_air_company = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-						field_hospital = { x = 1 y = 2 }
+						anti_air_company = { x = 0 y = 4 }
+						logistics_company = { x = 0 y = 5 }
+						field_hospital = { x = 0 y = 6 }
 					}
 				}
 			168 = {	
@@ -835,9 +835,9 @@ focus_tree = {
 						support = {
 							artillery = { x = 0 y = 0 }
 							recon = { x = 0 y = 1 }
-							anti_air_company = { x = 1 y = 0 }
-							logistics_company = { x = 1 y = 1 }
-							field_hospital = { x = 1 y = 2 }
+							anti_air_company = { x = 0 y = 4 }
+							logistics_company = { x = 0 y = 5 }
+							field_hospital = { x = 0 y = 6 }
 						}
 					}
 					168 = {
@@ -1161,8 +1161,8 @@ focus_tree = {
 				}
 				support = {
 					artillery = { x = 0 y = 0 }
-					maintenance_company = { x = 1 y = 0 }
-					logistics_company = { x = 1 y = 1 }
+					maintenance_company = { x = 0 y = 4 }
+					logistics_company = { x = 0 y = 5 }
 					field_hospital = { x = 0 y = 1 }
 				}
 			}
@@ -1571,7 +1571,7 @@ focus_tree = {
 
 						support = {
 							military_police = { x = 0 y = 0 }
-							recon = { x = 1 y = 0 }
+							recon = { x = 0 y = 4 }
 						}
 					}
 					every_owned_state = {
@@ -1849,8 +1849,8 @@ focus_tree = {
 					support = {
 						recon_ac = { x = 0 y = 0 }
 						military_police = { x = 0 y = 1 }
-						anti_air_company = { x = 1 y = 0 }
-						pack_artillery = { x = 1 y = 1 }
+						anti_air_company = { x = 0 y = 4 }
+						pack_artillery = { x = 0 y = 5 }
 					}
 				}
 			167 = {	

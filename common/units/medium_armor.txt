@@ -1,6 +1,7 @@
 sub_units = {
 
 	medium_armor = {
+		allow_in_army_hq = yes
 		sprite = "medium_armor"
 		map_icon_category = armored
 		priority = 2502

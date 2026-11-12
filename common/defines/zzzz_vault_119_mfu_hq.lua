@@ -1,0 +1,36 @@
+NDefines.NMilitary.MAX_HQ_BATTALION_WIDTH = 4 -- Army HQ designer: columns in the HQ line-battalion grid
+NDefines.NMilitary.MAX_HQ_BATTALION_HEIGHT = 4 -- Army HQ designer: rows in the HQ line-battalion grid (so up to 1x4 line battalions)
+NDefines.NMilitary.MAX_HQ_SUPPORT_WIDTH = 1 -- Army HQ designer: columns in the HQ support-company grid
+NDefines.NMilitary.MAX_HQ_SUPPORT_HEIGHT = 4 -- Army HQ designer: rows in the HQ support-company grid (so up to 1x4 support)
+NDefines.NMilitary.MAX_HQ_REGIMENTAL_SUPPORT_WIDTH = 0 -- Army HQ designer: regimental-support columns (0 = HQs cannot take regimental support)
+NDefines.NMilitary.MAX_HQ_REGIMENTAL_SUPPORT_HEIGHT = 0 -- Army HQ designer: regimental-support rows (0 = disabled for HQs)
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_DEPLOY = 3 -- days an Army HQ's leader modifiers are on cooldown after first deploying
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_DEPLOY_MIN = 7 -- flat 7 days to deploy an Army HQ of any size (scaling disabled by REFERENCE_MANPOWER below)
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_REDEPLOY = 15 -- cooldown in days when an already-deployed HQ is moved/redeployed
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_WITHDRAW = 14 -- cooldown in days applied when an HQ is withdrawn
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_WITHDRAW_MIN = 7 -- flat 7 days to withdraw/recall an Army HQ of any size
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_REFERENCE_MANPOWER = 100000000 -- huge reference makes the manpower-scaled part ~0, so the _MIN values are the fixed times (BFFU method)
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_MANPOWER_EXPONENT = 1.5 -- exponent scaling cooldown length by HQ manpower relative to the reference
+NDefines.NMilitary.FIGHTING_STRENGTH_DEATH_THRESHOLD = 0.001 -- fighting-strength fraction below which an HQ/unit is treated as destroyed
+NDefines.NMilitary.FIGHTING_STRENGTH_HQ_ALERT_THRESHOLD = 0.2 -- HQ fighting-strength fraction below which the UI shows a low-strength alert
+NDefines.NMilitary.COMMANDER_ABILITY_BASE_RANGE = 10 -- base range (provinces) of a commander/HQ ability's area of effect
+NDefines.NMilitary.COMMS_MAX_DISTANCE = 4 -- max communication distance (hops from the Army HQ) before units count as out of comms
+NDefines.NMilitary.PLANNING_CAP_COMMS_SCALING = { 1, 1, 1, 1, 1} -- max-planning multiplier indexed by comms distance (0..4 hops from HQ)
+NDefines.NMilitary.PLANNING_CAP_NO_HQ_SCALING = 1 -- max-planning multiplier for units that have no Army HQ
+NDefines.NMilitary.PLANNING_SPEED_COMMS_SCALING = { 1, 1, 1, 1, 1} -- planning-speed multiplier indexed by comms distance
+NDefines.NMilitary.PLANNING_SPEED_NO_HQ_SCALING = 1 -- planning-speed multiplier for units with no Army HQ
+NDefines.NMilitary.LEADER_MOD_COMMS_SCALING = { 1, 1, 1, 1, 1} -- HQ leader-modifier effectiveness multiplier by comms distance
+NDefines.NMilitary.LEADER_MOD_NO_HQ_SCALING = 1 -- HQ leader-modifier effectiveness when no HQ
+NDefines.NMilitary.ABILITY_COMMS_SCALING = { 1.4, 1.2, 0.8, 0.5, 0.3 } -- HQ ability effectiveness multiplier by comms distance
+NDefines.NMilitary.ABILITY_NO_HQ_SCALING = 0 -- HQ ability effectiveness when no HQ
+NDefines.NMilitary.GENERAL_PROXIMITY_CLOSE = 1 -- proximity tier value: general/HQ is close to its units
+NDefines.NMilitary.GENERAL_PROXIMITY_MEDIUM = 2 -- proximity tier value: medium distance
+NDefines.NMilitary.GENERAL_PROXIMITY_FAR = 3 -- proximity tier value: far
+NDefines.NMilitary.GENERAL_PROXIMITY_DEFAULT = 1 -- default proximity tier used when none is computed
+NDefines.NMilitary.GENERAL_RANK_TO_ARMY_HQ_EXP_LEVEL_FACTOR = 1.5 -- converts a general's rank into the deployed Army HQ's starting experience level
+NDefines.NMilitary.ARMY_HQ_REQUISITION_MINIMUM_REMAINING_PERCENTAGE = 1 -- min % of equipment kept in the stockpile when an HQ requisitions equipment
+NDefines.NMilitary.PREFERRED_PRISON_VP = 5 -- victory-point weight used when choosing which state to hold captured generals in
+NDefines.NAI.ARMY_LEADER_ASSIGN_WITHDRAW_DAYS = 7 -- AI: days to wait before withdrawing/reassigning an army leader's HQ
+NDefines.NAI.ARMY_LEADER_MIN_DIVISIONS_FOR_HQ = 10 -- AI: minimum divisions in an army before the AI deploys an Army HQ for it
+NDefines.NAI.MAX_DEPLOYED_ARMY_HQS = 5 -- AI: maximum number of Army HQs the AI keeps deployed at once
+NDefines.NAI.MAX_CAPTURED_GENERALS_TO_STOP_HQ_DEPLOY = 3 -- AI: stops deploying new HQs once this many of its generals are captured

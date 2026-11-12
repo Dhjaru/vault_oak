@@ -1,0 +1,6 @@
+﻿l_english:
+  GRAND_DOCTRINE_SPECIAL_FORCES_QUANTITY: "Expanded Special Forces"
+  GRAND_DOCTRINE_SPECIAL_FORCES_QUANTITY_DESC: "$improved_special_forces_desc$"
+  GRAND_DOCTRINE_SPECIAL_FORCES_QUALITY: "Elite Special Forces"
+  GRAND_DOCTRINE_SPECIAL_FORCES_QUALITY_DESC: "$elite_forces_desc$"
+ special_forces_doctrine_folder: "Special Forces"

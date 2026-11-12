@@ -1,11 +1,12 @@
 ﻿capital = 282
+add_to_tech_sharing_group = JAP_greater_east_asia_research
 
 oob = "JAP_1936"
 set_rule = { can_create_factions = no }
 set_stability = 0.2
 set_war_support = 0.5
 set_fuel_ratio = 0.75
-set_research_slots = 7
+set_research_slots = 6
 starting_train_buffer = 2
 set_country_flag = fuel_system_enabled
 set_country_flag = JAP_subs1_flag
@@ -43,7 +44,7 @@ set_variable = { JAP_war_escalation_var = 0 }
 set_variable = { JAP_interior_counter_var = 0 }
 
 set_variable = { JAP_command_power_gain_mult_var = -0.2 }
-set_variable = { JAP_max_command_power_var = 0 }
+set_variable = { JAP_max_command_power_var = 20 }
 set_variable = { JAP_army_org_factor_var = 0.125 }
 set_variable = { JAP_max_planning_var = -0.02 }
 set_variable = { JAP_planning_speed_var = -0.2 }

@@ -64,7 +64,7 @@ technologies = {
 		}
 						
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 
 		}
@@ -103,7 +103,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	}							
@@ -146,7 +146,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
@@ -165,7 +165,7 @@ technologies = {
 		enable_equipments = {
 			heavy_anti_air_equipment_3
 		}
-
+		static_anti_air_damage_factor = 0.2
 		
 		research_cost = 1
 
@@ -185,7 +185,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
@@ -219,7 +219,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -253,7 +253,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -308,7 +308,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	}
@@ -328,7 +328,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -363,7 +363,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -409,7 +409,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}	
 		
@@ -452,7 +452,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	
@@ -485,7 +485,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	
@@ -523,7 +523,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -554,7 +554,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	
@@ -585,7 +585,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	
@@ -621,7 +621,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -660,7 +660,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	}
@@ -699,7 +699,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	
@@ -729,6 +729,9 @@ technologies = {
 		    hills = {
 				movement = 0.1
 	    	}
+		    desert_hills = {
+				movement = 0.1
+	    	}
 	    	mountain = {
 				movement = 0.2
 		    }		
@@ -747,7 +750,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	
@@ -781,7 +784,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -820,7 +823,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -861,7 +864,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -897,7 +900,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -954,7 +957,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -987,6 +990,9 @@ technologies = {
 	    	hills = {
 				movement = 0.1
 	    	}
+	    	desert_hills = {
+				movement = 0.1
+	    	}
 	    	mountain = {
 				movement = 0.1
 	    	}
@@ -1005,6 +1011,9 @@ technologies = {
 				movement = 0.15
 	    	}
 	    	hills = {
+				movement = 0.1
+	    	}
+	    	desert_hills = {
 				movement = 0.1
 	    	}
 	    	mountain = {
@@ -1030,7 +1039,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1071,7 +1080,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		ai_will_do = {
@@ -1112,7 +1121,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1155,7 +1164,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1180,7 +1189,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1213,7 +1222,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1258,7 +1267,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1319,7 +1328,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1365,6 +1374,9 @@ technologies = {
 			hills = {
 				movement = 0.15
 			}
+			desert_hills = {
+				movement = 0.15
+			}
 			mountain = {
 				movement = 0.15
 			}
@@ -1378,6 +1390,9 @@ technologies = {
 				movement = 0.15
 			}
 			desert = {
+				movement = 0.15
+			}
+			deep_desert = {
 				movement = 0.15
 			}
 		}
@@ -1388,6 +1403,9 @@ technologies = {
 			hills = {
 				movement = 0.15
 			}
+			desert_hills = {
+				movement = 0.15
+			}
 			mountain = {
 				movement = 0.15
 			}
@@ -1401,6 +1419,9 @@ technologies = {
 				movement = 0.15
 			}
 			desert = {
+				movement = 0.15
+			}
+			deep_desert = {
 				movement = 0.15
 			}		
 		}
@@ -1413,7 +1434,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1455,7 +1476,7 @@ technologies = {
 		}
 
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1537,7 +1558,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1589,7 +1610,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1627,7 +1648,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1669,7 +1690,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1718,7 +1739,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1761,7 +1782,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1822,7 +1843,7 @@ technologies = {
 			siege_artillery4_2
 		}		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1872,7 +1893,7 @@ technologies = {
 		}
 			
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -1910,7 +1931,7 @@ technologies = {
 			siege_artillery4_1
 		}			
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		artillery_siege_support = {	
@@ -1965,7 +1986,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		artillery_siege_support = {	
@@ -2013,7 +2034,7 @@ technologies = {
 		}
 				
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		
@@ -2148,7 +2169,7 @@ technologies = {
 		
 		categories = {
 			rocketry
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
@@ -2176,7 +2197,7 @@ technologies = {
 		
 		categories = {
 			rocketry
-			artillery
+			cat_artillery
 			mot_rockets
 			inf_artillery
 		}
@@ -2244,7 +2265,7 @@ technologies = {
 		
 		categories = {
 			rocketry
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	}
@@ -2271,7 +2292,7 @@ technologies = {
 		
 		categories = {
 			rocketry
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
@@ -2306,7 +2327,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 			cat_anti_tank
 		}
@@ -2343,7 +2364,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 			cat_anti_tank
 		}
@@ -2394,7 +2415,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 			cat_anti_tank
 		}
@@ -2428,7 +2449,7 @@ technologies = {
 			
 		}
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 			cat_anti_tank
 		}
@@ -2470,6 +2491,9 @@ technologies = {
 			hills = {
 				movement = -0.1
 			}
+			desert_hills = {
+				movement = -0.1
+			}
 			mountain = {
 				movement = -0.1
 			}		
@@ -2488,6 +2512,9 @@ technologies = {
 				movement = -0.1
 			}
 			hills = {
+				movement = -0.1
+			}
+			desert_hills = {
 				movement = -0.1
 			}
 			mountain = {
@@ -2509,7 +2536,7 @@ technologies = {
 			
 		}
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 			cat_anti_tank
 		}
@@ -2558,7 +2585,7 @@ technologies = {
 			
 		}
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 			cat_anti_tank
 		}
@@ -2585,7 +2612,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 			cat_anti_tank
 		}
@@ -2631,7 +2658,7 @@ technologies = {
 		}
 						
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}	
 		special_project_specialization = { specialization_land }
@@ -2665,7 +2692,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	}
@@ -2681,6 +2708,7 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_anti_air_3
 		}
+		static_anti_air_damage_factor = 0.10
 		path = {
 			leads_to_tech = antiair5
 			research_cost_coeff = 1
@@ -2704,7 +2732,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
@@ -2721,7 +2749,7 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_anti_air_4
 		}
-
+		static_anti_air_damage_factor = 0.35
 		
 		research_cost = 1.1
 
@@ -2741,7 +2769,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 		special_project_specialization = { specialization_land }
@@ -2755,6 +2783,8 @@ technologies = {
 		category_heavy_anti_air = {
 			air_attack = 0.08
 		}
+		static_anti_air_damage_factor = 0.1
+		static_anti_air_hit_chance_factor = 0.1
 		path = {
 			leads_to_tech = antiairfc
 			research_cost_coeff = 1
@@ -2778,7 +2808,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	}
@@ -2791,7 +2821,9 @@ technologies = {
 		category_heavy_anti_air = {
 			air_attack = 0.08
 		}
-		
+
+		static_anti_air_damage_factor = 0.2
+		static_anti_air_hit_chance_factor = 0.15
 		
 	
 		
@@ -2810,7 +2842,7 @@ technologies = {
 		}
 						
 		categories = {
-			artillery
+			cat_artillery
 			inf_artillery
 		}
 	}

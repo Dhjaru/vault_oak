@@ -5,6 +5,7 @@
 sub_units = {
 
 	cavalry = {
+		allow_in_army_hq = yes
 		sprite = cavalry
 		map_icon_category = other
 		priority = 400

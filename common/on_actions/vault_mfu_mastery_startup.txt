@@ -1,0 +1,10 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = { limit = { OR = { tag = JAP tag = ENG tag = ITA } } add_ideas = semi_major_starting_bonus }
+				else_if = { limit = { NOR = { tag = GER tag = SOV tag = JAP tag = ENG tag = ITA } } add_ideas = minor_starting_bonus }
+			}
+		}
+	}
+}

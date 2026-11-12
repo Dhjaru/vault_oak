@@ -3727,11 +3727,11 @@ focus_tree = {
 					}
 					support = {
 						artillery = { x = 0 y = 0 }
-						engineer = { x = 1 y = 0 }
+						engineer = { x = 0 y = 4 }
 						logistics_company_mot = { x = 0 y = 1 }
-						maintenance_company = { x = 1 y = 1 }
+						maintenance_company = { x = 0 y = 5 }
 						recon_ac = { x = 0 y = 2 }
-						military_police = { x = 1 y = 2 } 
+						military_police = { x = 0 y = 6 } 
 			
 						
 					}
@@ -6839,8 +6839,8 @@ focus_tree = {
 							infantry = { x = 2 y = 1 }
 							
 							infantry = { x = 2 y = 0 }
-							artillery_brigade = { x = 2 y = 1 }
-							artillery_brigade = { x = 2 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+							artillery_brigade = { x = 4 y = 0 }
 							artillery_brigade = { x = 2 y = 3 }
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }

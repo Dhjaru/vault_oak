@@ -1,0 +1,12 @@
+hq_air_liaison
+hq_engineer
+hq_field_hospital
+hq_logistics
+hq_maintenance
+hq_military_police
+hq_naval_liaison
+hq_paratrooper
+hq_recon
+hq_signal
+hq_specops
+hq_support_company

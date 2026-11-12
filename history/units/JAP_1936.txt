@@ -24,17 +24,11 @@
 	support = {
 		pack_artillery = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon_ac = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		artillery = {
-			x = 0
-			y = 3
-		}
-		maintenance_company = {
-			x = 1
-			y = 2
-		}
+		recon_ac = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+		artillery = { x = 0 y = 5 }
+		maintenance_company = { x = 0 y = 6 }
 	}
 }
 division_template = {
@@ -97,7 +91,7 @@ division_template = {
 	support = {
 		artillery = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon_ac = { x = 1 y = 0 }
+		recon_ac = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -126,13 +120,10 @@ division_template = {
 	support = {
 		pack_artillery = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon = { x = 1 y = 0 }
-		artillery = { x = 1 y = 1 }
-		maintenance_company = {
-			x = 0
-			y = 2
-		}
-	}	
+		recon = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
 	priority = 2
 }
 division_template = {
@@ -796,7 +787,8 @@ instant_effect = { #player
 		}
 		requested_factories = 6
 		progress = 0.1
-		efficiency = 20
+		efficiency = 30
+		industrial_manufacturer = mio:JAP_tokyo_arsenal_organization
 	}
 	
 	add_equipment_production = {
@@ -806,7 +798,7 @@ instant_effect = { #player
 		}
 		requested_factories = 3
 		progress = 0.3
-		efficiency = 20
+		efficiency = 30
 	}
 	
 	add_equipment_production = {
@@ -816,7 +808,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.3
-		efficiency = 20
+		efficiency = 30
 	}
 	add_equipment_production = {
 		equipment = {
@@ -825,7 +817,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.3
-		efficiency = 20
+		efficiency = 30
 	}
 	add_equipment_production = {
 		equipment = {
@@ -834,7 +826,7 @@ instant_effect = { #player
 		}
 		requested_factories = 3
 		progress = 0.15
-		efficiency = 20
+		efficiency = 30
 	}
 	
 	add_equipment_production = {
@@ -844,7 +836,8 @@ instant_effect = { #player
 		}
 		requested_factories = 5
 		progress = 0.3
-		efficiency = 20
+		efficiency = 30
+		industrial_manufacturer = mio:JAP_osaka_army_arsenal_artillery_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -853,7 +846,8 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.3
-		efficiency = 20
+		efficiency = 30
+		industrial_manufacturer = mio:JAP_osaka_army_arsenal_artillery_organization
 	}
 	 add_equipment_production = {
 		equipment = {
@@ -862,7 +856,8 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 20
+		efficiency = 30
+		industrial_manufacturer = mio:JAP_osaka_army_arsenal_artillery_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -871,7 +866,8 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.4
-		efficiency = 20
+		efficiency = 30
+		industrial_manufacturer = mio:JAP_nissan_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -880,7 +876,8 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.4
-		efficiency = 20
+		efficiency = 30
+		industrial_manufacturer = mio:ishikawa
 	}
 	add_equipment_production = { 
 		equipment = {
@@ -890,7 +887,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.8
-		efficiency = 20
+		efficiency = 30
 	} 
 	add_equipment_production = { 
 		equipment = {
@@ -900,7 +897,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.8
-		efficiency = 20
+		efficiency = 30
 	}
 	add_equipment_production = {
 		equipment = {
@@ -909,7 +906,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.4
-		efficiency = 35
+		efficiency = 30
 	}	
 	add_equipment_production = {
 		equipment = {
@@ -918,7 +915,7 @@ instant_effect = { #player
 		}
 		requested_factories = 5
 		progress = 0.4
-		efficiency = 20 
+		efficiency = 30 
 	}
 	add_equipment_production = {
 		equipment = {
@@ -927,7 +924,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.5
-		efficiency = 20
+		efficiency = 30
 	}
 
 	add_equipment_production = {
@@ -937,7 +934,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.5
-		efficiency = 20
+		efficiency = 30
 	}
 	add_equipment_production = {
 		equipment = {
@@ -946,7 +943,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 20
+		efficiency = 30
 	}
 	add_equipment_production = {
 		equipment = {
@@ -955,7 +952,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 20
+		efficiency = 30
 	}
 	add_equipment_production = {
 		equipment = {
@@ -964,7 +961,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.5
-		efficiency = 20
+		efficiency = 30
 	}
 	############# equipment stockpile ################
 	add_equipment_to_stockpile = {

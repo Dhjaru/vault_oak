@@ -448,10 +448,10 @@ PAR_instant_effect_decisions = {
 						engineer = { x = 0 y = 1 }
 						recon = { x = 0 y = 2 }
 						pack_artillery = { x = 0 y = 3 }
-						anti_air_company = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-						field_hospital = { x = 1 y = 2 }
-						anti_tank  = { x = 1 y = 3 }
+						anti_air_company = { x = 0 y = 4 }
+						logistics_company = { x = 0 y = 5 }
+						field_hospital = { x = 0 y = 6 }
+						anti_tank  = { x = 0 y = 7 }
 					}
 
 					regiments = {
@@ -509,10 +509,10 @@ PAR_instant_effect_decisions = {
 						engineer = { x = 0 y = 1 }
 						recon = { x = 0 y = 2 }
 						pack_artillery = { x = 0 y = 3 }
-						anti_air_company = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-						field_hospital = { x = 1 y = 2 }
-						anti_tank  = { x = 1 y = 3 }
+						anti_air_company = { x = 0 y = 4 }
+						logistics_company = { x = 0 y = 5 }
+						field_hospital = { x = 0 y = 6 }
+						anti_tank  = { x = 0 y = 7 }
 					}
 
 					regiments = {
@@ -570,10 +570,10 @@ PAR_instant_effect_decisions = {
 						engineer = { x = 0 y = 1 }
 						recon = { x = 0 y = 2 }
 						pack_artillery = { x = 0 y = 3 }
-						anti_air_company = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-						field_hospital = { x = 1 y = 2 }
-						anti_tank  = { x = 1 y = 3 }
+						anti_air_company = { x = 0 y = 4 }
+						logistics_company = { x = 0 y = 5 }
+						field_hospital = { x = 0 y = 6 }
+						anti_tank  = { x = 0 y = 7 }
 					}
 
 					regiments = {
@@ -631,10 +631,10 @@ PAR_instant_effect_decisions = {
 						engineer = { x = 0 y = 1 }
 						recon = { x = 0 y = 2 }
 						pack_artillery = { x = 0 y = 3 }
-						anti_air_company = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-						field_hospital = { x = 1 y = 2 }
-						anti_tank  = { x = 1 y = 3 }
+						anti_air_company = { x = 0 y = 4 }
+						logistics_company = { x = 0 y = 5 }
+						field_hospital = { x = 0 y = 6 }
+						anti_tank  = { x = 0 y = 7 }
 					}
 
 					regiments = {

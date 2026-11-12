@@ -1976,8 +1976,8 @@ focus = {
 						infantry = { x = 2 y = 1 }
 						
 						infantry = { x = 2 y = 0 }
-						field_gun_brigade = { x = 2 y = 1 }
-						field_gun_brigade = { x = 2 y = 2 }
+						field_gun_brigade = { x = 3 y = 3 }
+						field_gun_brigade = { x = 4 y = 0 }
 						artillery_brigade = { x = 2 y = 3 }
 						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
@@ -1989,9 +1989,9 @@ focus = {
 						artillery = { x = 0 y = 0 }
 						recon = { x = 0 y = 1 }
 						anti_air_company = { x = 0 y = 2 }
-						field_hospital = { x = 1 y = 0 }
-						pack_artillery = { x = 1 y = 1 }
-						engineer = { x = 1 y = 2 }
+						field_hospital = { x = 0 y = 4 }
+						pack_artillery = { x = 0 y = 5 }
+						engineer = { x = 0 y = 6 }
 					}
 
 					priority = 2 
@@ -2153,10 +2153,10 @@ focus = {
 						recon_ac = { x = 0 y = 1 }
 						mobile_engineer = { x = 0 y = 2 }
 						anti_tank = { x = 0 y = 3 }
-						maintenance_company = { x = 1 y = 0 }
-						logistics_company_mot = { x = 1 y = 1 }
-						anti_air_heavy_support = { x = 1 y = 2 }
-						signal_company = { x = 1 y = 3 }
+						maintenance_company = { x = 0 y = 4 }
+						logistics_company_mot = { x = 0 y = 5 }
+						anti_air_heavy_support = { x = 0 y = 6 }
+						signal_company = { x = 0 y = 7 }
 					}
 					priority = 2
 				}
@@ -4779,8 +4779,8 @@ focus = {
 					infantry = { x = 2 y = 1 }
 					
 					infantry = { x = 2 y = 0 }
-					artillery_brigade = { x = 2 y = 1 }
-					artillery_brigade = { x = 2 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+					artillery_brigade = { x = 4 y = 0 }
 					artillery_brigade = { x = 2 y = 3 }
 					artillery_brigade = { x = 3 y = 0 }
 					artillery_brigade = { x = 3 y = 1 }
@@ -4793,10 +4793,10 @@ focus = {
 					recon = { x = 0 y = 1 }
 					anti_air_company = { x = 0 y = 2 }
 					military_police = { x = 0 y = 3 }
-					field_hospital = { x = 1 y = 0 }
-					pack_artillery = { x = 1 y = 1 }
-					engineer = { x = 1 y = 2 }
-					artillery_heavy_support = { x = 1 y = 3 }
+					field_hospital = { x = 0 y = 4 }
+					pack_artillery = { x = 0 y = 5 }
+					engineer = { x = 0 y = 6 }
+					artillery_heavy_support = { x = 0 y = 7 }
 				}
 
 				priority = 2 
@@ -5089,8 +5089,8 @@ focus = {
 							infantry = { x = 2 y = 1 }
 							
 							infantry = { x = 2 y = 0 }
-							field_gun_brigade = { x = 2 y = 1 }
-							field_gun_brigade = { x = 2 y = 2 }
+							field_gun_brigade = { x = 3 y = 3 }
+							field_gun_brigade = { x = 4 y = 0 }
 							artillery_brigade = { x = 2 y = 3 }
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }
@@ -5102,9 +5102,9 @@ focus = {
 							artillery = { x = 0 y = 0 }
 							recon = { x = 0 y = 1 }
 							anti_air_company = { x = 0 y = 2 }
-							field_hospital = { x = 1 y = 0 }
-							pack_artillery = { x = 1 y = 1 }
-							engineer = { x = 1 y = 2 }
+							field_hospital = { x = 0 y = 4 }
+							pack_artillery = { x = 0 y = 5 }
+							engineer = { x = 0 y = 6 }
 						}
 
 						priority = 2 
@@ -5175,8 +5175,8 @@ focus = {
 							infantry = { x = 2 y = 1 }
 							
 							infantry = { x = 2 y = 0 }
-							field_gun_brigade = { x = 2 y = 1 }
-							field_gun_brigade = { x = 2 y = 2 }
+							field_gun_brigade = { x = 3 y = 3 }
+							field_gun_brigade = { x = 4 y = 3 }
 							artillery_brigade = { x = 2 y = 3 }
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }
@@ -5192,9 +5192,9 @@ focus = {
 							artillery = { x = 0 y = 0 }
 							recon = { x = 0 y = 1 }
 							anti_air_company = { x = 0 y = 2 }
-							field_hospital = { x = 1 y = 0 }
-							pack_artillery = { x = 1 y = 1 }
-							engineer = { x = 1 y = 2 }
+							field_hospital = { x = 0 y = 4 }
+							pack_artillery = { x = 0 y = 5 }
+							engineer = { x = 0 y = 6 }
 						}
 
 						priority = 2 
@@ -5502,8 +5502,8 @@ focus = {
 							infantry = { x = 2 y = 1 }
 							
 							infantry = { x = 2 y = 0 }
-							field_gun_brigade = { x = 2 y = 1 }
-							field_gun_brigade = { x = 2 y = 2 }
+							field_gun_brigade = { x = 3 y = 3 }
+							field_gun_brigade = { x = 4 y = 0 }
 							artillery_brigade = { x = 2 y = 3 }
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }
@@ -5515,9 +5515,9 @@ focus = {
 							artillery = { x = 0 y = 0 }
 							recon = { x = 0 y = 1 }
 							anti_air_company = { x = 0 y = 2 }
-							field_hospital = { x = 1 y = 0 }
-							pack_artillery = { x = 1 y = 1 }
-							engineer = { x = 1 y = 2 }
+							field_hospital = { x = 0 y = 4 }
+							pack_artillery = { x = 0 y = 5 }
+							engineer = { x = 0 y = 6 }
 						}
 
 						priority = 2 
@@ -5588,8 +5588,8 @@ focus = {
 							infantry = { x = 2 y = 1 }
 							
 							infantry = { x = 2 y = 0 }
-							field_gun_brigade = { x = 2 y = 1 }
-							field_gun_brigade = { x = 2 y = 2 }
+							field_gun_brigade = { x = 3 y = 3 }
+							field_gun_brigade = { x = 4 y = 3 }
 							artillery_brigade = { x = 2 y = 3 }
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }
@@ -5605,9 +5605,9 @@ focus = {
 							artillery = { x = 0 y = 0 }
 							recon = { x = 0 y = 1 }
 							anti_air_company = { x = 0 y = 2 }
-							field_hospital = { x = 1 y = 0 }
-							pack_artillery = { x = 1 y = 1 }
-							engineer = { x = 1 y = 2 }
+							field_hospital = { x = 0 y = 4 }
+							pack_artillery = { x = 0 y = 5 }
+							engineer = { x = 0 y = 6 }
 						}
 
 						priority = 2 

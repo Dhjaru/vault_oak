@@ -12,7 +12,7 @@ spriteTypes = {
 
 	frameAnimatedSpriteType = {
 		name = "GFX_mastery_progress_bar_animated_preview"
-		texturefile = "gfx/interface/doctrines/UI/mastery_progress_bar_strip_preview.dds"
+		texturefile = "gfx/interface/doctrines/UI/mastery_progress_bar_strip_land.dds"
 		noOfFrames = 24
 		loadType = "INGAME"
 		transparencecheck = yes
@@ -73,12 +73,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_subdoctrine_icon_frame"
-		texturefile = "gfx/interface/doctrines/doctrine_button_background.dds"
+		texturefile = "gfx/interface/doctrines/UI/subdoctrine_button_and_text_frame.dds"
 	}
 
 	spriteType = {
 		name = "GFX_subdoctrine_name_frame"
-		texturefile = "gfx/interface/doctrines/sub_doctrine_text_box.dds"
+		texturefile = "gfx/interface/doctrines/UI/subdoctrine_button_and_text_frame.dds"
 	}
 
 	spriteType = {
@@ -96,7 +96,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mastery_amount_frame"
 		texturefile = "gfx/interface/doctrines/UI/doctrine_mastery_backgrounds.dds"
-		noOfFrames = 4
+		noOfFrames = 5
 	}
 	spriteType = {
 		name = "GFX_mastery_amount_frame_big"
@@ -106,13 +106,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_grand_doctrine_frame"
 		texturefile = "gfx/interface/doctrines/UI/grand_doctrine_frame.dds"
-		noOfFrames = 3
+		noOfFrames = 4
 	}
 
 	spriteType = {
 		name = "GFX_subdoctrine_button_and_text_frame"
 		texturefile = "gfx/interface/doctrines/UI/subdoctrine_button_and_text_frame.dds"
-		noOfFrames = 3
+		noOfFrames = 4
 	}
 
 ### Milestones
@@ -192,6 +192,38 @@ spriteTypes = {
 		name = "GFX_doctrine_decor_naval"
 		texturefile = "gfx/interface/doctrines/window/doctrine_decor_naval.dds"
 		noOfFrames = 2
+	}
+
+### MFU re-added (1.19): special_forces doctrine sprites the mod's shadowing doctrines.gfx had dropped; textures resolve from vanilla
+	spriteType = {
+		name = "GFX_doctrine_decor_special_forces"
+		texturefile = "gfx/interface/doctrines/window/doctrine_decor_special_forces.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_doctrine_milestone_special_forces"
+		texturefile = "gfx/interface/doctrines/window/doctrine_milestone_special_forces.dds"
+		noOfFrames = 2
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_mastery_progress_bar_animated_special_forces"
+		texturefile = "gfx/interface/doctrines/UI/mastery_progress_bar_strip_special_forces.dds"
+		noOfFrames = 24
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 24
+		looping = yes
+		pause_on_loop = 0.0
+	}
+	spriteType = {
+		name = "GFX_doctrine_special_forces_1_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_special_forces_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_special_forces_2_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_special_forces_2.dds"
+		alwaystransparent = yes
 	}
 
 ###Other
@@ -328,7 +360,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_doctrine_naval_gunfire_medium"
-		texturefile = "gfx/interface/doctrines/icons/doctrine_naval_gunfire.dds"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_naval_gunfire_support.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = {
@@ -427,12 +459,12 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_devils_gardens_medium"
-		texturefile = "gfx/interface/doctrines/icons/devils_gardens.tga"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_grand_battleplan.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = {
 		name = "GFX_firebrigadies_medium"
-		texturefile = "gfx/interface/doctrines/icons/firebrigadies.tga"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_superior_firepower.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = {
@@ -457,7 +489,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_mobile_assault_medium"
-		texturefile = "gfx/interface/doctrines/icons/mobile_assault.tga"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_mobile_warfare.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = {

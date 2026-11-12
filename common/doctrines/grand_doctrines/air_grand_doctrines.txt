@@ -8,7 +8,7 @@ new_strategic_destruction = {
         always = yes
     }
 
-    xp_cost = 150
+    xp_cost = 0
     xp_type = air
 
     ai_will_do = { 
@@ -114,7 +114,7 @@ new_battlefield_support = {
         always = yes
     }
 
-    xp_cost = 150
+    xp_cost = 0
     xp_type = air
 
     ai_will_do = {
@@ -145,7 +145,7 @@ new_battlefield_support = {
     # EFFECTS
 	
 	air_cas_efficiency = 0.05
-    air_superiority_detect_factor = 0.05
+    naval_strike_targetting_factor = 0.05
 	
     milestones = {
         {
@@ -233,7 +233,7 @@ new_operational_integrity = {
         always = yes
     }
 
-    xp_cost = 150
+    xp_cost = 0
     xp_type = air
 
     ai_will_do = {
@@ -259,8 +259,7 @@ new_operational_integrity = {
     # EFFECTS
 	
 	
-	air_interception_detect_factor = 0.1
-    air_superiority_detect_factor = 0.1
+	ace_effectiveness_factor = 0.2
 	
     milestones = {
          {

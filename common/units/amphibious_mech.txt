@@ -1,6 +1,7 @@
 sub_units = {
 
 	amphibious_mechanized = {
+		allow_in_army_hq = yes
 		sprite = amphibious_mechanized
 		map_icon_category = infantry
 

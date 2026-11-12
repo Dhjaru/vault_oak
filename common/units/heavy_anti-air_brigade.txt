@@ -3,6 +3,7 @@
 # For sea units: ship,transport,uboat
 sub_units = {
 	anti_air_heavy = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 100
@@ -82,6 +83,7 @@ sub_units = {
 		}
 	}
 	anti_air_heavy_mot = {
+		allow_in_army_hq = yes
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 0

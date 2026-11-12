@@ -1,6 +1,7 @@
 sub_units = {
 
 	amphibious_armor = {
+		allow_in_army_hq = yes
 		sprite = amphibious_armor
 		map_icon_category = armored
 		priority = 2501
@@ -72,6 +73,7 @@ sub_units = {
 		}	
 	}
 	amphibious_light_armor = {
+		allow_in_army_hq = yes
 		abbreviation = "LAM"
 		sprite = amphibious_armor
 		map_icon_category = armored
@@ -147,6 +149,7 @@ sub_units = {
 	}
 
 	amphibious_medium_armor = {
+		allow_in_army_hq = yes
 		abbreviation = "MAM"
 		sprite = amphibious_armor
 		map_icon_category = armored
@@ -223,6 +226,7 @@ sub_units = {
 	}
 
 	amphibious_heavy_armor = {
+		allow_in_army_hq = yes
 		abbreviation = "HAM"
 		sprite = amphibious_armor
 		map_icon_category = armored
@@ -310,6 +314,7 @@ sub_units = {
 	}
 
 	amphibious_super_heavy_armor = {
+		allow_in_army_hq = yes
 		abbreviation = "SAM"
 		sprite = amphibious_armor
 		map_icon_category = armored

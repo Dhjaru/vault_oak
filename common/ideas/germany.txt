@@ -4412,7 +4412,7 @@ ideas = {
 				political_power_cost = 0.05
 				resistance_damage_to_garrison = 0.05
 				industry_repair_factor = -0.05
-				resistance_target = 0.03				
+							
 			}
 		}
 
@@ -4431,7 +4431,7 @@ ideas = {
 				resistance_damage_to_garrison = 0.075
 				industry_repair_factor = -0.1
 				consumer_goods_expected_value = 0.01	
-				resistance_target = 0.06			
+						
 			}
 		}
 
@@ -4450,7 +4450,7 @@ ideas = {
 				resistance_damage_to_garrison = 0.125
 				industry_repair_factor = -0.1
 				consumer_goods_expected_value = 0.02	
-				resistance_target = 0.09			
+						
 			}
 		}
 
@@ -4469,7 +4469,7 @@ ideas = {
 				resistance_damage_to_garrison = 0.15
 				industry_repair_factor = -0.1
 				consumer_goods_expected_value = 0.03	
-				resistance_target = 0.12	
+			
 			}
 		}
 
@@ -4488,7 +4488,7 @@ ideas = {
 				resistance_damage_to_garrison = 0.175
 				industry_repair_factor = -0.1
 				consumer_goods_expected_value = 0.04
-				resistance_target = 0.15
+			
 			}
 		}
 
@@ -4507,7 +4507,7 @@ ideas = {
 				resistance_damage_to_garrison = 0.2
 				industry_repair_factor = -0.1
 				consumer_goods_expected_value = 0.05	
-				resistance_target = 0.18			
+					
 			}
 		}
 
@@ -4831,6 +4831,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
+				production_factory_max_efficiency_factor = 0.02
 				production_cost_tank_assembly_factor = -0.2
 				tank_production_capacity = 20
 				
@@ -5034,7 +5035,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = -0.02
-				consumer_goods_factor = 0.15
+				#consumer_goods_factor = 0.15
 			}
 		}
 		GER_rationing = {
@@ -5628,7 +5629,7 @@ ideas = {
 
 			research_bonus = {
 				industry = 0.10 
-				synth_resources = 0.10 
+				synth_resources = 0.20
 			}
 
 
@@ -5637,7 +5638,8 @@ ideas = {
 			picture = GER_autarky_2
 
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.10
+				production_speed_synthetic_rubber_refinery_factor = 0.05
 				consumer_goods_expected_value = 0.01
 				political_power_cost = 0.2
 			}
@@ -5657,7 +5659,7 @@ ideas = {
 		
 			research_bonus = {
 				industry = 0.15 
-				synth_resources = 0.15 
+				synth_resources = 0.25
 			}
 			
 			removal_cost = -1
@@ -5665,7 +5667,40 @@ ideas = {
 			picture = GER_autarky_3
 
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.05
+				production_cost_synthetic_refinery_factor = -0.15
+				production_cost_synthetic_rubber_refinery_factor = -0.1
+				production_speed_synthetic_refinery_factor = 0.20
+				production_speed_synthetic_rubber_refinery_factor = 0.075
+				consumer_goods_expected_value = 0.02
+				political_power_cost = 0.25
+			}
+		}
+
+		GER_autarky_idea3_rubber = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			research_bonus = {
+				industry = 0.15
+				synth_resources = 0.25
+			}
+
+			removal_cost = -1
+
+			picture = GER_autarky_3
+
+			modifier = {
+				production_cost_synthetic_refinery_factor = -0.1
+				production_cost_synthetic_rubber_refinery_factor = -0.15
+				production_speed_synthetic_refinery_factor = 0.10
+				production_speed_synthetic_rubber_refinery_factor = 0.15
 				consumer_goods_expected_value = 0.02
 				political_power_cost = 0.25
 			}
@@ -5685,7 +5720,7 @@ ideas = {
 
 			research_bonus = {
 				industry = 0.2 
-				synth_resources = 0.2 
+				synth_resources = 0.3
 			}
 			
 			removal_cost = -1
@@ -5693,7 +5728,43 @@ ideas = {
 			picture = GER_autarky_4
 
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.1
+				production_cost_synthetic_refinery_factor = -0.15
+				production_cost_synthetic_rubber_refinery_factor = -0.1
+				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_synthetic_rubber_refinery_factor = 0.075
+			}
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		GER_autarky_idea4_rubber = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			research_bonus = {
+				industry = 0.2
+				synth_resources = 0.3
+			}
+
+			removal_cost = -1
+
+			picture = GER_autarky_4
+
+			modifier = {
+				production_cost_synthetic_refinery_factor = -0.1
+				production_cost_synthetic_rubber_refinery_factor = -0.15
+				production_speed_synthetic_refinery_factor = 0.15
+				production_speed_synthetic_rubber_refinery_factor = 0.15
 			}
 			equipment_bonus = {
 				support_equipment = {
@@ -6821,7 +6892,7 @@ ideas = {
 				root_out_resistance_effectiveness_factor = -0.2
 				political_power_gain = 0.25
 				fascism_drift = 0.2
-				send_volunteer_size = 1
+				send_volunteer_size = 2
 				operative_slot = 3
 				send_volunteer_divisions_required = -1
 				
@@ -6913,6 +6984,7 @@ ideas = {
 			picture = GER_french_payments
 			
 			modifier = {
+				
 				political_power_gain = 0.25
 				consumer_goods_expected_value = -0.05 
 				industry_repair_factor = 0.5
@@ -6934,10 +7006,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
+				max_command_power = 20
 				max_planning_factor = 0.1
 				dig_in_speed_factor = 0.2
-				experience_gain_army_factor = -0.5
+				experience_gain_army_factor = -0.45
 				air_mastery_gain_factor = -0.40
 				
 				
@@ -6959,9 +7031,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				max_command_power = 20
 				command_power_gain = 0.1
 				dig_in_speed_factor = 0.2
-				experience_gain_army_factor = -0.5
+				experience_gain_army_factor = -0.45
 				air_mastery_gain_factor = -0.40
 				
 			}
@@ -6981,9 +7054,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				max_command_power = 20	
 				command_power_gain = 0.1
 				dig_in_speed_factor = 0.2
-				experience_gain_army_factor = -0.25
+				experience_gain_army_factor = -0.45
 				experience_gain_factor = -0.25
 				air_mastery_gain_factor = -0.40
 			
@@ -7338,11 +7412,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			cancel = {
-				NOT = {
-					has_idea = GER_heinrich_himmler
-				}
-			}
 			removal_cost = -1
 		
 			allowed_civil_war = {
@@ -7368,11 +7437,6 @@ ideas = {
 			
 			allowed = {
 				always = no
-			}
-			cancel = {
-				NOT = {
-					has_idea = GER_heinrich_himmler
-				}
 			}
 			removal_cost = -1
 		
@@ -8425,6 +8489,36 @@ ideas = {
 	######
 	industrial_concern = {
 
+		reichswerke_hermann_goring_early = {
+			allowed = {
+				OR = {
+					original_tag = GER
+					is_reichskommissariat_ger = yes
+				}
+				
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = GER_the_states_military_industrial_complex
+				}
+			}
+			traits = { trait_industrial_concern }
+			available = {
+				GER = {
+					has_completed_focus = GER_hermann_goring_werke
+				}
+			}
+			picture = reichswerke_hermann_goring
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_resources_steel_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+			cost = 100
+		}
 		reichswerke_hermann_goring = {
 
 			allowed = {
@@ -8444,9 +8538,10 @@ ideas = {
 
 			modifier = {	
 				global_building_slots_factor = 0.35
-				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.08
 				consumer_goods_expected_value = 0.03	
+				local_resources_steel_factor = 0.15
 				production_cost_air_assembly_factor = -0.2
 			}
 
@@ -8488,7 +8583,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.1
 				global_building_slots_factor = 0.8
 				production_speed_arms_factory_factor  = 0.4
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.12
 				political_power_cost = -0.1
 				production_cost_tank_assembly_factor = -0.2		
@@ -8497,126 +8592,6 @@ ideas = {
 			}
 		}
 
-		ig_faben = {
-			
-			allowed = {
-				OR = {
-					original_tag = GER	
-					is_reichskommissariat_ger = yes
-				}
-			}
-
-			available = {
-				GER = {
-					has_completed_focus = GER_ig_faben_focus
-				}
-			}
-
-			visible = {
-				GER = {
-					OR = {
-						NOT = { has_completed_focus = ig_faben_rubber }
-						NOT = { has_completed_focus = ig_faben_oil }
-					}
-				}
-			}
-			
-			research_bonus = {
-				synth_resources = 0.1
-			}
-
-			modifier = {
-				production_speed_synthetic_refinery_factor = 0.05
-				production_speed_synthetic_rubber_refinery_factor = 0.05
-			}
-
-			traits = { GER_refinery_concern }
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		ig_faben_oil = {
-			
-			allowed = {
-				OR = {
-					original_tag = GER	
-					is_reichskommissariat_ger = yes
-				}
-			}
-
-			available = {
-				GER = {
-					has_completed_focus = ig_faben_oil
-				}
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = ig_faben_seize_chemicals
-				}
-				has_completed_focus = ig_faben_oil
-			}
-			
-			research_bonus = {
-				synth_resources = 0.1
-			}
-			modifier = {
-
-				production_cost_synthetic_refinery_factor = -0.1
-				production_cost_synthetic_rubber_refinery_factor = -0.1
-				production_speed_synthetic_refinery_factor = 0.15
-				production_speed_synthetic_rubber_refinery_factor = 0.075
-			}
-			
-
-			traits = { GER_refinery_concern }
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		ig_faben_rubber = {
-			
-			allowed = {
-				OR = {
-					original_tag = GER	
-					is_reichskommissariat_ger = yes
-				}
-			}
-
-			available = {
-				GER = {
-					has_completed_focus = ig_faben_rubber
-				}
-			}
-
-			visible = {
-				NOT = {
-					has_completed_focus = ig_faben_seize_chemicals
-				}
-				has_completed_focus = ig_faben_rubber
-			}
-			
-			research_bonus = {
-				synth_resources = 0.1
-			}
-
-			modifier = {
-				production_cost_synthetic_refinery_factor = -0.1
-				production_cost_synthetic_rubber_refinery_factor = -0.1
-				production_speed_synthetic_refinery_factor = 0.05
-				production_speed_synthetic_rubber_refinery_factor = 0.125
-			}
-
-			traits = { GER_refinery_concern }
-			
-			ai_will_do = {
-				factor = 3
-			}
-		}
 	}
 	industrial_research = {
 
@@ -8732,7 +8707,7 @@ ideas = {
 				}
 			}
 			traits = { artillery_research_trait }
-			research_bonus = { artillery = 0.15 rocketry = 0.15 }
+			research_bonus = { cat_artillery = 0.15 rocketry = 0.15 }
 		
 		}
 

@@ -357,7 +357,6 @@ BUL_Krupp = {
 	
 	allowed = {	
 		OR = {
-			original_tag = HUN
 			original_tag = SPR
 			original_tag = BUL
 			original_tag = EFR
@@ -378,7 +377,6 @@ BUL_ger_MAN = {
 	
 	allowed = {	
 		OR = {
-			original_tag = HUN
 			original_tag = SPR
 			original_tag = BUL
 			original_tag = EFR

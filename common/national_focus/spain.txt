@@ -3120,10 +3120,10 @@ focus_tree = {
 							military_police = { x = 0 y = 1 }
 							mobile_engineer = { x = 0 y = 2 }	
 							signal_company = { x = 0 y = 3 }
-							maintenance_company = { x = 1 y = 0 }
-							logistics_company = { x = 1 y = 1 }
-							recon_ac = { x = 1 y = 2 }
-							anti_air_company = { x = 1 y = 3}
+							maintenance_company = { x = 0 y = 4 }
+							logistics_company = { x = 0 y = 5 }
+							recon_ac = { x = 0 y = 6 }
+							anti_air_company = { x = 0 y = 7}
 						}
 					}
 				}
@@ -3169,10 +3169,10 @@ focus_tree = {
 							military_police = { x = 0 y = 1 }
 							mobile_engineer = { x = 0 y = 2 }	
 							signal_company = { x = 0 y = 3 }
-							maintenance_company = { x = 1 y = 0 }
-							logistics_company = { x = 1 y = 1 }
-							recon_ac = { x = 1 y = 2 }
-							anti_air_company = { x = 1 y = 3}
+							maintenance_company = { x = 0 y = 4 }
+							logistics_company = { x = 0 y = 5 }
+							recon_ac = { x = 0 y = 6 }
+							anti_air_company = { x = 0 y = 7}
 						}
 					}
 				}
@@ -3266,10 +3266,10 @@ focus_tree = {
 							military_police = { x = 0 y = 1 }
 							mobile_engineer = { x = 0 y = 2 }	
 							signal_company = { x = 0 y = 3 }
-							maintenance_company = { x = 1 y = 0 }
-							logistics_company = { x = 1 y = 1 }
-							recon_ac = { x = 1 y = 2 }
-							anti_air_company = { x = 1 y = 3}
+							maintenance_company = { x = 0 y = 4 }
+							logistics_company = { x = 0 y = 5 }
+							recon_ac = { x = 0 y = 6 }
+							anti_air_company = { x = 0 y = 7}
 						}
 					#is_locked = no
 					priority = 2
@@ -11576,8 +11576,8 @@ focus_tree = {
 							recon = { x = 0 y = 1 } 		
 							engineer = { x = 0 y = 2 } 	
 							anti_air_company = { x = 0 y = 3 }
-							logistics_company_mot = { x = 1 y = 0 }
-							field_hospital = { x = 1 y = 1 }
+							logistics_company_mot = { x = 0 y = 4 }
+							field_hospital = { x = 0 y = 5 }
 						}
 					}
 					random_owned_state = {
@@ -11705,9 +11705,9 @@ focus_tree = {
 							engineer = { x = 0 y = 1 }
 							recon = { x = 0 y = 2 }
 							pack_artillery = { x = 0 y = 3 }
-							maintenance_company = { x = 1 y = 0 }
-							logistics_company = { x = 1 y = 1 }
-							field_hospital = { x = 1 y = 2 }
+							maintenance_company = { x = 0 y = 4 }
+							logistics_company = { x = 0 y = 5 }
+							field_hospital = { x = 0 y = 6 }
 
 						}
 					}
@@ -11859,8 +11859,8 @@ focus_tree = {
 					support = {
 						artillery = { x = 0 y = 0 }
 						engineer = { x = 0 y = 1 }
-						field_hospital = { x = 1 y = 0 }
-						recon = { x = 1 y = 1 }
+						field_hospital = { x = 0 y = 4 }
+						recon = { x = 0 y = 5 }
 					}
 				}	
 			}
@@ -12626,10 +12626,10 @@ focus_tree = {
 						engineer = { x = 0 y = 1 }
 						recon = { x = 0 y = 2 }
 						pack_artillery = { x = 0 y = 3 }
-						anti_air_company = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-						field_hospital = { x = 1 y = 2 }
-						anti_tank  = { x = 1 y = 3 }
+						anti_air_company = { x = 0 y = 4 }
+						logistics_company = { x = 0 y = 5 }
+						field_hospital = { x = 0 y = 6 }
+						anti_tank  = { x = 0 y = 7 }
 					}
 				}
 				division_template = { #Blackshirts
@@ -12661,8 +12661,8 @@ focus_tree = {
 						artillery = { x = 0 y = 0 }
 						recon = { x = 0 y = 1 }
 						pack_artillery = { x = 0 y = 2 }
-						logistics_company = { x = 1 y = 0 }
-						field_hospital = { x = 1 y = 1 }
+						logistics_company = { x = 0 y = 4 }
+						field_hospital = { x = 0 y = 5 }
 					}
 				}
 			290 ={
@@ -12913,7 +12913,7 @@ focus_tree = {
 							artillery = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
 							recon = { x = 0 y = 2 }
-							logistics_company = { x = 1 y = 0 }
+							logistics_company = { x = 0 y = 4 }
 						}
 					}
 					290 ={
@@ -13269,8 +13269,8 @@ focus_tree = {
 				}
 				support = {
 					artillery = { x = 0 y = 0 }
-					maintenance_company = { x = 1 y = 0 }
-					logistics_company = { x = 1 y = 1 }
+					maintenance_company = { x = 0 y = 4 }
+					logistics_company = { x = 0 y = 5 }
 					field_hospital = { x = 0 y = 1 }
 				}
 			}
@@ -13687,7 +13687,7 @@ focus_tree = {
 
 						support = {
 							military_police = { x = 0 y = 0 }
-							recon = { x = 1 y = 0 }
+							recon = { x = 0 y = 4 }
 						}
 					}
 					every_owned_state = {
@@ -13914,8 +13914,8 @@ focus_tree = {
 					support = {
 						recon_ac = { x = 0 y = 0 }
 						military_police = { x = 0 y = 1 }
-						anti_air_company = { x = 1 y = 0 }
-						pack_artillery = { x = 1 y = 1 }
+						anti_air_company = { x = 0 y = 4 }
+						pack_artillery = { x = 0 y = 5 }
 					}
 				}
 				290 ={
@@ -14183,8 +14183,8 @@ focus_tree = {
 							artillery = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
 							recon = { x = 0 y = 2 }
-							maintenance_company = { x = 1 y = 0 }
-							field_hospital = { x = 1 y = 1 }
+							maintenance_company = { x = 0 y = 4 }
+							field_hospital = { x = 0 y = 5 }
 						}
 					}
 					290 ={
@@ -14614,7 +14614,7 @@ focus_tree = {
 						support = {
 							recon = { x = 0 y = 0 }
 							pack_artillery = { x = 0 y = 1 }
-							field_hospital = { x = 1 y = 0 }
+							field_hospital = { x = 0 y = 4 }
 						}
 					}
 					290 ={

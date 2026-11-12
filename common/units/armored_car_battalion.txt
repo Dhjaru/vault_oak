@@ -1,5 +1,6 @@
 sub_units = {
 	armored_car = {
+		allow_in_army_hq = yes
 		sprite = armored_car
 		map_icon_category = armored
 		priority = 2501

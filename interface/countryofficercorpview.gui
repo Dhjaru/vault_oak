@@ -544,12 +544,6 @@ guiTypes = {
 		    name = "spirit_row_offset"
 		    position = { x = 0 y = 56 }
 		}
-
-		positionType = {
-		    # When TAOG is inactive the hq_ribbon band is hidden, so shift the panels up to fill the freed space
-		    name = "no_taog_offset"
-		    position = { x = 0 y = -57 }
-		}
 		
 		containerWindowType = {
 			name = "army_header"
@@ -564,7 +558,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "modifiers_grid"
-				position = { x = 4 y = -68 }
+				position = { x = 4 y = -158 }
 				orientation = lower_left
 				size = { width = 500 height = 35 }
 				slotsize = { width = 72 height = 33 }
@@ -593,6 +587,7 @@ guiTypes = {
 				position = { x=110 y=6 }
 				Orientation = "UPPER_LEFT"
 				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
 				text = "OFFICER_CORP_ARMY_DOCTRINE"
 				maxWidth = 240
 				maxHeight = 20
@@ -618,7 +613,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "land_doctrine_button" # A container window of the format X_doctrine_button will automatically be linked to doctrine folder "X"
-				position = { x=260 y=-11 }
+				position = { x=-15 y=126 }
 				size = {width=20 height=20}
 				clipping = no
 
@@ -632,16 +627,16 @@ guiTypes = {
 				iconType = {
 					#Subdoctrine motive. Also can control what's displayed before subdoctrine is chosen. 
 					name = "icon"
-					position = { x=61 y=69 }
+					position = { x=-885 y=27 }
 					Orientation = CENTER
 					spriteType = "GFX_land_doctrine_medium" # Default icon when no grand doctrine is active
-					alwaystransparent = yes
-					centerposition = yes
+					alwaystransparent = no
+					centerposition = no
 				}
 
 				iconType = {
 					name = "number_container"
-					position = { x=62 y=95 }
+					position = { x=62 y=195 }
 					Orientation = CENTER
 					spriteType = "GFX_bronze_number_container"
 					alwaystransparent = yes
@@ -651,7 +646,7 @@ guiTypes = {
 				gridBoxType = {
 					#Container for numbers
 					name = track_status_grid
-					position = { x=48 y=98 }
+					position = { x=48 y=198 }
 					slotsize = { width = 16 height = 16 }
 					max_slots_vertical = 1
 				}
@@ -660,7 +655,7 @@ guiTypes = {
 			buttonType = {
 				name = "commander_roster_army"
 				quadTextureSprite = "GFX_diplo_filter_entry"
-				position = { x=382 y=36 }
+				position = { x=378 y=46 }
 				buttonText = "Placeholder"
 				font = "hoi_16mbs"
 				frame = 2
@@ -671,41 +666,14 @@ guiTypes = {
 			buttonType = {
 				name = "commander_roster_division"
 				quadTextureSprite = "GFX_diplo_filter_entry"
-				position = { x=382 y=70 }
+				position = { x=234 y=46 }
 				buttonText = "Placeholder"
 				font = "hoi_16mbs"
 				frame = 2
 				pdx_tooltip = "COMMANDER_ROSTER_DIVISION_TOOLTIP"
 				pdx_tooltip_delayed = "COMMANDER_ROSTER_DIVISION_TOOLTIP_DELAYED"
 			}
-
-			containerWindowType = {
-				# Citation counter badge overlaid on the top-right corner of "commander_roster_division"
-				name = "commander_roster_division_badge"
-				position = { x = 484 y = 90 }
-				size = { width = 20 height = 20 }
-				clipping = no
-
-				iconType = {
-					name = "badge_bg"
-					spriteType = "GFX_topbar_alert_bg"
-					alwaystransparent = yes
-					frame = 1
-				}
-
-				instantTextBoxType = {
-					name = "badge_text"
-					position = { x = 0 y = 0 }
-					font = "hoi_16mbs"
-					text = "9"
-					format = center
-					maxWidth = 16
-					maxHeight = 16
-					fixedsize = yes
-					alwaystransparent = yes
-				}
-			}
-
+			
 		}
 
 		containerWindowType = {
@@ -739,6 +707,7 @@ guiTypes = {
 				position = { x=110 y=6 }
 				Orientation = "UPPER_LEFT"
 				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
 				text = "OFFICER_CORP_NAVY_DOCTRINE"
 				maxWidth = 240
 				maxHeight = 20
@@ -764,7 +733,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "modifiers_grid"
-				position = { x = 7 y = -68 }
+				position = { x = 4 y = -158 }
 				orientation = lower_left
 				size = { width = 500 height = 35 }
 				slotsize = { width = 71 height = 33 }
@@ -775,7 +744,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "naval_doctrine_button" # A container window of the format X_doctrine_button will automatically be linked to doctrine folder "X"
-				position = { x=260 y=-10 }
+				position = { x=-15 y=126 }
 				size = {width=20 height=20}
 				clipping = no
 				
@@ -789,7 +758,7 @@ guiTypes = {
 				iconType = {
 					#Subdoctrine motive. Also can control what's displayed before subdoctrine is chosen. 
 					name = "icon"
-					position = { x=61 y=68 }
+					position = { x=61 y=430 }
 					spriteType = "GFX_naval_doctrine_medium" # Default icon when no grand doctrine is active
 					Orientation = CENTER
 					alwaystransparent = yes
@@ -798,7 +767,7 @@ guiTypes = {
 
 				iconType = {
 					name = "number_container"
-					position = { x=62 y=95 }
+					position = { x=62 y=195 }
 					Orientation = CENTER
 					spriteType = "GFX_bronze_number_container"
 					alwaystransparent = yes
@@ -808,7 +777,7 @@ guiTypes = {
 				gridBoxType = {
 					#Container for numbers
 					name = track_status_grid
-					position = { x=48 y=98 }
+					position = { x=48 y=198 }
 					slotsize = { width = 16 height = 16 }
 					max_slots_vertical = 1
 				}
@@ -817,7 +786,7 @@ guiTypes = {
 			buttonType = {
 				name = "commander_roster_navy"
 				quadTextureSprite = "GFX_diplo_filter_entry"
-				position = { x=382 y=36 }
+				position = { x=234 y=46 }
 				buttonText = "Placeholder"
 				font = "hoi_16mbs"
 				frame = 2
@@ -826,42 +795,16 @@ guiTypes = {
 			}
 			
 			buttonType = {
-				name = "commander_roster_ship"
+				name = "naval_headquarter_roster"
 				quadTextureSprite = "GFX_diplo_filter_entry"
-				position = { x=382 y=70 }
-				buttonText = "COMMANDER_ROSTER_SHIP_BUTTON"
+				position = { x=378 y=46 }
+				buttonText = "NAVAL_HEADQUARTER_ROSTER"
 				font = "hoi_16mbs"
 				frame = 2
-				pdx_tooltip = "COMMANDER_ROSTER_SHIP_TOOLTIP"
-				pdx_tooltip_delayed = "COMMANDER_ROSTER_SHIP_TOOLTIP_DELAYED"
+				pdx_tooltip = "NAVAL_HEADQUARTER_ROSTER_COLORED"
+				pdx_tooltip_delayed = "NAVAL_HEADQUARTER_ROSTER_DELAYED"
 			}
-
-			containerWindowType = {
-				# Citation counter badge overlaid on the top-right corner of "commander_roster_ship"
-				name = "commander_roster_ship_badge"
-				position = { x = 480 y = 60 }
-				size = { width = 20 height = 20 }
-				clipping = no
-
-				iconType = {
-					name = "badge_bg"
-					spriteType = "GFX_topbar_alert_bg"
-					alwaystransparent = yes
-					frame = 1
-				}
-
-				instantTextBoxType = {
-					name = "badge_text"
-					position = { x = 2 y = 3 }
-					font = "hoi_16mbs"
-					text = "9"
-					format = center
-					maxWidth = 16
-					maxHeight = 16
-					fixedsize = yes
-					alwaystransparent = yes
-				}
-			}
+			
 		}
 
 		containerWindowType = {
@@ -895,6 +838,7 @@ guiTypes = {
 				position = { x= 110 y=6 }
 				Orientation = "UPPER_LEFT"
 				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
 				text = "OFFICER_CORP_AIR_DOCTRINE"
 				maxWidth = 240
 				maxHeight = 20
@@ -920,7 +864,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "modifiers_grid"
-				position = { x = 7 y = -68 }
+				position = { x = 4 y = -158 }
 				orientation = lower_left
 				size = { width = 500 height = 35 }
 				slotsize = { width = 71 height = 33 }
@@ -931,7 +875,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "air_doctrine_button" # A container window of the format X_doctrine_button will automatically be linked to doctrine folder "X"
-				position = { x=260 y=-10 }
+				position = { x=-15 y=126 }
 				size = {width=20 height=20}
 				clipping = no
 
@@ -945,7 +889,7 @@ guiTypes = {
 				iconType = {
 					#Subdoctrine motive. Also can control what's displayed before subdoctrine is chosen. 
 					name = "icon"
-					position = { x=61 y=68 }
+					position = { x=61 y=533 }
 					spriteType = "GFX_air_doctrine_medium" # Default icon when no grand doctrine is active
 					Orientation = CENTER
 					alwaystransparent = yes
@@ -954,7 +898,7 @@ guiTypes = {
 
 				iconType = {
 					name = "number_container"
-					position = { x=62 y=95 }
+					position = { x=62 y=195 }
 					Orientation = CENTER
 					spriteType = "GFX_bronze_number_container"
 					alwaystransparent = yes
@@ -964,7 +908,7 @@ guiTypes = {
 				gridBoxType = {
 					#Container for numbers
 					name = track_status_grid
-					position = { x=48 y=98 }
+					position = { x=48 y=198 }
 					slotsize = { width = 16 height = 16 }
 					max_slots_vertical = 1
 				}
@@ -1012,52 +956,56 @@ guiTypes = {
 				position = { x=110 y=6 }
 				Orientation = "UPPER_LEFT"
 				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
 				text = "OFFICER_CORP_SPECIAL_FORCES_DOCTRINE"
 				maxWidth = 240
 				maxHeight = 20
 				format = left
-			}
+			}			
 
 			containerWindowType = {
-				name = "special_forces_doctrine_button" # A container window of the format X_doctrine_button will automatically be linked to doctrine folder "X"
+				name = "special_forces_doctrine_button"
 				position = { x=360 y=0 }
 				size = {width=20 height=20}
 				clipping = no
 
 				buttonType = {
-					#Subdoctrine background
 					name = "button"
-					quadTextureSprite = "GFX_doctrines_officer_corps_button_special_forces"
-					position = { x=28 y=45 }
+					quadTextureSprite = "GFX_technology_land_doctrine_folder_available_item_bg"
+					position = { x=34 y=47 }
+					#buttonText = "Doctrines"
+					font = "hoi_24header"
 				}
 
 				iconType = {
-					#Subdoctrine motive. Also can control what's displayed before subdoctrine is chosen.
 					name = "icon"
-					position = { x=61 y=68 }
-					spriteType = "GFX_special_forces_doctrine_medium" # Default icon when no grand doctrine is active
+					position = { x=58 y=538 }
 					Orientation = CENTER
+					spriteType = "GFX_placeholder_bordered"
 					alwaystransparent = yes
 					centerposition = yes
 				}
 
 				iconType = {
-					name = "number_container"
-					position = { x=62 y=95 }
-					Orientation = CENTER
-					spriteType = "GFX_bronze_number_container_short"
+					name = "nb_doctrine_unlocked_bg"
+					spriteType = "GFX_topbar_alert_bg"
+					position = { x=36 y=97 }
 					alwaystransparent = yes
-					centerposition = yes
+					frame = 1
 				}
 
-				gridBoxType = {
-					#Container for numbers
-					name = track_status_grid
-					position = { x=64 y=98 }
-					slotsize = { width = 16 height = 16 }
-					max_slots_vertical = 1
+				instantTextBoxType = {
+					name ="nb_doctrine_unlocked"
+					position = { x=34 y=97 }
+					font = "hoi_16mbs"
+					text = "0"
+					format = center
+					maxWidth = 20
+					maxHeight = 24
+					fixedsize = yes
 				}
 			}
+			
 		}
 		
 		containerWindowType = {
@@ -1125,7 +1073,7 @@ guiTypes = {
 	
     containerWindowType = {
 		name = "division_command_spirit_entry"
-		position = { x = 55 y = -56 }
+		position = { x = 60 y = 5 }
 		size = { width=150 height=66 }
 		clipping = no
 
@@ -1167,7 +1115,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "army_spirit_entry"
-		position = { x = 59 y = -56 }
+		position = { x = 100 y = 5 }
 		size = { width=150 height=66 }
 		clipping = no
 
@@ -1209,7 +1157,7 @@ guiTypes = {
 
     containerWindowType = {
 		name = "academy_spirit_entry"
-		position = { x = 63 y = -56 }
+		position = { x = 140 y = 5 }
 		size = { width=150 height=66 }
 		clipping = no
 
@@ -1251,7 +1199,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "naval_command_spirit_entry"
-		position = { x = 55 y = -42 }
+		position = { x = 60 y = 18 }
 		size = { width = 150 height = 66 }
 		clipping = no
 
@@ -1293,7 +1241,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "navy_spirit_entry"
-		position = { x = 59 y = -42 }
+		position = { x = 100 y = 18 }
 		size = { width = 150 height = 66 }
 		clipping = no
 
@@ -1335,7 +1283,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "naval_academy_spirit_entry"
-		position = { x = 63 y = -42 }
+		position = { x = 140 y = 18 }
 		size = { width = 150 height = 66 }
 		clipping = no
 
@@ -1377,7 +1325,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "air_force_command_spirit_entry"
-		position = { x = 151 y = -88 }
+		position = { x = 173 y = -28 }
 		size = { width = 150 height = 66 }
 		clipping = no
 
@@ -1419,7 +1367,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "air_force_spirit_entry"
-		position = { x = 133 y = -88 }
+		position = { x = 203 y = -28 }
 		size = { width = 150 height = 66 }
 		clipping = no
 
@@ -1659,6 +1607,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 120
 				format = left
 				alwaystransparent = yes
@@ -1669,6 +1618,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -1680,6 +1630,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -1690,6 +1641,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -1736,6 +1688,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 120
 				format = left
 				alwaystransparent = yes
@@ -1746,6 +1699,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -1757,6 +1711,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -1767,6 +1722,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -1813,6 +1769,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 120
 				format = left
 				alwaystransparent = yes
@@ -1823,6 +1780,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -1834,6 +1792,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -1844,6 +1803,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -1890,6 +1850,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 120
 				format = left
 				alwaystransparent = yes
@@ -1900,6 +1861,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -1911,6 +1873,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -1921,6 +1884,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -1967,6 +1931,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 120
 				format = left
 				alwaystransparent = yes
@@ -1977,6 +1942,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -1988,6 +1954,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -1998,6 +1965,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -2044,6 +2012,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 120
 				format = left
 				alwaystransparent = yes
@@ -2054,6 +2023,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -2065,6 +2035,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -2075,6 +2046,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -2121,6 +2093,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 120
 				format = left
 				alwaystransparent = yes
@@ -2131,6 +2104,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -2142,6 +2116,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -2152,6 +2127,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -2198,6 +2174,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 120
 				format = left
 				alwaystransparent = yes
@@ -2208,6 +2185,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -2219,6 +2197,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -2229,6 +2208,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -2275,6 +2255,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 120
 				format = left
 				alwaystransparent = yes
@@ -2285,6 +2266,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -2296,6 +2278,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -2306,6 +2289,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -2358,6 +2342,7 @@ guiTypes = {
 				position = { x = 0 y = 10 }
 				font = "hoi_18mbs"
 				fixedsize = yes			
+				text = ""
 				maxWidth = 150
 				maxHeight = 13
 				format = left
@@ -2369,6 +2354,7 @@ guiTypes = {
 				position = { x = 0 y = 28 }
 				font = "hoi_16mbs"
 				fixedsize = yes			
+				text = ""
 				maxWidth = 140
 				maxHeight = 100%%
 				format = left
@@ -2380,6 +2366,7 @@ guiTypes = {
 			name = "cost"
 			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = right
@@ -2390,6 +2377,7 @@ guiTypes = {
 			name = "stats"
 			position = { x = 300 y = 32 }
 			font = "hoi_16mbs"
+			text = ""
 			maxWidth = 142
 			maxHeight = 10
 			format = center
@@ -2397,6 +2385,8 @@ guiTypes = {
 		}
 	}
 
+
+	### MFU 1.19 integration: named_hq_template_entry - grid entry widget the game spawns inside armyhqtemplatewindow's templates_grid
 	containerWindowType = {
 		name = "named_hq_template_entry"
 		position = { x=0 y=0 }
@@ -2493,6 +2483,7 @@ guiTypes = {
 		}
 	}
 
+	### MFU 1.19 integration: Army HQ template window (was missing -> "Undefined GUI_TYPE: armyhqtemplatewindow" crash when deploying an army HQ)
 	containerWindowType = {
 		name = "armyhqtemplatewindow"
 		position = { x=-356 y=83 }
@@ -2614,4 +2605,5 @@ guiTypes = {
 			}
 		}
 	}
+
 }

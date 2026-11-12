@@ -1,4 +1,40 @@
 on_actions = {
+	on_deployed_leader_defeated = {
+		effect = {
+			if = {
+				limit = { can_be_captured = yes }
+
+				# MFU: chance for the general to DIE (retire = permanently removed) instead of being
+				# captured. 20% for most commanders; 90% for Japanese commanders (death before capture).
+				# Uses random_list (not check_variable=random) because the `random` magic-var proved
+				# unreliable here. Capture logic = scripted_effect mfu_capture_defeated_leader.
+				if = {
+					limit = { tag = JAP }
+					random_list = {
+						90 = { mfu_kill_defeated_leader = yes }
+						10 = { mfu_capture_defeated_leader = yes }
+					}
+				}
+				else = {
+					random_list = {
+						20 = { mfu_kill_defeated_leader = yes }
+						80 = { mfu_capture_defeated_leader = yes }
+					}
+				}
+			}
+			else = {
+				# uncapturable leaders (e.g. country leaders) get wounded instead
+				if = {
+					limit = { NOT = { has_trait = wounded } }
+					add_timed_unit_leader_trait = {
+						trait = wounded
+						days = 90
+					}
+				}
+			}
+		}
+	}
+
 	
 	on_daily_SOV = {
 		effect = {
@@ -2103,10 +2139,10 @@ on_actions = {
 							engineer = { x = 0 y = 1 }
 							recon = { x = 0 y = 2 }
 							anti_air_heavy_support = { x = 0 y = 3 }
-							maintenance_company = { x = 1 y = 0 }
-							logistics_company = { x = 1 y = 1 }
-							field_hospital = { x = 1 y = 2 }
-							signal_company = { x = 1 y = 3 }
+							maintenance_company = { x = 0 y = 4 }
+							logistics_company = { x = 0 y = 5 }
+							field_hospital = { x = 0 y = 6 }
+							signal_company = { x = 0 y = 7 }
 						}
 
 					}
@@ -2147,10 +2183,10 @@ on_actions = {
 							engineer = { x = 0 y = 1 }
 							recon = { x = 0 y = 2 }
 							anti_air_heavy_support = { x = 0 y = 3 }
-							maintenance_company = { x = 1 y = 0 }
-							logistics_company = { x = 1 y = 1 }
-							field_hospital = { x = 1 y = 2 }
-							signal_company = { x = 1 y = 3 }
+							maintenance_company = { x = 0 y = 4 }
+							logistics_company = { x = 0 y = 5 }
+							field_hospital = { x = 0 y = 6 }
+							signal_company = { x = 0 y = 7 }
 						}
 
 					}

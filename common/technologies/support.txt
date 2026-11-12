@@ -316,6 +316,9 @@ technologies = {
 			hills = {
 				attack = 0.03
 			}
+			desert_hills = {
+				attack = 0.03
+			}
 			jungle = {
 				attack = 0.03
 			}
@@ -332,6 +335,9 @@ technologies = {
 				attack = 0.03
 			}
 			hills = {
+				attack = 0.03
+			}
+			desert_hills = {
 				attack = 0.03
 			}
 			jungle = {
@@ -352,6 +358,9 @@ technologies = {
 			hills = {
 				attack = 0.03
 			}
+			desert_hills = {
+				attack = 0.03
+			}
 			jungle = {
 				attack = 0.03
 			}
@@ -367,6 +376,9 @@ technologies = {
 				attack = 0.03
 			}
 			hills = {
+				attack = 0.03
+			}
+			desert_hills = {
 				attack = 0.03
 			}
 			jungle = {
@@ -653,7 +665,7 @@ technologies = {
 			defense = 0.02
 		}
 		enable_subunits = {
-			motorized_military_police
+			
 		}		
 		path = {
 			leads_to_tech = tech_military_police3
@@ -680,8 +692,9 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
-			max_organisation = 20
+			
 			defense = 0.02
+			max_organisation = 20
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -711,8 +724,9 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
-			max_organisation = 20
+			
 			defense = 0.02
+			max_organisation = 20
 		}
 
 		research_cost = 0.8
@@ -1223,7 +1237,7 @@ technologies = {
 		signal_company = {
 			#initiative = 0.05
 			max_organisation = 7
-			default_morale = 0.15
+			default_morale = 0.10
 			
 		}
 	
@@ -1255,7 +1269,7 @@ technologies = {
 		signal_company = {
 			#initiative = 0.05
 			max_organisation = 7
-			default_morale = 0.15
+			default_morale = 0.10
 		
 		}
 	
@@ -1286,7 +1300,7 @@ technologies = {
 
 		signal_company = {
 			max_organisation = 7
-			default_morale = 0.15
+			default_morale = 0.10
 		}
 		
 		
@@ -1513,7 +1527,7 @@ technologies = {
 		
 		categories = {
 			train_tech
-			artillery
+			cat_artillery
 		}
 		
 		ai_will_do = {

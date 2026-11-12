@@ -1641,6 +1641,7 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			custom_effect_tooltip = "Clickable every 180 days"
 			ITA_bop_medium_decrease_effect = yes
+			custom_effect_tooltip = #ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
 			#add_to_variable = {
 				#var = ITA_political_power_gain_modifier
 				#value = -0.1
@@ -2336,10 +2337,10 @@ ITA_prepare_to_invade_the_cairo = {
 									construction_engineer = { x = 0 y = 1 } 		
 									recon = { x = 0 y = 2 }
 									pack_artillery = { x = 0 y = 3 }
-									logistics_company = { x = 1 y = 0 }
-									anti_air_company = { x = 1 y = 1 }
-									field_gun_support = { x = 1 y = 2 }
-									military_police = { x = 1 y = 3 }
+									logistics_company = { x = 0 y = 4 }
+									anti_air_company = { x = 0 y = 5 }
+									field_gun_support = { x = 0 y = 6 }
+									military_police = { x = 0 y = 7 }
 								
 								}
 							}
@@ -2373,10 +2374,10 @@ ITA_prepare_to_invade_the_cairo = {
 									engineer = { x = 0 y = 1 } 		
 									recon = { x = 0 y = 2 }
 									pack_artillery = { x = 0 y = 3 }
-									logistics_company = { x = 1 y = 0 }
-									anti_air_company = { x = 1 y = 1 }
-									field_gun_support = { x = 1 y = 2 }
-									military_police = { x = 1 y = 3 }
+									logistics_company = { x = 0 y = 4 }
+									anti_air_company = { x = 0 y = 5 }
+									field_gun_support = { x = 0 y = 6 }
+									military_police = { x = 0 y = 7 }
 								
 								}
 							}
@@ -2418,10 +2419,10 @@ ITA_prepare_to_invade_the_cairo = {
 									construction_engineer = { x = 0 y = 1 } 		
 									recon = { x = 0 y = 2 }
 									pack_artillery = { x = 0 y = 3 }
-									logistics_company = { x = 1 y = 0 }
-									anti_air_company = { x = 1 y = 1 }
-									field_gun_support = { x = 1 y = 2 }
-									military_police = { x = 1 y = 3 }
+									logistics_company = { x = 0 y = 4 }
+									anti_air_company = { x = 0 y = 5 }
+									field_gun_support = { x = 0 y = 6 }
+									military_police = { x = 0 y = 7 }
 							
 								}
 							}
@@ -2460,10 +2461,10 @@ ITA_prepare_to_invade_the_cairo = {
 									engineer = { x = 0 y = 1 } 		
 									recon = { x = 0 y = 2 }
 									pack_artillery = { x = 0 y = 3 }
-									logistics_company = { x = 1 y = 0 }
-									anti_air_company = { x = 1 y = 1 }
-									field_gun_support = { x = 1 y = 2 }
-									military_police = { x = 1 y = 3 }
+									logistics_company = { x = 0 y = 4 }
+									anti_air_company = { x = 0 y = 5 }
+									field_gun_support = { x = 0 y = 6 }
+									military_police = { x = 0 y = 7 }
 								
 								}
 							}

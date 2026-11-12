@@ -188,6 +188,9 @@ focus_tree = {
 					instant_build = yes
 				}
 		    }
+			mio:JAP_nissan_organization = {
+				add_mio_funds_gain_factor = .25
+			}
 
 
 		}
@@ -215,19 +218,23 @@ focus_tree = {
 			
 			custom_effect_tooltip = upgrade_industrial_concerns
 			show_ideas_tooltip = JAP_mitubishi_industry_upgraded	
-			show_ideas_tooltip = mitsubishi_bonus_2	
+			#show_ideas_tooltip = mitsubishi_bonus_2	
+			
 			if = {
 				limit = {
                          has_idea = JAP_mitubishi_industry 
 					}
 					add_ideas = JAP_mitubishi_industry_upgraded
 			}
-			if = {
-				limit = {
-                         has_idea = mitsubishi_bonus
-					}
-					add_ideas = mitsubishi_bonus_2
+			else_if = {
+				add_ideas = JAP_mitubishi_industry_upgraded
 			}
+			#if = {
+				#limit = {
+                         #has_idea = mitsubishi_bonus
+					#}
+					#add_ideas = mitsubishi_bonus_2
+			#}
 			528 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -239,11 +246,17 @@ focus_tree = {
 			803 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = industrial_complex
+					type = air_assembly
 					level = 1
 					instant_build = yes
 				}
 		    }
+			mio:JAP_mitsubishi_organization = {
+				add_mio_funds_gain_factor = .25
+			}
+			mio:JAP_mitsu = {
+				add_mio_funds_gain_factor = .25
+			}
 
 		}
 	}
@@ -777,7 +790,7 @@ focus_tree = {
 				tooltip = JAP_cost
 			}
 			add_to_variable = {
-				JAP_conscription_factor_var = 0.02
+				JAP_conscription_factor_var = 0.01
 			
 			}
 
@@ -1192,15 +1205,62 @@ focus_tree = {
 			
 		
 		hidden_effect = {
-		retire_country_leader = yes
+			retire_country_leader = yes
 		}
 		custom_effect_tooltip = JAP_modify_dep_tt
-			add_to_variable = {
-				JAP_consumer_goods_factor_var = 0.03
-				tooltip = consumer_goods_tooltip
+			if = {
+				limit = {
+					282 = {
+						OR = {
+							has_state_flag = no_china_war_state_flag
+							has_state_flag = no_partial_china_war_state_flag
+						}
+					}
+				}
+				add_to_variable = {
+					JAP_consumer_goods_factor_var = 0.05
+					tooltip = consumer_goods_tooltip
+				}
+				add_to_variable = {
+					JAP_industrial_capacity_factory_var = -0.1
+					tooltip = industrial_capacity_factory_tooltip
+				}
+				add_to_variable = {
+					JAP_industrial_capacity_dockyard_var = -0.1
+					tooltip = industrial_dockyard_capacity_factory_tooltip
+				}
 			}
-			
-			custom_effect_tooltip = JAP_everythingforwareffort_tt
+			else_if = {
+				add_to_variable = {
+					JAP_consumer_goods_factor_var = 0.03
+					tooltip = consumer_goods_tooltip
+				}
+			}
+					
+		custom_effect_tooltip = JAP_everythingforwareffort_tt
+		custom_effect_tooltip = JAP_umi_yukaba_no_china_land_mastery_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					282 = {
+						OR = {
+							has_state_flag = no_china_war_state_flag
+							has_state_flag = no_partial_china_war_state_flag
+						}
+					}
+				}
+				add_mastery = {
+					amount = 130
+					folder = land
+				}
+				MAN = {
+					add_mastery = {
+						amount = 65
+						folder = land
+					}
+				}
+			}
+		}
 			create_country_leader = {
 				name = "Hideki Tojo "
 				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
@@ -1744,14 +1804,14 @@ focus_tree = {
 						amount = 12
 					}
 			}
+
+			MAN = {
 				give_resource_rights = {
 					receiver = JAP
 					state = 761
 				}
-			
-			MAN = {
 				add_to_variable = {
-					var = MAN_military_industry_dm_local_resources_factor 
+					var = MAN_military_industry_dm_local_resources_factor
 					value = 0.08
 					tooltip = man_resource_gain
 				}
@@ -1804,13 +1864,15 @@ focus_tree = {
 				set_building_level = {
 					type = supply_node
 					level = 1
-					province = 11752 
+					province = 11752
 				}
-				
+
 			}
-			give_resource_rights = {
-					receiver = JAP
-					state = 611
+			MAN = {
+				give_resource_rights = {
+						receiver = JAP
+						state = 611
+				}
 			}
 		}
 	}
@@ -1928,7 +1990,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = JAP_army_expansion_law
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 100
 		}
@@ -1981,7 +2043,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_old_guard
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2012,7 +2074,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JAP_modernize_equipment
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2043,7 +2105,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_the_old_guard }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 4.4
 		relative_position_id = JAP_the_old_guard
 		ai_will_do = {
 			factor = 10
@@ -2057,7 +2119,7 @@ focus_tree = {
 				name = arty_bonus
 				bonus = 0.75
 				uses = 2
-				category = artillery
+				category = cat_artillery
 			}
 			add_tech_bonus = {
 				name = JAP_improve_logistics
@@ -2074,7 +2136,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JAP_artillery_modernisation
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2161,7 +2223,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_army_expansion_law
 
-		cost = 5
+		cost = 4.4
 
 		ai_will_do = {
 			factor = 1
@@ -2223,7 +2285,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_superiority_of_man
 
-		cost = 5
+		cost = 4.4
 
 		ai_will_do = {
 			factor = 1
@@ -2265,7 +2327,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_superiority_of_man
 
-		cost = 5
+		cost = 4.4
 
 		ai_will_do = {
 			factor = 1
@@ -2315,7 +2377,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_superiority_of_man
 
-		cost = 5
+		cost = 4.4
 
 		ai_will_do = {
 			factor = 1
@@ -2343,7 +2405,7 @@ focus_tree = {
 				name = arty_bonus
 				bonus = 0.5
 				uses = 1
-				category = artillery
+				category = cat_artillery
 			}
 			add_tech_bonus = {
 				name = retardo_elgato
@@ -2406,7 +2468,7 @@ focus_tree = {
 		relative_position_id = JAP_army_expansion_law 
 		x = 6
 		y = 1
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 0
 		}
@@ -2466,7 +2528,7 @@ focus_tree = {
 		relative_position_id = JAP_superiority_of_firepower
 		x = -1
 		y = 1
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 0
 		}
@@ -2493,7 +2555,7 @@ focus_tree = {
 		relative_position_id = JAP_superiority_of_firepower
 		x = -1
 		y = 2
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 0
 		}
@@ -2529,7 +2591,7 @@ focus_tree = {
 		relative_position_id = JAP_superiority_of_firepower 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 0
 		}
@@ -2547,7 +2609,7 @@ focus_tree = {
 				name = arty_bonus
 				bonus = 0.5
 				uses = 2
-				category = artillery
+				category = cat_artillery
 			}
 					
 		}
@@ -2560,7 +2622,7 @@ focus_tree = {
 		relative_position_id = JAP_superiority_of_firepower
 		x = 1
 		y = 2
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 0
 		}
@@ -2603,7 +2665,7 @@ focus_tree = {
 		relative_position_id = JAP_army_expansion_law 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 0
 		}
@@ -2671,7 +2733,7 @@ focus_tree = {
 		relative_position_id = JAP_innovative_theories
 		x = 1
 		y = 1
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2717,7 +2779,7 @@ focus_tree = {
 		relative_position_id = JAP_mechanization_program 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2773,7 +2835,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JAP_innovative_theories
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2814,7 +2876,7 @@ focus_tree = {
 		relative_position_id = JAP_jungle_armour
 		x = 0
 		y = 2
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 10
 		}
@@ -3610,22 +3672,19 @@ focus_tree = {
 				add_compliance = 40
 			}
 			336 = {
-		    	add_building_construction = {
+				remove_building = {
 					type = industrial_complex
 					level = -2
-					instant_build = yes
 				}
 			}
 			335 = {
-				add_building_construction = {
-					type = arms_factory
-					level = -2
-					instant_build = yes
-				}
-		    	add_building_construction = {
+				remove_building = {
 					type = industrial_complex
-					level = -2
-					instant_build = yes
+					level = 2
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
 				}
 			}
 			798 = {
@@ -3852,9 +3911,9 @@ focus_tree = {
 							engineer = { x = 0 y = 1 } 		
 							recon = { x = 0 y = 2 }
 							pack_artillery = { x = 0 y = 3 }
-							logistics_company = { x = 1 y = 0 }
-							anti_air_company = { x = 1 y = 1 }
-							field_gun_support = { x = 1 y = 2 }
+							logistics_company = { x = 0 y = 4 }
+							anti_air_company = { x = 0 y = 5 }
+							field_gun_support = { x = 0 y = 6 }
 						}
 
 						priority = 2
@@ -3978,17 +4037,15 @@ focus_tree = {
 			}
 			
 			623 = {
-				add_building_construction = {
+				remove_building = {
 					type = industrial_complex
-					level = -3
-					instant_build = yes
+					level = 3
 				}
 			}
 			327 = {
-				add_building_construction = {
+				remove_building = {
 					type = arms_factory
-					level = -5
-					instant_build = yes
+					level = 5
 				}
 			}
 			803 = {
@@ -4469,8 +4526,8 @@ focus_tree = {
 					transfer_state = 821
 				}
 				821 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 			}
 			else = {
@@ -4488,6 +4545,7 @@ focus_tree = {
 			#JAP_change_of_max_states = yes
 			#custom_effect_tooltip = generic_skip_one_line_tt
 			#custom_effect_tooltip = JAP_increase_amount_of_occupied_states_tt
+			custom_effect_tooltip = JAP_pacification_tt
 		}
 
 	}
@@ -4650,16 +4708,16 @@ focus_tree = {
 					}
 				}
 				has_equipment = {
-					infantry_equipment > 9999
+					infantry_equipment > 12499
 				}
 				has_equipment = {
-					horse_equipment > 2499
+					horse_equipment > 2999
 				}
 				has_equipment = {
-					radio_equipment_1 > 299
+					radio_equipment_1 > 399
 				}
 				has_equipment = {
-					support_equipment_1 > 799
+					support_equipment_1 > 999
 				}
 				has_equipment = {
 					motorized_equipment_1 > 799
@@ -4675,11 +4733,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = { flag = JAP_offensive_going_on value = 1 days = 120 }
-			add_mastery = {
-				amount = 40
-				folder = land
 			
-			}
 			if = {
 				limit = {
 					282 = {
@@ -4704,28 +4758,28 @@ focus_tree = {
 					transfer_state = 593
 				}
 				593 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				JAP = {
 					transfer_state = 596
 				}
 				596 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				JAP = {
 					transfer_state = 595
 				}
 				595 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				add_manpower = -100000
-				add_equipment_to_stockpile = { type = infantry_equipment amount = -10000 producer = JAP }
-				add_equipment_to_stockpile = { type = horse_equipment amount = -2500 producer = JAP }
-				add_equipment_to_stockpile = { type = radio_equipment_1 amount = -300 producer = JAP }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = -800 producer = JAP }
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -12500 producer = JAP }
+				add_equipment_to_stockpile = { type = horse_equipment amount = -3000 producer = JAP }
+				add_equipment_to_stockpile = { type = radio_equipment_1 amount = -400 producer = JAP }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -1000 producer = JAP }
 				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = -800 producer = JAP }
 			}
 			else = {
@@ -4776,16 +4830,16 @@ focus_tree = {
 					}
 				}
 				has_equipment = {
-					infantry_equipment > 9999
+					infantry_equipment > 12499
 				}
 				has_equipment = {
-					horse_equipment > 2499
+					horse_equipment > 2999
 				}
 				has_equipment = {
-					radio_equipment_1 > 299
+					radio_equipment_1 > 399
 				}
 				has_equipment = {
-					support_equipment_1 > 799
+					support_equipment_1 > 999
 				}
 				has_equipment = {
 					motorized_equipment_1 > 799
@@ -4801,11 +4855,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = { flag = JAP_offensive_going_on value = 1 days = 120 }
-			add_mastery = {
-				amount = 40
-				folder = land
 			
-			}
 			if = {
 				limit = {
 					282 = {
@@ -4833,28 +4883,28 @@ focus_tree = {
 					transfer_state = 622
 				}
 				622 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				JAP = {
 					transfer_state = 746
 				}
 				746 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				JAP = {
 					transfer_state = 821
 				}
 				821 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				add_manpower = -100000
-				add_equipment_to_stockpile = { type = infantry_equipment amount = -10000 producer = JAP }
-				add_equipment_to_stockpile = { type = horse_equipment amount = -2500 producer = JAP }
-				add_equipment_to_stockpile = { type = radio_equipment_1 amount = -300 producer = JAP }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = -800 producer = JAP }
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -12500 producer = JAP }
+				add_equipment_to_stockpile = { type = horse_equipment amount = -3000 producer = JAP }
+				add_equipment_to_stockpile = { type = radio_equipment_1 amount = -400 producer = JAP }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -1000 producer = JAP }
 				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = -800 producer = JAP }
 			}
 			else = {
@@ -4906,16 +4956,16 @@ focus_tree = {
 					}
 				}
 				has_equipment = {
-					infantry_equipment > 9999
+					infantry_equipment > 12499
 				}
 				has_equipment = {
-					horse_equipment > 2499
+					horse_equipment > 2999
 				}
 				has_equipment = {
-					radio_equipment_1 > 299
+					radio_equipment_1 > 399
 				}
 				has_equipment = {
-					support_equipment_1 > 799
+					support_equipment_1 > 999
 				}
 				has_equipment = {
 					motorized_equipment_1 > 799
@@ -4931,11 +4981,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = { flag = JAP_offensive_going_on value = 1 days = 120 }
-			add_mastery = {
-				amount = 40
-				folder = land
 			
-			}
 			if = {
 				limit = {
 					282 = {
@@ -4960,29 +5006,29 @@ focus_tree = {
 					transfer_state = 747
 				}
 				747 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				JAP = {
 					transfer_state = 325
 				}
 				325 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				JAP = {
 					transfer_state = 599
 				}
 				599 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				
 				add_manpower = -100000
-				add_equipment_to_stockpile = { type = infantry_equipment amount = -10000 producer = JAP }
-				add_equipment_to_stockpile = { type = horse_equipment amount = -2500 producer = JAP }
-				add_equipment_to_stockpile = { type = radio_equipment_1 amount = -300 producer = JAP }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = -800 producer = JAP }
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -12500 producer = JAP }
+				add_equipment_to_stockpile = { type = horse_equipment amount = -3000 producer = JAP }
+				add_equipment_to_stockpile = { type = radio_equipment_1 amount = -400 producer = JAP }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -1000 producer = JAP }
 				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = -800 producer = JAP }
 			}
 			else = {
@@ -5033,16 +5079,16 @@ focus_tree = {
 					}
 				}
 				has_equipment = {
-					infantry_equipment > 9999
+					infantry_equipment > 12499
 				}
 				has_equipment = {
-					horse_equipment > 2499
+					horse_equipment > 2999
 				}
 				has_equipment = {
-					radio_equipment_1 > 299
+					radio_equipment_1 > 399
 				}
 				has_equipment = {
-					support_equipment_1 > 799
+					support_equipment_1 > 999
 				}
 				has_equipment = {
 					motorized_equipment_1 > 799
@@ -5058,11 +5104,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = { flag = JAP_offensive_going_on value = 1 days = 120 }
-			add_mastery = {
-				amount = 40
-				folder = land
 			
-			}
 			if = {
 				limit = {
 					282 = {
@@ -5087,35 +5129,35 @@ focus_tree = {
 					transfer_state = 602
 				}
 				602 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				JAP = {
 					transfer_state = 820
 				}
 				820 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				JAP = {
 					transfer_state = 600
 				}
 				600 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				JAP = {
 					transfer_state = 749
 				}
 				749 = {
-					set_resistance = 55
-					add_resistance_target = 30 
+					set_resistance = 60
+					add_resistance_target = 35 
 				}
 				add_manpower = -100000
-				add_equipment_to_stockpile = { type = infantry_equipment amount = -10000 producer = JAP }
-				add_equipment_to_stockpile = { type = horse_equipment amount = -2500 producer = JAP }
-				add_equipment_to_stockpile = { type = radio_equipment_1 amount = -300 producer = JAP }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = -800 producer = JAP }
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -12500 producer = JAP }
+				add_equipment_to_stockpile = { type = horse_equipment amount = -3000 producer = JAP }
+				add_equipment_to_stockpile = { type = radio_equipment_1 amount = -400 producer = JAP }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -1000 producer = JAP }
 				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = -800 producer = JAP }
 			}
 			else = {
@@ -6856,7 +6898,7 @@ focus = {
 							artillery = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
 							anti_air_company = { x = 0 y = 2 }
-							artillery_heavy_support = { x = 1 y = 0 }
+							artillery_heavy_support = { x = 0 y = 3 }
 						}	
 						
 						priority = 1
@@ -6895,7 +6937,7 @@ focus = {
 							artillery = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
 							anti_air_company = { x = 0 y = 2 }
-							artillery_heavy_support = { x = 1 y = 0 }
+							artillery_heavy_support = { x = 0 y = 3 }
 						}	
 						
 						priority = 1
@@ -6964,7 +7006,7 @@ focus = {
 		hidden_effect = {
 			if = {
 				limit = {
-					RCC = {
+					JAP = {
 						NOT = {
 							OR = {
 								has_tech = width_tech_chi
@@ -7049,26 +7091,22 @@ focus = {
 			}
 		every_state = {
 				limit = {	
-					is_controlled_by = JAP
-					is_core_of = CHI 
-					NOT =  {
-						state = 609 
-						state = 745
-						is_core_of = MAN
+					OR = {
+						state = 608
+						state = 614
+						state = 597
+						state = 598
+						state = 606
+						state = 613
+						state = 840
 					}
 				}
-					create_unit = {
-						division = "division_template = \"Rénmen huì\" start_experience_factor = 0 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_0 = { owner = \"JAP\" }} "
-						owner = JAP
-					}
-					create_unit = {
-						division = "division_template = \"Rénmen huì\" start_experience_factor = 0 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_0 = { owner = \"JAP\" }} "
-						owner = JAP
-					}
-					create_unit = {
-						division = "division_template = \"Rénmen huì\" start_experience_factor = 0 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_0 = { owner = \"JAP\" }} "
-						owner = JAP
-					}
+				create_unit = {
+					division = "division_template = \"Rénmen huì\" start_experience_factor = 0 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_0 = { owner = \"JAP\" }} "
+					owner = JAP
+					count = 6
+				}
+					
 			}
 
 		}
@@ -9258,7 +9296,7 @@ focus = {
 				name = arty_bonus
 				bonus = 0.5
 				uses = 2
-				category = artillery
+				category = cat_artillery
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -10070,11 +10108,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		custom_effect_tooltip = extra_super
+		#custom_effect_tooltip = extra_super
 			mio:JAP_mitsubishi_organization = {
-				add_mio_funds = 3000
+				add_mio_funds = 2000
 			}
-		
+			mio:JAP_mitsubishi_organization = {
+				complete_mio_trait = japanese_zero
+			}
 		}
 	}
 	focus = {
@@ -10162,6 +10202,12 @@ focus = {
 				technology = jet_fighter_1946
 				technology = cv_fighter_1942
 				technology = cv_fighter_1944
+			}
+			add_tech_bonus = {
+				name = JAP_fighter_modernization
+				ahead_reduction = 1
+				uses = 1
+				category = light_fighter	
 			}
 			add_breakthrough_points = {
 				specialization = specialization_air
@@ -10956,11 +11002,18 @@ focus = {
 			has_war_with = USA
 			OR = {
 				RAJ = {
-					surrender_progress < 0.4
+					surrender_progress < 0.6
 					NOT = { RAJ = { has_capitulated = yes } }
 				}
 				date > 1943.6.1
 			}
+			OR = {
+				AST = {
+					surrender_progress < 0.6
+					NOT = { AST = { has_capitulated = yes } }				
+				}
+				date > 1943.6.1
+			}	
 		}
 
 		bypass = {
