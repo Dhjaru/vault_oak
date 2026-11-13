@@ -1,8 +1,0 @@
-vault_119_hq_category = {
-    icon = generic_prepare_civil_war
-    allowed = { always = yes }
-    visible = {
-        has_dlc = "Thunder at Our Gates"
-        NOT = { has_template = "Vault Army Headquarters" }
-    }
-}

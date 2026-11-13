@@ -1,4 +1,0 @@
-every_possible_country = {
-    limit = { has_dlc = "Thunder at Our Gates" }
-    vault_119_create_hq_template = yes
-}
