@@ -1198,11 +1198,11 @@ equipments = {
 			
 
 
-		build_cost_ic = 10
-		reliability = 0.91
+		build_cost_ic = 10.5
+		reliability = 0.95
 		maximum_speed = 5
-		supply_consumption = 0.1
-		hardness = 0.24
+		supply_consumption = 0.09
+		hardness = 0.28
 		armor_value = 19.6
 		defense = 15
 		resources = {
@@ -1633,19 +1633,19 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					oak_vickers_small_main_armament
 					tank_small_main_armament
+					oak_vickers_small_main_armament	# Vickers MIO module
 				}
 			}
 
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					oak_vickers_turret_type
-					oak_vickers_opentop_turret_type
 					tank_medium_turret_type
 					tank_medium_casemate_turret_early_type
 					tank_medium_opentop_turret_early_type
+					oak_vickers_turret_type	# Vickers MIO module
+					oak_vickers_opentop_turret_type	# Vickers MIO module
 				}
 			}
 
@@ -1659,8 +1659,8 @@ equipments = {
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					oak_vickers_engine_type
 					tank_engine_type
+					oak_vickers_engine_type	# Vickers MIO module
 				}
 			}
 			armor_type_slot = {
@@ -1925,7 +1925,7 @@ equipments = {
 		}
 		maximum_speed = 4.2
 		build_cost_ic = 9.1
-		reliability = 0.85
+		reliability = 0.9
 		armor_value = 23.8
 		supply_consumption = 0.13
 		hardness = 0.35
@@ -2080,21 +2080,21 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					oak_vickers_small_main_armament
-					oak_vickers_medium_main_armament
 					tank_small_main_armament
 					tank_medium_main_armament
+					oak_vickers_small_main_armament	# Vickers MIO module
+					oak_vickers_medium_main_armament	# Vickers MIO module
 				}
 			}
 
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					oak_vickers_turret_type
-					oak_vickers_opentop_turret_type
 					tank_medium_turret_type
 					tank_medium_casemate_turret_type
 					tank_medium_opentop_turret_type
+					oak_vickers_turret_type	# Vickers MIO module
+					oak_vickers_opentop_turret_type	# Vickers MIO module
 				}
 			}
 
@@ -2108,8 +2108,8 @@ equipments = {
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					oak_vickers_engine_type
 					tank_engine_type
+					oak_vickers_engine_type	# Vickers MIO module
 				}
 			}
 			armor_type_slot = {
@@ -2203,8 +2203,8 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					oak_alkett_stuh_armament
 					tank_small_main_armament
+					oak_alkett_stuh_armament	# Alkett MIO module
 				}
 			}
 
@@ -3043,7 +3043,6 @@ equipments = {
 					tank_secondary_turret
 					tank_flamethrower
 					
-					tank_rocket_module
 				}
 			}
 			special_type_slot_2 = {
@@ -3054,7 +3053,6 @@ equipments = {
 					tank_secondary_turret
 					tank_flamethrower
 					
-					tank_rocket_module
 				}
 			}
 		}
@@ -3204,7 +3202,7 @@ equipments = {
 		supply_consumption = 0.11
 
 		armor_value = 9.8
-		hardness = 0.31
+		hardness = 0.21
 		resources = {
 			tank_production = 10
 			steel = 9
@@ -3483,7 +3481,7 @@ equipments = {
 			tank_production = 10
 			steel = 13
 			tungsten = 3
-			chromium = 11
+			chromium = 12
 		}
 
 		manpower = 5
@@ -3516,7 +3514,7 @@ equipments = {
 			tank_production = 10
 			steel = 12
 			tungsten = 3
-			chromium = 10
+			chromium = 11
 		}
 		
 	}
@@ -3544,7 +3542,7 @@ equipments = {
 			tank_production = 10
 			steel = 13
 			tungsten = 3
-			chromium = 12
+			chromium = 13
 		}
 		
 	}
@@ -3573,7 +3571,7 @@ equipments = {
 			tank_production = 10
 			steel = 13
 			tungsten = 3
-			chromium = 12
+			chromium = 13
 		}
 		
 	}
@@ -3601,7 +3599,7 @@ equipments = {
 			tank_production = 10
 			steel = 14
 			tungsten = 3
-			chromium = 13
+			chromium = 14
 		}
 		
 	}
@@ -3795,7 +3793,7 @@ equipments = {
 			tank_production = 10
 			steel = 14
 			tungsten = 3
-			chromium = 13
+			chromium = 14
 		}
 	
 	}
@@ -3989,7 +3987,7 @@ equipments = {
 			tank_production = 10
 			steel = 14
 			tungsten = 3
-			chromium = 13
+			chromium = 14
 		}
 		
 	}
@@ -4194,7 +4192,7 @@ equipments = {
 			tank_production = 10
 			steel = 15
 			tungsten = 4
-			chromium = 13
+			chromium = 14
 		}
 		
 	}
@@ -4400,7 +4398,7 @@ equipments = {
 			tank_production = 10
 			steel = 15
 			tungsten = 4
-			chromium = 13
+			chromium = 14
 		}
 		
 	}
@@ -4616,7 +4614,7 @@ equipments = {
 			tank_production = 10
 			steel = 15
 			tungsten = 4
-			chromium = 13
+			chromium = 14
 		}
 		
 	}
@@ -4822,7 +4820,7 @@ equipments = {
 			tank_production = 10
 			steel = 15
 			tungsten = 4
-			chromium = 13
+			chromium = 14
 		}
 		
 	}
@@ -5093,15 +5091,15 @@ equipments = {
 		hardness = 0.37
 		reliability = 1
 		armor_value = 39.2
-		soft_attack = 7 
-		hard_attack = 7
+		soft_attack = 3
+		hard_attack = 3
 
 		fuel_consumption = 0.3
 		resources = {
 			tank_production = 10
 			steel = 15
 			tungsten = 3
-			chromium = 13
+			chromium = 14
 		}
 		
 		manpower = 6
@@ -5120,7 +5118,7 @@ equipments = {
 			tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
-		build_cost_ic = 27
+		build_cost_ic = 31
 		maximum_speed = 2.6
 		reliability = 1.1
 		supply_consumption = 0.2
@@ -5264,7 +5262,7 @@ equipments = {
 			tank_production = 10
 			steel = 16
 			tungsten = 4
-			chromium = 13
+			chromium = 14
 		}
 	}
 	super_heavy_tank_chassis_1941 = {
@@ -5403,7 +5401,7 @@ equipments = {
 			tank_production = 10
 			steel = 15
 			tungsten = 4
-			chromium = 14
+			chromium = 15
 		}
 	}
 	super_heavy_tank_chassis_1942 = {
@@ -5554,7 +5552,7 @@ equipments = {
 			tank_production = 10
 			steel = 17
 			tungsten = 4
-			chromium = 14
+			chromium = 15
 		}
 	}
 	super_heavy_tank_chassis_1944 = {
@@ -5704,7 +5702,7 @@ equipments = {
 			tank_production = 10
 			steel = 17
 			tungsten = 4
-			chromium = 14
+			chromium = 15
 		}
 	}
 

@@ -211,17 +211,17 @@ upgrades = {
 			}
 		}
 
-		maximum_speed = -0.03
+		maximum_speed = -0.035
 		
 
 		
-		armor_value = 0.16
+		armor_value = 0.14
 		#soft_attack = 0.005
 		#hard_attack = 0.005
 		add_stats = {
 			breakthrough = 0.3
 			build_cost_ic = 0.25
-			hardness = 0.025
+			hardness = 0.03
 			soft_attack = 0.3
 			hard_attack = 0.3
 			reliability = -0.025

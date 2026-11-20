@@ -12,13 +12,19 @@ state = {
 		owner = ITA
 		add_core_of = SEN
 		
-		victory_points = {
-			1149 12
-		}
+		
 		strategic_state_location = {
 			favorable_approach = 7066
 		}
 		buildings = {
+			
+			
+												
+			infrastructure = 4
+			air_base = 8
+			industrial_complex = 1
+			
+		
 			4194 = {
 				bunker = 3
 				coastal_bunker = 1
@@ -27,19 +33,25 @@ state = {
 				bunker = 3
 				coastal_bunker = 1
 			}
-												
-			infrastructure = 4
-			air_base = 8
-			industrial_complex = 1
+			1118 = {
+				bunker = 3
+			}
 			1149 = {
 				naval_base = 15
 				bunker = 5
 				coastal_bunker = 2				
 			}
 		}
+	
+		victory_points = {
+			1149 12
+		}
+		victory_points = {
+			1118 1
+		}
 	}
 
 	provinces = {
-		 1149 1189 4194 7066 7209  12039 13513
+		 1149 1189 4194 7066 7209  12039 13513 9980 13527 1118
 	}
 }

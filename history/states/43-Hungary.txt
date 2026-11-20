@@ -3,9 +3,9 @@ state = {
 	id = 43
 	name = "STATE_43"
 	resources = {
-		steel = 12.000
-		aluminium = 80.000
-		tungsten = 72.000
+		steel = 14
+		aluminium = 92
+		tungsten = 83
 	}
 
 	history = {

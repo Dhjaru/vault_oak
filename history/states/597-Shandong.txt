@@ -6,8 +6,8 @@ state =
 	state_category = town
 	resources = {
 
-		steel = 42
-		chromium = 32
+		steel = 48
+		chromium = 37
 	
 	}
 	

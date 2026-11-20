@@ -2,9 +2,9 @@ state = {
 	id = 617
 	name = "STATE_617"
 	resources = {
-		steel = 400 # was: 2
-		tungsten = 108 # was: 3
-		oil = 400
+		steel = 460 # was: 2
+		tungsten = 124 # was: 3
+		oil = 460
 	}
 	history = {
 		add_dynamic_modifier = { modifier = CHI_tougher_resistance4 }

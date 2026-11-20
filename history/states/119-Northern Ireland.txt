@@ -30,6 +30,6 @@ state = {
 	state_category = "city"
 	
 	resources = {
-		aluminium = 4
+		aluminium = 5
 	}
 }

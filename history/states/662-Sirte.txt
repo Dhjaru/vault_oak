@@ -5,19 +5,21 @@ state = {
 	
 	state_category = wasteland
 	resources = {
-		oil = 48
+		oil = 55
 	
 	}
 	
 	
 	history = {
-		victory_points = {
-			13073 2
-		}
+		
 		add_core_of = SEN
 		owner = ITA
 		buildings = {
 			infrastructure = 3
+		}
+	
+		victory_points = {
+			13073 2
 		}
 	}
 	

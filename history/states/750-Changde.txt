@@ -8,9 +8,9 @@ state = {
 	buildings_max_level_factor = 1.000
 	state_category = town
 	resources = {
-		aluminium = 40
-		chromium = 32
-		steel = 32
+		aluminium = 46
+		chromium = 37
+		steel = 37
 	}
 	history = {
 		set_state_flag = JAP_interior_flag

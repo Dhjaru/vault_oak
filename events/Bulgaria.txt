@@ -18,18 +18,18 @@ country_event = {
 		
 		if = {
 			limit = {
-				BUL = {
+				HUN = {
 					exists = yes 
 				}
 			}
-			BUL = { 
+			HUN = { 
 				transfer_state = 77
 			}
 		}
 		if = {
 			limit = {
 				77 = { is_core_of = ROM }
-				BUL = {
+				HUN = {
 					exists = yes 
 				}
 			}
@@ -83,7 +83,7 @@ country_event = {
 					803 = { is_owned_by = GER }
 				}
 			}
-			transfer_state = 106
+			HUN = { transfer_state = 106 }
 			transfer_state = 803
 		}
 	}
@@ -156,11 +156,11 @@ country_event = {
 		army_experience = 50
 		if = {
 			limit = {
-				BUL = {
+				HUN = {
 					exists = yes 
 				}
 			}
-			BUL = { 
+			HUN = { 
 				transfer_state = 106
 			}
 		}		
@@ -241,11 +241,11 @@ country_event = {
 		army_experience = 50
 		if = {
 			limit = {
-				BUL = {
+				HUN = {
 					exists = yes 
 				}
 			}
-			BUL = { 
+			HUN = { 
 				transfer_state = 184
 			}
 		}			

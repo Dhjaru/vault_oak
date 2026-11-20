@@ -1688,7 +1688,7 @@ leader_traits = {
 	comintern_workhorse = {
 		sprite = 13
 		random = no
-		stability_weekly = 0.002 
+		stability_weekly = 0.004 
 		stability_factor = 0.05
 		communism_drift = 0.05
 	}
@@ -1890,8 +1890,8 @@ leader_traits = {
 	nationalist_symbol = {
 		war_support_factor = 0.05
 		stability_factor = 0.05
-		army_core_attack_factor = 0.2
-		army_core_defence_factor = 0.2
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
 	}
 
 	champion_of_peace_1 = {
@@ -3232,7 +3232,7 @@ leader_traits = {
 	
 	air_warfare_theorist = {
 		sprite = 14
-		experience_gain_air = 0.05
+		experience_gain_air = 0.10
 		air_doctrine_cost_factor = -0.1
 		ai_will_do = {
 			factor = 500
@@ -3703,13 +3703,24 @@ leader_traits = {
 	}
 	medium_aircraft_manufacturer_2 = {
 		random = no
-		
+		equipment_bonus = {
+			medium_plane_fighter_airframe = {
+				air_attack = 0.1 
+				air_agility = 0.1 
+			}
+			medium_plane_airframe = {
+				air_attack = 0.1 
+				air_bombing = 0.1 
+			}
+			medium_plane_scout_plane_airframe = {
+				air_range = 0.1
+				reliability = 0.2
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
-	}
-	
-	heavy_aircraft_manufacturer = {
+	}heavy_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
 

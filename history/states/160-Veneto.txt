@@ -2,9 +2,9 @@ state = {
 	id = 160
 	name = "STATE_160"
 	resources = {
-		steel = 40 # was: 32.000
-		aluminium = 24 # was: 18.000
-		tungsten = 40
+		steel = 46 # was: 32.000
+		aluminium = 28 # was: 18.000
+		tungsten = 46
 	}
 	
 	state_category = metropolis

@@ -1,0 +1,125 @@
+on_actions = {
+    on_monthly_SOV = {
+        effect = {
+            if = {
+                limit = {
+                    tag = SOV
+                    has_idea_with_trait = OAK_popular_figurehead2
+                }
+                add_to_variable = {
+                    var = SOV_stability_factor_modifier
+                    value = 0.005
+                }
+            }
+
+            if = {
+                limit = {
+                    tag = SOV
+                    has_idea_with_trait = SOV_negotiator_trait
+                }
+                add_to_variable = {
+                    var = SOV_political_power_gain_modifier
+                    value = 0.01
+                }
+            }
+
+            
+            if = {
+                limit = {
+                    tag = SOV
+                    has_idea_with_trait = SOV_military_intelligence_officer
+                }
+                add_to_variable = {
+                    var = SOV_research_speed_factor_var
+                    value = 0.005
+                }
+            }
+
+            if = {
+                limit = {
+                    tag = SOV
+                    has_idea_with_trait = SOV_stalins_agent
+                }
+                add_to_variable = {
+                    var = SOV_max_planning
+                    value = 0.002
+                }
+            }
+
+
+            if = {
+                limit = {
+                    tag = SOV
+                    has_idea_with_trait = SOV_communist_purist
+                }
+                add_to_variable = {
+                    var = SOV_stability_factor_modifier
+                    value = 0.01
+                }
+                add_to_variable = {
+                    var = SOV_political_power_gain_modifier
+                    value = -0.02
+                }
+            }
+
+            # Vault: political-crisis penalties disabled.
+            
+            if = {
+                limit = {
+                    tag = SOV
+                    has_idea_with_trait = SOV_commissar_of_trade
+                }
+                add_to_variable = {
+                    var = SOV_industry_industrial_capacity_factory_modifier
+                    value = 0.005
+                }
+                add_to_variable = {
+                    var = SOV_political_power_gain_modifier
+                    value = -0.02
+                }
+            }
+            if = {
+                limit = {
+                    tag = SOV
+                    has_idea_with_trait = SOV_ambassador_to_the_british
+                }
+                add_to_variable = {
+                    var = SOV_industry_consumer_goods_modifier
+                    value = -0.0015
+                }
+                add_to_variable = {
+                    var = SOV_political_power_gain_modifier
+                    value = -0.025
+                }
+            }
+          
+           if = {
+            limit = {
+           tag = SOV
+           has_completed_focus = SOV_induct_junior_workers
+             OR = {
+            has_idea = SOV_war_economy
+            has_idea = tot_economic_mobilisation
+           }
+    }
+
+
+    add_to_variable = {
+        var = SOV_industry_production_efficiency_max_modifier
+        value = 0.0022
+    }
+}
+
+         if = {
+                limit = {
+                    tag = SOV
+                    has_idea_with_trait = SOV_head_of_the_nkvd_yagoda
+                }
+                add_to_variable = {
+                    var = SOV_political_power_gain_modifier
+                    value = 0.01
+                }
+            }
+        }
+    }
+}

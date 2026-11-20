@@ -7,7 +7,7 @@ state = {
 	state_category = usa_state
 	
 	resources = {
-		aluminium = 52 # was: 20
+		aluminium = 60 # was: 20
 	}
 
 

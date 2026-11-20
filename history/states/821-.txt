@@ -8,10 +8,10 @@ state = {
 	
 	buildings_max_level_factor = 1.000
 	resources = {
-		oil = 12
-		tungsten = 28
-		chromium = 24
-		steel = 20
+		oil = 14
+		tungsten = 32
+		chromium = 27
+		steel = 23
 	}
 
 	history = {

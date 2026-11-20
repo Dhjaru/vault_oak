@@ -9,8 +9,8 @@ state = {
 	buildings_max_level_factor = 1.000
 	resources = {
 
-		steel = 32
-		chromium = 20
+		steel = 37
+		chromium = 23
 	}
 
 	history = {

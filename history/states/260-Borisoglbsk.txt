@@ -7,7 +7,7 @@ state = {
 	state_category = town
 	resources = {
 		
-		rubber = 48.000 #0
+		rubber = 55 #0
 	}
 	history = {
 		set_state_flag = SOV_important_city

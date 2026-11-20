@@ -8,7 +8,7 @@ state = {
 	buildings_max_level_factor = 1.000
 	state_category = town
 	resources = {
-		steel = 64
+		steel = 73
 	}
 	history = {
 		add_dynamic_modifier = { modifier = CHI_tougher_resistance }

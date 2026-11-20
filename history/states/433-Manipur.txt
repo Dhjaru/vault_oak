@@ -8,7 +8,7 @@ state = {
 	
 	
 	resources = {
-		tungsten = 64 # was: 42
+		tungsten = 73 # was: 42
 	}
 
 	history = {

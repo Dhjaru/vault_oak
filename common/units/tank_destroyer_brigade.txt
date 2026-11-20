@@ -1,7 +1,6 @@
 sub_units = {
 
 	light_tank_destroyer_brigade = {
-		allow_in_army_hq = yes
 		sprite = "light_armor"
 		map_icon_category = armored
 		priority = 1795
@@ -23,6 +22,7 @@ sub_units = {
 			category_tanks
 			category_sp_td
 		}
+		allow_in_army_hq = yes
 
 		combat_width = 2
 
@@ -33,7 +33,7 @@ sub_units = {
 		manpower = 500
 		initiative = 0.007
 		max_organisation = 3
-		default_morale = 0.08
+		default_morale = 0.1
 		max_strength = 3
 		training_time = 80
 		weight = 0.8
@@ -45,6 +45,11 @@ sub_units = {
 			movement = -0.1
 		}
 		hills = {
+			attack = -0.05
+			defence = -0.25
+			movement = -0.1
+		}
+		desert_hills = {
 			attack = -0.05
 			defence = -0.25
 			movement = -0.1
@@ -80,7 +85,6 @@ sub_units = {
 	}
 	
 	medium_tank_destroyer_brigade = {
-		allow_in_army_hq = yes
 		sprite = "medium_armor"
 		map_icon_category = armored
 		priority = 1796
@@ -101,6 +105,7 @@ sub_units = {
 			category_tanks
 			category_sp_td
 		}
+		allow_in_army_hq = yes
 
 		combat_width = 2
 
@@ -111,7 +116,7 @@ sub_units = {
 		manpower = 500
 		initiative = 0.007
 		max_organisation = 3
-		default_morale = 0.08
+		default_morale = 0.1
 		max_strength = 3
 		training_time = 80
 		weight = 1
@@ -123,6 +128,11 @@ sub_units = {
 			movement = -0.3
 		}
 		hills = {
+			attack = -0.15
+			defence = -0.35
+			movement = -0.15
+		}
+		desert_hills = {
 			attack = -0.15
 			defence = -0.35
 			movement = -0.15
@@ -158,7 +168,6 @@ sub_units = {
 	}
 	
 	heavy_tank_destroyer_brigade = {
-		allow_in_army_hq = yes
 		sprite = "heavy_armor"
 		map_icon_category = armored
 		priority = 1797
@@ -181,6 +190,7 @@ sub_units = {
 			category_tanks
 			category_sp_td
 		}
+		allow_in_army_hq = yes
 
 		combat_width = 2
 
@@ -191,11 +201,15 @@ sub_units = {
 		initiative = 0.007
 		manpower = 500
 		max_organisation = 3
-		default_morale = 0.08
+		default_morale = 0.1
 		max_strength = 3
 		weight = 1.2
 		suppression = 1.5
 		desert = {
+			attack = 0.15
+			defence = 0.15
+		}
+		deep_desert = {
 			attack = 0.15
 			defence = 0.15
 		}	
@@ -209,6 +223,11 @@ sub_units = {
 			movement = -0.4
 		}
 		hills = {
+			attack = -0.25
+			defence = -0.5
+			movement = -0.2
+		}
+		desert_hills = {
 			attack = -0.25
 			defence = -0.5
 			movement = -0.2
@@ -246,7 +265,6 @@ sub_units = {
 		}
 	}	
 	super_heavy_tank_destroyer_brigade = {
-		allow_in_army_hq = yes
 		abbreviation = "STD"
 		sprite = "heavy_armor"
 		priority = 1797
@@ -269,6 +287,7 @@ sub_units = {
 			category_heavy_and_super_heavy_tanks
 			category_sp_td
 		}
+		allow_in_army_hq = yes
 
 		combat_width = 2
 
@@ -279,12 +298,16 @@ sub_units = {
 		manpower = 600
 		max_organisation = 3
 		
-		default_morale = 0.08
+		default_morale = 0.1
 		max_strength = 3
 		weight = 1.2
 		suppression = 1.5
 		initiative = 0.007
 		desert = {
+			attack = 0.2
+			defence = 0.2
+		}
+		deep_desert = {
 			attack = 0.2
 			defence = 0.2
 		}	
@@ -298,6 +321,11 @@ sub_units = {
 			movement = -0.4
 		}
 		hills = {
+			attack = -0.25
+			defence = -0.5
+			movement = -0.2
+		}
+		desert_hills = {
 			attack = -0.25
 			defence = -0.5
 			movement = -0.2

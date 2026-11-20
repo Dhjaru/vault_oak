@@ -6280,7 +6280,7 @@ country_event = {
 				transfer_state = 826
 				transfer_state = 827
 			}
-			BUL = {
+			HUN = {
 				transfer_state = 77
 			}
 			
@@ -6562,7 +6562,7 @@ country_event = {
 				transfer_state = 826
 				transfer_state = 827
 			}
-			BUL = {
+			HUN = {
 				transfer_state = 77
 			}
 			every_country = {limit = { check_variable= { music_enabled > 0}  }

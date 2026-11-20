@@ -2,10 +2,10 @@ state = {
 	id = 602
 	name = "STATE_602"
 	resources = {
-		tungsten = 20
-		aluminium = 20
-		chromium = 24
-		steel = 84
+		tungsten = 23
+		aluminium = 23
+		chromium = 28
+		steel = 97
 
 	}
 

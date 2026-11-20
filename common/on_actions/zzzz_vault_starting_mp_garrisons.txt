@@ -1,0 +1,39 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = { NOT = { has_template = "MP" } }
+					division_template = {
+						name = "MP"
+						role = garrison
+						priority = 0
+						regiments = {
+					garrison = { x = 0 y = 0 }
+					garrison = { x = 0 y = 1 }
+					garrison = { x = 0 y = 2 }
+					garrison = { x = 0 y = 3 }
+					garrison = { x = 1 y = 0 }
+					garrison = { x = 1 y = 1 }
+					garrison = { x = 1 y = 2 }
+					garrison = { x = 1 y = 3 }
+					garrison = { x = 2 y = 0 }
+					garrison = { x = 2 y = 1 }
+					garrison = { x = 2 y = 2 }
+					garrison = { x = 2 y = 3 }
+					garrison = { x = 3 y = 0 }
+					garrison = { x = 3 y = 1 }
+					garrison = { x = 3 y = 2 }
+					garrison = { x = 3 y = 3 }
+					garrison = { x = 4 y = 0 }
+					garrison = { x = 4 y = 1 }
+					garrison = { x = 4 y = 2 }
+					garrison = { x = 4 y = 3 }
+						}
+						support = { military_police = { x = 0 y = 0 } }
+					}
+				}
+			}
+		}
+	}
+}

@@ -7,9 +7,9 @@ state = {
 	state_category = city
 	
 	resources = {
-		rubber = 200 # 20 moved to papua# was: 242
-		oil = 16 # was: 16 #was 10
-		steel = 28
+		rubber = 230 # 20 moved to papua# was: 242
+		oil = 19 # was: 16 #was 10
+		steel = 32
 	}
 
 	history = {

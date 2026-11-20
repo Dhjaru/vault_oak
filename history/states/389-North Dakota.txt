@@ -5,8 +5,8 @@ state = {
 	manpower = 680844
 	state_category = usa_state
 	resources = {
-		steel = 36 # was: 24
-		oil = 28 # was: 10
+		steel = 41 # was: 24
+		oil = 32 # was: 10
 	}
 
 	history = {

@@ -1283,7 +1283,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.70
+				conscription_factor = -0.65
 				consumer_goods_expected_value = 0.03
 				industrial_capacity_factory = -0.05
 				min_export = 0.1
@@ -1309,7 +1309,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.65
+				conscription_factor = -0.60
 				consumer_goods_expected_value = 0.02
 				industrial_capacity_factory = -0.025
 				min_export = 0.1
@@ -1335,7 +1335,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.50
+				conscription_factor = -0.45
 				consumer_goods_expected_value = 0.02
 				min_export = 0.1
 			}
@@ -1360,7 +1360,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.45
+				conscription_factor = -0.40
 				consumer_goods_expected_value = 0.00
 				#industrial_capacity_factory = 0.00
 				min_export = 0.1
@@ -1386,7 +1386,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.70
+				conscription_factor = -0.65
 				consumer_goods_expected_value = 0.03
 				min_export = 0.1
 

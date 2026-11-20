@@ -1,7 +1,6 @@
 sub_units = {
 
 	light_sp_anti_air_brigade = {
-		allow_in_army_hq = yes
 		sprite = light_armor
 		map_icon_category = armored
 		priority = 301
@@ -22,6 +21,7 @@ sub_units = {
 			category_front_line
 			category_tanks
 		}
+		allow_in_army_hq = yes
 
 		combat_width = 2
 
@@ -30,7 +30,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 3
-		default_morale = 0.08
+		default_morale = 0.1
 		max_strength = 3
 		initiative = 0.007
 		training_time = 80
@@ -44,6 +44,11 @@ sub_units = {
 			movement = -0.1
 		}
 		hills = {
+			attack = -0.05
+			defence = -0.25
+			movement = -0.1
+		}
+		desert_hills = {
 			attack = -0.05
 			defence = -0.25
 			movement = -0.1
@@ -79,7 +84,6 @@ sub_units = {
 	
 	
 	medium_sp_anti_air_brigade = {
-		allow_in_army_hq = yes
 		sprite = medium_armor
 		map_icon_category = armored
 		priority = 301
@@ -100,6 +104,7 @@ sub_units = {
 			category_front_line
 			category_tanks
 		}
+		allow_in_army_hq = yes
 
 		combat_width = 2
 
@@ -108,7 +113,7 @@ sub_units = {
 		}
 		manpower = 300
 		max_organisation = 3
-		default_morale = 0.08
+		default_morale = 0.1
 		max_strength = 3
 		training_time = 80
 		initiative = 0.007
@@ -121,6 +126,11 @@ sub_units = {
 			movement = -0.3
 		}
 		hills = {
+			attack = -0.15
+			defence = -0.35
+			movement = -0.15
+		}
+		desert_hills = {
 			attack = -0.15
 			defence = -0.35
 			movement = -0.15
@@ -154,7 +164,6 @@ sub_units = {
 	
 	}
 	heavy_sp_anti_air_brigade = {
-		allow_in_army_hq = yes
 		abbreviation = "HAA"
 		sprite = heavy_armor
 		map_icon_category = armored
@@ -178,6 +187,7 @@ sub_units = {
 			category_tanks
 			category_heavy_and_super_heavy_tanks
 		}
+		allow_in_army_hq = yes
 
 		combat_width = 2
 
@@ -186,13 +196,17 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 3
-		default_morale = 0.08
+		default_morale = 0.1
 		max_strength = 3
 		initiative = 0.007
 		weight = 1.2
 
 		suppression = 1.5
 		desert = {
+			attack = 0.15
+			defence = 0.15
+		}
+		deep_desert = {
 			attack = 0.15
 			defence = 0.15
 		}	
@@ -206,6 +220,11 @@ sub_units = {
 			movement = -0.4
 		}
 		hills = {
+			attack = -0.25
+			defence = -0.5
+			movement = -0.2
+		}
+		desert_hills = {
 			attack = -0.25
 			defence = -0.5
 			movement = -0.2
@@ -245,7 +264,6 @@ sub_units = {
 	}
 	
 	super_heavy_sp_anti_air_brigade = {
-		allow_in_army_hq = yes
 		abbreviation = "SAA"
 		sprite = heavy_armor
 		map_icon_category = armored
@@ -261,6 +279,7 @@ sub_units = {
 			category_tanks
 			category_heavy_and_super_heavy_tanks
 		}
+		allow_in_army_hq = yes
 		
 		group = armor
 		
@@ -276,7 +295,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 3
-		default_morale = 0.08
+		default_morale = 0.1
 		max_strength = 3
 		initiative = 0.007
 		training_time = 80
@@ -284,6 +303,10 @@ sub_units = {
 
 		suppression = 1.5
 		desert = {
+			attack = 0.2
+			defence = 0.2
+		}
+		deep_desert = {
 			attack = 0.2
 			defence = 0.2
 		}	
@@ -297,6 +320,11 @@ sub_units = {
 			movement = -0.4
 		}
 		hills = {
+			attack = -0.25
+			defence = -0.5
+			movement = -0.2
+		}
+		desert_hills = {
 			attack = -0.25
 			defence = -0.5
 			movement = -0.2
@@ -332,6 +360,7 @@ sub_units = {
 			attack = 0.1
 		}
 	}
+	
 	light_sp_anti_air_company = {
 		sprite = light_armor
 		map_icon_category = armored
@@ -344,6 +373,7 @@ sub_units = {
 		}
 		
 		group = support
+		regimental = no
 		
 		categories = {
 			category_all_armor
@@ -390,6 +420,7 @@ sub_units = {
 		}
 		
 		group = support
+		regimental = no
 		
 		categories = {
 			category_all_armor
@@ -436,6 +467,7 @@ sub_units = {
 		}
 		
 		group = support
+		regimental = no
 		
 		categories = {
 			category_all_armor
@@ -483,6 +515,7 @@ sub_units = {
 		}
 		
 		group = support
+		regimental = no
 		
 		categories = {
 			category_all_armor

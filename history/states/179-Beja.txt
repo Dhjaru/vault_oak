@@ -2,7 +2,7 @@ state = {
 	id = 179
 	name = "STATE_179"
 	resources = {
-		steel = 24
+		steel = 28
 	}
 
 	history = {

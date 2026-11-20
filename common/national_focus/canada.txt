@@ -102,6 +102,13 @@ focus_tree = {
 				tooltip = CAN_infra_tt1
 			}
 			
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
 		}
 	}
 
@@ -513,6 +520,13 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 			}
 			
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+			}
 		}
 	}
 
@@ -753,6 +767,13 @@ focus_tree = {
 					bonus = 0.75
 					uses = 2
 					category = construction_tech
+			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 			}
 		}
 	}
@@ -2061,6 +2082,13 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CAN_c_d_howe_advisor
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+			}
 		}
 	}
 
@@ -5127,6 +5155,13 @@ focus = {
 				}
 			}
 			
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 	}
 

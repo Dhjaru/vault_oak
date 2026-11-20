@@ -135,9 +135,9 @@ country_event = {
 		name = romania.5.a
 		ai_chance = { factor = 90 }
 		effect_tooltip = {
-			BUL = { transfer_state = 77 }
+			HUN = { transfer_state = 77 }
 		}
-		BUL = {
+		HUN = {
 			country_event = { days = 1 id = bulgaria.1 }
 		}
 	}

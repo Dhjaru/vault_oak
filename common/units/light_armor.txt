@@ -1,6 +1,5 @@
 sub_units = {
 	light_armor = {
-		allow_in_army_hq = yes
 		sprite = light_armor
 		map_icon_category = armored
 		priority = 2501
@@ -19,7 +18,7 @@ sub_units = {
 			category_all_armor
 			category_army
 		}
-
+		allow_in_army_hq = yes
 
 		combat_width = 2
 
@@ -43,6 +42,11 @@ sub_units = {
 			movement = -0.1
 		}
 		hills = {
+			attack = -0.05
+			defence = -0.25
+			movement = -0.1
+		}
+		desert_hills = {
 			attack = -0.05
 			defence = -0.25
 			movement = -0.1
@@ -89,6 +93,7 @@ sub_units = {
 		}
 		
 		group = support
+		regimental = no
 		
 		categories = {
 			

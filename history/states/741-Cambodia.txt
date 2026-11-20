@@ -2,7 +2,7 @@ state = {
 	id = 741
 	name = "STATE_741"
 	resources = {
-		oil = 20
+		oil = 23
 	}
 	history = {
 		add_core_of = SEN

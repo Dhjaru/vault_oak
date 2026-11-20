@@ -1,0 +1,13 @@
+add_namespace = vault_soviet
+country_event = {
+	id = vault_soviet.1
+	title = vault_soviet.1.t
+	desc = vault_soviet.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = vault_soviet.1.a
+		SOV = { country_event = { days = 1 id = soviet.4 } }
+		set_country_flag = bessarabia_ceded
+	}
+}

@@ -3,10 +3,10 @@ state={
 	id=109
 	name="STATE_109"
 	resources={
-		steel=40.000
-		aluminium=12.000
-		chromium=20.000
-		tungsten=4.000
+		steel=46
+		aluminium=13
+		chromium=23
+		tungsten=4
 	}
 
 	history={

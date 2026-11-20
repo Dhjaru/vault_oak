@@ -2326,9 +2326,9 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					country_exists = BUL
+					country_exists = HUN
 				}
-				BUL = {
+				HUN = {
 					transfer_state = 184
 				}
 
@@ -2336,7 +2336,7 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
-						country_exists = BUL
+						country_exists = HUN
 					}
 				}
 				GER = {
@@ -2491,14 +2491,11 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					BUL = {
-						is_ai = no
-						
-					}
-					country_exists = BUL
+					
+					country_exists = HUN
 					
 				}	
-				BUL = {
+				HUN = {
 					transfer_state = 106	
 				}
 			}			   			

@@ -499,7 +499,7 @@ adjacency_rule=
 #Yemen Canal
 adjacency_rule=
 {
-	name = "Straits_of_Hormuz"
+	name = "VAULT_BAB_EL_MANDEB"
 
 	contested =
 	{
@@ -580,4 +580,16 @@ adjacency_rule=
 		}
 		
 	}
+}
+
+# Strait of Hormuz: Persian Gulf / Gulf of Oman, on the mod province map.
+adjacency_rule = {
+	name = "HORMUZ_STRAIT"
+	contested = { army = no navy = no submarine = no trade = no }
+	enemy = { army = no navy = no submarine = no trade = no }
+	friend = { army = yes navy = yes submarine = yes trade = yes }
+	neutral = { army = yes navy = yes submarine = yes trade = yes }
+	required_provinces = { 1889 4993 }
+	icon = 4993
+	offset = { 0 0 0 }
 }

@@ -7,7 +7,7 @@ state = {
 	
 	state_category = city
 	resources = {
-		steel = 80 # was: 20
+		steel = 92 # was: 20
 	}
 
 	history = {

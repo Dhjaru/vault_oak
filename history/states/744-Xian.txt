@@ -5,9 +5,9 @@ state = {
 		13620 13618 13621 1976 2006 4167 4256 4295 5092 7301 7406 7418 10257 12713 13640 13641 531
 	}
 	resources = {
-			tungsten = 20
-			steel = 32
-			chromium = 24
+			tungsten = 23
+			steel = 37
+			chromium = 28
 	}
 
 	history = {

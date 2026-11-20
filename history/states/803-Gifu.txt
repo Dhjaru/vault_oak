@@ -6,7 +6,7 @@ state = {
 	}
 	resources = {
 
-		steel = 12
+		steel = 14
 	}
 	history = {
 		owner = JAP

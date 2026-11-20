@@ -8,8 +8,8 @@ state = {
 	state_category = usa_state
 	
 	resources = {
-		oil = 1000 # was: 580
-		aluminium = 180 # was: 96
+		oil = 1150 # was: 580
+		aluminium = 207 # was: 96
 	}
 
 

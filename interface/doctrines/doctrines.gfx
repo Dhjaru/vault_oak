@@ -459,7 +459,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_devils_gardens_medium"
-		texturefile = "gfx/interface/doctrines/icons/doctrine_grand_battleplan.dds"
+		texturefile = "gfx/interface/doctrines/icons/devils_gardens.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = {

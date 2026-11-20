@@ -1215,6 +1215,7 @@ ITA_balance_of_power_category = {
 				tooltip = recruitable_population_factor_tooltip
 			}
 			ITA_bop_low_decrease_effect = yes
+			add_manpower = 50000
 		}
 
 		modifier = {
@@ -1339,7 +1340,7 @@ ITA_balance_of_power_category = {
 
 		days_re_enable = 90
 
-		days_remove = 180 
+		days_remove = 210 
 
 		complete_effect = {
 			ITA_bop_low_decrease_effect = yes
@@ -1374,7 +1375,7 @@ ITA_balance_of_power_category = {
 
 		days_re_enable = 90
 
-		days_remove = 180 
+		days_remove = 210 
 
 		complete_effect = {
 			ITA_bop_low_decrease_effect = yes
@@ -1416,7 +1417,7 @@ ITA_balance_of_power_category = {
 
 		days_re_enable = 90
 
-		days_remove = 120 
+		days_remove = 150 
 
 		complete_effect = {
 			custom_effect_tooltip = ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro
@@ -1642,11 +1643,11 @@ ITA_balance_of_power_category = {
 			custom_effect_tooltip = "Clickable every 180 days"
 			ITA_bop_medium_decrease_effect = yes
 			custom_effect_tooltip = ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
-			#add_to_variable = {
-				#var = ITA_political_power_gain_modifier
-				#value = -0.1
-				#tooltip = political_power_gain_daily_tooltip
-			#}
+			add_to_variable = {
+				var = ITA_political_power_gain_modifier
+				value = -0.1
+				tooltip = political_power_gain_daily_tooltip
+			}
 			add_to_variable = {
 				var = ITA_iri_production_speed_industrial_complex_factor
 				value = -0.1
@@ -1702,7 +1703,7 @@ ITA_balance_of_power_category = {
 
 		modifier = {
 			conversion_cost_civ_to_mil_factor = -0.2
-		#	industrial_capacity_factory = 0.2
+		#	industrial_capacity_factory = 0.20
 		}
 		days_re_enable = 90
 
@@ -1712,7 +1713,7 @@ ITA_balance_of_power_category = {
 			custom_effect_tooltip = ITA_modify_military_industry_dynamic_modifier_ns_intro
 			add_to_variable = {
 				var = ITA_military_industry_dm_industrial_capacity_factory
-				value = 0.25
+				value = 0.20
 				tooltip = industrial_capacity_factory_tooltip
 			}
 			#add_to_variable = {
@@ -1737,7 +1738,7 @@ ITA_balance_of_power_category = {
 			custom_effect_tooltip = ITA_modify_military_industry_dynamic_modifier_ns_intro
 			add_to_variable = {
 				var = ITA_military_industry_dm_industrial_capacity_factory
-				value = -0.25
+				value = -0.20
 				tooltip = industrial_capacity_factory_tooltip
 			}
 				#	custom_effect_tooltip = ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro
@@ -1749,7 +1750,7 @@ ITA_balance_of_power_category = {
 			#	}
 		}
 
-		days_remove = 120
+		days_remove = 180
 
 		cost = 0
 
@@ -1927,7 +1928,7 @@ ITA_balance_of_power_category = {
 			}
 		}
 
-		days_remove = 120
+		days_remove = 150
 
 		ai_will_do = {
 			factor = 0

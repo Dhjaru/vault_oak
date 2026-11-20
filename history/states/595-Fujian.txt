@@ -4,10 +4,10 @@ state = {
 	manpower = 5877800
 	state_category = city
 	resources = {
-		steel = 40 # was: 20
-		aluminium = 52
-		chromium = 40
-		oil = 24
+		steel = 46 # was: 20
+		aluminium = 60
+		chromium = 46
+		oil = 28
 	}
 	history =
 	{

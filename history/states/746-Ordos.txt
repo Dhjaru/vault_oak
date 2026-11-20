@@ -6,8 +6,8 @@ state = {
 	}
 	state_category = pastoral
 	resources = {
-			steel = 60
-			chromium = 16
+			steel = 69
+			chromium = 18
 	}
 	
 	

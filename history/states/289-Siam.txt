@@ -7,11 +7,11 @@ state = {
 	state_category = megalopolis
 	
 	resources = {
-		rubber = 32 # was: 10
-		tungsten = 48 # was: 2
-		steel = 60
-		chromium = 40 
-		oil = 20
+		rubber = 37 # was: 10
+		tungsten = 55 # was: 2
+		steel = 69
+		chromium = 46 
+		oil = 23
 	}
 
 	history = {

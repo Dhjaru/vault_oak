@@ -6,7 +6,7 @@ state = {
 	
 	state_category = usa_state
 	resources = {
-		steel = 80 
+		steel = 92 
 	}
 	history = {
 		owner = USA

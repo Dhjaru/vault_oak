@@ -7,7 +7,7 @@ state = {
 	state_category = large_town
 	
 	resources = {
-		oil = 32
+		oil = 37
 		#steel = 12 sent to Mexico City
 	}
 

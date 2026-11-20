@@ -523,6 +523,7 @@ country_event = {
 	
 	option = {
 		name = soviet.24.a
+		retire_character = SOV_Genrikh_Yagoda
 	}
 }
 
@@ -733,9 +734,11 @@ country_event = {
 	option = {
 		name = soviet.30.a
 		hidden_effect = { 
-			ROM = { 
-				country_event = { days = 2 id = romania.1 }
+			if = {
+				limit = { HUN = { OR = { owns_state = 78 owns_state = 80 owns_state = 766 } } }
+				HUN = { country_event = { days = 2 id = vault_soviet.1 } }
 			}
+			else = { ROM = { country_event = { days = 2 id = romania.1 } } }
 		}
 	}	
 }
@@ -3523,3 +3526,13 @@ country_event = {
         name = "We must consider our options carefully."
     }
 }
+
+# Disabled in Vault: retain the event ID as a harmless stub for queued events.
+country_event = {
+	id = soviet.1016
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { always = no }
+}
+
+

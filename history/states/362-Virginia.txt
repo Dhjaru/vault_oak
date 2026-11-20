@@ -7,7 +7,7 @@ state = {
 	state_category = usa_state
 
 	resources = {
-		chromium = 200
+		chromium = 230
 	}
 
 	history = {

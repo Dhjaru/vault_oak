@@ -2431,6 +2431,13 @@ focus_tree = {
 					level = 1
 				}
 			}			
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -2463,6 +2470,13 @@ focus_tree = {
 				}
 			}
 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -2520,6 +2534,14 @@ focus_tree = {
 					level = 1
 				}
 			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -2552,6 +2574,14 @@ focus_tree = {
 				}
 			}				
 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 	}	
 
@@ -2610,6 +2640,14 @@ focus_tree = {
 					level = 1 
 				}
 			} 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -2642,6 +2680,14 @@ focus_tree = {
 				}
 			}				
  
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 	}	
 	
@@ -2705,6 +2751,14 @@ focus_tree = {
 					level = 1 
 				}
 			} 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -2745,6 +2799,14 @@ focus_tree = {
 			add_to_variable = {
 				var = rapid_industrialization
 				value = 5
+			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
 			}
 		}
 	}
@@ -3082,6 +3144,13 @@ focus_tree = {
 				}
 			}
 			 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -3101,6 +3170,13 @@ focus_tree = {
 				}
 			}
 			 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 	focus = {
@@ -3143,6 +3219,14 @@ focus_tree = {
 				}
 			}
 			 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -3162,6 +3246,14 @@ focus_tree = {
 				}
 			}
 			 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 	}
 	
@@ -3205,6 +3297,14 @@ focus_tree = {
 				}
 			}
 			 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -3222,6 +3322,14 @@ focus_tree = {
 					type = industrial_complex
 					instant_build = yes 
 				}
+			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
 			}
 		}
 	}
@@ -3266,6 +3374,13 @@ focus_tree = {
 				}
 			}
 			 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -3285,6 +3400,13 @@ focus_tree = {
 				}
 			}
 			 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 	
@@ -3380,6 +3502,13 @@ focus_tree = {
 				}
 			}
 			 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -3399,6 +3528,13 @@ focus_tree = {
 				}
 			}
 			 
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+			}
 		}
 	}
 	
@@ -3695,6 +3831,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -3706,6 +3849,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}		
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 	
@@ -3746,6 +3896,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}		
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 	
@@ -3785,6 +3942,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -3796,6 +3960,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}		
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 	
@@ -3836,6 +4007,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}		
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 	
@@ -3882,6 +4060,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}	
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 	}
 	
@@ -3927,6 +4112,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -3943,6 +4135,13 @@ focus_tree = {
 					level = 2
 					instant_build = yes 
 				}
+			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
 			}
 		}
 	}
@@ -3986,6 +4185,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}	
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 	}
 	
@@ -4025,6 +4231,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
 		}
 
 		completion_reward = {
@@ -4035,6 +4248,13 @@ focus_tree = {
 					level = 2
 					instant_build = yes 
 				}
+			}
+		
+			# Vault merged-country factory compensation
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 			}
 		}
 	}

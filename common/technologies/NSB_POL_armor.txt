@@ -1330,11 +1330,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1938
 
 		folder = {
 			name = nsb_pol_armor_folder
-			position = { x = 10 y = @1936 }
+			position = { x = 10 y = @1938 }
 		}
 
 		ai_will_do = {
@@ -1667,6 +1667,46 @@ technologies = {
 		}
 		
 		   
+		}
+		light_assault_gun_brigade = {
+			marsh = {
+				attack = 0.04
+				movement = 0.04
+			}
+			river = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		medium_assault_gun_brigade = {
+			marsh = {
+				attack = 0.04
+				movement = 0.04
+			}
+			river = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		heavy_assaut_gun_brigade = {
+			marsh = {
+				attack = 0.04
+				movement = 0.04
+			}
+			river = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		super_heavy_assault_gun_brigade = {
+			marsh = {
+				attack = 0.04
+				movement = 0.04
+			}
+			river = {
+				attack = 0.05
+				movement = 0.1
+			}
 		}
 		research_cost = 1
 
